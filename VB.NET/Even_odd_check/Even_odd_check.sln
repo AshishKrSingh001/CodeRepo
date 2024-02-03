@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Even_odd_check", "Even_odd_check\Even_odd_check.vbproj", "{175D551D-0491-47D9-980E-1F78493B465A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{175D551D-0491-47D9-980E-1F78493B465A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175D551D-0491-47D9-980E-1F78493B465A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{175D551D-0491-47D9-980E-1F78493B465A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{175D551D-0491-47D9-980E-1F78493B465A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB8487B5-F8B8-458B-9A74-927C253D855F}
+	EndGlobalSection
+EndGlobal

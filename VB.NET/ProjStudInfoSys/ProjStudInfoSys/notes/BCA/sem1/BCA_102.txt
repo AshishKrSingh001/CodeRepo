@@ -1,0 +1,25 @@
+BCA-102 BASIC MATHEMATICS
+Objectives : To know about Logical operators, validity of arguments, set theory and set operations,
+relations and functions, linary operations, Binary algebra, Permutations & Combinations,
+Differentiation, Straight lines, pair of straight lines, Circles
+MODULE I : SYMBOLIC LOGIC & SET THEORY :
+Proposition, Logical operators, conjunction, disjunction, negation, conditional and bi-conditional
+operators, converse, Inverse, Contra Positive, logically equivalent, tautology and contradiction.
+Arguments and validity of arguments. Set operations, Venn diagram, Properties of sets, number of
+elements in a set, Cartesian product, relations & functions, Relations : Equivalence relation.
+Equivalence class, Partially and Totally Ordered sets, Functions: Types of Functions, Composition
+of Functions.
+MODULE II : DIFFERENTIAL CALCULUS
+Differentiation, successive differentiation, Leibnitz theorem, partial differentiation, Applications of
+differentiation, Tangent and normal, angle between two curves, Maximum and Minimum values
+(Second derivative test), Curvature and radius of Curvature (Cartesian coordinates), Envelopes.
+MODULE III : INTEGRAL CALCULUS
+Definite Integral and its application for area, length and volume. Multiple Integrals. Change of
+order of Integration. Transformation of integral from Cartesian to polar. Applications in Areas,
+volume and surfaces.
+MODULE IV : TWO DIMENSIONALANALYTICAL GEOMETRY
+Straight Lines .Pair Straight Lines .Circles.
+Text Books:
+1. Das BC and Mukherjee, Differential Calculus, Calcutta, U.N. Dhar Publishers
+2. Das BC and Mukherjee, Integral Calculus, Calcutta, U.N. Dhar Publishers
+3. Grewal B.S., Higher Engineering Mathematics, Delhi Khanna Publishers.

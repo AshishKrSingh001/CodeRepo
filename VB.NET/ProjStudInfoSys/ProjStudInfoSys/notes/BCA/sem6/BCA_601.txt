@@ -1,0 +1,37 @@
+BCA-601: Web Technology (Elective 1)
+Web2.0 and XHTML
+What Is Web 2.0? Introduction to Web 2.0 terms:Search, Content Networks, Blogging, Social
+Networking, Social Media, Rich Internet Applications (RIAs), Web Services, Introduction to
+XHTML, Syntactic Differences between HTML and XHTML, Standard XHTML Document
+Structure, An example of XHTML covering Basic Syntax, Images, Hypertext Links, Lists and
+Tables, Creation of an XHTML Form, Internal Linking and MetaElements.
+Introduction to XML
+XML Basics, XML Document Structure, XML Name-spaces, Document Type Definitions, XML
+Schema, Displaying XML Documents, XSL and CSS.
+Programming with Java Script – DOM and Events
+The Document Object Model, Element Access in Java Script, Traversing and Modifying a DOM
+Tree, DOM Collections and Styles, Events, Examples of Event Handling from Body, Button, Text
+Box and Password Elements, Dynamic Documents using JavaScript – element moving, visibility,
+positioning etc., Example program (s), Introduction and example of AJAX.
+The Server Side Scripting
+Server side scripting and its need ,Two-Tier,Three-Tier, N-Tier and Enterprise Architecture,Various
+Languages / Technologies for server scripting, HTTP Methods (such as GET,POST,HEAD, and so
+on), Purpose, Technical characteristics, Method selection, Use of request and response primitives,
+Web container – Tomcat.
+JSP – Basics
+Basic JSP Life-cycle, JSP Directives and Elements, Script-lets, Expressions, Action Elements,
+Standard Actions, Comments and Template Data, JSP variables, The out Object, Request, response,
+sessions and application objects.
+JSPApplications
+Exceptions and exception handling using JSP, Cookies and sessions, Managing Email using JSP.
+JSPApplication Development
+Example applications using JSP, What is JDBC? Need for JDBC, Database Drivers, Connection
+using JDBC API, Application development and deployment.
+Text Books:
+1. Ivan Bay Ross- Web Enable Commercial Application Using HTML, DHTML, BPB
+Publication
+2. Michel Morrison -HTML and XML for Beginners, PHI, New Delhi- 2001
+3. H.M Dietal and P.J Dietal -Java How to Program, PHI, New Delhi- 2005
+Reference Book:
+1. Java Server Side Programming -WROX Publication
+2. David S. Plat : Introducing Microsoft .Net, Microsoft Press

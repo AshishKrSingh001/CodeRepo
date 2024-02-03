@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE student SYSTEM "ExternalDTD.dtd">
+<student>
+	<name>Ashish</name>
+	<age>21</age>
+	<id>123</id>
+	<roll_no>85</roll_no>
+	<mob_no>7896541230</mob_no>
+	<add>Thakurganj</add>
+	<name>Ashish</name>
+	<age>21</age>
+	<id>123</id>
+	<roll_no>85</roll_no>
+	<mob_no>7896541230</mob_no>
+	<add>Thakurganj</add>
+</student>

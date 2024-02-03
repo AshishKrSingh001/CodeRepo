@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Object</title>
+	</head>
+	<body>
+		<script>
+			function employee(name,id)
+			{
+				this.name = name;
+				this.id = id;
+			}
+			var emp0 = new employee("Ashish",13489);
+			document.write("Name: "+emp0.name+"<br>Id: "+emp0.id+"<br>");
+			var emp1 = new employee("Aditya",13039);
+			document.write("Name: "+emp1.name+"<br>Id: "+emp1.id+"<br>");
+			var emp2 = new employee("Aman",13014);
+			document.write("Name: "+emp2.name+"<br>Id: "+emp2.id+"<br>");
+			var emp3 = new employee("Roshan",13088);
+			document.write("Name: "+emp3.name+"<br>Id: "+emp3.id+"<br>");
+		</script>
+	</body>
+</html>

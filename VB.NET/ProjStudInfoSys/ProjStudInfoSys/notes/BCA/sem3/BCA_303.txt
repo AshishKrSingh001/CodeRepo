@@ -1,0 +1,45 @@
+BCA–303 JAVA PROGRAMMING
+Java Evolution and Overview of Java Language: How Java differs from C and C++,Java and
+Internet, Java and World Wide Web, Introduction, Simple Java Program, More of Java, An
+Application with Two Classes, Java Program Structure, Java Tokens, Java Statements,
+Implementing a Java Program, Java Virtual Machine, Command Line Arguments, Programming
+Style. Constants, Variables, and Data Types: Introduction, Constants, Variables, Data
+Types,Declaration of Variables, Giving Values of Variables, Scope of Variables, Symbolic
+Constants, Type Casting, Getting Values of Variables, Standard Default Values.
+Operators and Expressions: Introduction, Arithmetic Operators, Relational Operators, Logical
+Operators, Assignment Operators, Increment and Decrement Operators, ConditionalOperators,
+Bitwise Operators, Special Operators, Arithmetic Expressions, Evolution of Expressions,
+Precedence of Arithmetic Operators, Type Conversion in Expressions, Operator Precedence and
+Associativity, Mathematical Functions.
+Decision Making and Branching: Introduction, Decision Making with if Statement, Simple if
+Statement, The if... else Statement, Nesting of if ... else Statements, The else if Ladder, The switch
+Statement, The ?: Operator.
+Decision Making and Looping: Introduction, The while Statement, The do Statement, The for
+Statement, Jumps in Loops, Labelled Loops.
+Classes, Objects and Methods: Introduction, Defining a Class, Adding Variables, Adding
+Methods, Creating Objects, Accessing Class Members, Constructors, Methods Overloading, Static
+Members, Nesting of Methods, Inheritance: Extending a. Class, Overriding Methods, final Variables
+and Methods, Final Classes, Finalizer Methods, Abstract Methods and Classes, Visibility Control.
+Arrays, String and Vectors: Arrays, One-Dimensional Arrays, Creating an Array, TwoDimensional Arrays, Strings, Vectors, Wrapper Classes. Interfaces: Multiple Inheritance:
+Introduction, Defining Interfaces, Extending Interfaces, implementing Interfaces, Accessing
+Interface Variables. Packages: Putting Classes Together: Introduction, Java API Packages, Using
+system Packages, Naming Conventions, Creating Packages, Accessing a Packages, Using a
+Package, Adding a Class to a Package, Hiding Classes. Multithreaded Programming: Introduction,
+Creating Threads, Extending the Thread Class, Stopping and Blocking a Thread, Life Cycle of a
+Thread, Using Thread Methods, Thread Exceptions, Thread Priority, Synchronization.
+Managing Errors and Exceptions: Introduction, Types of Errors, Exceptions, Syntax of Exception
+Handling Code, Multiple Catch Statements, Using finally Statement, Throwing Our Own
+Exceptions, Using Exceptions for Debugging.Applet Programming: Introduction, How Applets
+Differ from Application, Preparing to Write Applets, Building Applet Code, Applet Life Cycle,
+Creating an Executable Applet, Designing a Web Page, Applet Tag, Adding Applet to HTML File,
+Running the Applet, More About Applet Tag, Passing Parameters to Applets.
+Managing Input/Output Files in Java: Introduction, Concepts of Streams Stream Classes, Byte
+Stream Classes, Character Stream Classes, Using Streams, Other Useful I/O Classes, using the File
+Class, Input/Output Exceptions, Creation of Files.
+Text Book:
+1. E. Balagurusamy, Programming with Java, A Primer Second Edition, Tata McGraw Hill, New
+Delhi.
+Reference Books:
+1. H.M.Deitel & P.J.Deitel- JA V A- How to Program, 5th Edn, Pearson Education,New Delhi2004.
+2. P.Naughton and H. Schildt-JAVA: The Complete Reference, TMH, New Delhi 2005.
+3. D.Jana- Java and Object Oriented Programming Paradigm, PHI, New Delhi-2005.

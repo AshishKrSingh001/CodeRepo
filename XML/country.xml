@@ -1,0 +1,18 @@
+<tourist>
+	<destination place="Singapore">
+		<cost>20000</cost>
+		<noOfDays>8</noOfDays>
+		<modeOfTransport>Plane</modeOfTransport>
+	</destination>
+	<destination place="Shimla">
+		<cost>10000</cost>
+		<noOfDays>4</noOfDays>
+		<modeOfTransport>Train</modeOfTransport>
+	</destination>
+	<destination place="Gaya">
+		<cost>5000</cost>
+		<noOfDays>2</noOfDays>
+		<modeOfTransport>Bus</modeOfTransport>
+	</destination>
+</tourist>
+	

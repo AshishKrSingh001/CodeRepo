@@ -1,0 +1,35 @@
+BCA-503 COMPUTER NETWORK, DATA COMMUNICATION, AND CLIENT SERVER
+TECHNOLOGY
+Data Transmission Basic Concepts and Terminology: Data Communication Model,
+Communication Tasks, Parallel & Serial Transmission, Transmission Models, Transmission
+Channel, Data Rate, Bandwidth Signal Encoding Schemes, Data Compression, Transmission
+Impairments, Layering and Design Issues, OSI Model, Services and Standards. Computer Network:
+Network Topology, Performance of Network, Network Classification, Advantages & Disadvantages
+of Network, Transmission Media (guided and unguided), Network Architecture, OSI Reference
+Model, TCP/IP, SNA and DNA.
+Data Line Devices: Modems, DSL, ADSL, Multiplexer and Different Multiplexing Techniques:
+(FDM, TDM).
+Physical Layer: Function and interface, physical layer standard, null modem. Local Area Network:
+Definition of LAN, LAN topologies, Layered architecture of LAN, MAC, IEEE standard. Ethernet
+LAN, CSMA, CSMA/ CD, Token passing LAN. Network Security: Security Requirement, Data
+encryption strategies, authentication protocols, Firewalls.
+Data Link Layer: Need for Data Link Control, Frame Design Consideration, Flow Control &
+Error Control (Flow control mechanism, Error Detection and Correction techniques) Data Link
+Layer Protocol, HDLC.
+Network Layer: Routing, Congestion control, Internetworking principles, Internet Protocols (IPv4
+packet format, Hierarchal addressing sub netting, ARP, PPP), Bridges, Routers.
+Transport Layer; Session Layer; Presentation Layer; Application Layer.
+Basic Applications: Telnet, FTP, NFS, SMTP, SNMP and HTTP.
+Fundamental of Distributed System: An Introduction – Client/ Server Technology,
+classification. Distributed Computing Environment: introduction, DCE architecture. Types of
+CS architecture: 2-tier architecture, 3-tier architecture, Distributed collaborative enterprise
+architecture – Object Request Broker (ORB). Complementary technology to 3-tier : Object
+oriented design, Database Two phase. Commit processing , Remote procedure call, Message
+Oriented middle-ware.
+Distributed Computing Environment: Introduction : interoperability , C/S Model , Defining a
+distributed Environment. Motivation for distributed computing , developming the distributed
+computing architecture framework, Fundamental technologies, requirements of distributed system.
+Text Book:
+1. Prakash C. Gupta – Data Communications & Computer Networks, PHI, New Delhi.
+2. Behrouz Forouzan – Introduction to Data Communication & Networking; T. M. H.
+3. William Stallings – Data and Computer Communications; Pearson.

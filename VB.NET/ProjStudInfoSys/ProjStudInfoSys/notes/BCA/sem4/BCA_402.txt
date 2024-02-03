@@ -1,0 +1,48 @@
+BCA-402 DIGITAL ELECTRONICS, COMPUTER SYSTEM ARCHITECTURE, AND
+ORGANISATION
+Introduction to Digital Circuits: The Basic Computer; The Von-Neumann Architecture,
+Instruction Execution: An Example, Instruction Cycle Interrupts, Interrupts and Instruction Cycle,
+Computers: Then and Now, The Beginning, First Generation Computers, Second Generation
+Computers, Third Generation Computers, Later Generations.
+The Data Representation: Data Representation, Number Systems, Decimal Representation in
+Computers, Alphanumeric Representation, Data Representation for Computation, Error Detection
+and Correction Codes.
+Principles of Logic Circuits I: Logic Gates, Logic Circuits, Combinational Circuits, Canonical and
+Standard Forms, Minimization of Gates, Design of Combinational Circuits, Examples of Logic
+Combinational Circuits, Adders, Decoders, Multiplexer, Encoder, Programmable Logic Array, Read
+Only Memory ROM.
+Principles of Logic Circuits II: Sequential Circuits: The Definition, Flip Flops, Basic Flip-Flops,
+Excitation Tables, Master Slave Flip Flops, Edge Triggered Flip-flops, Sequential Circuit Design,
+Examples of Sequential Circuits, Registers, Counters: Asynchronous Counters, Synchronous
+Counters, RAM, Design of a Sample Counter.
+Basic Computer Organisation: The Memory System: The Memory Hierarchy, RAM, ROM,
+DRAM, Flash Memory, Secondary Memory and Characteristics, Hard Disk Drives, Optical
+Memories, CCDs, Bubble Memories, RAID and its Levels, The Concepts of High Speed Memories,
+Cache Memory, Cache Organisation, Memory Interleaving, Associative Memory.
+The Input/Output System: Input / Output Devices or External or Peripheral Devices, The Input
+Output Interface, the Device Controllers and its Structure, Device Drivers, Input Output
+Techniques, Programmed Input /Output, Interrupt-Driven Input /Output, Interrupt-Processing, DMA
+(Direct Memory Access). Input Output Processors, External Communication Interfaces.
+The Central Processing Unit: Instruction Set Architecture; Instruction Set Characteristics,
+Instruction Set Design Considerations, Operand Data Types, Types of Instructions, Number of
+Addresses in an Instruction, Addressing Schemes, Types of Addressing Schemes, Immediate
+Addressing, Direct Addressing, Indirect Addressing, Register Addressing, Register Indirect
+Addressing, Indexed Addressing Scheme, Base Register Addressing, Relative Addressing Scheme,
+Stack Addressing, Instruction Set and Format Design Issues, Instruction Length, Allocation of Bits
+Among Opcode and Operand, Variable Length of Instructions, Example of Instruction Format.
+Registers, Micro-Operations and Instruction Execution: Basic CPU Structure, Register
+Organization, Programmer Visible Registers, Status and Control Registers, General Registers in a
+Processor, Micro-operation Concepts, Register Transfer Micro-operations, Arithmetic Microoperations, Logic Micro- operations, Shift Micro-operations, Instruction Execution and Microoperations, Instruction Pipelining.
+ALU Organisation: ALU Organisation, A Simple ALU Organization, A Sample ALU Design,
+Arithmetic Processors.
+The Control Unit: The Control Unit, The Hardwired Control, Wilkes Control, The MicroProgrammed Control, The Micro-Instructions, Types of Micro-Instructions, Control Memory
+Organisation, Micro-Instruction Formats, The Execution of Micro-Program.
+Text Books :
+1. M. Morris Mano, Charles Kime : Logic and Computer Design Fundamentals, 4/E;
+Prentice Hall.
+2. Rajaraman V.: Fundamental of Computers, PHI
+3. Willam Stalling : Computer Organization & Architecture- Desigining for Performance;
+PHI
+4. B Ram: Computer Fundamentals: Architecture and Organization,New Age Int. Pub.
+Reference Books :
+1. M. Morris Mano : Computer System Architecture ; PHI.

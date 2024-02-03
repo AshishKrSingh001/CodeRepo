@@ -1,0 +1,26 @@
+<!--
+    Exercise-2 with Solution
+    Write a JavaScript function that returns a passed string with letters in
+    alphabetical order.
+    Example string : 'webmaster' Expected Output : 'abeemrstw'
+    Note: Assume punctuation and numbers symbols are not included in the passed string..
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Sorting</title>
+</head>
+<body>
+    <script>
+        function Sorting(str)
+        {
+            return str.split('').sort().join('');
+        }
+        var str = prompt("Enter a string:");
+        document.write("Sorted string: "+Sorting(str));
+    </script>
+</body>
+</html>

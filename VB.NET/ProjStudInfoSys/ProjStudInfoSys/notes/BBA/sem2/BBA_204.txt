@@ -1,0 +1,25 @@
+BBA 204 : BUSINESS MATHEMATICS & STATISTICS – 1
+[MATHEMATICAL ECONOMICS]
+Section I
+ Set theory, linear and quadratic equation. Permutations and combinations.
+Section II
+ Binomial theory, arithmetic and geometric progressions, functions, limitations and
+continuity, differential calculus, maxima and minima; (excluding trigonometric functions).
+Section III
+ Integral calculus – Integration by parts, by substitution, by partial fractions and its
+applications to business (excluding trigonometric functions).
+ Matrix: Algebra of Matrices, simultaneous equations, gauss limitation methods and their
+application to business.
+Text Books:
+1. Vohra, N.D., (2009) Quantitative Techniques in Management, 4th edition, McGraw Hill
+Education.
+2. Vishwanathan, P.K., (2008) Business Statistics and Applied Orientation, 1st edition, Pearson
+Education.
+Reference Books
+1. Rajagopalan, S. and Sattanathan, R., (2009) Business Statistics & Operations Research, 2nd
+Edition, McGraw Hill Education.
+2. Sharma, J.K., (2009) Operations Research: Problems & Solutions, 2nd edition, Macmillan
+India Ltd.
+3. Taha, Hamdy, (2008) Operations Research: An Introduction, 8th edition, Pearson Education.
+4. Render, Barry, Stair, R.M., Hanna, M.E., and Badri, (2009) Quantitative Analysis for
+Management, 10th edition, Pearson Education.

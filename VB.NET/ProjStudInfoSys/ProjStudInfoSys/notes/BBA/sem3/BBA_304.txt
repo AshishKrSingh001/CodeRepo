@@ -1,0 +1,26 @@
+BBA 304 : BUSINESS MATHEMATICS & STATISTICS – 2
+[MATHEMATICAL STATISTICS]
+Section I
+ Data Analysis: collection and presentation of business data, Measure of Central Tendency
+ Measures of Dispersion: Range Quartile Deviation, Mean Deviation, and Standard
+Deviation
+ Measures of Variations Skewness and Kurtosis
+ Correlation Analysis: Rank Method & Karl Pearson’s Coefficient of Correlation and
+Properties of Correlation
+ Regression Analysis: Fitting of a Regression Line and Interpretation of Results, Properties
+of Regression Coefficients and Relationship between Regression and Correlation
+Section II
+ Theory of Probability: Law, Conditional Probability, Bayes' Theorem & Probability
+Functions
+ Forecasting: Techniques, Exponential smoothing & Regression
+ Theoretical Distributions: Binomial, Poisson and Normal Distribution
+ Theory of Estimation
+Text Books:
+1. Trivedi, ((2010)), Business Mathematics, 1st edition, Pearson Education.
+2. Bhardwaj, R.S. (2000). Mathematics for Economics and Business, Excel Books.
+Reference Books:
+1. Raghavachari, M, ((2004)), Mathematics for Management, McGraw Hill Education.
+2. Cleaves, Cheryl, and Hobbs, Margie, (2008) Business Math, 7th Edition, Prentice Hall.
+3. Tuttle, Michael, D., (2008) Practical Business Math: An Applications Approach, 8th Edition,
+Prentice Hall.
+4. Khan, Shadab, (2008) A Text Book of Business Mathematics, Anmol Publications.

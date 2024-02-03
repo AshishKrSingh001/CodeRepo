@@ -1,0 +1,16 @@
+D:\Programming\dotnet\WinFormsApp_Structure\WinFormsApp_Structure\obj\Debug\net6.0-windows\WinFormsApp_Structure.Form1.resources
+D:\Programming\dotnet\WinFormsApp_Structure\WinFormsApp_Structure\obj\Debug\net6.0-windows\WinFormsApp_Structure.vbproj.GenerateResource.cache
+D:\Programming\dotnet\WinFormsApp_Structure\WinFormsApp_Structure\obj\Debug\net6.0-windows\WinFormsApp_Structure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\dotnet\WinFormsApp_Structure\WinFormsApp_Structure\obj\Debug\net6.0-windows\WinFormsApp_Structure.AssemblyInfoInputs.cache
+D:\Programming\dotnet\WinFormsApp_Structure\WinFormsApp_Structure\obj\Debug\net6.0-windows\WinFormsApp_Structure.AssemblyInfo.vb
+D:\Programming\dotnet\WinFormsApp_Structure\WinFormsApp_Structure\obj\Debug\net6.0-windows\WinFormsApp_Structure.vbproj.CoreCompileInputs.cache
+D:\Programming\dotnet\WinFormsApp_Structure\WinFormsApp_Structure\bin\Debug\net6.0-windows\WinFormsApp_Structure.exe
+D:\Programming\dotnet\WinFormsApp_Structure\WinFormsApp_Structure\bin\Debug\net6.0-windows\WinFormsApp_Structure.deps.json
+D:\Programming\dotnet\WinFormsApp_Structure\WinFormsApp_Structure\bin\Debug\net6.0-windows\WinFormsApp_Structure.runtimeconfig.json
+D:\Programming\dotnet\WinFormsApp_Structure\WinFormsApp_Structure\bin\Debug\net6.0-windows\WinFormsApp_Structure.dll
+D:\Programming\dotnet\WinFormsApp_Structure\WinFormsApp_Structure\bin\Debug\net6.0-windows\WinFormsApp_Structure.pdb
+D:\Programming\dotnet\WinFormsApp_Structure\WinFormsApp_Structure\obj\Debug\net6.0-windows\WinFormsApp_Structure.dll
+D:\Programming\dotnet\WinFormsApp_Structure\WinFormsApp_Structure\obj\Debug\net6.0-windows\refint\WinFormsApp_Structure.dll
+D:\Programming\dotnet\WinFormsApp_Structure\WinFormsApp_Structure\obj\Debug\net6.0-windows\WinFormsApp_Structure.pdb
+D:\Programming\dotnet\WinFormsApp_Structure\WinFormsApp_Structure\obj\Debug\net6.0-windows\WinFormsApp_Structure.genruntimeconfig.cache
+D:\Programming\dotnet\WinFormsApp_Structure\WinFormsApp_Structure\obj\Debug\net6.0-windows\ref\WinFormsApp_Structure.dll

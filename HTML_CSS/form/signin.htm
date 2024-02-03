@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin_form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 2vh;
+            color: aqua;
+            text-align: center;
+        }
+        .container{
+            height:24vh;
+            width: 24vw;
+            padding: 38vh 38vw 38vh 38vw;
+            background-color: red;
+            background-image:url("images.jfif");
+            background-size: cover;
+            
+        }
+        .form{
+            height:19vh;
+            width: 19vw;
+            padding: 1vh 1vw;
+            border: 0.2vh solid black;
+            background-image:url("images2.jfif");
+            background-size: cover;
+        }
+        ul {
+            list-style:none;
+            display: flex;
+            margin: 1vh 1vw;
+        }
+        div button a{
+            text-decoration: none;
+        }
+        button a{
+            color:blue;
+        }
+        input{
+            color: black;
+            height:3vh;
+            width:12vw;
+            margin: 0 1vw 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="form">
+            <div class="main" style="margin: 0 0 2vh 0 ;"><h4>CIMAGE PROFESSIONAL COLLAGE</h4></div>
+            <ul><li style="margin: 0 0 0 10vw ;">newuser&nbsp;<button><a href="signup.htm">signup</a></button></li></ul>
+            <ul>
+                <li class="user">USERNAME&nbsp;</li>
+                <li><input class="user1" type="text" required></li>
+            </ul>
+            <ul>
+                <li class="pass">PASSWORD&nbsp;</li>
+                <li><input class="pass1" type="password" required></li>
+            </ul>
+            <ul>
+                <li><button type="submit"><a href="login.htm">signin</a></button></li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+D:\Programming\dotnet\Array\Array\bin\Debug\net6.0-windows\Array.exe
+D:\Programming\dotnet\Array\Array\bin\Debug\net6.0-windows\Array.deps.json
+D:\Programming\dotnet\Array\Array\bin\Debug\net6.0-windows\Array.runtimeconfig.json
+D:\Programming\dotnet\Array\Array\bin\Debug\net6.0-windows\Array.dll
+D:\Programming\dotnet\Array\Array\bin\Debug\net6.0-windows\Array.pdb
+D:\Programming\dotnet\Array\Array\obj\Debug\net6.0-windows\Array.Form1.resources
+D:\Programming\dotnet\Array\Array\obj\Debug\net6.0-windows\Array.vbproj.GenerateResource.cache
+D:\Programming\dotnet\Array\Array\obj\Debug\net6.0-windows\Array.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\dotnet\Array\Array\obj\Debug\net6.0-windows\Array.AssemblyInfoInputs.cache
+D:\Programming\dotnet\Array\Array\obj\Debug\net6.0-windows\Array.AssemblyInfo.vb
+D:\Programming\dotnet\Array\Array\obj\Debug\net6.0-windows\Array.vbproj.CoreCompileInputs.cache
+D:\Programming\dotnet\Array\Array\obj\Debug\net6.0-windows\Array.dll
+D:\Programming\dotnet\Array\Array\obj\Debug\net6.0-windows\refint\Array.dll
+D:\Programming\dotnet\Array\Array\obj\Debug\net6.0-windows\Array.pdb
+D:\Programming\dotnet\Array\Array\obj\Debug\net6.0-windows\Array.genruntimeconfig.cache
+D:\Programming\dotnet\Array\Array\obj\Debug\net6.0-windows\ref\Array.dll

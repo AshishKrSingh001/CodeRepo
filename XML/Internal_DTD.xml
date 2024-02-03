@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE student
+[
+	<!ELEMENT student (name,id,mob_no)>
+		<!ELEMENT name (#PCDATA)>
+		<!ELEMENT id (#PCDATA)>
+		<!ELEMENT mob_no (#PCDATA)>
+]>
+
+<student>
+	<name>Ashish</name>
+	<id>123</id>
+	<mob_no>7896541230</mob_no>
+</student>

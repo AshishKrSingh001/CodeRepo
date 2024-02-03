@@ -1,0 +1,19 @@
+BCA–302 INTERNET & WEB DESIGNING
+Internet Basics: Basic concepts, Communication on the Internet, Internet Domains, Internet Server
+Identities, Establishing Connectivity on the Internet, Client IP Address, A brief overview of TCP/IP
+and its Services, Transmission Control Protocol, Web Server, Web Client, Domain Registration.
+Introduction to HTML: HTML, HTML Tags, Commonly Used HTML Commands, Title and
+Footers, Text Formatting, Text Style, Lists, Adding Graphics to HTML Documents, Tables, Linking
+Documents, Frames.
+Java Script : Java Script in Web Pages, Advantages of Java Script, Advantages of JavaScript, Data
+Types and Literals, Type Casting , Java Script Array, Operators and Expression, Conditional
+Checking , Function, User Defined Function. Understanding XML: SGML, XML, XML and HTML
+Creation of Dynamic Web pages using JSP: Dynamic Web Page, Introduction of JSP, Pages
+Overview, JSP Scripting, Standard Action, Page Directive, Include Directive.
+Text Books:
+1. Ivan Bay Ross - Web Enable Commercial Application Using HTML, DHTML, BPB
+Publication.
+2. Michel Morrison - HTML and XML for Beginners, PHI, New Delhi- 200
+3. H.M Dietal and P.J Dietal - Java How to Program, PHI, New Delhi- 2005
+Reference Book:
+1. Java Server Side Programming -WROX Publication

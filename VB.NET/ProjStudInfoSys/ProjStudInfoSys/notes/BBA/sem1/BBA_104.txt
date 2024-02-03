@@ -1,0 +1,42 @@
+BBA 104 : INFORMATION TECHNOLOGY IN MANAGEMENT – 1
+[OFFICE / PRODUCTIVITY SUITES]
+Section I
+ Basic components of computer system: Functional units and their interrelation.
+ Types of computer system: Computer categories & classification.
+ Information Technology : Introduction, New Developments, Information Systems,
+Software and data, Application of IT in Business & Industry, Home, Education & Training,
+Entertainment & Arts, Science, Engineering and Math.
+ Communication - The Electronic Web: Network Applications: Fax, voice, Information
+Services, Person to person Communication, Group Communication;
+ LAN: Architecture, System; Introduction to WAN; Link between Networks: Devices &
+Media, Protocol and dial up access.
+ World Wide Web: Introduction, Web access through online services, Using Web Browser.
+ Internet and Intranet: Meaning of Internet; Difference between the Internet and
+Intranet: Introduction to TCP/IP; Setting up an Internet, what is Internet addressing, IP
+address; types of Internet connections, sending and reading e-mails.
+Section II
+ MS - Excel: Concepts of spreadsheet, building a spreadsheet application using formulae,
+conditional calculations and inbuilt functions; printing worksheets; using graph plotting
+capabilities of spreadsheet package to display and print graphs; database management &
+interfacing spreadsheets with database systems; writing macros and creating customized
+menus with macros.
+ MS - Word: Creating and editing files, basic formatting and text enhancement, block
+operations, printing, file management global searches & substitutions, special print features
+merging files with mail merge, checking spelling with spell star, index & table of contents.
+ MS - PowerPoint: Creation of new slides; Slides from templates; Animation effects;
+Inserting objects in the slides; Creating hyperlinks; embedding audio/video files.
+Section III
+ Windows: What is Windows, using the programme manager to run programme, creating and
+using ICONS, using the file manager to work with directions, files and disks; customizing
+windows with the control panel, installing a printer and using the print manager using
+windows accessories like windows write, paintbrush etc.
+ Linux: Introduction; Flavors of Linux – Debian Family, Red Hat Family; Graphical Desktop
+Display Managers – GNOME, Unity, KDE - features, functions, customizations, default
+programmes, software management. LibreOffice suite, GIMP, Inkscape, Scribus.
+Text Books:
+1. ITL, ESL, (2005) Introduction to Infotech, 1st edition, Pearson Education.
+2. Goyal, Anita, (2010) Computer Fundamentals, 1st Edition, Pearson Education.
+Reference Books:
+1. Joseph A. Brady and Ellen F Monk, (2007) Problem Solving Cases in Microsoft and Excel,
+Fourth Annual Edition, Thomson Learning.
+2. Rajaraman, V., (2009) Introduction to Information Technology, Prentice Hall of India.

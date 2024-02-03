@@ -1,0 +1,35 @@
+BBA 402 : PRODUCTION AND OPERATIONS MANAGEMENT
+Section I
+ Operations Management - Concepts; Functions, introduction, nature and scope, strategic
+issues- impact of quality, cost, flexibility and efficiency
+ Product Design & Development - Product Design and its Characteristics; Product
+Development Process (Technical); Product Development Techniques.
+ Process Selection - Project, Job, Batch, Mass & Process types of Production Systems;
+ Product - Process Mix
+ Facility Location & Layout - importance; Factors in Location Analysis; Location Analysis
+Techniques; Basic Types of Layouts, mode of processing- job shop or process layout- flow
+line or product layout, Hybrid layout, Cellular manufacturing, line balancing, material
+handling
+Section II
+ Capacity Planning - Concepts; Factors Affective Capacity. Planning, capacity Planning
+Decisions.
+ Production Planning & Control (PPC) - Concepts, Objectives; Functions
+ Materials Management - Concepts, Objectives, supply chain, MRP-I and MRP-II,
+inventory control models Functions
+Section III
+ Quality Management - Quality Concepts, Difference Between Inspection, Quality Control,
+Quality Assurances, Total Quality Management-Quality function deployment-monitoring
+performance for quality and improvement- Kaizen, incremental vs. break through
+improvement, QM tools, ISO 9000, Just-in- time(JIT) philosophy, Kan ban production
+system, world class manufacturing, TPM; Control Charts; acceptance Sampling
+Text Books:
+1. Muhleman, (2008), Production and Operations Management, 6th edition, Pearson
+Education.
+2. B.Mahadevan, (2010), Operations Management, Theory and Practical, Pearson Education.
+References Books:
+1. Kachru, Upender, (2006), Production and Operation Management, Excel Books.
+2. Chary, S.N and Paneerselvam R., (2009), Production and Operations Management, McGraw
+Hill Education.
+3. Stevenson, W. J, (2007), Operations Management, 9th Edition, McGraw Hill Education.
+4. Gaither, Norman and Frazier, G., (2004), Operations Management, 9th Edition, Cengage
+Learning.

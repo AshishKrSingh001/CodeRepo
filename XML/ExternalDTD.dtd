@@ -1,0 +1,7 @@
+<!ELEMENT student (name,age,id,roll_no,mob_no,add)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT roll_no (#PCDATA)>
+<!ELEMENT mob_no (#PCDATA)>
+<!ELEMENT add (#PCDATA)>

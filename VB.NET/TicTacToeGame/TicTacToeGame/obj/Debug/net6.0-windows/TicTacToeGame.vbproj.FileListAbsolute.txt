@@ -1,0 +1,16 @@
+D:\Programming\dotnet\TicTacToeGame\TicTacToeGame\obj\Debug\net6.0-windows\TicTacToeGame.vbproj.GenerateResource.cache
+D:\Programming\dotnet\TicTacToeGame\TicTacToeGame\obj\Debug\net6.0-windows\TicTacToeGame.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\dotnet\TicTacToeGame\TicTacToeGame\obj\Debug\net6.0-windows\TicTacToeGame.AssemblyInfoInputs.cache
+D:\Programming\dotnet\TicTacToeGame\TicTacToeGame\obj\Debug\net6.0-windows\TicTacToeGame.AssemblyInfo.vb
+D:\Programming\dotnet\TicTacToeGame\TicTacToeGame\obj\Debug\net6.0-windows\TicTacToeGame.vbproj.CoreCompileInputs.cache
+D:\Programming\dotnet\TicTacToeGame\TicTacToeGame\bin\Debug\net6.0-windows\TicTacToeGame.exe
+D:\Programming\dotnet\TicTacToeGame\TicTacToeGame\bin\Debug\net6.0-windows\TicTacToeGame.deps.json
+D:\Programming\dotnet\TicTacToeGame\TicTacToeGame\bin\Debug\net6.0-windows\TicTacToeGame.runtimeconfig.json
+D:\Programming\dotnet\TicTacToeGame\TicTacToeGame\bin\Debug\net6.0-windows\TicTacToeGame.dll
+D:\Programming\dotnet\TicTacToeGame\TicTacToeGame\bin\Debug\net6.0-windows\TicTacToeGame.pdb
+D:\Programming\dotnet\TicTacToeGame\TicTacToeGame\obj\Debug\net6.0-windows\TicTacToeGame.Form1.resources
+D:\Programming\dotnet\TicTacToeGame\TicTacToeGame\obj\Debug\net6.0-windows\TicTacToeGame.dll
+D:\Programming\dotnet\TicTacToeGame\TicTacToeGame\obj\Debug\net6.0-windows\refint\TicTacToeGame.dll
+D:\Programming\dotnet\TicTacToeGame\TicTacToeGame\obj\Debug\net6.0-windows\TicTacToeGame.pdb
+D:\Programming\dotnet\TicTacToeGame\TicTacToeGame\obj\Debug\net6.0-windows\TicTacToeGame.genruntimeconfig.cache
+D:\Programming\dotnet\TicTacToeGame\TicTacToeGame\obj\Debug\net6.0-windows\ref\TicTacToeGame.dll

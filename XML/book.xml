@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml-stylesheet type="text/xsl" href="book.xsl">
+<book_store>
+	<book>
+		<title>Java</title>
+		<author>James Gosling</author>
+	</book>
+	<book>
+		<title>C++</title>
+		<author>Bjarne Stustroups</author>
+	</book>
+	<book>
+		<title>C</title>
+		<author>Dennis Richhie</author>
+	</book>
+	<book>
+		<title>Python</title>
+		<author>Van Rossum</author>
+	</book>
+</book_store>

@@ -1,0 +1,23 @@
+BCA-202 MATHEMATICS [NUMERICAL TECHNIQUES]
+Errors in Numerical Calculations: Numbers and their accuracy, Errors and their ComputationsAbsolute, Relative and Percentage, General Error Formula. Solution of Algebraic and
+Transcendental Equations: Introduction, Bisection method, Iteration method, Method of False
+Position, Newton- Raphson method
+Interpolation: Introduction, Errors in Polynomial Interpolation, Finite Differences – Forward,
+Backward and Central, Detection of errors using Difference tables, Differences of a Polynomial,
+Newton’s formulae for Interpolation, Central Difference Interpolation.
+Formulae: Gauss’s Central Difference Formula, Interpolation with unevenly spaced points,
+Lagrange’s Interpolation Formula, Divided Differences and their properties- Newton’s General
+Interpolation Formula
+Numerical Differentiation and Integration: Introduction, Numerical Differentiation and Errors,
+Numerical Integration – Trapezoidal Rule, Simpson’s 1/3 Rule, Simpson’s 3/8 Rule. Numerical
+Solution of Linear System of Equations: Direct Methods- Gauss-Jordan Method, Gauss Elimination
+Method, Method of Factorization, Ill- conditioned Linear System, Iterative Method- Gauss- Jacobi
+Method, Gauss-Seidel Method. Numerical Solution of Ordinary Differential Equations: Solution by
+Taylor’s Series, Euler’s method, Modified Euler’s method, Runge-Kutta method of 2nd and 4th
+order.
+Text Book:
+1. S.S.Sastry -Introductory methods of Numerical Analysis,4th Edition,Prentice Hall of India, New
+Delhi, 2006.
+Reference Books:
+1. V.N.Vedamurthy et.al.-Numerical Methods, Vikas Publishing House, New Delhi, 2005.
+2. B.S.Grewal- Numerical Methods in Engineering & Science, Khanna Publishers, Delhi,2005

@@ -1,0 +1,26 @@
+BCA-301 OBJECT ORIENTED PROGRAMMING USING C++
+Introduction to programming paradigms : Concept of object, class, objects as variables of class
+data type, difference in structures and class in terms of access to members, private and public
+members of a class, data & function members. Characteristics of OOP- Data hiding, Encapsulation,
+data security.
+Basics of C++: Structure of C++ programs, introduction to defining member functions within and
+outside a class, keyword using, declaring class, creating objects, constructors & destructor
+functions, Initializing member values with and without use of constructors, simple programs to
+access & manipulate data members, cin and cout functions. Dangers of returning reference to a
+private data member, constant objects and members function, composition of classes, friend
+functions and classes, using this pointer, creating and destroying objects dynamically using new
+and delete operators. Static class members, container classes and iterators, proxy classes.
+Operator overloading: Fundamentals, Restrictions, operator functions as class members v/s as
+friend functions. Overloading stream function, binary operators and unary operators. Converting
+between types.
+Inheritance: Base classes and derived classes, protected members, relationship between base class
+and derived classes, constructors and destructors in derived classes, public, private and protected
+inheritance, relationship among objects in an inheritance hierarchy, abstract classes, virtual
+functions and dynamic binding, virtual destructors.
+Advanced Topics: Multiple inheritance, virtual base classes, pointers to classes and class members,
+multiple class members. Templates, exception handling, File handling
+Text Books :
+1. E. Balagursamy : Object oriented programming with C++; TMH Publication.
+2. Deitel and Deitel : C++ How To Program (currently in its 4th edition); PHI.
+Reference Books:
+1. Robert Lafore : Object oriented programming in Turbo C++; Galgotia Publication

@@ -1,0 +1,16 @@
+D:\Programming\dotnet\WinFormsApp_ExceptionHandling\WinFormsApp_ExceptionHandling\bin\Debug\net6.0-windows\WinFormsApp_ExceptionHandling.exe
+D:\Programming\dotnet\WinFormsApp_ExceptionHandling\WinFormsApp_ExceptionHandling\bin\Debug\net6.0-windows\WinFormsApp_ExceptionHandling.deps.json
+D:\Programming\dotnet\WinFormsApp_ExceptionHandling\WinFormsApp_ExceptionHandling\bin\Debug\net6.0-windows\WinFormsApp_ExceptionHandling.runtimeconfig.json
+D:\Programming\dotnet\WinFormsApp_ExceptionHandling\WinFormsApp_ExceptionHandling\bin\Debug\net6.0-windows\WinFormsApp_ExceptionHandling.dll
+D:\Programming\dotnet\WinFormsApp_ExceptionHandling\WinFormsApp_ExceptionHandling\bin\Debug\net6.0-windows\WinFormsApp_ExceptionHandling.pdb
+D:\Programming\dotnet\WinFormsApp_ExceptionHandling\WinFormsApp_ExceptionHandling\obj\Debug\net6.0-windows\WinFormsApp_ExceptionHandling.Form1.resources
+D:\Programming\dotnet\WinFormsApp_ExceptionHandling\WinFormsApp_ExceptionHandling\obj\Debug\net6.0-windows\WinFormsApp_ExceptionHandling.vbproj.GenerateResource.cache
+D:\Programming\dotnet\WinFormsApp_ExceptionHandling\WinFormsApp_ExceptionHandling\obj\Debug\net6.0-windows\WinFormsApp_ExceptionHandling.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\dotnet\WinFormsApp_ExceptionHandling\WinFormsApp_ExceptionHandling\obj\Debug\net6.0-windows\WinFormsApp_ExceptionHandling.AssemblyInfoInputs.cache
+D:\Programming\dotnet\WinFormsApp_ExceptionHandling\WinFormsApp_ExceptionHandling\obj\Debug\net6.0-windows\WinFormsApp_ExceptionHandling.AssemblyInfo.vb
+D:\Programming\dotnet\WinFormsApp_ExceptionHandling\WinFormsApp_ExceptionHandling\obj\Debug\net6.0-windows\WinFormsApp_ExceptionHandling.vbproj.CoreCompileInputs.cache
+D:\Programming\dotnet\WinFormsApp_ExceptionHandling\WinFormsApp_ExceptionHandling\obj\Debug\net6.0-windows\WinFormsApp_ExceptionHandling.dll
+D:\Programming\dotnet\WinFormsApp_ExceptionHandling\WinFormsApp_ExceptionHandling\obj\Debug\net6.0-windows\refint\WinFormsApp_ExceptionHandling.dll
+D:\Programming\dotnet\WinFormsApp_ExceptionHandling\WinFormsApp_ExceptionHandling\obj\Debug\net6.0-windows\WinFormsApp_ExceptionHandling.pdb
+D:\Programming\dotnet\WinFormsApp_ExceptionHandling\WinFormsApp_ExceptionHandling\obj\Debug\net6.0-windows\WinFormsApp_ExceptionHandling.genruntimeconfig.cache
+D:\Programming\dotnet\WinFormsApp_ExceptionHandling\WinFormsApp_ExceptionHandling\obj\Debug\net6.0-windows\ref\WinFormsApp_ExceptionHandling.dll

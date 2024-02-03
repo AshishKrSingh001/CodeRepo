@@ -1,0 +1,29 @@
+BCA-204 PROBLEM SOLVING TECHNIQUE & PROGRAMMING IN C
+Fundamentals of C: Identifier and keywords - data types - constants - Variables - Declarations -
+Expressions - Statements - Arithmetic, Unary, Relational and logical , Assignment and Conditional
+Operators - Library functions. Simple C programs - Flow of control - if, if-else, while, do-while, for
+loop, Nested control structures - Switch, break and continue, go to statements - Comma operator.
+Functions -Definition - prototypes - Passing arguments – Recursion- Storage Classes - Automatic,
+External, Static, Register Variables .
+Arrays - Defining and Processing - Passing arrays to functions - Multi-dimension arrays - Arrays
+and Strings.
+Structures and unions - User defined data types - Passing structures to functions - Self-referential
+structures - Unions - Bit wise operations.
+Pointers - Declarations - Passing pointers to Functions - Operation on Pointers - Pointer and Arrays
+- Arrays of Pointers - Structures and Pointers - Files: Creating, Processing ,Opening and Closing a
+data file.
+The C Preprocessor: # define to Implement Constants, # define to Create Functional Macros,
+Reading from Other Files using # include ,Conditional Selection of Code using #ifdef, Using
+#ifdef for different computer types.
+Using #ifdef to temporarily remove program statements, Other Preprocessor Commands, Predefined
+Names Defined by Preprocessor, Macros Vs Functions.
+Files: File Handling in C Using File Pointers, Open a file using the function fopen ( ), Close a file
+using the function fclose ( ), Input and Output using file pointers, Character Input and Output in
+Files, String Input / Output Functions, Formatted Input / Output Functions, Block Input / Output
+Functions, Sequential Vs Random Access Files, Positioning the File Pointer.
+Text Book:
+1. E. Balaguru Swamy - ANSI C Programming Language, 2nd Edition, PHI, 1988.
+2. H. Schildt, C: The Complete Reference, 4th Edition, TMH Edition, 2000.
+3. Kanetkar Y., Let us C, BPB Pub., New Delhi, 1999.
+4. Reema Thareja - Programming in C
+5. Byron Gotlfried – C Programming; Oxford University Press

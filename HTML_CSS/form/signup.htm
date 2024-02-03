@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup_form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 2vh;
+            color: aqua;
+            text-align: center;
+        }
+        .container{
+            height:94vh;
+            width:50vw;
+            padding: 3vh 25vw 3vh 25vw;
+            background-color: red;
+            background-image:url("images.jfif");
+            background-size: cover;
+            
+        }
+        .form{
+            
+            height: 94vh;
+            width:50vw;
+            background-color:blue;
+            color:white;
+            border: 0.3vh solid black;
+            background-image:url("images2.jfif");
+            background-size: cover;
+        }
+        ul{
+            list-style: none;
+            display:flex;
+            margin: 1vh;
+        }
+        ul li{
+            float: left;
+            margin: 0 1vw;
+        }
+        input{
+            height:3vh;
+            width:12vw;
+            margin: 0 1vw 0 0;
+            color: black;
+        }
+        .o,.p,.q{
+            height: 3vh;
+            width: 8vw;
+            margin: 0 1vw 0 0;
+            text-align: center;
+        }
+        input.h2{
+            height: 7vh;
+            width: 35vw;
+        }
+        div button a{
+            text-decoration: none;
+        }
+        input.r,input.m,input.g{
+            height: auto;
+            width: auto;
+        }
+        button a{
+            color:blue;
+        }
+        @media screen {
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <form class="form">
+            <div class="main" style="margin: 0 0 2vh 0 ; text-align: center;"><h3>CIMAGE PROFESSIONAL COLLAGE</h3></div>
+            <ul><li style="margin: 0 0 0 35vw ;">already registered&nbsp;<button><a href="signin.htm">signin</a></button></li></ul>
+            <ul>
+                <li class="a1">FIRST NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><input class="a2" type="text"  required="It is mendetory" autofocus size="30" pattern="[A-Z a-z]" ></li>
+                <li class="a3">(max 30 characters a-z and A-Z)</li>
+            </ul>
+            <ul>
+                <li class="b1">MIDDLE NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><input class="b2" type="text" size="30" pattern="[A-Z a-z]" ></li>
+                <li class="b3">(max 30 characters a-z and A-Z)</li>
+            </ul>
+            <ul>
+                <li class="c1">LAST NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><input class="c2" type="text"  required="It is mendetory" size="30" pattern="[A-Z a-z]" ></li>
+                <li class="c3">(max 30 characters a-z and A-Z)</li>
+            </ul>
+            <ul>
+                <li class="d1">DATE OF BIRTH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><input class="d2" type="date"  required="It is mendetory"></li>
+            </ul>
+            <ul>
+                <li class="e1">EMAIL ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><input class="e2" type="email"  required="It is mendetory"></li>
+            </ul>
+            <ul>
+                <li class="f1">MOBILE NUMBER</li>
+                <li><input class="f2" type="text"  required="It is mendetory" size="10" pattern="[0-9]"></li>
+                <l1 class="f3">(max 10 digit number)</l1>
+            </ul>
+            <ul>
+                <li class="g">GENDER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>Male <input class="g" type="radio" name=""></li>
+                <li>Female <input class="g" type="radio" name=""></li>
+                <li>Other <input class="g" type="radio" name=""></li>
+            </ul>
+            <ul>
+                <li class="h1">ADDRESS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><input class="h2" type="address" required="It is mendetory"></li>
+            </ul>
+            <ul>
+                <li class="i1">DISTRICT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><input class="i2" type="text"  required="It is mendetory" size="30" pattern="[A-Z a-z]" ></li>
+                <li class="i3">(max 30 characters a-z and A-Z)</li>
+            </ul>
+            <ul>
+                <li class="j1">PINCODE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><input class="j2" type="text"  required="It is mendetory" size="6" pattern="[0-9]"></li>
+                <l1 class="j3">(max 6 digit number)</l1>
+            </ul>
+            <ul>
+                <li class="k1">STATE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><input class="k2" type="text"  required="It is mendetory" size="30" pattern="[A-Z a-z]" ></li>
+                <li class="k3">(max 30 characters a-z and A-Z)</li>
+            </ul>
+            <ul>
+                <li class="l1">COUNTRY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><input class="l2" type="text"  required="It is mendetory" size="30" pattern="[A-Z a-z]" ></li>
+                <li class="l3">(max 30 characters a-z and A-Z)</li>
+            </ul>
+            <ul>
+                <li class="m">HOBBIEs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>Drawing <input class="m" type="checkbox" name=""></li>
+                <li>Singing <input class="m" type="checkbox" name=""></li>
+                <li>Dancing <input class="m" type="checkbox" name=""></li>
+                <li>Others <input class="m" type="checkbox" name=""></li>
+                <li><input class="m1" type="text" name=""></li>
+
+            </ul>
+            <ul>
+                <li>QUALIFICATION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>BOARD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>PERCENTAGE&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>PASSING YEAR</li>
+            
+            </ul>
+            <ul style="margin: 1vh 4vw;">
+                
+                <l1 class="o1">1.&nbsp;</l1>
+                <l1 class="o2">Class X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</l1>
+                <l1><input class="o" type="text" size="10" pattern="[A-Z a-z]" placeholder="Board"></l1>
+                <l1><input class="o" type="text" placeholder="Percentage" ></l1>
+                <l1><input class="o" type="text" placeholder="passing-year"></l1>
+            </ul>
+            <ul style="margin: 1vh 4vw;">
+                <l1 class="p1">2.&nbsp;</l1>
+                <l1 class="p2">Class XII&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</l1>
+                <l1><input class="p" type="text" size="10" pattern="[A-Z a-z]" placeholder="Board"></l1>
+                <l1><input class="p" type="text" placeholder="Percentage"></l1>
+                <l1><input class="p" type="text" placeholder="passing-year"></l1>
+            </ul>
+            <ul style="margin: 1vh 4vw;">
+                <l1 class="q1">3.&nbsp;</l1>
+                <l1 class="q2">Graduation&nbsp;&nbsp;&nbsp;</l1>
+                <l1><input class="q" type="text" size="10" pattern="[A-Z a-z]" placeholder="Board" ></l1>
+                <l1><input class="q" type="text" placeholder="Percentage"></l1>
+                <l1><input class="q" type="text" placeholder="passing-year"></l1>
+            </ul>
+            <!-- <ul>
+                <li class="q6">(max 10 chars)</li>
+                <li class="q7">(upto 2 decimal)</li>
+            </ul> -->
+            <ul>
+                <li class="r">COURSE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>BCA <input class="r" type="radio" name=""></li>
+                <li>B.Com <input class="r" type="radio" name=""></li>
+                <li>BBA <input class="r" type="radio" name=""></li>
+                <li>BBM <input class="r" type="radio" name=""></li>
+            </ul>
+            <ul>
+                <li style="margin: 0 0 0 35vw"><button><a href="submit.htm">Submit</a></button></li>
+                <li style=><button type="reset" style="color: blue;">reset</button></li>
+            </ul>
+            
+            
+        </form>
+    </div>
+</body>
+</html>

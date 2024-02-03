@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Web Page</title>
+		<style>
+		ul li
+		{
+			list-type = none;
+		}
+		</style>
+	</head>
+	<body>
+		<form>
+			<ul>
+				<li>Enter length of Rectangle</li>
+				<li><input id="len" type="text"></li>
+			</ul>
+			<ul>
+				<li>Enter breadth of Rectangle</li>
+				<li><input id="bre" type="text"></li>
+			</ul>
+			<ul><li><input type="submit" onclick="fun()" value="fun"></li></ul>
+			<ul><li><p id="l"></p></li></ul>
+			<ul><li><p id="b"></p></li></ul>
+			<ul><li><p id="area"></p></li></ul>
+			<ul><li><p id="peri"></p></li></ul>
+		</form>
+		<script>
+			function area({l,b})
+			{
+				return l*b;
+			}
+			function perimeter({l,b})
+			{
+				return 2*(l+b);
+			}
+			
+			Rectangle=
+			{
+				l : 10,b : 20
+			}
+			/*l = parseInt(getElementById("len").innerHTML);
+			b = parseInt(getElementById("bre").innerHTML);
+			Rectangle.l = l.innerHTML;
+			Rectangle.b = b.innerHTML;*/
+			
+			function fun()
+			{
+				document.getElementById("l").innerHTML = "Length of Rectangle: "+Rectangle.l+"<br>";
+				document.getElementById("b").innerHTML = "Breadth of Rectangle: "+Rectangle.b+"<br>";
+				document.getElementById("area").innerHTML = "Area of Rectangle: "+area(Rectangle)+"<br>";
+				document.getElementById("peri").innerHTML = "perimeter of Rectangle: "+perimeter(Rectangle)+"<br>";
+			}
+		</script>
+	</body>
+</html>

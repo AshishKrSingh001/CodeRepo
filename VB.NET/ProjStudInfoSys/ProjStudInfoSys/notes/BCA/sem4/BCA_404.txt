@@ -1,0 +1,27 @@
+BCA-404 INTRODUCTION TO STATISTICS
+UNIT-I
+COMBINATORICS: Permutation and Combination, Repetition and Constrained Repetition,
+Binomial Coefficients, Binomial Theorem.
+UNIT-II
+Frequency distributions, Histograms and frequency polygons, Measures of central tendency: Mean,
+Mode, Median, Dispersion, Mean deviation and standard deviation. Moments, Skewness, kurtosis,
+UNIT–III
+Elementary probability theory: Definition, conditional probability, Probability distribution,
+mathematical expectation'
+Theoretical distribution: Binomial , poisson and Normal distribution, Relation between the
+binomial, poisoned Normal distribution.
+UNIT-IV
+Correlation and Regression: Linear Correlation, Measure of Correlation, Least Square Regression
+lines.
+Curve fitting: Method of least square, least square line, least squares Parabola. chi-square test:
+definition of chi-square; signification test: contingency test, coefficient of contingency.
+UNIT-V
+Basic of sampling theory: Sample mean and variance, students t-test, test of Hypotheses and
+significance, degree of freedom, Z-test, small and large sampling, Introduction to Monte Carlo
+method.
+TEXT BOOKS:
+1. Advanced Engineering Mathematics: H.K. Dass; S. Chand & Co., 9 Revised Edition, 2001.
+2. Discrete Mathematics: S.K. Sarkar; S. Chand & Co., 2000.
+3. Numerical Analysis: S.S. Sastry; Prentice Hall of India, 1998.
+4. Mathematical Statistics: J.N. Kapoor and H.C. Saxena.
+5. Mathematical Statistics: M. Ray and H. Sharma

@@ -1,0 +1,16 @@
+D:\Programming\dotnet\Even_odd_check\Even_odd_check\bin\Debug\net6.0-windows\Even_odd_check.exe
+D:\Programming\dotnet\Even_odd_check\Even_odd_check\bin\Debug\net6.0-windows\Even_odd_check.deps.json
+D:\Programming\dotnet\Even_odd_check\Even_odd_check\bin\Debug\net6.0-windows\Even_odd_check.runtimeconfig.json
+D:\Programming\dotnet\Even_odd_check\Even_odd_check\bin\Debug\net6.0-windows\Even_odd_check.dll
+D:\Programming\dotnet\Even_odd_check\Even_odd_check\bin\Debug\net6.0-windows\Even_odd_check.pdb
+D:\Programming\dotnet\Even_odd_check\Even_odd_check\obj\Debug\net6.0-windows\Even_odd_check.Form1.resources
+D:\Programming\dotnet\Even_odd_check\Even_odd_check\obj\Debug\net6.0-windows\Even_odd_check.vbproj.GenerateResource.cache
+D:\Programming\dotnet\Even_odd_check\Even_odd_check\obj\Debug\net6.0-windows\Even_odd_check.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\dotnet\Even_odd_check\Even_odd_check\obj\Debug\net6.0-windows\Even_odd_check.AssemblyInfoInputs.cache
+D:\Programming\dotnet\Even_odd_check\Even_odd_check\obj\Debug\net6.0-windows\Even_odd_check.AssemblyInfo.vb
+D:\Programming\dotnet\Even_odd_check\Even_odd_check\obj\Debug\net6.0-windows\Even_odd_check.vbproj.CoreCompileInputs.cache
+D:\Programming\dotnet\Even_odd_check\Even_odd_check\obj\Debug\net6.0-windows\Even_odd_check.dll
+D:\Programming\dotnet\Even_odd_check\Even_odd_check\obj\Debug\net6.0-windows\refint\Even_odd_check.dll
+D:\Programming\dotnet\Even_odd_check\Even_odd_check\obj\Debug\net6.0-windows\Even_odd_check.pdb
+D:\Programming\dotnet\Even_odd_check\Even_odd_check\obj\Debug\net6.0-windows\Even_odd_check.genruntimeconfig.cache
+D:\Programming\dotnet\Even_odd_check\Even_odd_check\obj\Debug\net6.0-windows\ref\Even_odd_check.dll

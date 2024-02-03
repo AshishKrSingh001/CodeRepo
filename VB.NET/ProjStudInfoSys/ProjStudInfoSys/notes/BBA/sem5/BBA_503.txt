@@ -1,0 +1,36 @@
+BBA 503 : SECURITY ANALYSIS & PORTFOLIO MANAGEMENT
+Section I
+1. Investment management: objective, investment opportunities, and philosophy of individual
+& institutional investors.
+2. Fundamental analysis: concept and significance of economic analysis, industry analysis:
+introduction, need for industry analysis, alternative classification of industry, industry life
+cycle analysis, economic factors & industry analysis, SWOT analysis for industries.
+Section II
+1. Company analysis: nature and style of management, key role of financial analysis, ratio
+analysis.
+2. Technical analysis: different techniques of analysis, Dow Theory, volume indicators, market
+sentiment indicators, confidence indicators, points & figure charting, bar charting.
+3. Efficient market theory random walk: weak form, semi-strong, strong form of market.
+4. Empirical tests. Comparison of random walk, technical & fundamental analysis.
+Section III
+1. Portfolio analysis selection: portfolio theory, return portfolio risk, efficient set of portfolios,
+optimum portfolio, capital asset pricing theory (CAPM), capital market line, security market
+line, corporate or folio management in India, portfolio revision techniques, constant value &
+constant ration plan, formula plan, dollar cost averaging.
+2. Options & futures: concept of derivatives, option trading, option contracts settlement,
+pricing of option futures, concept of futures, characteristics of future contract, its types,
+difference between future, options, forwards & badla contracts.
+3. Introduction to Investments.
+4. Portfolios of risky securities.
+5. Efficient frontier.
+6. Sharpe's Single index model: Capital assets pricing model.
+Text Books:
+1. Investment Analysis and Portfolio management – Prasanna Chandra – TMH - 2nd Edition,
+2005.
+2. Investments – Zvi Bodie, & Mohanty – TMH – 6th Edition, 2005.
+3. Investment Management – VK Bhalla - S.Chand & Co.
+4. Security Analysis & Portfolio Management, S.Bhat, Excel Books.
+Reference Books:
+1. Investment Analysis & Portfolio Management – Reilly – 8/e –Thamson / Cengage Learning.
+2. Security Analysis & Portfolio Management – Fisher and Jordan , 6/e, Pearson, PHI.
+3. Investment science – David G. Luenberger. Oxford.

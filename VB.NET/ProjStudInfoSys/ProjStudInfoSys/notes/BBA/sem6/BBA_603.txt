@@ -1,0 +1,28 @@
+BBA 603 : RISK MANAGEMENT
+Section I
+Market Risk Measurement: Risk management Principles; Sources of Market Risk; Derivatives
+and Risk Management; Risk Measurement before VaR; Measures of Financial Risk; VaR, Coherent
+Risk Measures; Estimating Market Risk; Estimating Liquidity Risk.
+Section II
+Credit Risk Measurement: Concept; Credit Analysis of Corporate Bonds; Agency Ratings;
+Modeling Credit Risk; Elements of Credit Risk; Default Risk; Measuring Default Probabilities;
+Loss given Default; Loan Portfolios, Expected Losses & Unexpected Losses; Credit Derivatives;
+CLN; CDO; CDS.
+Section III
+Operational Risk Measurement: Concept; Identification; Drivers; Approaches; Managing
+operational risk; Insurance; Hedging using derivatives; Application of VaR; Risk Adjusted
+Performance Measurement; VaR Based; Earnings Based; SVA; Integrated Risk Management; Legal;
+Reputational; Accounting; Other types – Regulatory, Political; Firm wide performance; Controlling
+Firm Wide Risk; Model Risk.
+Section IV
+Investment Risk Measurement: Investment companies & Evaluation Portfolio Performance;
+Hedge Fund Management; Hedge fund basics; Analysis of performance of Hedge funds; Risks in
+Hedge Funds; Individual Hedge Fund Strategies; Style Drifts – Monitoring, detection and control.
+Text Books:
+1. GARP – FRM Handbook, 4th Edition.
+2. Philippe Jorion – Value at Risk, 3rd Edition.
+3. Alexander J. McNeil, R ̈udiger Frey, Paul Embrechts – Quantitative Risk Management.
+Reference Books:
+1. Kevin Dowd – Measuring Market Risk, 2nd Edition.
+2. Frank K Reilly, Keith C Brown - Investment Analysis and Portfolio Management- 5th
+Edition.

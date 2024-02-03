@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary</title>
+    <style>
+        ul li
+        {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <ul>
+            <li>Enter a number:</li>
+            <li><input id="Input" type="text"></li>
+        </ul>
+        <ul>
+            <li><input type="button" id="submit" onclick="Binary()" value="Binary">&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" id="submit" onclick="Decimal()" value="Decimal"></li>
+        </ul>
+    </form>
+    <ul><li>Answer:<p id="value"></p></li></ul>
+    
+</body>
+<Script type="text/javascript">
+    function Binary()
+    {
+        var num = parseInt(document.getElementById("Input").value); 
+        var index=0;
+        var arr=[];
+        while(num>0)
+        {
+            arr[index++]=num%2;
+            num=parseInt(num/2);
+        }
+        arr=arr.reverse();
+        arr=arr.join("");
+        document.getElementById("value").innerHTML=arr;
+    }
+    function Decimal()
+    {
+        var num = parseInt(document.getElementById("Input").value); 
+        var d,b=0,base=1;
+        var flag =0;
+        while(num>0)
+        {
+            d=num%10;
+            if(d==1 || d==0)
+            {
+                b=b+d*base;
+                num=parseInt(num/10);
+                base=base*2;
+            }
+            else
+            {
+                flag=1;
+                break;
+            }
+            
+        }
+        if(flag==0)
+        {
+            document.getElementById("value").innerHTML=b;
+        }
+        else
+        {
+            document.getElementById("value").innerHTML="Invalid";
+        }
+    }
+</Script>
+</html>

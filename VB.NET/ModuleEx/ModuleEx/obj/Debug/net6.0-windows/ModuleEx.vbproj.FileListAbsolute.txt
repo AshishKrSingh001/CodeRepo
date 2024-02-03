@@ -1,0 +1,16 @@
+D:\Programming\dotnet\ModuleEx\ModuleEx\bin\Debug\net6.0-windows\ModuleEx.exe
+D:\Programming\dotnet\ModuleEx\ModuleEx\bin\Debug\net6.0-windows\ModuleEx.deps.json
+D:\Programming\dotnet\ModuleEx\ModuleEx\bin\Debug\net6.0-windows\ModuleEx.runtimeconfig.json
+D:\Programming\dotnet\ModuleEx\ModuleEx\bin\Debug\net6.0-windows\ModuleEx.dll
+D:\Programming\dotnet\ModuleEx\ModuleEx\bin\Debug\net6.0-windows\ModuleEx.pdb
+D:\Programming\dotnet\ModuleEx\ModuleEx\obj\Debug\net6.0-windows\ModuleEx.Form1.resources
+D:\Programming\dotnet\ModuleEx\ModuleEx\obj\Debug\net6.0-windows\ModuleEx.vbproj.GenerateResource.cache
+D:\Programming\dotnet\ModuleEx\ModuleEx\obj\Debug\net6.0-windows\ModuleEx.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\dotnet\ModuleEx\ModuleEx\obj\Debug\net6.0-windows\ModuleEx.AssemblyInfoInputs.cache
+D:\Programming\dotnet\ModuleEx\ModuleEx\obj\Debug\net6.0-windows\ModuleEx.AssemblyInfo.vb
+D:\Programming\dotnet\ModuleEx\ModuleEx\obj\Debug\net6.0-windows\ModuleEx.vbproj.CoreCompileInputs.cache
+D:\Programming\dotnet\ModuleEx\ModuleEx\obj\Debug\net6.0-windows\ModuleEx.dll
+D:\Programming\dotnet\ModuleEx\ModuleEx\obj\Debug\net6.0-windows\refint\ModuleEx.dll
+D:\Programming\dotnet\ModuleEx\ModuleEx\obj\Debug\net6.0-windows\ModuleEx.pdb
+D:\Programming\dotnet\ModuleEx\ModuleEx\obj\Debug\net6.0-windows\ModuleEx.genruntimeconfig.cache
+D:\Programming\dotnet\ModuleEx\ModuleEx\obj\Debug\net6.0-windows\ref\ModuleEx.dll

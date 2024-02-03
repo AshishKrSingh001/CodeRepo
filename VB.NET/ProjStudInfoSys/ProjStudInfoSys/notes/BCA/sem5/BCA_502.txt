@@ -1,0 +1,21 @@
+BCA-502 GRAPHICS & MULTIMEDIA
+Computer Graphics: Picture analysis, Overview of programmer’s model of interactive graphics,
+Fundamental problems in geometry. Scan Conversion: point, line, circle, ellipse polygon, Aliasing,
+and introduction to Anti Aliasing (No antialiasing algorithm).
+2D & 3D Co-ordinate system: Homogeneous Co-ordinates, Translation, Rotation, Scaling,
+Reflection, Inverse transformation, Composite transformation. Polygon Representation, Flood
+Filling, Boundary filling. Point Clipping, Cohen-Sutherland Line Clipping Algorithm, Polygon
+Clipping algorithms.
+Hidden Lines & Surfaces: Image and Object space, Depth Buffer Methods, Hidden Facets
+removal, Scan line algorithm, Area based algorithms. Curves and Splines & Rendering: Parametric
+and Non parametric Representations, Bezier curve, BSpline, Basic illumination model, diffuse
+reflection, specular reflection, shading, Ground shading, ray tracing, color models like RGB, YIQ,
+CMY, HSV
+Multimedia: Multimedia components, Multimedia Input/Output Technologies: Storage and
+retrieval technologies, Architectural considerations, file formats.
+Animation: Introduction, Rules, problems and Animation techniques.
+Text/References:
+1. J. Foley, A. Van Dam, S. Feiner, J. Hughes: Computer Graphics- Principles and Practice, Pearson
+2. Hearn and Baker: Computer Graphics, PHI
+3. Multimedia Systems Design, Prabhat Andleigh and Thakkar, PHI.
+4. Multimedia Information Networking, N.K.Sharda, PHI.

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<a:table xmlns:a="https://www.w3schools.com/furniture">
+		<a:name>African coffee table</a:name>
+		<a:price>10000</a:price>
+		<a:width>80</a:width>
+		<a:height>120</a:height>
+	</a:table>
+	<b:table xmlns:b="https://www.w3schoos.com/TR/html5/">
+		<b:tr>
+			<b:th>NAME</b:th>
+			<b:th>ID</b:th>
+			<b:th>ROLL_NO</b:th>
+		</b:tr>
+		<b:tr>
+			<b:td>Ashish</b:td>
+			<b:td>13089</b:td>
+			<b:td>85</b:td>
+		</b:tr>
+		<b:tr>
+			<b:td>Anish</b:td>
+			<b:td>13088</b:td>
+			<b:td>84</b:td>
+		</b:tr>
+		<b:tr>
+			<b:td>Aditya</b:td>
+			<b:td>13085</b:td>
+			<b:td>83</b:td>
+		</b:tr>
+		<b:tr>
+			<b:td>Rahul</b:td>
+			<b:td>13058</b:td>
+			<b:td>82</b:td>
+		</b:tr>
+	</b:table>
+</root>

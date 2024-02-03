@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>Web Page</title>
+		<style>
+		li{list-style:none;}
+		</style>
+	</head>
+	<body>
+		<form name="myform" type="type/javascript">
+			<ul>
+				<li>Enter length of Rectangle</li>
+				<li><input id="len" type="text"></li>
+			</ul>
+			<ul>
+				<li>Enter breadth of Rectangle</li>
+				<li><input id="bre" type="text"></li>
+			</ul>
+			<ul><li><input type="submit" onclick="fun()" value="fun"></li></ul>
+			<!--
+			<ul><li><p id="l"></p></li></ul>
+			<ul><li><p id="b"></p></li></ul>
+			<ul><li><p id="area"></p></li></ul>
+			<ul><li><p id="peri"></p></li></ul>
+			-->
+		</form>
+		<script>
+			function area({l,b})
+			{
+				return l*b;
+			}
+			function perimeter({l,b})
+			{
+				return (2*l+2*b);
+			}
+			
+			function fun()
+			{
+				if(document.myform.len.value=="")
+				{
+					alert("Enter some value");
+					return;
+				}
+				/*Rectangle=
+				{
+					l : document.myform.len.value,
+					b : document.myform.bre.value
+				}*/
+				Rectangle=
+				{
+					l : document.myform.len.value,
+					b : document.myform.bre.value
+				}
+				
+				document.write("Length of Rectangle: "+Rectangle.l+"<br>");
+				document.write("Breadth of Rectangle: "+Rectangle.b+"<br>");
+				document.write("Area of Rectangle: "+area(Rectangle)+"<br>");
+				document.write("perimeter of Rectangle: "+perimeter(Rectangle)+"<br>");
+				/*
+				document.getElementById("l").innerHTML = "Length of Rectangle: "+Rectangle.l+"<br>";
+				document.getElementById("b").innerHTML = "Breadth of Rectangle: "+Rectangle.b+"<br>";
+				document.getElementById("area").innerHTML = "Area of Rectangle: "+area(Rectangle)+"<br>";
+				document.getElementById("peri").innerHTML = "perimeter of Rectangle: "+perimeter(Rectangle)+"<br>";
+				*/
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+BCA-205 OPERATING SYSTEM & UNIX
+Introduction: Introduction to Operating Systems, Operating system services, multiprogramming,
+time-sharing system, storage structures, system calls, multiprocessor system. Basic concepts of
+CPU scheduling, Scheduling criteria, Scheduling algorithms,algorithm evaluation, multiple
+processor scheduling, real time scheduling I/0 devices organization, I/0 devices organization,
+I/0 devices organization, I/0 buffering.
+Process Management: Process concept, process scheduling, operations on processes, threads,
+inter-process communication, precedence graphs, critical section problem, semaphores, classical
+problems of synchronization. Deadlock problem, deadlock prevention, avoidance, recovery .
+Memory Management: Concepts of memory management, logical and physical address space,
+swapping, contiguous and non-contiguous allocation, paging, segmentation, and paging combined
+with segmentation. Virtual memory, demand paging, page replacement algorithms, allocation of
+frames, thrashing, demand segmentation. Security threads protection intruders-Viruses-trusted
+system.
+Introduction to Open Source technology, Files System hierarchy, Logging in, Simple commands
+like ls, cp, mv, wc, sort, tsort, cat, cut, grep, dd, head, tail, uniq, diff, echo, touch, which, whereis,
+whatis, type, who, whoami, finger, w (option and variations included), tty, ,uname, printf, ps, pwd ,
+history, exec, kill, pkill, clear, lpstate, cancel, compress, uncompress, exit. Directory commands
+like: Brief introduction to file system, mkdir, dir, cd, df, dfspace, du, ll, dirname, rmdir, dir access
+permission, changing access permission for files and directories like: chmod, chgrp, chown, hard &
+soft links. Environments and path setting. I/O redirection & piping commands
+vi editor: General startup of vi editor and it modes , Creating and editing files, features of vi, screen
+movement , cursor movement, insertion, deletion, searching, submitting operations, yank, put,
+delete commands, reading & writing files, exrc file for setting parameters, advance editing
+techniques, vim (improved vi).
+Shell: meaning and purpose of shell, introduction to types of shell. The command line, standard
+input and standard output, redirection, pipes, filters special characters for searching files and
+pathnames. Built-ins, functions, history, aliases, job control, file substitution, source code
+management - RCS and CVS. awk utility.
+Features of Linux: Drawbacks of Linux, Components of Linux, Memory Management
+Subsystems, Linux Process and Thread Management, File Management System, Device Drivers.
+Linux Commands and Utilities: Entering the Machine, User Names and Groups, Logging In,
+Correcting Typing Mistakes, Format of Linux Commands, Changing Your Password, Characters
+with Special Meanings, Linux Documentation, The File System, Current Directory, Looking at the
+Directory Contents, Absolute and Relative Pathnames, Some Linux Directories and Files.
+Linux Utilities and Editor: Some Useful Commands, Permission Modes and Standard Files, Pipes,
+Filters and Redirection, Shell Scripts, Graphical User Interface, Editor.
+UNIX System Administration: System Administration, Installing Linux, Choosing an Installation
+Method, Choosing an Installation Class, Pre-installation checks, Installation, Booting the System,
+Maintaining User Accounts, File Systems and Special Files, Backups and Restoration.
+TEXT BOOK:
+1. A. Silberschatz et.al.-Operating System Concepts , 6th Edition, John Wiley Inc., 2003
+2. H.M. Deitel -Operating Systems , 6th Edition, Pearson Education, 2006
+3. A. Robbins- Linux Programming by Example- Pearson Education, New Delhi- 2005
+4. Sumitabh Das : Your UNIX The Ultimate Guide; TMH
+REFERENCE BOOKS:
+1. D.M. Dhandhare - Operating Systems, 2nd Edition, Tata McGraw Hill, New Delhi,
+2006
+2. J.Goerzen- Linux Programming Bible, IDG Books, New Delhi- 2001
+3. N.Mathew & R.Stones- Beginning Linux Programming Wiley Publishing India, 2004.
+4. S.E. Mandnick & J.J. Donovan : Operating System; TMH

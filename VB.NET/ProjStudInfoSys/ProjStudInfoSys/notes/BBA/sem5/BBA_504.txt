@@ -1,0 +1,22 @@
+BBA 504 : E-COMMERCE
+Section I
+ Introduction: E-Business & E-Commerce.
+ Fundamentals: E-Commerce: E-Business Infrastructure; E-Environment.
+ Internet, Intranet, World Wide Web: Introduction; Gopher, FTP, Telnet, HTTP, Network
+Protocols; Internet facilities through www.
+Section II
+ E-Business Strategy: Supply Chain Management; E-Procurement.
+ Case Studies: Online Gambling; Music Industry; Amazon.com & Flipkart.com.
+Section III
+ E-Marketing: Customer Relationship Management; Change Management.
+Text Books:
+1. E-Business and E-Commerce Management: Strategy: Implementation and Practice; Chaffey,
+Dave; (2009); 4th Edition; ISBN 978-0-273-71960-1.
+2. E-Commerce: Business, Technology, Society, Case Book Update; 2005, 2/E; Kenneth C.
+Laudon, & Carol Guercio Traver; ISBN: 0-321-26937-3 949.
+Reference Books:
+1. Applying E-commerce in Business;Tassabehji Rana; (2003) Sage Publications; ISBN 0-
+7619-4875-9.
+2. Web 2.0: A Strategy Guide; Shuen, A; (2008); Cambridge, O'Reilly.
+3. The Google Story; Vise, David A.; (2006); London, Pan.
+4. Business @ the Speed of Thought; Gates, Bill; (2000); Penguin.
