@@ -36,5 +36,9 @@
     git log. The git log command displays committed snapshots. It lets you list the project history, filter it, and search for specific changes.
 
 <git log -p -count>:
-    Git is a widely used distributed version control system that allows software developers to manage and track changes to their codebase. Git logs are an essential part of Git that can help developers understand what changes have been made to a repository, who made them, and when they were made
+    Git is a widely used distributed version control system that allows software developers to manage and track changes to their codebase. Git logs are an essential part of Git that can help developers understand what changes have been made to a repository, who made them, and when they were made.
+<git diff>:
+    The git diff command helps you see, compare, and understand changes in your project. You can use it in many different situations, e.g. to look at current changes in your working copy, past changes in commits, or even to compare branches.
 
+<git diff --staged>:
+    The git diff command allows us to track the changes that are staged but not committed. We can track the changes in the staging area. To check the already staged changes, use the --staged option along with git diff command.
