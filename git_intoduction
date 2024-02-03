@@ -45,3 +45,12 @@
 
 <git diff --staged>:
     The git diff command allows us to track the changes that are staged but not committed. We can track the changes in the staging area. To check the already staged changes, use the --staged option along with git diff command.
+
+<touch filename>:
+    The touch command's primary function is to modify a timestamp. Commonly, the utility is used for file creation, although this is not its primary function. The terminal program can change the modification and access time for any given file. The touch command creates a file only if the file doesn't already exist.
+
+<git rm filename>:
+    The git rm command can be used to remove individual files or a collection of files. The primary function of git rm is to remove tracked files from the Git index. Additionally, git rm can be used to remove files from both the staging index and the working directory.
+
+<git rm --cached filename>:
+    --cached. Removes the file only from the Git repository, but not from the filesystem. By default, the git rm command deletes files both from the Git repository as well as the filesystem. Using the --cached flag, the actual file on disk will not be deleted.
