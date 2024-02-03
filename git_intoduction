@@ -57,3 +57,11 @@
 
 <git rm --cached filename>:
     --cached. Removes the file only from the Git repository, but not from the filesystem. By default, the git rm command deletes files both from the Git repository as well as the filesystem. Using the --cached flag, the actual file on disk will not be deleted.
+
+{.gitignore file}:
+    The purpose of gitignore files is to ensure that certain files not tracked by Git remain untracked.
+    Ex:
+        for specifying particular file: [filename]
+        for specifying  particular directory: [dirName/]
+        for specifying particular extension: [*.extensionName]
+
