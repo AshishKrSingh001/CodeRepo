@@ -34,3 +34,7 @@
 
 <git log>:
     git log. The git log command displays committed snapshots. It lets you list the project history, filter it, and search for specific changes.
+
+<git log -p -count>:
+    Git is a widely used distributed version control system that allows software developers to manage and track changes to their codebase. Git logs are an essential part of Git that can help developers understand what changes have been made to a repository, who made them, and when they were made
+
