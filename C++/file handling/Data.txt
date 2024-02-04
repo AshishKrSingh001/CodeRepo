@@ -1,7 +1,0 @@
-Name: Ashish Kumar Singh
-Age: 21
-Id: 13089
-Course: BCA
-Roll no: 85
-Fess: 347000
-
