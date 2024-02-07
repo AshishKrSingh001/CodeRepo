@@ -67,7 +67,7 @@ class vectorEx
 	void vectorInput()
 	{
 		int x;
-		cout<<"Vector iutput"<<endl<<"Enter 5 elements"<<endl;
+		cout<<"Vector intput"<<endl<<"Enter 5 elements"<<endl;
 		for(int i=0;i<5;i++)
 		{
 			cin>>x;

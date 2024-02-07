@@ -8,7 +8,7 @@ public class JLabelEx extends JFrame
 	JLabel jl1,jl2,jl3;
 	public JLabelEx()
 	{
-		jp = new JPanel();
+		jp = new JPanel("xxxxxxxx");
 		
 		jl1 = new JLabel("First Name: ");
 		jl2 = new JLabel("Last Name: ");
@@ -19,6 +19,7 @@ public class JLabelEx extends JFrame
 		jp.add(jl1);
 		jp.add(jl3);
 		jp.add(jl2);
+		//jp.setTitle("JPanel");
 		
 		add(jp);
 		setTitle("JLabel");
