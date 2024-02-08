@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class a01_area_of_trangle
+public class a02_area_of_trangle
 {
     public static void main(String[] args)
     {
