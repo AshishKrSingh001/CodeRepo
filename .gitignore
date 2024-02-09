@@ -2,3 +2,7 @@
 ignoredDir/
 C++/*.exe
 C/*.exe
+JAVA/JAVA_GUI/*.class
+JAVA/JAVA_GUI/GUI
+JAVA/Java_Adv/*.class
+JAVA/Core_Java
