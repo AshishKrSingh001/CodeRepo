@@ -1,4 +1,4 @@
 *.log
 ignoredDir/
-C++/a.exe
-C/a.exe
+C++/*.exe
+C/*.exe
