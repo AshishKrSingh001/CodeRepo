@@ -72,19 +72,19 @@ Partial Class Form1
         ' DeptMenuStrip
         ' 
         DeptMenuStrip.Name = "DeptMenuStrip"
-        DeptMenuStrip.Size = New Size(224, 26)
+        DeptMenuStrip.Size = New Size(204, 26)
         DeptMenuStrip.Text = "1. Department"
         ' 
         ' EmployeeMenuStrip
         ' 
         EmployeeMenuStrip.Name = "EmployeeMenuStrip"
-        EmployeeMenuStrip.Size = New Size(224, 26)
+        EmployeeMenuStrip.Size = New Size(204, 26)
         EmployeeMenuStrip.Text = "2. Employee"
         ' 
         ' AddUsersToolStripMenuItem
         ' 
         AddUsersToolStripMenuItem.Name = "AddUsersToolStripMenuItem"
-        AddUsersToolStripMenuItem.Size = New Size(224, 26)
+        AddUsersToolStripMenuItem.Size = New Size(204, 26)
         AddUsersToolStripMenuItem.Text = "3. Register User"
         ' 
         ' ReportToolStripMenuItem
@@ -196,12 +196,15 @@ Partial Class Form1
         ' 
         ' PictureBox1
         ' 
+        PictureBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         PictureBox1.BackColor = SystemColors.ActiveCaptionText
         PictureBox1.BackgroundImageLayout = ImageLayout.Stretch
-        PictureBox1.Dock = DockStyle.Fill
+        PictureBox1.ErrorImage = CType(resources.GetObject("PictureBox1.ErrorImage"), Image)
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
         PictureBox1.Location = New Point(0, 26)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(718, 418)
+        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 6
         PictureBox1.TabStop = False
         ' 
@@ -210,6 +213,8 @@ Partial Class Form1
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         AutoSize = True
+        BackColor = SystemColors.ButtonShadow
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(718, 444)
         Controls.Add(PictureBox1)
         Controls.Add(MenuStrip1)
@@ -218,6 +223,7 @@ Partial Class Form1
         IsMdiContainer = True
         MainMenuStrip = MenuStrip1
         Name = "Form1"
+        StartPosition = FormStartPosition.CenterScreen
         Text = " Department & Employee Information Management"
         WindowState = FormWindowState.Maximized
         MenuStrip1.ResumeLayout(False)

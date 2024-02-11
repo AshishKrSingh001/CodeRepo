@@ -33,6 +33,7 @@ Partial Class a17_ReportOfAllRecord
         ' 
         dgvEmp.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvEmp.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvEmp.Cursor = Cursors.Hand
         dgvEmp.Dock = DockStyle.Fill
         dgvEmp.Location = New Point(0, 0)
         dgvEmp.Margin = New Padding(2)
@@ -43,18 +44,23 @@ Partial Class a17_ReportOfAllRecord
         ' 
         ' btnExportToExcel
         ' 
+        btnExportToExcel.BackColor = SystemColors.HotTrack
+        btnExportToExcel.Cursor = Cursors.Hand
         btnExportToExcel.Dock = DockStyle.Bottom
+        btnExportToExcel.FlatStyle = FlatStyle.Flat
+        btnExportToExcel.ForeColor = SystemColors.Control
         btnExportToExcel.Location = New Point(0, 683)
         btnExportToExcel.Name = "btnExportToExcel"
         btnExportToExcel.Size = New Size(1790, 40)
         btnExportToExcel.TabIndex = 19
         btnExportToExcel.Text = "Export To Excel"
-        btnExportToExcel.UseVisualStyleBackColor = True
+        btnExportToExcel.UseVisualStyleBackColor = False
         ' 
-        ' ReportOfAllRecord
+        ' a17_ReportOfAllRecord
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ButtonShadow
         ClientSize = New Size(1790, 723)
         Controls.Add(btnExportToExcel)
         Controls.Add(dgvEmp)
@@ -62,7 +68,7 @@ Partial Class a17_ReportOfAllRecord
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         MinimizeBox = False
-        Name = "ReportOfAllRecord"
+        Name = "a17_ReportOfAllRecord"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Report of All Record"
         CType(dgvEmp, ComponentModel.ISupportInitialize).EndInit()

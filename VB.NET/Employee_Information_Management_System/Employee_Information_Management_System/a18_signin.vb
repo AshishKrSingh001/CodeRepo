@@ -3,6 +3,7 @@
 Public Class a18_signin
     Dim con As New SqlConnection(Form1.conString)
     Private Sub signin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim rnd As New Form_Round(Me)
         txtPasswd.UseSystemPasswordChar = Not CheckBox1.Checked
     End Sub
 

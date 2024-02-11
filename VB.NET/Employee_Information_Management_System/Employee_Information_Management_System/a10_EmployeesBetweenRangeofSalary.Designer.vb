@@ -49,10 +49,11 @@ Partial Class a10_EmployeesBetweenRangeofSalary
         ' 
         DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(10, 84)
+        DataGridView1.Cursor = Cursors.Hand
+        DataGridView1.Location = New Point(10, 61)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(1136, 424)
+        DataGridView1.Size = New Size(1136, 447)
         DataGridView1.TabIndex = 10
         ' 
         ' GroupBox1
@@ -62,9 +63,10 @@ Partial Class a10_EmployeesBetweenRangeofSalary
         GroupBox1.Controls.Add(TextBox1)
         GroupBox1.Controls.Add(Label3)
         GroupBox1.Controls.Add(Button1)
-        GroupBox1.Location = New Point(12, 23)
+        GroupBox1.Dock = DockStyle.Top
+        GroupBox1.Location = New Point(0, 0)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(1134, 55)
+        GroupBox1.Size = New Size(1158, 55)
         GroupBox1.TabIndex = 15
         GroupBox1.TabStop = False
         GroupBox1.Text = "Form"
@@ -103,27 +105,36 @@ Partial Class a10_EmployeesBetweenRangeofSalary
         ' 
         ' Button1
         ' 
+        Button1.BackColor = SystemColors.HotTrack
+        Button1.Cursor = Cursors.Hand
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.ForeColor = SystemColors.Control
         Button1.Location = New Point(886, 20)
         Button1.Name = "Button1"
         Button1.Size = New Size(129, 32)
         Button1.TabIndex = 22
         Button1.Text = "Select"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' btnExportToExcel
         ' 
+        btnExportToExcel.BackColor = SystemColors.HotTrack
+        btnExportToExcel.Cursor = Cursors.Hand
         btnExportToExcel.Dock = DockStyle.Bottom
+        btnExportToExcel.FlatStyle = FlatStyle.Flat
+        btnExportToExcel.ForeColor = SystemColors.Control
         btnExportToExcel.Location = New Point(0, 514)
         btnExportToExcel.Name = "btnExportToExcel"
         btnExportToExcel.Size = New Size(1158, 40)
         btnExportToExcel.TabIndex = 20
         btnExportToExcel.Text = "Export To Excel"
-        btnExportToExcel.UseVisualStyleBackColor = True
+        btnExportToExcel.UseVisualStyleBackColor = False
         ' 
-        ' EmployeesBetweenRangeofSalary
+        ' a10_EmployeesBetweenRangeofSalary
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ButtonShadow
         ClientSize = New Size(1158, 579)
         Controls.Add(btnExportToExcel)
         Controls.Add(GroupBox1)
@@ -133,7 +144,7 @@ Partial Class a10_EmployeesBetweenRangeofSalary
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         MinimizeBox = False
-        Name = "EmployeesBetweenRangeofSalary"
+        Name = "a10_EmployeesBetweenRangeofSalary"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Employees Between Range of Salary"
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()

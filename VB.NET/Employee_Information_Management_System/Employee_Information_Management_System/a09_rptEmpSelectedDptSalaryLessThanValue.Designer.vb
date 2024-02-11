@@ -49,6 +49,7 @@ Partial Class a09_rptEmpSelectedDptSalaryLessThanValue
         ' 
         DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView1.Cursor = Cursors.Hand
         DataGridView1.Location = New Point(9, 84)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
@@ -87,12 +88,16 @@ Partial Class a09_rptEmpSelectedDptSalaryLessThanValue
         ' 
         ' Button1
         ' 
+        Button1.BackColor = SystemColors.HotTrack
+        Button1.Cursor = Cursors.Hand
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.ForeColor = SystemColors.Control
         Button1.Location = New Point(922, 22)
         Button1.Name = "Button1"
         Button1.Size = New Size(129, 32)
         Button1.TabIndex = 19
         Button1.Text = "Select"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' ComboBox1
         ' 
@@ -113,18 +118,23 @@ Partial Class a09_rptEmpSelectedDptSalaryLessThanValue
         ' 
         ' btnExportToExcel
         ' 
+        btnExportToExcel.BackColor = SystemColors.HotTrack
+        btnExportToExcel.Cursor = Cursors.Hand
         btnExportToExcel.Dock = DockStyle.Bottom
+        btnExportToExcel.FlatStyle = FlatStyle.Flat
+        btnExportToExcel.ForeColor = SystemColors.Control
         btnExportToExcel.Location = New Point(0, 489)
         btnExportToExcel.Name = "btnExportToExcel"
         btnExportToExcel.Size = New Size(1090, 40)
         btnExportToExcel.TabIndex = 24
         btnExportToExcel.Text = "Export To Excel"
-        btnExportToExcel.UseVisualStyleBackColor = True
+        btnExportToExcel.UseVisualStyleBackColor = False
         ' 
         ' a09_rptEmpSelectedDptSalaryLessThanValue
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ButtonShadow
         ClientSize = New Size(1090, 558)
         Controls.Add(btnExportToExcel)
         Controls.Add(GroupBox1)

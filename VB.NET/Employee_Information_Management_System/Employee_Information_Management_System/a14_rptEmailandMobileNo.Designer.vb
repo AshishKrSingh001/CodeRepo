@@ -22,6 +22,7 @@ Partial Class a14_rptEmailandMobileNo
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(a14_rptEmailandMobileNo))
         DataGridView1 = New DataGridView()
         btnExportToExcel = New Button()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
@@ -31,6 +32,7 @@ Partial Class a14_rptEmailandMobileNo
         ' 
         DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView1.Cursor = Cursors.Hand
         DataGridView1.Dock = DockStyle.Fill
         DataGridView1.Location = New Point(0, 0)
         DataGridView1.Name = "DataGridView1"
@@ -40,22 +42,28 @@ Partial Class a14_rptEmailandMobileNo
         ' 
         ' btnExportToExcel
         ' 
+        btnExportToExcel.BackColor = SystemColors.HotTrack
+        btnExportToExcel.Cursor = Cursors.Hand
         btnExportToExcel.Dock = DockStyle.Bottom
+        btnExportToExcel.FlatStyle = FlatStyle.Flat
+        btnExportToExcel.ForeColor = SystemColors.Control
         btnExportToExcel.Location = New Point(0, 524)
         btnExportToExcel.Name = "btnExportToExcel"
         btnExportToExcel.Size = New Size(1061, 40)
         btnExportToExcel.TabIndex = 20
         btnExportToExcel.Text = "Export To Excel"
-        btnExportToExcel.UseVisualStyleBackColor = True
+        btnExportToExcel.UseVisualStyleBackColor = False
         ' 
         ' a14_rptEmailandMobileNo
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ButtonShadow
         ClientSize = New Size(1061, 564)
         Controls.Add(btnExportToExcel)
         Controls.Add(DataGridView1)
         Font = New Font("Segoe UI", 9F, FontStyle.Bold Or FontStyle.Italic)
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "a14_rptEmailandMobileNo"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Email and MobileNo"

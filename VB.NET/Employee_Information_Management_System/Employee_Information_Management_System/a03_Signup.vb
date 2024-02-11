@@ -7,29 +7,6 @@ Public Class a03_Signup
     Dim inc As Integer = 0
     Dim maxRow As Integer = 0
 
-    Sub displayRecords()
-        Try
-            Dim cmd As New SqlCommand("Select * from Loginn", con)
-            Dim da As New SqlDataAdapter(cmd)
-            ds = New DataSet
-            da.Fill(ds, "Login")
-            DataGridview1.DataSource = ds.Tables("Login")
-            DataGridview1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White
-            DataGridview1.ColumnHeadersDefaultCellStyle.BackColor = Color.Black
-            With DataGridview1
-                .RowHeadersVisible = False
-                .Columns(0).HeaderCell.Value = "Username"
-                .Columns(1).HeaderCell.Value = "Password"
-                .Columns(2).HeaderCell.Value = "Employee No"
-                .Columns(0).FillWeight = 155
-            End With
-            inc = 0
-            maxRow = ds.Tables("Login").Rows.Count
-        Catch ex As Exception
-            MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
-    End Sub
-
     Sub ClearControls()
         txtNo.Text = ""
         txtPassword.Text = ""
@@ -47,8 +24,8 @@ Public Class a03_Signup
     End Function
 
     Private Sub Signup_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Dim rnd As New Form_Round(Me)
         txtPassword.UseSystemPasswordChar = Not CheckBox1.Checked
-        displayRecords()
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
@@ -80,7 +57,6 @@ Public Class a03_Signup
                     If flag > 0 Then
                         MessageBox.Show("Inserted successfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         ClearControls()
-                        displayRecords()
                     Else
                         MessageBox.Show("Something went wrong.....Record not Inserted", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
                     End If
@@ -90,76 +66,13 @@ Public Class a03_Signup
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Finally
                 con.Close()
-                displayRecords()
             End Try
         End If
     End Sub
 
-    Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
-        If isEmpty() = False And txtcPassword.Text = txtPassword.Text Then
-            Try
-                Dim cmd As New SqlCommand("Delete from Loginn Where Username = @user", con)
-                cmd.Parameters.Add("@user", SqlDbType.VarChar).Value = txtEmail.Text
-                con.Open()
-                Dim flag As Integer = 0
-                flag = cmd.ExecuteNonQuery()
-                con.Close()
-                If flag > 0 Then
-                    MessageBox.Show("Record is Deleted", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
-                    ClearControls()
-                    displayRecords()
-                Else
-                    MessageBox.Show("Something went wrong.....Record not Deleted", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
-                End If
-            Catch ex As Exception
-                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
-            Finally
-                If con.State = ConnectionState.Open Then
-                    con.Close()
-                End If
-            End Try
-        End If
-        displayRecords()
-    End Sub
 
-    Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
-        If isEmpty() = False And txtcPassword.Text = txtPassword.Text Then
-            Try
-                Dim cmd As New SqlCommand("Update Loginn Set Password = @pass where Username = @user", con)
-                cmd.Parameters.Add("@user", SqlDbType.VarChar).Value = txtEmail.Text
-                cmd.Parameters.Add("@pass", SqlDbType.VarChar).Value = txtPassword.Text
-                con.Open()
-                Dim flag As Integer = 0
-                flag = cmd.ExecuteNonQuery()
-                con.Close()
-                If flag > 0 Then
-                    MessageBox.Show("Record is Updated", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
-                    ClearControls()
-                    displayRecords()
-                Else
-                    MessageBox.Show("Something went wrong.....Record not Updated", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
-                End If
-            Catch ex As Exception
-                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
-            Finally
-                If con.State = ConnectionState.Open Then
-                    con.Close()
-                End If
-            End Try
-        End If
-        displayRecords()
-    End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         ClearControls()
-        displayRecords()
-    End Sub
-
-
-    Private Sub DataGridView1_cellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridview1.CellContentClick
-        txtEmail.Text = DataGridview1.CurrentRow.Cells(0).Value
-        txtcPassword.Text = DataGridview1.CurrentRow.Cells(1).Value
-        txtPassword.Text = DataGridview1.CurrentRow.Cells(1).Value
-        txtNo.Text = DataGridview1.CurrentRow.Cells(2).Value
     End Sub
 End Class

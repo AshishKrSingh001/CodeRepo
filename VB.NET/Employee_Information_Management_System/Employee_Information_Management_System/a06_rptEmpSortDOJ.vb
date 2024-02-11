@@ -4,14 +4,19 @@ Public Class a06_rptEmpSortDOJ
     Dim con As New SqlConnection(Form1.conString)
     Dim ds As DataSet
     Private Sub rptEmpSortDOJ_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Dim rnd As New Form_Round(Me)
         Try
             Dim cmd As New SqlCommand("Select * from EmpTable order by Date_OJ desc", con)
             Dim da As New SqlDataAdapter(cmd)
             ds = New DataSet
             da.Fill(ds, "Emp")
             DataGridView1.DataSource = ds.Tables("Emp")
-            DataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White
-            DataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.Black
+            With DataGridView1.ColumnHeadersDefaultCellStyle
+                .BackColor = Color.Black
+                .ForeColor = Color.White
+                .Font = New Font(DataGridView1.Font, FontStyle.Bold)
+            End With
+            DataGridView1.EnableHeadersVisualStyles = False
             With DataGridView1
                 .RowHeadersVisible = False
                 .Columns(0).HeaderCell.Value = "Employee's No"

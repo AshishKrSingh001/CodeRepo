@@ -26,6 +26,12 @@ Public Class a09_rptEmpSelectedDptSalaryLessThanValue
             ds = New DataSet
             da.Fill(ds, "Emp")
             DataGridView1.DataSource = ds.Tables("Emp")
+            With DataGridView1.ColumnHeadersDefaultCellStyle
+                .BackColor = Color.Black
+                .ForeColor = Color.White
+                .Font = New Font(DataGridView1.Font, FontStyle.Bold)
+            End With
+            DataGridView1.EnableHeadersVisualStyles = False
             With DataGridView1
                 .RowHeadersVisible = False
                 .Columns(0).HeaderCell.Value = "Employee's No"

@@ -32,6 +32,7 @@ Partial Class a15_rptAttendenceRecord
         ' 
         dgvEmp.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvEmp.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvEmp.Cursor = Cursors.Hand
         dgvEmp.Dock = DockStyle.Fill
         dgvEmp.Location = New Point(0, 0)
         dgvEmp.Margin = New Padding(2)
@@ -42,18 +43,23 @@ Partial Class a15_rptAttendenceRecord
         ' 
         ' btnExportToExcel
         ' 
+        btnExportToExcel.BackColor = SystemColors.HotTrack
+        btnExportToExcel.Cursor = Cursors.Hand
         btnExportToExcel.Dock = DockStyle.Bottom
+        btnExportToExcel.FlatStyle = FlatStyle.Flat
+        btnExportToExcel.ForeColor = SystemColors.Control
         btnExportToExcel.Location = New Point(0, 647)
         btnExportToExcel.Name = "btnExportToExcel"
         btnExportToExcel.Size = New Size(1636, 40)
         btnExportToExcel.TabIndex = 20
         btnExportToExcel.Text = "Export To Excel"
-        btnExportToExcel.UseVisualStyleBackColor = True
+        btnExportToExcel.UseVisualStyleBackColor = False
         ' 
-        ' rptAttendenceRecord
+        ' a15_rptAttendenceRecord
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ButtonShadow
         ClientSize = New Size(1636, 687)
         Controls.Add(btnExportToExcel)
         Controls.Add(dgvEmp)
@@ -61,7 +67,7 @@ Partial Class a15_rptAttendenceRecord
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         MinimizeBox = False
-        Name = "rptAttendenceRecord"
+        Name = "a15_rptAttendenceRecord"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Attendence Record"
         CType(dgvEmp, ComponentModel.ISupportInitialize).EndInit()

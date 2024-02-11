@@ -33,11 +33,13 @@ Partial Class a05_rptEmpWithDept
         ' 
         DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(11, 11)
+        DataGridView1.Cursor = Cursors.Hand
+        DataGridView1.Dock = DockStyle.Fill
+        DataGridView1.Location = New Point(0, 0)
         DataGridView1.Margin = New Padding(2)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(1276, 443)
+        DataGridView1.Size = New Size(1298, 479)
         DataGridView1.TabIndex = 0
         ' 
         ' Label1
@@ -51,18 +53,23 @@ Partial Class a05_rptEmpWithDept
         ' 
         ' btnExportToExcel
         ' 
+        btnExportToExcel.BackColor = SystemColors.HotTrack
+        btnExportToExcel.Cursor = Cursors.Hand
         btnExportToExcel.Dock = DockStyle.Bottom
+        btnExportToExcel.FlatStyle = FlatStyle.Flat
+        btnExportToExcel.ForeColor = SystemColors.Control
         btnExportToExcel.Location = New Point(0, 439)
         btnExportToExcel.Name = "btnExportToExcel"
         btnExportToExcel.Size = New Size(1298, 40)
         btnExportToExcel.TabIndex = 20
         btnExportToExcel.Text = "Export To Excel"
-        btnExportToExcel.UseVisualStyleBackColor = True
+        btnExportToExcel.UseVisualStyleBackColor = False
         ' 
         ' a05_rptEmpWithDept
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ButtonShadow
         ClientSize = New Size(1298, 479)
         Controls.Add(btnExportToExcel)
         Controls.Add(Label1)

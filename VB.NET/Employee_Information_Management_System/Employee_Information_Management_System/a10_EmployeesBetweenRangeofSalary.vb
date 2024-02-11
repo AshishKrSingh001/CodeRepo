@@ -11,14 +11,19 @@ Public Class a10_EmployeesBetweenRangeofSalary
             ds = New DataSet
             da.Fill(ds, "Emp")
             DataGridView1.DataSource = ds.Tables("Emp")
-            DataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White
-            DataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.Black
+            With DataGridView1.ColumnHeadersDefaultCellStyle
+                .BackColor = Color.Black
+                .ForeColor = Color.White
+                .Font = New Font(DataGridView1.Font, FontStyle.Bold)
+            End With
+            DataGridView1.EnableHeadersVisualStyles = False
             With DataGridView1
                 .RowHeadersVisible = False
                 .Columns(0).HeaderCell.Value = "Employee's No"
                 .Columns(1).HeaderCell.Value = "Employee's Name"
                 .Columns(2).HeaderCell.Value = "Salary"
-                .Columns(3).HeaderCell.Value = "Date of Join"
+                .Columns(3).HeaderCell.Value = "Department No"
+                .Columns(4).HeaderCell.Value = "Date of Join"
                 .Columns(5).HeaderCell.Value = "Email"
                 .Columns(5).FillWeight = 155
             End With
@@ -40,8 +45,11 @@ Public Class a10_EmployeesBetweenRangeofSalary
                     ds = New DataSet
                     da.Fill(ds, "Emp")
                     DataGridView1.DataSource = ds.Tables("Emp")
-                    DataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White
-                    DataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.Black
+                    With DataGridView1.ColumnHeadersDefaultCellStyle
+                        .BackColor = Color.Black
+                        .ForeColor = Color.White
+                        .Font = New Font(DataGridView1.Font, FontStyle.Bold)
+                    End With
                     With DataGridView1
                         .RowHeadersVisible = False
                         .Columns(0).HeaderCell.Value = "Employee's No"
@@ -69,6 +77,7 @@ Public Class a10_EmployeesBetweenRangeofSalary
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
 
 End Class
 Class NotSpecifiedFormatEnteredBetweenSalary : Inherits ApplicationException

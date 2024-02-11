@@ -2,7 +2,14 @@
 Imports System.Data
 Public Class a16_TimeIn_TimeOut
     Dim con As New SqlConnection(Form1.conString)
+    Sub display()
+        txtEmpNo.Focus()
+        lblInfo.Text = ""
+        Label1.Text = ""
+    End Sub
     Private Sub btnTimeInTimeOut_Click(sender As Object, e As EventArgs) Handles btnTimeInTimeOut.Click
+        display()
+
         Try
             If txtEmpNo.Text = String.Empty Then
                 lblInfo.Text = "Enter Employee No: "
@@ -12,11 +19,12 @@ Public Class a16_TimeIn_TimeOut
                 cmd.Parameters.Clear()
                 cmd.Parameters.AddWithValue("@empNo", txtEmpNo.Text())
                 Dim da As New SqlDataAdapter(cmd)
-                Dim dt = New DataTable
+                Dim dt1 = New DataTable
                 da.SelectCommand = cmd
-                da.Fill(dt)
+                da.Fill(dt1)
 
-                If dt.Rows.Count > 0 Then
+                If dt1.Rows.Count > 0 Then
+                    Dim Nam As String = dt1.Rows(0).Item("EmpName").ToString
                     cmd = New SqlCommand("Select * from Attendence where EmpNo = @empNo AND attenDate = @attenDate AND outStatus = @outStatus AND inStatus = @inStatus", con)
                     cmd.Parameters.Clear()
                     cmd.Parameters.AddWithValue("@empNo", txtEmpNo.Text)
@@ -24,9 +32,9 @@ Public Class a16_TimeIn_TimeOut
                     cmd.Parameters.AddWithValue("@inStatus", "TIME IN")
                     cmd.Parameters.AddWithValue("@outStatus", "TIME OUT")
                     da = New SqlDataAdapter(cmd)
-                    dt = New DataTable
+                    Dim dt2 = New DataTable
                     da.SelectCommand = cmd
-                    da.Fill(dt)
+                    da.Fill(dt2)
                     If txtEmpNo.Text = String.Empty Then
                         lblInfo.Text = "Enter Employee No: "
                         lblInfo.ForeColor = Color.Orange
@@ -37,12 +45,17 @@ Public Class a16_TimeIn_TimeOut
                         cmd.Parameters.AddWithValue("@attenDate", Date.Now.ToString("d"))
                         cmd.Parameters.AddWithValue("@inStatus", "TIME IN")
                         da = New SqlDataAdapter(cmd)
-                        dt = New DataTable
+                        dt2 = New DataTable
                         da.SelectCommand = cmd
-                        da.Fill(dt)
-                        If dt.Rows.Count > 0 Then
-                            cmd = New SqlCommand("Update Attendence SET outTime = @outTime, outStatus = @outStatus Where EmpNo = @empNo AND attenDate = @attenDate", con)
+                        da.Fill(dt2)
+
+
+                        If dt2.Rows.Count > 0 Then
+                            Dim dtTime = New TimeSpan()
+                            dtTime = Date.Now.TimeOfDay.Subtract(Convert.ToDateTime(dt2.Rows(0).Item("inTime")).TimeOfDay)
+                            cmd = New SqlCommand("Update Attendence SET outTime = @outTime, outStatus = @outStatus,TimeDuration = @time Where EmpNo = @empNo AND attenDate = @attenDate", con)
                             cmd.Parameters.AddWithValue("@empNo", txtEmpNo.Text)
+                            cmd.Parameters.AddWithValue("@Time", dtTime.Hours.ToString() + " Hours")
                             cmd.Parameters.AddWithValue("@attenDate", Date.Now.ToString("d"))
                             cmd.Parameters.AddWithValue("@outTime", Date.Now.ToString("t"))
                             cmd.Parameters.AddWithValue("@outStatus", "TIME OUT")
@@ -52,7 +65,9 @@ Public Class a16_TimeIn_TimeOut
 
                             If i > 0 Then
                                 lblInfo.Text = "Time Out Sucess !"
+                                Label1.Text = Nam
                                 lblInfo.ForeColor = Color.Lime
+                                Label1.ForeColor = Color.Blue
                             Else
                                 lblInfo.Text = "Time Out Failed !"
                                 lblInfo.ForeColor = Color.Red
@@ -70,7 +85,9 @@ Public Class a16_TimeIn_TimeOut
                             con.Close()
                             If i > 0 Then
                                 lblInfo.Text = "Time In Sucess !"
+                                Label1.Text = Nam
                                 lblInfo.ForeColor = Color.Lime
+                                Label1.ForeColor = Color.Blue
                             Else
                                 lblInfo.Text = "Time In Failed !"
                                 lblInfo.ForeColor = Color.Red
@@ -85,6 +102,7 @@ Public Class a16_TimeIn_TimeOut
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
         Finally
+
             If con.State = ConnectionState.Open Then
                 con.Close()
             End If
@@ -92,6 +110,8 @@ Public Class a16_TimeIn_TimeOut
     End Sub
 
     Private Sub TimeIn_TimeOut_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        txtEmpNo.Focus()
+        display()
+        txtEmpNo.Text = ""
     End Sub
+
 End Class

@@ -6,13 +6,17 @@ Public Class a17_ReportOfAllRecord
     Dim ds As DataSet
     Sub displayRecords()
         Try
-            Dim cmd As New SqlCommand("Select Id,EmpTable.EmpNo,EmpName,EmpTable.DptNo,DptName,Location,Date_OJ,Email,MobNo,Salary,attenDate,inTime,inStatus,outTime,outStatus from Attendence,EmpTable,DeptTable where Attendence.EmpNo = EmpTable.EmpNo AND EmpTable.DptNo = DeptTable.DptNo", con)
+            Dim cmd As New SqlCommand("Select Id,EmpTable.EmpNo,EmpName,EmpTable.DptNo,DptName,Location,Date_OJ,Email,MobNo,Salary,attenDate,inTime,inStatus,outTime,outStatus,TimeDuration from Attendence,EmpTable,DeptTable where Attendence.EmpNo = EmpTable.EmpNo AND EmpTable.DptNo = DeptTable.DptNo", con)
             Dim da As New SqlDataAdapter(cmd)
             ds = New DataSet
             da.Fill(ds, "Atten")
             dgvEmp.DataSource = ds.Tables("Atten")
-            dgvEmp.ColumnHeadersDefaultCellStyle.ForeColor = Color.White
-            dgvEmp.ColumnHeadersDefaultCellStyle.BackColor = Color.Black
+            With dgvEmp.ColumnHeadersDefaultCellStyle
+                .BackColor = Color.Black
+                .ForeColor = Color.White
+                .Font = New Font(dgvEmp.Font, FontStyle.Bold)
+            End With
+            dgvEmp.EnableHeadersVisualStyles = False
             With dgvEmp
                 .RowHeadersVisible = False
                 .Columns(0).HeaderCell.Value = "S. NO"
@@ -30,6 +34,7 @@ Public Class a17_ReportOfAllRecord
                 .Columns(12).HeaderCell.Value = "In Status"
                 .Columns(13).HeaderCell.Value = "Out Time"
                 .Columns(14).HeaderCell.Value = "Out Status"
+                .Columns(14).HeaderCell.Value = "Time Duration"
 
                 .Columns(0).FillWeight = 20
                 .Columns(1).FillWeight = 40
@@ -46,6 +51,7 @@ Public Class a17_ReportOfAllRecord
                 .Columns(12).FillWeight = 40
                 .Columns(13).FillWeight = 40
                 .Columns(14).FillWeight = 40
+                .Columns(15).FillWeight = 40
             End With
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)

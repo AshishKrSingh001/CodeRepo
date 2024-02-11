@@ -27,12 +27,15 @@ Partial Class a16_TimeIn_TimeOut
         txtEmpNo = New MaskedTextBox()
         PictureBox1 = New PictureBox()
         lblInfo = New Label()
+        Label1 = New Label()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' btnTimeInTimeOut
         ' 
         btnTimeInTimeOut.BackColor = SystemColors.HotTrack
+        btnTimeInTimeOut.Cursor = Cursors.Hand
+        btnTimeInTimeOut.FlatStyle = FlatStyle.Flat
         btnTimeInTimeOut.ForeColor = SystemColors.Control
         btnTimeInTimeOut.Location = New Point(7, 246)
         btnTimeInTimeOut.Margin = New Padding(2)
@@ -57,7 +60,7 @@ Partial Class a16_TimeIn_TimeOut
         ' PictureBox1
         ' 
         PictureBox1.Image = My.Resources.Resources.EmpImage1
-        PictureBox1.Location = New Point(124, 25)
+        PictureBox1.Location = New Point(127, 12)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(126, 117)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
@@ -72,11 +75,21 @@ Partial Class a16_TimeIn_TimeOut
         lblInfo.TabIndex = 32
         lblInfo.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' TimeIn_TimeOut
+        ' Label1
+        ' 
+        Label1.Location = New Point(12, 149)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(348, 25)
+        Label1.TabIndex = 33
+        Label1.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' a16_TimeIn_TimeOut
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ButtonShadow
         ClientSize = New Size(370, 318)
+        Controls.Add(Label1)
         Controls.Add(lblInfo)
         Controls.Add(PictureBox1)
         Controls.Add(txtEmpNo)
@@ -85,7 +98,7 @@ Partial Class a16_TimeIn_TimeOut
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         MinimizeBox = False
-        Name = "TimeIn_TimeOut"
+        Name = "a16_TimeIn_TimeOut"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Mark Attendence"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
@@ -96,4 +109,5 @@ Partial Class a16_TimeIn_TimeOut
     Friend WithEvents txtEmpNo As MaskedTextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents lblInfo As Label
+    Friend WithEvents Label1 As Label
 End Class

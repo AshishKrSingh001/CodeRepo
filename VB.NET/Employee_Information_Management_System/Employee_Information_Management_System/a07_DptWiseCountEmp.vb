@@ -3,14 +3,19 @@ Imports System.Data.SqlClient
 Public Class a07_DptWiseCountEmp
     Dim con As New SqlConnection(Form1.conString)
     Private Sub DptWiseCountEmp_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Dim rnd As New Form_Round(Me)
         Try
             Dim cmd As New SqlCommand("Select DptName,Count(EmpNo) as count from DeptTable,EmpTable Where DeptTable.DptNo = EmpTable.DptNo group by DptName", con)
             Dim da As New SqlDataAdapter(cmd)
             Dim ds As New DataSet
             da.Fill(ds, "Emp")
             DataGridView1.DataSource = ds.Tables("Emp")
-            DataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White
-            DataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.Black
+            With DataGridView1.ColumnHeadersDefaultCellStyle
+                .BackColor = Color.Black
+                .ForeColor = Color.White
+                .Font = New Font(DataGridView1.Font, FontStyle.Bold)
+            End With
+            DataGridView1.EnableHeadersVisualStyles = False
             With DataGridView1
                 .RowHeadersVisible = False
                 .Columns(0).HeaderCell.Value = "Department Name"

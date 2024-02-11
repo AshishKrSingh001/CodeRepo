@@ -16,8 +16,12 @@ Public Class a12_rptStartCharName
                 ds.Clear()
             End If
             DataGridView1.DataSource = ds.Tables("Emp")
-            DataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White
-            DataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.Black
+            With DataGridView1.ColumnHeadersDefaultCellStyle
+                .BackColor = Color.Black
+                .ForeColor = Color.White
+                .Font = New Font(DataGridView1.Font, FontStyle.Bold)
+            End With
+            DataGridView1.EnableHeadersVisualStyles = False
             With DataGridView1
                 .RowHeadersVisible = False
                 .Columns(0).HeaderCell.Value = "Employee's No"

@@ -7,14 +7,19 @@ Public Class a02_FormEmployee
     Dim inc As Integer = 0
     Dim maxRow As Integer = 0
     Sub displayRecords()
+        'Dim rnd As New Form_Round(Me)
         Try
             Dim cmd As New SqlCommand("Select * from EmpTable", con)
             Dim da As New SqlDataAdapter(cmd)
             ds = New DataSet
             da.Fill(ds, "Emp")
             dgvEmp.DataSource = ds.Tables("Emp")
-            dgvEmp.ColumnHeadersDefaultCellStyle.ForeColor = Color.White
-            dgvEmp.ColumnHeadersDefaultCellStyle.BackColor = Color.Black
+            With dgvEmp.ColumnHeadersDefaultCellStyle
+                .BackColor = Color.Black
+                .ForeColor = Color.White
+                .Font = New Font(dgvEmp.Font, FontStyle.Bold)
+            End With
+            dgvEmp.EnableHeadersVisualStyles = False
             With dgvEmp
                 .RowHeadersVisible = False
                 .Columns(0).HeaderCell.Value = "Employee's No"

@@ -33,11 +33,11 @@ Partial Class a12_rptStartCharName
         ' 
         DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Dock = DockStyle.Fill
-        DataGridView1.Location = New Point(0, 0)
+        DataGridView1.Cursor = Cursors.Hand
+        DataGridView1.Location = New Point(0, 41)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(1177, 664)
+        DataGridView1.Size = New Size(1177, 586)
         DataGridView1.TabIndex = 0
         ' 
         ' Label1
@@ -45,24 +45,29 @@ Partial Class a12_rptStartCharName
         Label1.Dock = DockStyle.Top
         Label1.Location = New Point(0, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(1177, 20)
+        Label1.Size = New Size(1177, 42)
         Label1.TabIndex = 1
         Label1.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' btnExportToExcel
         ' 
+        btnExportToExcel.BackColor = SystemColors.HotTrack
+        btnExportToExcel.Cursor = Cursors.Hand
         btnExportToExcel.Dock = DockStyle.Bottom
+        btnExportToExcel.FlatStyle = FlatStyle.Flat
+        btnExportToExcel.ForeColor = SystemColors.Control
         btnExportToExcel.Location = New Point(0, 624)
         btnExportToExcel.Name = "btnExportToExcel"
         btnExportToExcel.Size = New Size(1177, 40)
         btnExportToExcel.TabIndex = 20
         btnExportToExcel.Text = "Export To Excel"
-        btnExportToExcel.UseVisualStyleBackColor = True
+        btnExportToExcel.UseVisualStyleBackColor = False
         ' 
         ' a12_rptStartCharName
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ButtonShadow
         ClientSize = New Size(1177, 664)
         Controls.Add(btnExportToExcel)
         Controls.Add(Label1)

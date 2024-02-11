@@ -67,7 +67,8 @@ Partial Class a02_FormEmployee
         ' 
         dgvEmp.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvEmp.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvEmp.Location = New Point(462, 29)
+        dgvEmp.Cursor = Cursors.Hand
+        dgvEmp.Location = New Point(454, 11)
         dgvEmp.Margin = New Padding(2)
         dgvEmp.Name = "dgvEmp"
         dgvEmp.RowHeadersWidth = 51
@@ -82,7 +83,7 @@ Partial Class a02_FormEmployee
         gbOperations.Controls.Add(btnFilter)
         gbOperations.Controls.Add(btnUpdate)
         gbOperations.Controls.Add(btnInsert)
-        gbOperations.Location = New Point(13, 263)
+        gbOperations.Location = New Point(13, 246)
         gbOperations.Margin = New Padding(2)
         gbOperations.Name = "gbOperations"
         gbOperations.Padding = New Padding(2)
@@ -93,69 +94,93 @@ Partial Class a02_FormEmployee
         ' 
         ' btnShow
         ' 
+        btnShow.BackColor = SystemColors.HotTrack
+        btnShow.Cursor = Cursors.Hand
+        btnShow.FlatStyle = FlatStyle.Flat
+        btnShow.ForeColor = SystemColors.Control
         btnShow.Location = New Point(272, 41)
         btnShow.Margin = New Padding(2)
         btnShow.Name = "btnShow"
         btnShow.Size = New Size(106, 36)
         btnShow.TabIndex = 5
         btnShow.Text = "Reset"
-        btnShow.UseVisualStyleBackColor = True
+        btnShow.UseVisualStyleBackColor = False
         ' 
         ' btnClear
         ' 
+        btnClear.BackColor = SystemColors.HotTrack
+        btnClear.Cursor = Cursors.Hand
+        btnClear.FlatStyle = FlatStyle.Flat
+        btnClear.ForeColor = SystemColors.Control
         btnClear.Location = New Point(272, 89)
         btnClear.Margin = New Padding(2)
         btnClear.Name = "btnClear"
         btnClear.Size = New Size(106, 36)
         btnClear.TabIndex = 4
         btnClear.Text = "Clear"
-        btnClear.UseVisualStyleBackColor = True
+        btnClear.UseVisualStyleBackColor = False
         ' 
         ' btnDelete
         ' 
+        btnDelete.BackColor = SystemColors.HotTrack
+        btnDelete.Cursor = Cursors.Hand
+        btnDelete.FlatStyle = FlatStyle.Flat
+        btnDelete.ForeColor = SystemColors.Control
         btnDelete.Location = New Point(52, 89)
         btnDelete.Margin = New Padding(2)
         btnDelete.Name = "btnDelete"
         btnDelete.Size = New Size(106, 36)
         btnDelete.TabIndex = 3
         btnDelete.Text = "Delete"
-        btnDelete.UseVisualStyleBackColor = True
+        btnDelete.UseVisualStyleBackColor = False
         ' 
         ' btnFilter
         ' 
+        btnFilter.BackColor = SystemColors.HotTrack
+        btnFilter.Cursor = Cursors.Hand
+        btnFilter.FlatStyle = FlatStyle.Flat
+        btnFilter.ForeColor = SystemColors.Control
         btnFilter.Location = New Point(162, 89)
         btnFilter.Margin = New Padding(2)
         btnFilter.Name = "btnFilter"
         btnFilter.Size = New Size(106, 36)
         btnFilter.TabIndex = 2
         btnFilter.Text = "Filter"
-        btnFilter.UseVisualStyleBackColor = True
+        btnFilter.UseVisualStyleBackColor = False
         ' 
         ' btnUpdate
         ' 
+        btnUpdate.BackColor = SystemColors.HotTrack
+        btnUpdate.Cursor = Cursors.Hand
+        btnUpdate.FlatStyle = FlatStyle.Flat
+        btnUpdate.ForeColor = SystemColors.Control
         btnUpdate.Location = New Point(162, 41)
         btnUpdate.Margin = New Padding(2)
         btnUpdate.Name = "btnUpdate"
         btnUpdate.Size = New Size(106, 36)
         btnUpdate.TabIndex = 1
         btnUpdate.Text = "Update"
-        btnUpdate.UseVisualStyleBackColor = True
+        btnUpdate.UseVisualStyleBackColor = False
         ' 
         ' btnInsert
         ' 
+        btnInsert.BackColor = SystemColors.HotTrack
+        btnInsert.Cursor = Cursors.Hand
+        btnInsert.FlatStyle = FlatStyle.Flat
+        btnInsert.ForeColor = SystemColors.Control
         btnInsert.Location = New Point(52, 41)
         btnInsert.Margin = New Padding(2)
         btnInsert.Name = "btnInsert"
         btnInsert.Size = New Size(106, 36)
         btnInsert.TabIndex = 0
         btnInsert.Text = "Insert"
-        btnInsert.UseVisualStyleBackColor = True
+        btnInsert.UseVisualStyleBackColor = False
         ' 
         ' gbSorting
         ' 
         gbSorting.Controls.Add(btnDes)
         gbSorting.Controls.Add(btnAsc)
-        gbSorting.Location = New Point(13, 423)
+        gbSorting.Location = New Point(13, 406)
         gbSorting.Margin = New Padding(2)
         gbSorting.Name = "gbSorting"
         gbSorting.Padding = New Padding(2)
@@ -166,23 +191,31 @@ Partial Class a02_FormEmployee
         ' 
         ' btnDes
         ' 
+        btnDes.BackColor = SystemColors.HotTrack
+        btnDes.Cursor = Cursors.Hand
+        btnDes.FlatStyle = FlatStyle.Flat
+        btnDes.ForeColor = SystemColors.Control
         btnDes.Location = New Point(250, 27)
         btnDes.Margin = New Padding(2)
         btnDes.Name = "btnDes"
         btnDes.Size = New Size(131, 36)
         btnDes.TabIndex = 3
         btnDes.Text = "Decending"
-        btnDes.UseVisualStyleBackColor = True
+        btnDes.UseVisualStyleBackColor = False
         ' 
         ' btnAsc
         ' 
+        btnAsc.BackColor = SystemColors.HotTrack
+        btnAsc.Cursor = Cursors.Hand
+        btnAsc.FlatStyle = FlatStyle.Flat
+        btnAsc.ForeColor = SystemColors.Control
         btnAsc.Location = New Point(70, 27)
         btnAsc.Margin = New Padding(2)
         btnAsc.Name = "btnAsc"
         btnAsc.Size = New Size(131, 36)
         btnAsc.TabIndex = 1
         btnAsc.Text = "Ascending"
-        btnAsc.UseVisualStyleBackColor = True
+        btnAsc.UseVisualStyleBackColor = False
         ' 
         ' gbNavigation
         ' 
@@ -190,7 +223,7 @@ Partial Class a02_FormEmployee
         gbNavigation.Controls.Add(btnNav2)
         gbNavigation.Controls.Add(btnNav4)
         gbNavigation.Controls.Add(btnNav1)
-        gbNavigation.Location = New Point(11, 501)
+        gbNavigation.Location = New Point(11, 484)
         gbNavigation.Margin = New Padding(2)
         gbNavigation.Name = "gbNavigation"
         gbNavigation.Padding = New Padding(2)
@@ -201,47 +234,63 @@ Partial Class a02_FormEmployee
         ' 
         ' btnNav3
         ' 
+        btnNav3.BackColor = SystemColors.HotTrack
+        btnNav3.Cursor = Cursors.Hand
+        btnNav3.FlatStyle = FlatStyle.Flat
         btnNav3.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        btnNav3.ForeColor = SystemColors.Control
         btnNav3.Location = New Point(15, 36)
         btnNav3.Margin = New Padding(2)
         btnNav3.Name = "btnNav3"
         btnNav3.Size = New Size(100, 36)
         btnNav3.TabIndex = 4
         btnNav3.Text = "First"
-        btnNav3.UseVisualStyleBackColor = True
+        btnNav3.UseVisualStyleBackColor = False
         ' 
         ' btnNav2
         ' 
+        btnNav2.BackColor = SystemColors.HotTrack
+        btnNav2.Cursor = Cursors.Hand
+        btnNav2.FlatStyle = FlatStyle.Flat
         btnNav2.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        btnNav2.ForeColor = SystemColors.Control
         btnNav2.Location = New Point(223, 36)
         btnNav2.Margin = New Padding(2)
         btnNav2.Name = "btnNav2"
         btnNav2.Size = New Size(100, 36)
         btnNav2.TabIndex = 3
         btnNav2.Text = "Next"
-        btnNav2.UseVisualStyleBackColor = True
+        btnNav2.UseVisualStyleBackColor = False
         ' 
         ' btnNav4
         ' 
+        btnNav4.BackColor = SystemColors.HotTrack
+        btnNav4.Cursor = Cursors.Hand
+        btnNav4.FlatStyle = FlatStyle.Flat
         btnNav4.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        btnNav4.ForeColor = SystemColors.Control
         btnNav4.Location = New Point(327, 36)
         btnNav4.Margin = New Padding(2)
         btnNav4.Name = "btnNav4"
         btnNav4.Size = New Size(100, 36)
         btnNav4.TabIndex = 2
         btnNav4.Text = "Last"
-        btnNav4.UseVisualStyleBackColor = True
+        btnNav4.UseVisualStyleBackColor = False
         ' 
         ' btnNav1
         ' 
+        btnNav1.BackColor = SystemColors.HotTrack
+        btnNav1.Cursor = Cursors.Hand
+        btnNav1.FlatStyle = FlatStyle.Flat
         btnNav1.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        btnNav1.ForeColor = SystemColors.Control
         btnNav1.Location = New Point(119, 36)
         btnNav1.Margin = New Padding(2)
         btnNav1.Name = "btnNav1"
         btnNav1.Size = New Size(100, 36)
         btnNav1.TabIndex = 1
         btnNav1.Text = "Prev"
-        btnNav1.UseVisualStyleBackColor = True
+        btnNav1.UseVisualStyleBackColor = False
         ' 
         ' GroupBox1
         ' 
@@ -257,7 +306,7 @@ Partial Class a02_FormEmployee
         GroupBox1.Controls.Add(Label3)
         GroupBox1.Controls.Add(Label2)
         GroupBox1.Controls.Add(Label1)
-        GroupBox1.Location = New Point(14, 29)
+        GroupBox1.Location = New Point(14, 12)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(434, 229)
         GroupBox1.TabIndex = 19
@@ -384,20 +433,25 @@ Partial Class a02_FormEmployee
         ' 
         ' btnExportToExcel
         ' 
+        btnExportToExcel.BackColor = SystemColors.HotTrack
+        btnExportToExcel.Cursor = Cursors.Hand
         btnExportToExcel.Dock = DockStyle.Bottom
-        btnExportToExcel.Location = New Point(0, 592)
+        btnExportToExcel.FlatStyle = FlatStyle.Flat
+        btnExportToExcel.ForeColor = SystemColors.Control
+        btnExportToExcel.Location = New Point(0, 573)
         btnExportToExcel.Name = "btnExportToExcel"
         btnExportToExcel.Size = New Size(1467, 40)
         btnExportToExcel.TabIndex = 20
         btnExportToExcel.Text = "Export To Excel"
-        btnExportToExcel.UseVisualStyleBackColor = True
+        btnExportToExcel.UseVisualStyleBackColor = False
         ' 
-        ' FormEmployee
+        ' a02_FormEmployee
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         AutoSize = True
-        ClientSize = New Size(1467, 632)
+        BackColor = SystemColors.ButtonShadow
+        ClientSize = New Size(1467, 613)
         Controls.Add(btnExportToExcel)
         Controls.Add(GroupBox1)
         Controls.Add(gbNavigation)
@@ -408,7 +462,7 @@ Partial Class a02_FormEmployee
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         MinimizeBox = False
-        Name = "FormEmployee"
+        Name = "a02_FormEmployee"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Employee Information"
         CType(dgvEmp, ComponentModel.ISupportInitialize).EndInit()

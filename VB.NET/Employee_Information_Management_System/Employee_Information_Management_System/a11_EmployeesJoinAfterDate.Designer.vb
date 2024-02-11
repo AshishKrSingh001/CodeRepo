@@ -50,17 +50,22 @@ Partial Class a11_EmployeesJoinAfterDate
         ' 
         ' Button1
         ' 
+        Button1.BackColor = SystemColors.HotTrack
+        Button1.Cursor = Cursors.Hand
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.ForeColor = SystemColors.Control
         Button1.Location = New Point(711, 26)
         Button1.Name = "Button1"
-        Button1.Size = New Size(94, 40)
+        Button1.Size = New Size(158, 40)
         Button1.TabIndex = 2
         Button1.Text = "Show"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' DataGridView1
         ' 
         DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView1.Cursor = Cursors.Hand
         DataGridView1.Location = New Point(12, 89)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
@@ -78,18 +83,23 @@ Partial Class a11_EmployeesJoinAfterDate
         ' 
         ' btnExportToExcel
         ' 
+        btnExportToExcel.BackColor = SystemColors.HotTrack
+        btnExportToExcel.Cursor = Cursors.Hand
         btnExportToExcel.Dock = DockStyle.Bottom
+        btnExportToExcel.FlatStyle = FlatStyle.Flat
+        btnExportToExcel.ForeColor = SystemColors.Control
         btnExportToExcel.Location = New Point(0, 431)
         btnExportToExcel.Name = "btnExportToExcel"
         btnExportToExcel.Size = New Size(1160, 40)
         btnExportToExcel.TabIndex = 20
         btnExportToExcel.Text = "Export To Excel"
-        btnExportToExcel.UseVisualStyleBackColor = True
+        btnExportToExcel.UseVisualStyleBackColor = False
         ' 
-        ' EmployeesJoinAfterDate
+        ' a11_EmployeesJoinAfterDate
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ButtonShadow
         ClientSize = New Size(1160, 496)
         Controls.Add(btnExportToExcel)
         Controls.Add(Label2)
@@ -101,7 +111,7 @@ Partial Class a11_EmployeesJoinAfterDate
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         MinimizeBox = False
-        Name = "EmployeesJoinAfterDate"
+        Name = "a11_EmployeesJoinAfterDate"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Employees Joins After Given Date"
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()

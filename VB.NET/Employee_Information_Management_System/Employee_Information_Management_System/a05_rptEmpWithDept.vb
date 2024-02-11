@@ -5,14 +5,19 @@ Public Class a05_rptEmpWithDept
     Dim ds As DataSet
 
     Private Sub rptEmpWithDept_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Dim rnd As New Form_Round(Me)
         Try
             Dim cmd As New SqlCommand("Select EmpNo,EmpName,Salary,Date_Oj,EmpTable.DptNo,DptName,Location from EmpTable,DeptTable where EmpTable.DptNo = DeptTable.DptNo", con)
             Dim da As New SqlDataAdapter(cmd)
             ds = New DataSet
             da.Fill(ds, "Emp")
             DataGridView1.DataSource = ds.Tables("Emp")
-            DataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White
-            DataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.Black
+            With DataGridView1.ColumnHeadersDefaultCellStyle
+                .BackColor = Color.Black
+                .ForeColor = Color.White
+                .Font = New Font(DataGridView1.Font, FontStyle.Bold)
+            End With
+            DataGridView1.EnableHeadersVisualStyles = False
             With DataGridView1
                 .RowHeadersVisible = False
                 .Columns(0).HeaderCell.Value = "Employee's No"

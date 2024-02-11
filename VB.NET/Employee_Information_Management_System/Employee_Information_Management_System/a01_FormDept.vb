@@ -8,14 +8,21 @@ Public Class a01_FormDept
     Dim maxRow As Integer = 0
     Dim inc As Integer = 0
     Sub displayRecords()
+        'Dim rnd As New Form_Round(Me)
         Try
             Dim cmd As New SqlCommand("Select * from DeptTable", con)
             Dim da As New SqlDataAdapter(cmd)
             ds = New DataSet
             da.Fill(ds, "Dept")
             DataGridView1.DataSource = ds.Tables("Dept")
-            DataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White
-            DataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.Black
+
+            With DataGridView1.ColumnHeadersDefaultCellStyle
+                .BackColor = Color.Black
+                .ForeColor = Color.White
+                .Font = New Font(DataGridView1.Font, FontStyle.Bold)
+            End With
+
+            DataGridView1.EnableHeadersVisualStyles = False
             With DataGridView1
                 .RowHeadersVisible = False
                 .Columns(0).HeaderCell.Value = "Department No"

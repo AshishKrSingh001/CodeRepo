@@ -8,13 +8,17 @@ Public Class a15_rptAttendenceRecord
     Dim ds As DataSet
     Sub displayRecords()
         Try
-            Dim cmd As New SqlCommand("Select Id,EmpTable.EmpNo,EmpName,DptNo,attenDate,inTime,inStatus,outTime,outStatus from Attendence,EmpTable where Attendence.EmpNo = EmpTable.EmpNo", con)
+            Dim cmd As New SqlCommand("Select Id,EmpTable.EmpNo,EmpName,DptNo,attenDate,inTime,inStatus,outTime,outStatus,TimeDuration from Attendence,EmpTable where Attendence.EmpNo = EmpTable.EmpNo", con)
             Dim da As New SqlDataAdapter(cmd)
             ds = New DataSet
             da.Fill(ds, "Atten")
             dgvEmp.DataSource = ds.Tables("Atten")
-            dgvEmp.ColumnHeadersDefaultCellStyle.ForeColor = Color.White
-            dgvEmp.ColumnHeadersDefaultCellStyle.BackColor = Color.Black
+            With dgvEmp.ColumnHeadersDefaultCellStyle
+                .BackColor = Color.Black
+                .ForeColor = Color.White
+                .Font = New Font(dgvEmp.Font, FontStyle.Bold)
+            End With
+            dgvEmp.EnableHeadersVisualStyles = False
             With dgvEmp
                 .RowHeadersVisible = False
                 .Columns(0).HeaderCell.Value = "S.NO"
@@ -26,6 +30,7 @@ Public Class a15_rptAttendenceRecord
                 .Columns(6).HeaderCell.Value = "In Status"
                 .Columns(7).HeaderCell.Value = "Out Time"
                 .Columns(8).HeaderCell.Value = "Out Status"
+                .Columns(9).HeaderCell.Value = "Time Duration"
             End With
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -38,4 +43,6 @@ Public Class a15_rptAttendenceRecord
     Private Sub btnExportToExcel_Click(sender As Object, e As EventArgs) Handles btnExportToExcel.Click
         Dim ete As New Export_to_Excel(dgvEmp)
     End Sub
+
+
 End Class

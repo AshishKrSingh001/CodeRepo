@@ -36,6 +36,7 @@ Partial Class a08_EmpAccordingDptSelected
         ' 
         DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridView1.Cursor = Cursors.Hand
         DataGridView1.Location = New Point(10, 83)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
@@ -53,22 +54,30 @@ Partial Class a08_EmpAccordingDptSelected
         ' 
         ' btnExportToExcel
         ' 
+        btnExportToExcel.BackColor = SystemColors.HotTrack
+        btnExportToExcel.Cursor = Cursors.Hand
         btnExportToExcel.Dock = DockStyle.Bottom
+        btnExportToExcel.FlatStyle = FlatStyle.Flat
+        btnExportToExcel.ForeColor = SystemColors.Control
         btnExportToExcel.Location = New Point(0, 488)
         btnExportToExcel.Name = "btnExportToExcel"
         btnExportToExcel.Size = New Size(1116, 40)
         btnExportToExcel.TabIndex = 20
         btnExportToExcel.Text = "Export To Excel"
-        btnExportToExcel.UseVisualStyleBackColor = True
+        btnExportToExcel.UseVisualStyleBackColor = False
         ' 
         ' Button1
         ' 
+        Button1.BackColor = SystemColors.HotTrack
+        Button1.Cursor = Cursors.Hand
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.ForeColor = SystemColors.Control
         Button1.Location = New Point(677, 31)
         Button1.Name = "Button1"
         Button1.Size = New Size(94, 29)
         Button1.TabIndex = 4
         Button1.Text = "Select"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' ComboBox1
         ' 
@@ -91,6 +100,7 @@ Partial Class a08_EmpAccordingDptSelected
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = SystemColors.ButtonShadow
         ClientSize = New Size(1116, 553)
         Controls.Add(btnExportToExcel)
         Controls.Add(Label2)

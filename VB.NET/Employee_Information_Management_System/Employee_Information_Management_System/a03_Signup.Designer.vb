@@ -22,10 +22,12 @@ Partial Class a03_Signup
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(a03_Signup))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(a03_Signup))
         GroupBox1 = New GroupBox()
+        btnClear = New Button()
         txtNo = New MaskedTextBox()
         txtPassword = New TextBox()
+        btnInsert = New Button()
         Label5 = New Label()
         txtEmail = New TextBox()
         Label2 = New Label()
@@ -33,22 +35,18 @@ Partial Class a03_Signup
         Label1 = New Label()
         CheckBox1 = New CheckBox()
         Label4 = New Label()
-        DataGridview1 = New DataGridView()
-        gbOperations = New GroupBox()
-        btnClear = New Button()
-        btnDelete = New Button()
-        btnUpdate = New Button()
-        btnInsert = New Button()
+        PictureBox1 = New PictureBox()
         GroupBox1.SuspendLayout()
-        CType(DataGridview1, ComponentModel.ISupportInitialize).BeginInit()
-        gbOperations.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' GroupBox1
         ' 
-        GroupBox1.BackColor = SystemColors.Control
+        GroupBox1.BackColor = SystemColors.ButtonShadow
+        GroupBox1.Controls.Add(btnClear)
         GroupBox1.Controls.Add(txtNo)
         GroupBox1.Controls.Add(txtPassword)
+        GroupBox1.Controls.Add(btnInsert)
         GroupBox1.Controls.Add(Label5)
         GroupBox1.Controls.Add(txtEmail)
         GroupBox1.Controls.Add(Label2)
@@ -56,14 +54,28 @@ Partial Class a03_Signup
         GroupBox1.Controls.Add(Label1)
         GroupBox1.Controls.Add(CheckBox1)
         GroupBox1.Controls.Add(Label4)
-        GroupBox1.Font = New Font("Segoe UI", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
-        GroupBox1.Location = New Point(14, 21)
+        GroupBox1.Font = New Font("Segoe UI", 9F, FontStyle.Bold Or FontStyle.Italic)
+        GroupBox1.Location = New Point(12, 135)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(528, 225)
+        GroupBox1.Size = New Size(528, 277)
         GroupBox1.TabIndex = 13
         GroupBox1.TabStop = False
         GroupBox1.Text = "Register"
         GroupBox1.UseCompatibleTextRendering = True
+        ' 
+        ' btnClear
+        ' 
+        btnClear.BackColor = SystemColors.HotTrack
+        btnClear.Cursor = Cursors.Hand
+        btnClear.FlatStyle = FlatStyle.Flat
+        btnClear.ForeColor = SystemColors.Control
+        btnClear.Location = New Point(240, 218)
+        btnClear.Margin = New Padding(2)
+        btnClear.Name = "btnClear"
+        btnClear.Size = New Size(120, 43)
+        btnClear.TabIndex = 4
+        btnClear.Text = "Clear"
+        btnClear.UseVisualStyleBackColor = False
         ' 
         ' txtNo
         ' 
@@ -81,6 +93,20 @@ Partial Class a03_Signup
         txtPassword.Name = "txtPassword"
         txtPassword.Size = New Size(330, 27)
         txtPassword.TabIndex = 8
+        ' 
+        ' btnInsert
+        ' 
+        btnInsert.BackColor = SystemColors.HotTrack
+        btnInsert.Cursor = Cursors.Hand
+        btnInsert.FlatStyle = FlatStyle.Flat
+        btnInsert.ForeColor = SystemColors.Control
+        btnInsert.Location = New Point(387, 218)
+        btnInsert.Margin = New Padding(2)
+        btnInsert.Name = "btnInsert"
+        btnInsert.Size = New Size(120, 43)
+        btnInsert.TabIndex = 0
+        btnInsert.Text = "Insert"
+        btnInsert.UseVisualStyleBackColor = False
         ' 
         ' Label5
         ' 
@@ -141,91 +167,33 @@ Partial Class a03_Signup
         Label4.TabIndex = 4
         Label4.Text = "Employee's Id :"
         ' 
-        ' DataGridview1
+        ' PictureBox1
         ' 
-        DataGridview1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
-        DataGridview1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridview1.Location = New Point(558, 21)
-        DataGridview1.Margin = New Padding(2)
-        DataGridview1.Name = "DataGridview1"
-        DataGridview1.RowHeadersWidth = 51
-        DataGridview1.RowTemplate.Height = 29
-        DataGridview1.Size = New Size(567, 347)
-        DataGridview1.TabIndex = 14
+        PictureBox1.Image = My.Resources.Resources.EmpImage1
+        PictureBox1.Location = New Point(216, 12)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(126, 117)
+        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox1.TabIndex = 32
+        PictureBox1.TabStop = False
         ' 
-        ' gbOperations
-        ' 
-        gbOperations.Controls.Add(btnClear)
-        gbOperations.Controls.Add(btnDelete)
-        gbOperations.Controls.Add(btnUpdate)
-        gbOperations.Controls.Add(btnInsert)
-        gbOperations.Location = New Point(14, 262)
-        gbOperations.Margin = New Padding(2)
-        gbOperations.Name = "gbOperations"
-        gbOperations.Padding = New Padding(2)
-        gbOperations.Size = New Size(528, 106)
-        gbOperations.TabIndex = 18
-        gbOperations.TabStop = False
-        gbOperations.Text = "Operations"
-        ' 
-        ' btnClear
-        ' 
-        btnClear.Location = New Point(404, 41)
-        btnClear.Margin = New Padding(2)
-        btnClear.Name = "btnClear"
-        btnClear.Size = New Size(120, 43)
-        btnClear.TabIndex = 4
-        btnClear.Text = "Clear"
-        btnClear.UseVisualStyleBackColor = True
-        ' 
-        ' btnDelete
-        ' 
-        btnDelete.Location = New Point(280, 41)
-        btnDelete.Margin = New Padding(2)
-        btnDelete.Name = "btnDelete"
-        btnDelete.Size = New Size(120, 43)
-        btnDelete.TabIndex = 3
-        btnDelete.Text = "Delete"
-        btnDelete.UseVisualStyleBackColor = True
-        ' 
-        ' btnUpdate
-        ' 
-        btnUpdate.Location = New Point(156, 41)
-        btnUpdate.Margin = New Padding(2)
-        btnUpdate.Name = "btnUpdate"
-        btnUpdate.Size = New Size(120, 43)
-        btnUpdate.TabIndex = 1
-        btnUpdate.Text = "Update"
-        btnUpdate.UseVisualStyleBackColor = True
-        ' 
-        ' btnInsert
-        ' 
-        btnInsert.Location = New Point(32, 41)
-        btnInsert.Margin = New Padding(2)
-        btnInsert.Name = "btnInsert"
-        btnInsert.Size = New Size(120, 43)
-        btnInsert.TabIndex = 0
-        btnInsert.Text = "Insert"
-        btnInsert.UseVisualStyleBackColor = True
-        ' 
-        ' Signup
+        ' a03_Signup
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1137, 389)
-        Controls.Add(gbOperations)
-        Controls.Add(DataGridview1)
+        BackColor = SystemColors.ButtonShadow
+        ClientSize = New Size(548, 426)
+        Controls.Add(PictureBox1)
         Controls.Add(GroupBox1)
-        Font = New Font("Segoe UI", 9F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point)
+        Font = New Font("Segoe UI", 9F, FontStyle.Bold Or FontStyle.Italic)
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         MinimizeBox = False
-        Name = "Signup"
+        Name = "a03_Signup"
         StartPosition = FormStartPosition.CenterScreen
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
-        CType(DataGridview1, ComponentModel.ISupportInitialize).EndInit()
-        gbOperations.ResumeLayout(False)
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -238,11 +206,8 @@ Partial Class a03_Signup
     Friend WithEvents Label1 As Label
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents DataGridview1 As DataGridView
-    Friend WithEvents gbOperations As GroupBox
-    Friend WithEvents btnClear As Button
-    Friend WithEvents btnDelete As Button
-    Friend WithEvents btnUpdate As Button
     Friend WithEvents btnInsert As Button
     Friend WithEvents txtNo As MaskedTextBox
+    Friend WithEvents btnClear As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
