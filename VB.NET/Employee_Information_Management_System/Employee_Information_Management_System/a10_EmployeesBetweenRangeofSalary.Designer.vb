@@ -39,9 +39,9 @@ Partial Class a10_EmployeesBetweenRangeofSalary
         ' Label2
         ' 
         Label2.Dock = DockStyle.Bottom
-        Label2.Location = New Point(0, 554)
+        Label2.Location = New Point(0, 699)
         Label2.Name = "Label2"
-        Label2.Size = New Size(1158, 25)
+        Label2.Size = New Size(1754, 25)
         Label2.TabIndex = 14
         Label2.TextAlign = ContentAlignment.MiddleCenter
         ' 
@@ -53,7 +53,7 @@ Partial Class a10_EmployeesBetweenRangeofSalary
         DataGridView1.Location = New Point(10, 61)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(1136, 447)
+        DataGridView1.Size = New Size(1744, 592)
         DataGridView1.TabIndex = 10
         ' 
         ' GroupBox1
@@ -66,14 +66,14 @@ Partial Class a10_EmployeesBetweenRangeofSalary
         GroupBox1.Dock = DockStyle.Top
         GroupBox1.Location = New Point(0, 0)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(1158, 55)
+        GroupBox1.Size = New Size(1754, 55)
         GroupBox1.TabIndex = 15
         GroupBox1.TabStop = False
         GroupBox1.Text = "Form"
         ' 
         ' TextBox2
         ' 
-        TextBox2.Location = New Point(617, 23)
+        TextBox2.Location = New Point(934, 20)
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(237, 27)
         TextBox2.TabIndex = 26
@@ -81,7 +81,7 @@ Partial Class a10_EmployeesBetweenRangeofSalary
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(521, 26)
+        Label1.Location = New Point(838, 23)
         Label1.Name = "Label1"
         Label1.Size = New Size(88, 20)
         Label1.TabIndex = 25
@@ -89,7 +89,7 @@ Partial Class a10_EmployeesBetweenRangeofSalary
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(245, 23)
+        TextBox1.Location = New Point(562, 20)
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(237, 27)
         TextBox1.TabIndex = 24
@@ -97,7 +97,7 @@ Partial Class a10_EmployeesBetweenRangeofSalary
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(132, 26)
+        Label3.Location = New Point(449, 23)
         Label3.Name = "Label3"
         Label3.Size = New Size(107, 20)
         Label3.TabIndex = 23
@@ -109,7 +109,7 @@ Partial Class a10_EmployeesBetweenRangeofSalary
         Button1.Cursor = Cursors.Hand
         Button1.FlatStyle = FlatStyle.Flat
         Button1.ForeColor = SystemColors.Control
-        Button1.Location = New Point(886, 20)
+        Button1.Location = New Point(1203, 17)
         Button1.Name = "Button1"
         Button1.Size = New Size(129, 32)
         Button1.TabIndex = 22
@@ -123,9 +123,9 @@ Partial Class a10_EmployeesBetweenRangeofSalary
         btnExportToExcel.Dock = DockStyle.Bottom
         btnExportToExcel.FlatStyle = FlatStyle.Flat
         btnExportToExcel.ForeColor = SystemColors.Control
-        btnExportToExcel.Location = New Point(0, 514)
+        btnExportToExcel.Location = New Point(0, 659)
         btnExportToExcel.Name = "btnExportToExcel"
-        btnExportToExcel.Size = New Size(1158, 40)
+        btnExportToExcel.Size = New Size(1754, 40)
         btnExportToExcel.TabIndex = 20
         btnExportToExcel.Text = "Export To Excel"
         btnExportToExcel.UseVisualStyleBackColor = False
@@ -135,7 +135,7 @@ Partial Class a10_EmployeesBetweenRangeofSalary
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ButtonShadow
-        ClientSize = New Size(1158, 579)
+        ClientSize = New Size(1754, 724)
         Controls.Add(btnExportToExcel)
         Controls.Add(GroupBox1)
         Controls.Add(Label2)

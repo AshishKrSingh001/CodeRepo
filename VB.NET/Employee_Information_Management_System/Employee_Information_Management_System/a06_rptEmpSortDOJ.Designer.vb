@@ -34,11 +34,10 @@ Partial Class a06_rptEmpSortDOJ
         DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView1.Cursor = Cursors.Hand
-        DataGridView1.Dock = DockStyle.Fill
-        DataGridView1.Location = New Point(0, 0)
+        DataGridView1.Location = New Point(0, 37)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(1245, 514)
+        DataGridView1.Size = New Size(1587, 547)
         DataGridView1.TabIndex = 1
         ' 
         ' lblCount
@@ -48,7 +47,7 @@ Partial Class a06_rptEmpSortDOJ
         lblCount.Location = New Point(0, 0)
         lblCount.Margin = New Padding(2, 0, 2, 0)
         lblCount.Name = "lblCount"
-        lblCount.Size = New Size(1245, 34)
+        lblCount.Size = New Size(1587, 34)
         lblCount.TabIndex = 21
         lblCount.TextAlign = ContentAlignment.MiddleCenter
         ' 
@@ -59,9 +58,9 @@ Partial Class a06_rptEmpSortDOJ
         Button1.Dock = DockStyle.Bottom
         Button1.FlatStyle = FlatStyle.Flat
         Button1.ForeColor = SystemColors.Control
-        Button1.Location = New Point(0, 474)
+        Button1.Location = New Point(0, 590)
         Button1.Name = "Button1"
-        Button1.Size = New Size(1245, 40)
+        Button1.Size = New Size(1587, 40)
         Button1.TabIndex = 22
         Button1.Text = "Export To Excel"
         Button1.UseVisualStyleBackColor = False
@@ -71,7 +70,7 @@ Partial Class a06_rptEmpSortDOJ
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ButtonShadow
-        ClientSize = New Size(1245, 514)
+        ClientSize = New Size(1587, 630)
         Controls.Add(Button1)
         Controls.Add(lblCount)
         Controls.Add(DataGridView1)

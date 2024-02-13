@@ -1,13 +1,25 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
+Imports System.Runtime.InteropServices.JavaScript.JSType
 
 Public Class a02_FormEmployee
     Dim con As New SqlConnection(Form1.conString)
     Dim ds As DataSet
     Dim inc As Integer = 0
     Dim maxRow As Integer = 0
+    Dim gen As String = ""
+    Dim marry As String = ""
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles cbsame.CheckedChanged
+        If cbsame.Checked = True Then
+            txtpAdd.Text = txtcAdd.Text
+        Else
+            txtpAdd.Text = ""
+        End If
+    End Sub
     Sub displayRecords()
         'Dim rnd As New Form_Round(Me)
+
+
         Try
             Dim cmd As New SqlCommand("Select * from EmpTable", con)
             Dim da As New SqlDataAdapter(cmd)
@@ -29,7 +41,23 @@ Public Class a02_FormEmployee
                 .Columns(4).HeaderCell.Value = "Date of Joining"
                 .Columns(5).HeaderCell.Value = "Email"
                 .Columns(6).HeaderCell.Value = "Mobile No"
-                .Columns(5).FillWeight = 155
+                .Columns(7).HeaderCell.Value = "Date of Birth"
+                .Columns(8).HeaderCell.Value = "Gender"
+                .Columns(9).HeaderCell.Value = "Marital Status"
+                .Columns(10).HeaderCell.Value = "Blood Group"
+                .Columns(11).HeaderCell.Value = "Corrospondence Address"
+                .Columns(12).HeaderCell.Value = "Permanent Address"
+                .Columns(0).FillWeight = 40
+                .Columns(1).FillWeight = 80
+                .Columns(2).FillWeight = 40
+                .Columns(3).FillWeight = 40
+                .Columns(4).FillWeight = 60
+                .Columns(5).FillWeight = 100
+                .Columns(6).FillWeight = 60
+                .Columns(7).FillWeight = 70
+                .Columns(8).FillWeight = 40
+                .Columns(9).FillWeight = 60
+                .Columns(10).FillWeight = 40
             End With
             inc = 0
             maxRow = ds.Tables("Emp").Rows.Count
@@ -46,15 +74,18 @@ Public Class a02_FormEmployee
         txtSalary.Text = ""
         txtMobNo.Text = ""
         dtpDate.Value = DateTime.Now.Date
+        dtpDob.Value = New Date(1995, 1, 1)
+        dtpDob.MaxDate = New Date(2010, 1, 1)
         dtpDate.MaxDate = DateTime.Now.Date
+        rbMale.Checked = False
+        rbFemale.Checked = False
+        rbo.Checked = False
+        rbM.Checked = False
+        rbUnM.Checked = False
+        txtpAdd.Clear()
+        txtcAdd.Clear()
+        cbsame.Checked = False
 
-    End Sub
-
-
-    Private Sub txtSalary_TextChanged(sender As Object, e As EventArgs)
-        If IsNumeric(txtSalary.Text) = False Then
-            ErrorProvider1.SetError(txtSalary, "Salary Should be Numeric")
-        End If
     End Sub
 
     Sub ComboBox_Value()
@@ -79,8 +110,16 @@ Public Class a02_FormEmployee
 
 
     Private Function isEmpty() As Boolean
-        If txtEmpNo.Text = "" And txtEmpName.Text = "" And txtSalary.Text = "" And txtMobNo.Text = "" Then
-            Return True
+        If txtEmpNo.Text = "" And txtEmpName.Text = "" And txtSalary.Text = "" And txtMobNo.Text = "" And txtcAdd.Text = "" Then
+            If rbFemale.Checked = False And rbMale.Checked = False And rbo.Checked = False Then
+                If rbM.Checked = False And rbUnM.Checked = False Then
+                    Return True
+                Else
+                    Return False
+                End If
+            Else
+                Return False
+            End If
         Else
             Return False
         End If
@@ -109,10 +148,26 @@ Public Class a02_FormEmployee
         Name = Name.Replace(" ", "").Trim
         Return Name.ToLower & "." & id & "@hues.in"
     End Function
+    Sub radioValue()
+        If rbMale.Checked = True Then
+            gen = "Male"
+        ElseIf rbFemale.Checked = True Then
+            gen = "Female"
+        ElseIf rbo.Checked = True Then
+            gen = "Other"
+        End If
+        If rbM.Checked = True Then
+            marry = "Married"
+        ElseIf rbUnM.Checked = True Then
+            marry = "Unmarried"
+        End If
+    End Sub
     Private Sub btnInsert_Click(sender As Object, e As EventArgs) Handles btnInsert.Click
         If isEmpty() = False Then
+            radioValue()
             Try
-                Dim cmd As New SqlCommand("Insert into EmpTable(EmpNo,EmpName,Salary,DptNo,Date_Oj,Email,MobNo) values(@Empno,@Empname,@salary,@DptNo,@doj,@email,@mob)", con)
+                Dim cmd As New SqlCommand("Insert into EmpTable(EmpNo,EmpName,Salary,DptNo,Date_Oj,Email,MobNo,DOB,Gender,MaritalStatus,BloodGroup,CorrospondenceAddress,PermanentAddress) values(@Empno,@Empname,@salary,@DptNo,@doj,@email,@mob,@dob,@gen,@ms,@bgroup,@ca,@pa)", con)
+                cmd.Parameters.Clear()
                 cmd.Parameters.Add("@Empno", SqlDbType.Int).Value = CInt(txtEmpNo.Text)
                 cmd.Parameters.Add("@Empname", SqlDbType.VarChar).Value = txtEmpName.Text
                 cmd.Parameters.Add("@salary", SqlDbType.Decimal).Value = CDec(txtSalary.Text)
@@ -120,6 +175,12 @@ Public Class a02_FormEmployee
                 cmd.Parameters.Add("@doj", SqlDbType.Date).Value = dtpDate.Value
                 cmd.Parameters.Add("@email", SqlDbType.VarChar).Value = GenerateEmail(txtEmpName.Text, CInt(txtEmpNo.Text))
                 cmd.Parameters.Add("@mob", SqlDbType.VarChar).Value = txtMobNo.Text
+                cmd.Parameters.Add("@dob", SqlDbType.Date).Value = dtpDob.Value
+                cmd.Parameters.Add("@gen", SqlDbType.VarChar).Value = gen
+                cmd.Parameters.Add("@ms", SqlDbType.VarChar).Value = marry
+                cmd.Parameters.Add("@bgroup", SqlDbType.VarChar).Value = cmbBlood.Text
+                cmd.Parameters.Add("@ca", SqlDbType.VarChar).Value = txtcAdd.Text
+                cmd.Parameters.Add("@pa", SqlDbType.VarChar).Value = txtpAdd.Text
                 con.Open()
                 Dim flag As Integer = 0
                 flag = cmd.ExecuteNonQuery()
@@ -168,15 +229,24 @@ Public Class a02_FormEmployee
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
+
         If isEmpty() = False Then
             Try
-                Dim cmd As New SqlCommand("Update EmpTable set EmpNo=@Empno,EmpName=@Empname,Salary=@salary,DptNo=@DptNo,Date_Oj=@doj,MobNo = @mob where EmpNo = @Empno", con)
+                radioValue()
+                Dim cmd As New SqlCommand("Update EmpTable set EmpNo=@Empno,EmpName=@Empname,Salary=@salary,DptNo=@DptNo,Date_Oj=@doj,MobNo = @mob,DOB = @dob,Gender = @gen,MaritalStatus = @ms,BloodGroup = @bgroup,CorrospondenceAddress = @ca,PermanentAddress = @pa where EmpNo = @Empno", con)
                 cmd.Parameters.Add("@Empno", SqlDbType.Int).Value = CInt(txtEmpNo.Text)
                 cmd.Parameters.Add("@Empname", SqlDbType.VarChar).Value = txtEmpName.Text
                 cmd.Parameters.Add("@salary", SqlDbType.Decimal).Value = CDec(txtSalary.Text)
                 cmd.Parameters.Add("@DptNo", SqlDbType.Int).Value = CInt(cmbDeptName.SelectedValue)
                 cmd.Parameters.Add("@doj", SqlDbType.Date).Value = dtpDate.Value
+                cmd.Parameters.Add("@email", SqlDbType.VarChar).Value = GenerateEmail(txtEmpName.Text, CInt(txtEmpNo.Text))
                 cmd.Parameters.Add("@mob", SqlDbType.VarChar).Value = txtMobNo.Text
+                cmd.Parameters.Add("@dob", SqlDbType.Date).Value = dtpDob.Value
+                cmd.Parameters.Add("@gen", SqlDbType.VarChar).Value = gen
+                cmd.Parameters.Add("@ms", SqlDbType.VarChar).Value = marry
+                cmd.Parameters.Add("@bgroup", SqlDbType.VarChar).Value = cmbBlood.Text
+                cmd.Parameters.Add("@ca", SqlDbType.VarChar).Value = txtcAdd.Text
+                cmd.Parameters.Add("@pa", SqlDbType.VarChar).Value = txtpAdd.Text
                 con.Open()
                 Dim flag As Integer = 0
                 flag = cmd.ExecuteNonQuery()
@@ -208,6 +278,7 @@ Public Class a02_FormEmployee
         displayRecords()
     End Sub
 
+
     Private Sub dgvEmp_cellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvEmp.CellContentClick
         txtEmpNo.Text = dgvEmp.CurrentRow.Cells(0).Value
         txtEmpName.Text = dgvEmp.CurrentRow.Cells(1).Value
@@ -215,6 +286,22 @@ Public Class a02_FormEmployee
         cmbDeptName.SelectedValue = dgvEmp.CurrentRow.Cells(3).Value
         dtpDate.Value = dgvEmp.CurrentRow.Cells(4).Value
         txtMobNo.Text = dgvEmp.CurrentRow.Cells(6).Value
+        dtpDate.Value = dgvEmp.CurrentRow.Cells(7).Value
+        If dgvEmp.CurrentRow.Cells(8).Value = "Male" Then
+            rbMale.Checked = True
+        ElseIf dgvEmp.CurrentRow.Cells(8).Value = "Female" Then
+            rbFemale.Checked = True
+        ElseIf dgvEmp.CurrentRow.Cells(8).Value = "Other" Then
+            rbo.Checked = True
+        End If
+        If dgvEmp.CurrentRow.Cells(9).Value = "Married" Then
+            rbM.Checked = True
+        ElseIf dgvEmp.CurrentRow.Cells(9).Value = "Unmarried" Then
+            rbUnM.Checked = True
+        End If
+        cmbBlood.Text = dgvEmp.CurrentRow.Cells(10).Value
+        txtcAdd.Text = dgvEmp.CurrentRow.Cells(11).Value
+        txtpAdd.Text = dgvEmp.CurrentRow.Cells(12).Value
     End Sub
 
     Private Sub btnFilter_Click(sender As Object, e As EventArgs) Handles btnFilter.Click
@@ -238,6 +325,22 @@ Public Class a02_FormEmployee
                     cmbDeptName.SelectedValue = .Item(3)
                     dtpDate.Value = .Item(4)
                     txtMobNo.Text = .Item(6)
+                    dtpDate.Value = .Item(7)
+                    If .Item(8) = "Male" Then
+                        rbMale.Checked = True
+                    ElseIf .Item(8) = "Female" Then
+                        rbFemale.Checked = True
+                    ElseIf .Item(8) = "Other" Then
+                        rbo.Checked = True
+                    End If
+                    If .Item(9) = "Married" Then
+                        rbM.Checked = True
+                    ElseIf .Item(9) = "Unmarried" Then
+                        rbUnM.Checked = True
+                    End If
+                    cmbBlood.SelectedValue = .Item(10)
+                    txtcAdd.Text = .Item(11)
+                    txtpAdd.Text = .Item(12)
                 End With
             Else
                 ClearControls()

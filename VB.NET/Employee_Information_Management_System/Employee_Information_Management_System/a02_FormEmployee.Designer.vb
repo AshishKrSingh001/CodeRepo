@@ -22,7 +22,6 @@ Partial Class a02_FormEmployee
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(a02_FormEmployee))
         dgvEmp = New DataGridView()
         gbOperations = New GroupBox()
@@ -53,14 +52,34 @@ Partial Class a02_FormEmployee
         Label3 = New Label()
         Label2 = New Label()
         Label1 = New Label()
-        ErrorProvider1 = New ErrorProvider(components)
         btnExportToExcel = New Button()
+        GroupBox2 = New GroupBox()
+        cmbBlood = New ComboBox()
+        Label8 = New Label()
+        GroupBox4 = New GroupBox()
+        rbUnM = New RadioButton()
+        rbM = New RadioButton()
+        GroupBox3 = New GroupBox()
+        rbo = New RadioButton()
+        rbFemale = New RadioButton()
+        rbMale = New RadioButton()
+        dtpDob = New DateTimePicker()
+        Label7 = New Label()
+        txtcAdd = New TextBox()
+        txtpAdd = New TextBox()
+        Label9 = New Label()
+        Label10 = New Label()
+        GroupBox5 = New GroupBox()
+        cbsame = New CheckBox()
         CType(dgvEmp, ComponentModel.ISupportInitialize).BeginInit()
         gbOperations.SuspendLayout()
         gbSorting.SuspendLayout()
         gbNavigation.SuspendLayout()
         GroupBox1.SuspendLayout()
-        CType(ErrorProvider1, ComponentModel.ISupportInitialize).BeginInit()
+        GroupBox2.SuspendLayout()
+        GroupBox4.SuspendLayout()
+        GroupBox3.SuspendLayout()
+        GroupBox5.SuspendLayout()
         SuspendLayout()
         ' 
         ' dgvEmp
@@ -68,11 +87,11 @@ Partial Class a02_FormEmployee
         dgvEmp.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvEmp.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvEmp.Cursor = Cursors.Hand
-        dgvEmp.Location = New Point(454, 11)
+        dgvEmp.Location = New Point(453, 10)
         dgvEmp.Margin = New Padding(2)
         dgvEmp.Name = "dgvEmp"
         dgvEmp.RowHeadersWidth = 51
-        dgvEmp.Size = New Size(1002, 556)
+        dgvEmp.Size = New Size(1305, 660)
         dgvEmp.TabIndex = 5
         ' 
         ' gbOperations
@@ -83,11 +102,11 @@ Partial Class a02_FormEmployee
         gbOperations.Controls.Add(btnFilter)
         gbOperations.Controls.Add(btnUpdate)
         gbOperations.Controls.Add(btnInsert)
-        gbOperations.Location = New Point(13, 246)
+        gbOperations.Location = New Point(11, 674)
         gbOperations.Margin = New Padding(2)
         gbOperations.Name = "gbOperations"
         gbOperations.Padding = New Padding(2)
-        gbOperations.Size = New Size(435, 156)
+        gbOperations.Size = New Size(815, 74)
         gbOperations.TabIndex = 14
         gbOperations.TabStop = False
         gbOperations.Text = "Operations"
@@ -98,10 +117,10 @@ Partial Class a02_FormEmployee
         btnShow.Cursor = Cursors.Hand
         btnShow.FlatStyle = FlatStyle.Flat
         btnShow.ForeColor = SystemColors.Control
-        btnShow.Location = New Point(272, 41)
+        btnShow.Location = New Point(295, 31)
         btnShow.Margin = New Padding(2)
         btnShow.Name = "btnShow"
-        btnShow.Size = New Size(106, 36)
+        btnShow.Size = New Size(125, 35)
         btnShow.TabIndex = 5
         btnShow.Text = "Reset"
         btnShow.UseVisualStyleBackColor = False
@@ -112,10 +131,10 @@ Partial Class a02_FormEmployee
         btnClear.Cursor = Cursors.Hand
         btnClear.FlatStyle = FlatStyle.Flat
         btnClear.ForeColor = SystemColors.Control
-        btnClear.Location = New Point(272, 89)
+        btnClear.Location = New Point(682, 31)
         btnClear.Margin = New Padding(2)
         btnClear.Name = "btnClear"
-        btnClear.Size = New Size(106, 36)
+        btnClear.Size = New Size(125, 35)
         btnClear.TabIndex = 4
         btnClear.Text = "Clear"
         btnClear.UseVisualStyleBackColor = False
@@ -126,10 +145,10 @@ Partial Class a02_FormEmployee
         btnDelete.Cursor = Cursors.Hand
         btnDelete.FlatStyle = FlatStyle.Flat
         btnDelete.ForeColor = SystemColors.Control
-        btnDelete.Location = New Point(52, 89)
+        btnDelete.Location = New Point(424, 31)
         btnDelete.Margin = New Padding(2)
         btnDelete.Name = "btnDelete"
-        btnDelete.Size = New Size(106, 36)
+        btnDelete.Size = New Size(125, 35)
         btnDelete.TabIndex = 3
         btnDelete.Text = "Delete"
         btnDelete.UseVisualStyleBackColor = False
@@ -140,10 +159,10 @@ Partial Class a02_FormEmployee
         btnFilter.Cursor = Cursors.Hand
         btnFilter.FlatStyle = FlatStyle.Flat
         btnFilter.ForeColor = SystemColors.Control
-        btnFilter.Location = New Point(162, 89)
+        btnFilter.Location = New Point(553, 31)
         btnFilter.Margin = New Padding(2)
         btnFilter.Name = "btnFilter"
-        btnFilter.Size = New Size(106, 36)
+        btnFilter.Size = New Size(125, 35)
         btnFilter.TabIndex = 2
         btnFilter.Text = "Filter"
         btnFilter.UseVisualStyleBackColor = False
@@ -154,10 +173,10 @@ Partial Class a02_FormEmployee
         btnUpdate.Cursor = Cursors.Hand
         btnUpdate.FlatStyle = FlatStyle.Flat
         btnUpdate.ForeColor = SystemColors.Control
-        btnUpdate.Location = New Point(162, 41)
+        btnUpdate.Location = New Point(166, 31)
         btnUpdate.Margin = New Padding(2)
         btnUpdate.Name = "btnUpdate"
-        btnUpdate.Size = New Size(106, 36)
+        btnUpdate.Size = New Size(125, 35)
         btnUpdate.TabIndex = 1
         btnUpdate.Text = "Update"
         btnUpdate.UseVisualStyleBackColor = False
@@ -168,10 +187,10 @@ Partial Class a02_FormEmployee
         btnInsert.Cursor = Cursors.Hand
         btnInsert.FlatStyle = FlatStyle.Flat
         btnInsert.ForeColor = SystemColors.Control
-        btnInsert.Location = New Point(52, 41)
+        btnInsert.Location = New Point(37, 30)
         btnInsert.Margin = New Padding(2)
         btnInsert.Name = "btnInsert"
-        btnInsert.Size = New Size(106, 36)
+        btnInsert.Size = New Size(125, 35)
         btnInsert.TabIndex = 0
         btnInsert.Text = "Insert"
         btnInsert.UseVisualStyleBackColor = False
@@ -180,11 +199,11 @@ Partial Class a02_FormEmployee
         ' 
         gbSorting.Controls.Add(btnDes)
         gbSorting.Controls.Add(btnAsc)
-        gbSorting.Location = New Point(13, 406)
+        gbSorting.Location = New Point(1421, 675)
         gbSorting.Margin = New Padding(2)
         gbSorting.Name = "gbSorting"
         gbSorting.Padding = New Padding(2)
-        gbSorting.Size = New Size(434, 74)
+        gbSorting.Size = New Size(340, 74)
         gbSorting.TabIndex = 16
         gbSorting.TabStop = False
         gbSorting.Text = "Sorting"
@@ -195,10 +214,10 @@ Partial Class a02_FormEmployee
         btnDes.Cursor = Cursors.Hand
         btnDes.FlatStyle = FlatStyle.Flat
         btnDes.ForeColor = SystemColors.Control
-        btnDes.Location = New Point(250, 27)
+        btnDes.Location = New Point(199, 30)
         btnDes.Margin = New Padding(2)
         btnDes.Name = "btnDes"
-        btnDes.Size = New Size(131, 36)
+        btnDes.Size = New Size(125, 35)
         btnDes.TabIndex = 3
         btnDes.Text = "Decending"
         btnDes.UseVisualStyleBackColor = False
@@ -209,10 +228,10 @@ Partial Class a02_FormEmployee
         btnAsc.Cursor = Cursors.Hand
         btnAsc.FlatStyle = FlatStyle.Flat
         btnAsc.ForeColor = SystemColors.Control
-        btnAsc.Location = New Point(70, 27)
+        btnAsc.Location = New Point(70, 29)
         btnAsc.Margin = New Padding(2)
         btnAsc.Name = "btnAsc"
-        btnAsc.Size = New Size(131, 36)
+        btnAsc.Size = New Size(125, 35)
         btnAsc.TabIndex = 1
         btnAsc.Text = "Ascending"
         btnAsc.UseVisualStyleBackColor = False
@@ -223,11 +242,11 @@ Partial Class a02_FormEmployee
         gbNavigation.Controls.Add(btnNav2)
         gbNavigation.Controls.Add(btnNav4)
         gbNavigation.Controls.Add(btnNav1)
-        gbNavigation.Location = New Point(11, 484)
+        gbNavigation.Location = New Point(830, 675)
         gbNavigation.Margin = New Padding(2)
         gbNavigation.Name = "gbNavigation"
         gbNavigation.Padding = New Padding(2)
-        gbNavigation.Size = New Size(436, 84)
+        gbNavigation.Size = New Size(587, 74)
         gbNavigation.TabIndex = 17
         gbNavigation.TabStop = False
         gbNavigation.Text = "Navigation"
@@ -239,10 +258,10 @@ Partial Class a02_FormEmployee
         btnNav3.FlatStyle = FlatStyle.Flat
         btnNav3.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         btnNav3.ForeColor = SystemColors.Control
-        btnNav3.Location = New Point(15, 36)
+        btnNav3.Location = New Point(69, 28)
         btnNav3.Margin = New Padding(2)
         btnNav3.Name = "btnNav3"
-        btnNav3.Size = New Size(100, 36)
+        btnNav3.Size = New Size(125, 35)
         btnNav3.TabIndex = 4
         btnNav3.Text = "First"
         btnNav3.UseVisualStyleBackColor = False
@@ -254,10 +273,10 @@ Partial Class a02_FormEmployee
         btnNav2.FlatStyle = FlatStyle.Flat
         btnNav2.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         btnNav2.ForeColor = SystemColors.Control
-        btnNav2.Location = New Point(223, 36)
+        btnNav2.Location = New Point(327, 28)
         btnNav2.Margin = New Padding(2)
         btnNav2.Name = "btnNav2"
-        btnNav2.Size = New Size(100, 36)
+        btnNav2.Size = New Size(125, 35)
         btnNav2.TabIndex = 3
         btnNav2.Text = "Next"
         btnNav2.UseVisualStyleBackColor = False
@@ -269,10 +288,10 @@ Partial Class a02_FormEmployee
         btnNav4.FlatStyle = FlatStyle.Flat
         btnNav4.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         btnNav4.ForeColor = SystemColors.Control
-        btnNav4.Location = New Point(327, 36)
+        btnNav4.Location = New Point(456, 28)
         btnNav4.Margin = New Padding(2)
         btnNav4.Name = "btnNav4"
-        btnNav4.Size = New Size(100, 36)
+        btnNav4.Size = New Size(125, 35)
         btnNav4.TabIndex = 2
         btnNav4.Text = "Last"
         btnNav4.UseVisualStyleBackColor = False
@@ -284,10 +303,10 @@ Partial Class a02_FormEmployee
         btnNav1.FlatStyle = FlatStyle.Flat
         btnNav1.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         btnNav1.ForeColor = SystemColors.Control
-        btnNav1.Location = New Point(119, 36)
+        btnNav1.Location = New Point(198, 28)
         btnNav1.Margin = New Padding(2)
         btnNav1.Name = "btnNav1"
-        btnNav1.Size = New Size(100, 36)
+        btnNav1.Size = New Size(125, 35)
         btnNav1.TabIndex = 1
         btnNav1.Text = "Prev"
         btnNav1.UseVisualStyleBackColor = False
@@ -308,10 +327,10 @@ Partial Class a02_FormEmployee
         GroupBox1.Controls.Add(Label1)
         GroupBox1.Location = New Point(14, 12)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(434, 229)
+        GroupBox1.Size = New Size(434, 222)
         GroupBox1.TabIndex = 19
         GroupBox1.TabStop = False
-        GroupBox1.Text = "Form"
+        GroupBox1.Text = "Employee Details"
         ' 
         ' txtMobNo
         ' 
@@ -363,7 +382,7 @@ Partial Class a02_FormEmployee
         ' 
         ' txtSalary
         ' 
-        txtSalary.Location = New Point(162, 87)
+        txtSalary.Location = New Point(162, 88)
         txtSalary.Margin = New Padding(2)
         txtSalary.Name = "txtSalary"
         txtSalary.Size = New Size(245, 27)
@@ -427,10 +446,6 @@ Partial Class a02_FormEmployee
         Label1.TabIndex = 19
         Label1.Text = "Employee No : "
         ' 
-        ' ErrorProvider1
-        ' 
-        ErrorProvider1.ContainerControl = Me
-        ' 
         ' btnExportToExcel
         ' 
         btnExportToExcel.BackColor = SystemColors.HotTrack
@@ -438,12 +453,208 @@ Partial Class a02_FormEmployee
         btnExportToExcel.Dock = DockStyle.Bottom
         btnExportToExcel.FlatStyle = FlatStyle.Flat
         btnExportToExcel.ForeColor = SystemColors.Control
-        btnExportToExcel.Location = New Point(0, 573)
+        btnExportToExcel.Location = New Point(0, 754)
         btnExportToExcel.Name = "btnExportToExcel"
-        btnExportToExcel.Size = New Size(1467, 40)
+        btnExportToExcel.Size = New Size(1769, 40)
         btnExportToExcel.TabIndex = 20
         btnExportToExcel.Text = "Export To Excel"
         btnExportToExcel.UseVisualStyleBackColor = False
+        ' 
+        ' GroupBox2
+        ' 
+        GroupBox2.Controls.Add(cmbBlood)
+        GroupBox2.Controls.Add(Label8)
+        GroupBox2.Controls.Add(GroupBox4)
+        GroupBox2.Controls.Add(GroupBox3)
+        GroupBox2.Controls.Add(dtpDob)
+        GroupBox2.Controls.Add(Label7)
+        GroupBox2.Location = New Point(14, 240)
+        GroupBox2.Name = "GroupBox2"
+        GroupBox2.Size = New Size(434, 224)
+        GroupBox2.TabIndex = 21
+        GroupBox2.TabStop = False
+        GroupBox2.Text = "Personal Details"
+        ' 
+        ' cmbBlood
+        ' 
+        cmbBlood.FormattingEnabled = True
+        cmbBlood.Items.AddRange(New Object() {"A+", "A-", "AB+", "AB-", "B+", "B-", "O+", "O-", "Other"})
+        cmbBlood.Location = New Point(162, 184)
+        cmbBlood.Margin = New Padding(2)
+        cmbBlood.Name = "cmbBlood"
+        cmbBlood.Size = New Size(245, 28)
+        cmbBlood.TabIndex = 32
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Location = New Point(7, 187)
+        Label8.Margin = New Padding(2, 0, 2, 0)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(107, 20)
+        Label8.TabIndex = 31
+        Label8.Text = "Blood Group :"
+        ' 
+        ' GroupBox4
+        ' 
+        GroupBox4.Controls.Add(rbUnM)
+        GroupBox4.Controls.Add(rbM)
+        GroupBox4.Location = New Point(7, 121)
+        GroupBox4.Name = "GroupBox4"
+        GroupBox4.Size = New Size(400, 58)
+        GroupBox4.TabIndex = 34
+        GroupBox4.TabStop = False
+        GroupBox4.Text = "Marital Status : "
+        ' 
+        ' rbUnM
+        ' 
+        rbUnM.AutoSize = True
+        rbUnM.Location = New Point(253, 26)
+        rbUnM.Name = "rbUnM"
+        rbUnM.Size = New Size(107, 24)
+        rbUnM.TabIndex = 2
+        rbUnM.TabStop = True
+        rbUnM.Text = "Unmarried"
+        rbUnM.UseVisualStyleBackColor = True
+        ' 
+        ' rbM
+        ' 
+        rbM.AutoSize = True
+        rbM.Location = New Point(133, 26)
+        rbM.Name = "rbM"
+        rbM.Size = New Size(86, 24)
+        rbM.TabIndex = 0
+        rbM.TabStop = True
+        rbM.Text = "Married"
+        rbM.UseVisualStyleBackColor = True
+        ' 
+        ' GroupBox3
+        ' 
+        GroupBox3.Controls.Add(rbo)
+        GroupBox3.Controls.Add(rbFemale)
+        GroupBox3.Controls.Add(rbMale)
+        GroupBox3.Location = New Point(7, 57)
+        GroupBox3.Name = "GroupBox3"
+        GroupBox3.Size = New Size(400, 58)
+        GroupBox3.TabIndex = 33
+        GroupBox3.TabStop = False
+        GroupBox3.Text = "Gender : "
+        ' 
+        ' rbo
+        ' 
+        rbo.AutoSize = True
+        rbo.Location = New Point(237, 26)
+        rbo.Name = "rbo"
+        rbo.Size = New Size(70, 24)
+        rbo.TabIndex = 2
+        rbo.TabStop = True
+        rbo.Text = "Other"
+        rbo.UseVisualStyleBackColor = True
+        ' 
+        ' rbFemale
+        ' 
+        rbFemale.AutoSize = True
+        rbFemale.Location = New Point(149, 26)
+        rbFemale.Name = "rbFemale"
+        rbFemale.Size = New Size(82, 24)
+        rbFemale.TabIndex = 1
+        rbFemale.TabStop = True
+        rbFemale.Text = "Female"
+        rbFemale.UseVisualStyleBackColor = True
+        ' 
+        ' rbMale
+        ' 
+        rbMale.AutoSize = True
+        rbMale.Location = New Point(72, 26)
+        rbMale.Name = "rbMale"
+        rbMale.Size = New Size(65, 24)
+        rbMale.TabIndex = 0
+        rbMale.TabStop = True
+        rbMale.Text = "Male"
+        rbMale.UseVisualStyleBackColor = True
+        ' 
+        ' dtpDob
+        ' 
+        dtpDob.Location = New Point(162, 25)
+        dtpDob.Margin = New Padding(2)
+        dtpDob.MaxDate = New Date(2050, 1, 1, 0, 0, 0, 0)
+        dtpDob.MinDate = New Date(1970, 1, 1, 0, 0, 0, 0)
+        dtpDob.Name = "dtpDob"
+        dtpDob.Size = New Size(245, 27)
+        dtpDob.TabIndex = 32
+        dtpDob.Value = New Date(1995, 1, 1, 0, 0, 0, 0)
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Location = New Point(7, 30)
+        Label7.Margin = New Padding(2, 0, 2, 0)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(114, 20)
+        Label7.TabIndex = 31
+        Label7.Text = "Date of Birth : "
+        ' 
+        ' txtcAdd
+        ' 
+        txtcAdd.Location = New Point(12, 74)
+        txtcAdd.Margin = New Padding(2)
+        txtcAdd.Multiline = True
+        txtcAdd.Name = "txtcAdd"
+        txtcAdd.Size = New Size(200, 108)
+        txtcAdd.TabIndex = 31
+        ' 
+        ' txtpAdd
+        ' 
+        txtpAdd.Location = New Point(228, 74)
+        txtpAdd.Margin = New Padding(2)
+        txtpAdd.Multiline = True
+        txtpAdd.Name = "txtpAdd"
+        txtpAdd.Size = New Size(200, 108)
+        txtpAdd.TabIndex = 35
+        ' 
+        ' Label9
+        ' 
+        Label9.AutoSize = True
+        Label9.Location = New Point(12, 52)
+        Label9.Margin = New Padding(2, 0, 2, 0)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(184, 20)
+        Label9.TabIndex = 31
+        Label9.Text = "Corrspondence Address :"
+        ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.Location = New Point(228, 52)
+        Label10.Margin = New Padding(2, 0, 2, 0)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(160, 20)
+        Label10.TabIndex = 36
+        Label10.Text = "Permanent Address : "
+        ' 
+        ' GroupBox5
+        ' 
+        GroupBox5.Controls.Add(cbsame)
+        GroupBox5.Controls.Add(Label10)
+        GroupBox5.Controls.Add(txtcAdd)
+        GroupBox5.Controls.Add(Label9)
+        GroupBox5.Controls.Add(txtpAdd)
+        GroupBox5.Location = New Point(14, 470)
+        GroupBox5.Name = "GroupBox5"
+        GroupBox5.Size = New Size(434, 200)
+        GroupBox5.TabIndex = 31
+        GroupBox5.TabStop = False
+        GroupBox5.Text = "Address"
+        ' 
+        ' cbsame
+        ' 
+        cbsame.AutoSize = True
+        cbsame.Location = New Point(191, 25)
+        cbsame.Name = "cbsame"
+        cbsame.Size = New Size(108, 24)
+        cbsame.TabIndex = 37
+        cbsame.Text = "Both Same"
+        cbsame.UseVisualStyleBackColor = True
         ' 
         ' a02_FormEmployee
         ' 
@@ -451,7 +662,9 @@ Partial Class a02_FormEmployee
         AutoScaleMode = AutoScaleMode.Font
         AutoSize = True
         BackColor = SystemColors.ButtonShadow
-        ClientSize = New Size(1467, 613)
+        ClientSize = New Size(1769, 794)
+        Controls.Add(GroupBox5)
+        Controls.Add(GroupBox2)
         Controls.Add(btnExportToExcel)
         Controls.Add(GroupBox1)
         Controls.Add(gbNavigation)
@@ -471,7 +684,14 @@ Partial Class a02_FormEmployee
         gbNavigation.ResumeLayout(False)
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
-        CType(ErrorProvider1, ComponentModel.ISupportInitialize).EndInit()
+        GroupBox2.ResumeLayout(False)
+        GroupBox2.PerformLayout()
+        GroupBox4.ResumeLayout(False)
+        GroupBox4.PerformLayout()
+        GroupBox3.ResumeLayout(False)
+        GroupBox3.PerformLayout()
+        GroupBox5.ResumeLayout(False)
+        GroupBox5.PerformLayout()
         ResumeLayout(False)
     End Sub
     Friend WithEvents dgvEmp As DataGridView
@@ -503,6 +723,28 @@ Partial Class a02_FormEmployee
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents ErrorProvider1 As ErrorProvider
     Friend WithEvents btnExportToExcel As Button
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents RadioButton4 As RadioButton
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents rbo As RadioButton
+    Friend WithEvents rbFemale As RadioButton
+    Friend WithEvents rbMale As RadioButton
+    Friend WithEvents RadioButton3 As RadioButton
+    Friend WithEvents RadioButton5 As RadioButton
+    Friend WithEvents cmbBlood As ComboBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents txtpAdd As TextBox
+    Friend WithEvents txtcAdd As TextBox
+    Friend WithEvents dtpDob As DateTimePicker
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents GroupBox5 As GroupBox
+    Friend WithEvents cbsame As CheckBox
+    Friend WithEvents rbUnM As RadioButton
+    Friend WithEvents rbM As RadioButton
+
 End Class

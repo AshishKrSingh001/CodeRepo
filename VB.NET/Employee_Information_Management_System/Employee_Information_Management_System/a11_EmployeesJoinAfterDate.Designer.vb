@@ -35,7 +35,7 @@ Partial Class a11_EmployeesJoinAfterDate
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(162, 36)
+        Label1.Location = New Point(585, 38)
         Label1.Name = "Label1"
         Label1.Size = New Size(275, 20)
         Label1.TabIndex = 0
@@ -43,7 +43,7 @@ Partial Class a11_EmployeesJoinAfterDate
         ' 
         ' DateTimePicker1
         ' 
-        DateTimePicker1.Location = New Point(455, 31)
+        DateTimePicker1.Location = New Point(878, 33)
         DateTimePicker1.Name = "DateTimePicker1"
         DateTimePicker1.Size = New Size(250, 27)
         DateTimePicker1.TabIndex = 1
@@ -54,7 +54,7 @@ Partial Class a11_EmployeesJoinAfterDate
         Button1.Cursor = Cursors.Hand
         Button1.FlatStyle = FlatStyle.Flat
         Button1.ForeColor = SystemColors.Control
-        Button1.Location = New Point(711, 26)
+        Button1.Location = New Point(1134, 28)
         Button1.Name = "Button1"
         Button1.Size = New Size(158, 40)
         Button1.TabIndex = 2
@@ -69,15 +69,15 @@ Partial Class a11_EmployeesJoinAfterDate
         DataGridView1.Location = New Point(12, 89)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(1136, 336)
+        DataGridView1.Size = New Size(1759, 576)
         DataGridView1.TabIndex = 3
         ' 
         ' Label2
         ' 
         Label2.Dock = DockStyle.Bottom
-        Label2.Location = New Point(0, 471)
+        Label2.Location = New Point(0, 711)
         Label2.Name = "Label2"
-        Label2.Size = New Size(1160, 25)
+        Label2.Size = New Size(1783, 25)
         Label2.TabIndex = 4
         Label2.TextAlign = ContentAlignment.MiddleCenter
         ' 
@@ -88,9 +88,9 @@ Partial Class a11_EmployeesJoinAfterDate
         btnExportToExcel.Dock = DockStyle.Bottom
         btnExportToExcel.FlatStyle = FlatStyle.Flat
         btnExportToExcel.ForeColor = SystemColors.Control
-        btnExportToExcel.Location = New Point(0, 431)
+        btnExportToExcel.Location = New Point(0, 671)
         btnExportToExcel.Name = "btnExportToExcel"
-        btnExportToExcel.Size = New Size(1160, 40)
+        btnExportToExcel.Size = New Size(1783, 40)
         btnExportToExcel.TabIndex = 20
         btnExportToExcel.Text = "Export To Excel"
         btnExportToExcel.UseVisualStyleBackColor = False
@@ -100,7 +100,7 @@ Partial Class a11_EmployeesJoinAfterDate
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ButtonShadow
-        ClientSize = New Size(1160, 496)
+        ClientSize = New Size(1783, 736)
         Controls.Add(btnExportToExcel)
         Controls.Add(Label2)
         Controls.Add(DataGridView1)

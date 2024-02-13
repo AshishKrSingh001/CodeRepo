@@ -24,8 +24,8 @@ Partial Class a05_rptEmpWithDept
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(a05_rptEmpWithDept))
         DataGridView1 = New DataGridView()
-        Label1 = New Label()
         btnExportToExcel = New Button()
+        Label1 = New Label()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -34,22 +34,12 @@ Partial Class a05_rptEmpWithDept
         DataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView1.Cursor = Cursors.Hand
-        DataGridView1.Dock = DockStyle.Fill
-        DataGridView1.Location = New Point(0, 0)
+        DataGridView1.Location = New Point(0, 36)
         DataGridView1.Margin = New Padding(2)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(1298, 479)
+        DataGridView1.Size = New Size(1298, 443)
         DataGridView1.TabIndex = 0
-        ' 
-        ' Label1
-        ' 
-        Label1.Dock = DockStyle.Top
-        Label1.Location = New Point(0, 0)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(1298, 25)
-        Label1.TabIndex = 1
-        Label1.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' btnExportToExcel
         ' 
@@ -64,6 +54,15 @@ Partial Class a05_rptEmpWithDept
         btnExportToExcel.TabIndex = 20
         btnExportToExcel.Text = "Export To Excel"
         btnExportToExcel.UseVisualStyleBackColor = False
+        ' 
+        ' Label1
+        ' 
+        Label1.Dock = DockStyle.Top
+        Label1.Location = New Point(0, 0)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(1298, 25)
+        Label1.TabIndex = 1
+        Label1.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' a05_rptEmpWithDept
         ' 
@@ -85,6 +84,6 @@ Partial Class a05_rptEmpWithDept
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Label1 As Label
     Friend WithEvents btnExportToExcel As Button
+    Friend WithEvents Label1 As Label
 End Class
