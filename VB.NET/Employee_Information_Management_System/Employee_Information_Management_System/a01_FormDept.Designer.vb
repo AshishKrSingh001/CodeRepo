@@ -62,7 +62,7 @@ Partial Class a01_FormDept
         Label1.Margin = New Padding(2, 0, 2, 0)
         Label1.Name = "Label1"
         Label1.Size = New Size(131, 24)
-        Label1.TabIndex = 0
+        Label1.TabIndex = 23
         Label1.Text = "Department No : "
         ' 
         ' Label8
@@ -80,7 +80,7 @@ Partial Class a01_FormDept
         Label9.Margin = New Padding(2, 0, 2, 0)
         Label9.Name = "Label9"
         Label9.Size = New Size(160, 24)
-        Label9.TabIndex = 8
+        Label9.TabIndex = 24
         Label9.Text = "Department Name : "
         ' 
         ' Label10
@@ -89,7 +89,7 @@ Partial Class a01_FormDept
         Label10.Margin = New Padding(2, 0, 2, 0)
         Label10.Name = "Label10"
         Label10.Size = New Size(94, 24)
-        Label10.TabIndex = 9
+        Label10.TabIndex = 25
         Label10.Text = "Location : "
         ' 
         ' txtDeptName
@@ -98,7 +98,7 @@ Partial Class a01_FormDept
         txtDeptName.Margin = New Padding(2)
         txtDeptName.Name = "txtDeptName"
         txtDeptName.Size = New Size(219, 27)
-        txtDeptName.TabIndex = 11
+        txtDeptName.TabIndex = 1
         ' 
         ' txtLocation
         ' 
@@ -106,7 +106,7 @@ Partial Class a01_FormDept
         txtLocation.Margin = New Padding(2)
         txtLocation.Name = "txtLocation"
         txtLocation.Size = New Size(219, 27)
-        txtLocation.TabIndex = 12
+        txtLocation.TabIndex = 2
         ' 
         ' gbOperations
         ' 
@@ -121,7 +121,7 @@ Partial Class a01_FormDept
         gbOperations.Name = "gbOperations"
         gbOperations.Padding = New Padding(2)
         gbOperations.Size = New Size(461, 143)
-        gbOperations.TabIndex = 13
+        gbOperations.TabIndex = 20
         gbOperations.TabStop = False
         gbOperations.Text = "Operations"
         ' 
@@ -135,7 +135,7 @@ Partial Class a01_FormDept
         btnShow.Margin = New Padding(2)
         btnShow.Name = "btnShow"
         btnShow.Size = New Size(106, 36)
-        btnShow.TabIndex = 5
+        btnShow.TabIndex = 7
         btnShow.Text = "Reset"
         btnShow.UseVisualStyleBackColor = False
         ' 
@@ -149,7 +149,7 @@ Partial Class a01_FormDept
         btnClear.Margin = New Padding(2)
         btnClear.Name = "btnClear"
         btnClear.Size = New Size(106, 36)
-        btnClear.TabIndex = 4
+        btnClear.TabIndex = 9
         btnClear.Text = "Clear"
         btnClear.UseVisualStyleBackColor = False
         ' 
@@ -163,7 +163,7 @@ Partial Class a01_FormDept
         btnDelete.Margin = New Padding(2)
         btnDelete.Name = "btnDelete"
         btnDelete.Size = New Size(106, 36)
-        btnDelete.TabIndex = 3
+        btnDelete.TabIndex = 10
         btnDelete.Text = "Delete"
         btnDelete.UseVisualStyleBackColor = False
         ' 
@@ -177,7 +177,7 @@ Partial Class a01_FormDept
         btnFilter.Margin = New Padding(2)
         btnFilter.Name = "btnFilter"
         btnFilter.Size = New Size(106, 36)
-        btnFilter.TabIndex = 2
+        btnFilter.TabIndex = 8
         btnFilter.Text = "Filter"
         btnFilter.UseVisualStyleBackColor = False
         ' 
@@ -191,7 +191,7 @@ Partial Class a01_FormDept
         btnUpdate.Margin = New Padding(2)
         btnUpdate.Name = "btnUpdate"
         btnUpdate.Size = New Size(106, 36)
-        btnUpdate.TabIndex = 1
+        btnUpdate.TabIndex = 6
         btnUpdate.Text = "Update"
         btnUpdate.UseVisualStyleBackColor = False
         ' 
@@ -205,7 +205,7 @@ Partial Class a01_FormDept
         btnInsert.Margin = New Padding(2)
         btnInsert.Name = "btnInsert"
         btnInsert.Size = New Size(106, 36)
-        btnInsert.TabIndex = 0
+        btnInsert.TabIndex = 4
         btnInsert.Text = "Insert"
         btnInsert.UseVisualStyleBackColor = False
         ' 
@@ -220,7 +220,7 @@ Partial Class a01_FormDept
         gbNavigation.Name = "gbNavigation"
         gbNavigation.Padding = New Padding(2)
         gbNavigation.Size = New Size(560, 78)
-        gbNavigation.TabIndex = 14
+        gbNavigation.TabIndex = 22
         gbNavigation.TabStop = False
         gbNavigation.Text = "Navigation"
         ' 
@@ -235,7 +235,7 @@ Partial Class a01_FormDept
         btnNav4.Margin = New Padding(2)
         btnNav4.Name = "btnNav4"
         btnNav4.Size = New Size(131, 36)
-        btnNav4.TabIndex = 2
+        btnNav4.TabIndex = 16
         btnNav4.Text = "Last"
         btnNav4.UseVisualStyleBackColor = False
         ' 
@@ -250,7 +250,7 @@ Partial Class a01_FormDept
         btnNav3.Margin = New Padding(2)
         btnNav3.Name = "btnNav3"
         btnNav3.Size = New Size(131, 36)
-        btnNav3.TabIndex = 4
+        btnNav3.TabIndex = 13
         btnNav3.Text = "First"
         btnNav3.UseVisualStyleBackColor = False
         ' 
@@ -265,7 +265,7 @@ Partial Class a01_FormDept
         btnNav2.Margin = New Padding(2)
         btnNav2.Name = "btnNav2"
         btnNav2.Size = New Size(131, 36)
-        btnNav2.TabIndex = 3
+        btnNav2.TabIndex = 15
         btnNav2.Text = "Next"
         btnNav2.UseVisualStyleBackColor = False
         ' 
@@ -280,7 +280,7 @@ Partial Class a01_FormDept
         btnNav1.Margin = New Padding(2)
         btnNav1.Name = "btnNav1"
         btnNav1.Size = New Size(131, 36)
-        btnNav1.TabIndex = 1
+        btnNav1.TabIndex = 14
         btnNav1.Text = "Prev"
         btnNav1.UseVisualStyleBackColor = False
         ' 
@@ -293,7 +293,7 @@ Partial Class a01_FormDept
         gbSorting.Name = "gbSorting"
         gbSorting.Padding = New Padding(2)
         gbSorting.Size = New Size(461, 74)
-        gbSorting.TabIndex = 15
+        gbSorting.TabIndex = 21
         gbSorting.TabStop = False
         gbSorting.Text = "Sorting"
         ' 
@@ -307,7 +307,7 @@ Partial Class a01_FormDept
         btnDes.Margin = New Padding(2)
         btnDes.Name = "btnDes"
         btnDes.Size = New Size(131, 36)
-        btnDes.TabIndex = 3
+        btnDes.TabIndex = 12
         btnDes.Text = "Decending"
         btnDes.UseVisualStyleBackColor = False
         ' 
@@ -321,7 +321,7 @@ Partial Class a01_FormDept
         btnAsc.Margin = New Padding(2)
         btnAsc.Name = "btnAsc"
         btnAsc.Size = New Size(131, 36)
-        btnAsc.TabIndex = 1
+        btnAsc.TabIndex = 11
         btnAsc.Text = "Ascending"
         btnAsc.UseVisualStyleBackColor = False
         ' 
@@ -343,7 +343,7 @@ Partial Class a01_FormDept
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
         DataGridView1.Size = New Size(560, 296)
-        DataGridView1.TabIndex = 15
+        DataGridView1.TabIndex = 18
         ' 
         ' txtDeptNo
         ' 
@@ -352,7 +352,7 @@ Partial Class a01_FormDept
         txtDeptNo.Name = "txtDeptNo"
         txtDeptNo.PromptChar = "#"c
         txtDeptNo.Size = New Size(219, 27)
-        txtDeptNo.TabIndex = 16
+        txtDeptNo.TabIndex = 0
         txtDeptNo.TextMaskFormat = MaskFormat.IncludePrompt
         txtDeptNo.ValidatingType = GetType(Integer)
         ' 
@@ -367,7 +367,7 @@ Partial Class a01_FormDept
         GroupBox1.Location = New Point(12, 12)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(461, 139)
-        GroupBox1.TabIndex = 17
+        GroupBox1.TabIndex = 19
         GroupBox1.TabStop = False
         GroupBox1.Text = "Form"
         ' 
@@ -381,7 +381,7 @@ Partial Class a01_FormDept
         btnExportToExcel.Location = New Point(0, 404)
         btnExportToExcel.Name = "btnExportToExcel"
         btnExportToExcel.Size = New Size(1070, 40)
-        btnExportToExcel.TabIndex = 20
+        btnExportToExcel.TabIndex = 17
         btnExportToExcel.Text = "Export To Excel"
         btnExportToExcel.UseVisualStyleBackColor = False
         ' 

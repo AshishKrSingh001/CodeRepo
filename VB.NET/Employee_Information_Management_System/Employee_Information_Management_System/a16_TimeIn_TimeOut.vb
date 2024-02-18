@@ -25,7 +25,7 @@ Public Class a16_TimeIn_TimeOut
 
                 If dt1.Rows.Count > 0 Then
                     Dim Nam As String = dt1.Rows(0).Item("EmpName").ToString
-                    cmd = New SqlCommand("Select * from Attendence where EmpNo = @empNo AND attenDate = @attenDate AND outStatus = @outStatus AND inStatus = @inStatus", con)
+                    cmd = New SqlCommand("Select * from Attendence where empNo = @empNo AND attenDate = @attenDate AND outStatus = @outStatus AND inStatus = @inStatus", con)
                     cmd.Parameters.Clear()
                     cmd.Parameters.AddWithValue("@empNo", txtEmpNo.Text)
                     cmd.Parameters.AddWithValue("@attenDate", Date.Now.ToString("d"))
@@ -39,7 +39,7 @@ Public Class a16_TimeIn_TimeOut
                         lblInfo.Text = "Enter Employee No: "
                         lblInfo.ForeColor = Color.Orange
                     Else
-                        cmd = New SqlCommand("Select * from Attendence where EmpNo = @empNo AND attenDate = @attenDate AND inStatus = @inStatus", con)
+                        cmd = New SqlCommand("Select * from Attendence where empNo = @empNo AND attenDate = @attenDate AND inStatus = @inStatus", con)
                         cmd.Parameters.Clear()
                         cmd.Parameters.AddWithValue("@empNo", txtEmpNo.Text)
                         cmd.Parameters.AddWithValue("@attenDate", Date.Now.ToString("d"))
@@ -53,7 +53,7 @@ Public Class a16_TimeIn_TimeOut
                         If dt2.Rows.Count > 0 Then
                             Dim dtTime = New TimeSpan()
                             dtTime = Date.Now.TimeOfDay.Subtract(Convert.ToDateTime(dt2.Rows(0).Item("inTime")).TimeOfDay)
-                            cmd = New SqlCommand("Update Attendence SET outTime = @outTime, outStatus = @outStatus,TimeDuration = @time Where EmpNo = @empNo AND attenDate = @attenDate", con)
+                            cmd = New SqlCommand("Update Attendence SET outTime = @outTime, outStatus = @outStatus,TimeDuration = @time Where empNo = @empNo AND attenDate = @attenDate", con)
                             cmd.Parameters.AddWithValue("@empNo", txtEmpNo.Text)
                             cmd.Parameters.AddWithValue("@Time", dtTime.Hours.ToString() + " Hours")
                             cmd.Parameters.AddWithValue("@attenDate", Date.Now.ToString("d"))
@@ -74,7 +74,7 @@ Public Class a16_TimeIn_TimeOut
 
                             End If
                         Else
-                            cmd = New SqlCommand("INSERT INTO Attendence(EmpNo, attenDate, inTime, inStatus) VALUES(@empNo, @attenDate, @inTime, @inStatus)", con)
+                            cmd = New SqlCommand("INSERT INTO Attendence(empNo, attenDate, inTime, inStatus) VALUES(@empNo, @attenDate, @inTime, @inStatus)", con)
                             cmd.Parameters.Clear()
                             cmd.Parameters.AddWithValue("@empNo", txtEmpNo.Text)
                             cmd.Parameters.AddWithValue("@attenDate", Date.Now.ToString("d"))

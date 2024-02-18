@@ -17,9 +17,6 @@ Public Class a02_FormEmployee
         End If
     End Sub
     Sub displayRecords()
-        'Dim rnd As New Form_Round(Me)
-
-
         Try
             Dim cmd As New SqlCommand("Select * from EmpTable", con)
             Dim da As New SqlDataAdapter(cmd)
@@ -85,6 +82,7 @@ Public Class a02_FormEmployee
         txtpAdd.Clear()
         txtcAdd.Clear()
         cbsame.Checked = False
+        txtEmpNo.Focus()
 
     End Sub
 
@@ -105,6 +103,7 @@ Public Class a02_FormEmployee
     Private Sub FormEmployee_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox_Value()
         displayRecords()
+        txtEmpNo.Focus()
     End Sub
 
 

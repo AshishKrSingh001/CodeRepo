@@ -92,7 +92,7 @@ Partial Class a02_FormEmployee
         dgvEmp.Name = "dgvEmp"
         dgvEmp.RowHeadersWidth = 51
         dgvEmp.Size = New Size(1305, 660)
-        dgvEmp.TabIndex = 5
+        dgvEmp.TabIndex = 29
         ' 
         ' gbOperations
         ' 
@@ -107,7 +107,7 @@ Partial Class a02_FormEmployee
         gbOperations.Name = "gbOperations"
         gbOperations.Padding = New Padding(2)
         gbOperations.Size = New Size(815, 74)
-        gbOperations.TabIndex = 14
+        gbOperations.TabIndex = 16
         gbOperations.TabStop = False
         gbOperations.Text = "Operations"
         ' 
@@ -121,7 +121,7 @@ Partial Class a02_FormEmployee
         btnShow.Margin = New Padding(2)
         btnShow.Name = "btnShow"
         btnShow.Size = New Size(125, 35)
-        btnShow.TabIndex = 5
+        btnShow.TabIndex = 18
         btnShow.Text = "Reset"
         btnShow.UseVisualStyleBackColor = False
         ' 
@@ -135,7 +135,7 @@ Partial Class a02_FormEmployee
         btnClear.Margin = New Padding(2)
         btnClear.Name = "btnClear"
         btnClear.Size = New Size(125, 35)
-        btnClear.TabIndex = 4
+        btnClear.TabIndex = 21
         btnClear.Text = "Clear"
         btnClear.UseVisualStyleBackColor = False
         ' 
@@ -149,7 +149,7 @@ Partial Class a02_FormEmployee
         btnDelete.Margin = New Padding(2)
         btnDelete.Name = "btnDelete"
         btnDelete.Size = New Size(125, 35)
-        btnDelete.TabIndex = 3
+        btnDelete.TabIndex = 19
         btnDelete.Text = "Delete"
         btnDelete.UseVisualStyleBackColor = False
         ' 
@@ -163,7 +163,7 @@ Partial Class a02_FormEmployee
         btnFilter.Margin = New Padding(2)
         btnFilter.Name = "btnFilter"
         btnFilter.Size = New Size(125, 35)
-        btnFilter.TabIndex = 2
+        btnFilter.TabIndex = 20
         btnFilter.Text = "Filter"
         btnFilter.UseVisualStyleBackColor = False
         ' 
@@ -177,7 +177,7 @@ Partial Class a02_FormEmployee
         btnUpdate.Margin = New Padding(2)
         btnUpdate.Name = "btnUpdate"
         btnUpdate.Size = New Size(125, 35)
-        btnUpdate.TabIndex = 1
+        btnUpdate.TabIndex = 17
         btnUpdate.Text = "Update"
         btnUpdate.UseVisualStyleBackColor = False
         ' 
@@ -191,7 +191,7 @@ Partial Class a02_FormEmployee
         btnInsert.Margin = New Padding(2)
         btnInsert.Name = "btnInsert"
         btnInsert.Size = New Size(125, 35)
-        btnInsert.TabIndex = 0
+        btnInsert.TabIndex = 16
         btnInsert.Text = "Insert"
         btnInsert.UseVisualStyleBackColor = False
         ' 
@@ -204,7 +204,7 @@ Partial Class a02_FormEmployee
         gbSorting.Name = "gbSorting"
         gbSorting.Padding = New Padding(2)
         gbSorting.Size = New Size(340, 74)
-        gbSorting.TabIndex = 16
+        gbSorting.TabIndex = 26
         gbSorting.TabStop = False
         gbSorting.Text = "Sorting"
         ' 
@@ -218,7 +218,7 @@ Partial Class a02_FormEmployee
         btnDes.Margin = New Padding(2)
         btnDes.Name = "btnDes"
         btnDes.Size = New Size(125, 35)
-        btnDes.TabIndex = 3
+        btnDes.TabIndex = 27
         btnDes.Text = "Decending"
         btnDes.UseVisualStyleBackColor = False
         ' 
@@ -232,7 +232,7 @@ Partial Class a02_FormEmployee
         btnAsc.Margin = New Padding(2)
         btnAsc.Name = "btnAsc"
         btnAsc.Size = New Size(125, 35)
-        btnAsc.TabIndex = 1
+        btnAsc.TabIndex = 26
         btnAsc.Text = "Ascending"
         btnAsc.UseVisualStyleBackColor = False
         ' 
@@ -247,7 +247,7 @@ Partial Class a02_FormEmployee
         gbNavigation.Name = "gbNavigation"
         gbNavigation.Padding = New Padding(2)
         gbNavigation.Size = New Size(587, 74)
-        gbNavigation.TabIndex = 17
+        gbNavigation.TabIndex = 22
         gbNavigation.TabStop = False
         gbNavigation.Text = "Navigation"
         ' 
@@ -262,7 +262,7 @@ Partial Class a02_FormEmployee
         btnNav3.Margin = New Padding(2)
         btnNav3.Name = "btnNav3"
         btnNav3.Size = New Size(125, 35)
-        btnNav3.TabIndex = 4
+        btnNav3.TabIndex = 22
         btnNav3.Text = "First"
         btnNav3.UseVisualStyleBackColor = False
         ' 
@@ -277,7 +277,7 @@ Partial Class a02_FormEmployee
         btnNav2.Margin = New Padding(2)
         btnNav2.Name = "btnNav2"
         btnNav2.Size = New Size(125, 35)
-        btnNav2.TabIndex = 3
+        btnNav2.TabIndex = 24
         btnNav2.Text = "Next"
         btnNav2.UseVisualStyleBackColor = False
         ' 
@@ -292,7 +292,7 @@ Partial Class a02_FormEmployee
         btnNav4.Margin = New Padding(2)
         btnNav4.Name = "btnNav4"
         btnNav4.Size = New Size(125, 35)
-        btnNav4.TabIndex = 2
+        btnNav4.TabIndex = 25
         btnNav4.Text = "Last"
         btnNav4.UseVisualStyleBackColor = False
         ' 
@@ -307,7 +307,7 @@ Partial Class a02_FormEmployee
         btnNav1.Margin = New Padding(2)
         btnNav1.Name = "btnNav1"
         btnNav1.Size = New Size(125, 35)
-        btnNav1.TabIndex = 1
+        btnNav1.TabIndex = 23
         btnNav1.Text = "Prev"
         btnNav1.UseVisualStyleBackColor = False
         ' 
@@ -328,7 +328,7 @@ Partial Class a02_FormEmployee
         GroupBox1.Location = New Point(14, 12)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(434, 222)
-        GroupBox1.TabIndex = 19
+        GroupBox1.TabIndex = 0
         GroupBox1.TabStop = False
         GroupBox1.Text = "Employee Details"
         ' 
@@ -340,7 +340,7 @@ Partial Class a02_FormEmployee
         txtMobNo.Name = "txtMobNo"
         txtMobNo.PromptChar = "#"c
         txtMobNo.Size = New Size(245, 27)
-        txtMobNo.TabIndex = 30
+        txtMobNo.TabIndex = 5
         txtMobNo.ValidatingType = GetType(Integer)
         ' 
         ' Label6
@@ -360,7 +360,7 @@ Partial Class a02_FormEmployee
         txtEmpNo.Name = "txtEmpNo"
         txtEmpNo.PromptChar = "#"c
         txtEmpNo.Size = New Size(245, 27)
-        txtEmpNo.TabIndex = 28
+        txtEmpNo.TabIndex = 0
         txtEmpNo.ValidatingType = GetType(Integer)
         ' 
         ' dtpDate
@@ -369,7 +369,7 @@ Partial Class a02_FormEmployee
         dtpDate.Margin = New Padding(2)
         dtpDate.Name = "dtpDate"
         dtpDate.Size = New Size(245, 27)
-        dtpDate.TabIndex = 27
+        dtpDate.TabIndex = 4
         ' 
         ' cmbDeptName
         ' 
@@ -378,7 +378,7 @@ Partial Class a02_FormEmployee
         cmbDeptName.Margin = New Padding(2)
         cmbDeptName.Name = "cmbDeptName"
         cmbDeptName.Size = New Size(245, 28)
-        cmbDeptName.TabIndex = 26
+        cmbDeptName.TabIndex = 3
         ' 
         ' txtSalary
         ' 
@@ -386,7 +386,7 @@ Partial Class a02_FormEmployee
         txtSalary.Margin = New Padding(2)
         txtSalary.Name = "txtSalary"
         txtSalary.Size = New Size(245, 27)
-        txtSalary.TabIndex = 25
+        txtSalary.TabIndex = 2
         ' 
         ' txtEmpName
         ' 
@@ -394,7 +394,7 @@ Partial Class a02_FormEmployee
         txtEmpName.Margin = New Padding(2)
         txtEmpName.Name = "txtEmpName"
         txtEmpName.Size = New Size(245, 27)
-        txtEmpName.TabIndex = 24
+        txtEmpName.TabIndex = 1
         ' 
         ' Label5
         ' 
@@ -456,7 +456,7 @@ Partial Class a02_FormEmployee
         btnExportToExcel.Location = New Point(0, 754)
         btnExportToExcel.Name = "btnExportToExcel"
         btnExportToExcel.Size = New Size(1769, 40)
-        btnExportToExcel.TabIndex = 20
+        btnExportToExcel.TabIndex = 28
         btnExportToExcel.Text = "Export To Excel"
         btnExportToExcel.UseVisualStyleBackColor = False
         ' 
@@ -471,7 +471,7 @@ Partial Class a02_FormEmployee
         GroupBox2.Location = New Point(14, 240)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Size = New Size(434, 224)
-        GroupBox2.TabIndex = 21
+        GroupBox2.TabIndex = 6
         GroupBox2.TabStop = False
         GroupBox2.Text = "Personal Details"
         ' 
@@ -483,7 +483,7 @@ Partial Class a02_FormEmployee
         cmbBlood.Margin = New Padding(2)
         cmbBlood.Name = "cmbBlood"
         cmbBlood.Size = New Size(245, 28)
-        cmbBlood.TabIndex = 32
+        cmbBlood.TabIndex = 12
         ' 
         ' Label8
         ' 
@@ -502,7 +502,7 @@ Partial Class a02_FormEmployee
         GroupBox4.Location = New Point(7, 121)
         GroupBox4.Name = "GroupBox4"
         GroupBox4.Size = New Size(400, 58)
-        GroupBox4.TabIndex = 34
+        GroupBox4.TabIndex = 10
         GroupBox4.TabStop = False
         GroupBox4.Text = "Marital Status : "
         ' 
@@ -512,7 +512,7 @@ Partial Class a02_FormEmployee
         rbUnM.Location = New Point(253, 26)
         rbUnM.Name = "rbUnM"
         rbUnM.Size = New Size(107, 24)
-        rbUnM.TabIndex = 2
+        rbUnM.TabIndex = 11
         rbUnM.TabStop = True
         rbUnM.Text = "Unmarried"
         rbUnM.UseVisualStyleBackColor = True
@@ -523,7 +523,7 @@ Partial Class a02_FormEmployee
         rbM.Location = New Point(133, 26)
         rbM.Name = "rbM"
         rbM.Size = New Size(86, 24)
-        rbM.TabIndex = 0
+        rbM.TabIndex = 10
         rbM.TabStop = True
         rbM.Text = "Married"
         rbM.UseVisualStyleBackColor = True
@@ -536,7 +536,7 @@ Partial Class a02_FormEmployee
         GroupBox3.Location = New Point(7, 57)
         GroupBox3.Name = "GroupBox3"
         GroupBox3.Size = New Size(400, 58)
-        GroupBox3.TabIndex = 33
+        GroupBox3.TabIndex = 7
         GroupBox3.TabStop = False
         GroupBox3.Text = "Gender : "
         ' 
@@ -546,7 +546,7 @@ Partial Class a02_FormEmployee
         rbo.Location = New Point(237, 26)
         rbo.Name = "rbo"
         rbo.Size = New Size(70, 24)
-        rbo.TabIndex = 2
+        rbo.TabIndex = 9
         rbo.TabStop = True
         rbo.Text = "Other"
         rbo.UseVisualStyleBackColor = True
@@ -557,7 +557,7 @@ Partial Class a02_FormEmployee
         rbFemale.Location = New Point(149, 26)
         rbFemale.Name = "rbFemale"
         rbFemale.Size = New Size(82, 24)
-        rbFemale.TabIndex = 1
+        rbFemale.TabIndex = 8
         rbFemale.TabStop = True
         rbFemale.Text = "Female"
         rbFemale.UseVisualStyleBackColor = True
@@ -568,7 +568,7 @@ Partial Class a02_FormEmployee
         rbMale.Location = New Point(72, 26)
         rbMale.Name = "rbMale"
         rbMale.Size = New Size(65, 24)
-        rbMale.TabIndex = 0
+        rbMale.TabIndex = 7
         rbMale.TabStop = True
         rbMale.Text = "Male"
         rbMale.UseVisualStyleBackColor = True
@@ -581,7 +581,7 @@ Partial Class a02_FormEmployee
         dtpDob.MinDate = New Date(1970, 1, 1, 0, 0, 0, 0)
         dtpDob.Name = "dtpDob"
         dtpDob.Size = New Size(245, 27)
-        dtpDob.TabIndex = 32
+        dtpDob.TabIndex = 6
         dtpDob.Value = New Date(1995, 1, 1, 0, 0, 0, 0)
         ' 
         ' Label7
@@ -601,7 +601,7 @@ Partial Class a02_FormEmployee
         txtcAdd.Multiline = True
         txtcAdd.Name = "txtcAdd"
         txtcAdd.Size = New Size(200, 108)
-        txtcAdd.TabIndex = 31
+        txtcAdd.TabIndex = 13
         ' 
         ' txtpAdd
         ' 
@@ -610,7 +610,7 @@ Partial Class a02_FormEmployee
         txtpAdd.Multiline = True
         txtpAdd.Name = "txtpAdd"
         txtpAdd.Size = New Size(200, 108)
-        txtpAdd.TabIndex = 35
+        txtpAdd.TabIndex = 15
         ' 
         ' Label9
         ' 
@@ -642,7 +642,7 @@ Partial Class a02_FormEmployee
         GroupBox5.Location = New Point(14, 470)
         GroupBox5.Name = "GroupBox5"
         GroupBox5.Size = New Size(434, 200)
-        GroupBox5.TabIndex = 31
+        GroupBox5.TabIndex = 13
         GroupBox5.TabStop = False
         GroupBox5.Text = "Address"
         ' 
@@ -652,7 +652,7 @@ Partial Class a02_FormEmployee
         cbsame.Location = New Point(191, 25)
         cbsame.Name = "cbsame"
         cbsame.Size = New Size(108, 24)
-        cbsame.TabIndex = 37
+        cbsame.TabIndex = 14
         cbsame.Text = "Both Same"
         cbsame.UseVisualStyleBackColor = True
         ' 

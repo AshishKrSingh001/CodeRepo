@@ -75,4 +75,8 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         a18_signin.ShowDialog()
     End Sub
+
+    Private Sub EmployeesAttendenceToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EmployeesAttendenceToolStripMenuItem.Click
+        a19_Attendence_of_Each_Individual.ShowDialog()
+    End Sub
 End Class

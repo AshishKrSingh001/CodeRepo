@@ -43,6 +43,7 @@ Public Class a01_FormDept
         txtDeptName.Text = ""
         txtLocation.Text = ""
         inc = 0
+        txtDeptNo.Focus()
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
@@ -87,6 +88,7 @@ Public Class a01_FormDept
 
     Private Sub FormDept_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         displayRecords()
+        txtDeptNo.Focus()
     End Sub
     Private Sub btnShow_Click(sender As Object, e As EventArgs) Handles btnShow.Click
         clearControls()
@@ -102,7 +104,7 @@ Public Class a01_FormDept
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         If isEmpty() = False Then
             Try
-                Dim cmd As New SqlCommand("Delete from DeptTable Where DptNo=@DNo", con)
+                Dim cmd As New SqlCommand("Delete from DeptTable Where DeptTable.DptNo=@DNo", con)
                 cmd.Parameters.Add("@DNo", SqlDbType.Int).Value = CInt(txtDeptNo.Text)
                 Dim flag As Integer = 0
                 con.Open()

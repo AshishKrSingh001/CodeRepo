@@ -73,7 +73,7 @@ Partial Class a03_Signup
         btnClear.Margin = New Padding(2)
         btnClear.Name = "btnClear"
         btnClear.Size = New Size(120, 43)
-        btnClear.TabIndex = 4
+        btnClear.TabIndex = 6
         btnClear.Text = "Clear"
         btnClear.UseVisualStyleBackColor = False
         ' 
@@ -84,7 +84,7 @@ Partial Class a03_Signup
         txtNo.Name = "txtNo"
         txtNo.PromptChar = "#"c
         txtNo.Size = New Size(330, 27)
-        txtNo.TabIndex = 29
+        txtNo.TabIndex = 0
         txtNo.ValidatingType = GetType(Integer)
         ' 
         ' txtPassword
@@ -92,7 +92,7 @@ Partial Class a03_Signup
         txtPassword.Location = New Point(177, 107)
         txtPassword.Name = "txtPassword"
         txtPassword.Size = New Size(330, 27)
-        txtPassword.TabIndex = 8
+        txtPassword.TabIndex = 2
         ' 
         ' btnInsert
         ' 
@@ -104,7 +104,7 @@ Partial Class a03_Signup
         btnInsert.Margin = New Padding(2)
         btnInsert.Name = "btnInsert"
         btnInsert.Size = New Size(120, 43)
-        btnInsert.TabIndex = 0
+        btnInsert.TabIndex = 5
         btnInsert.Text = "Insert"
         btnInsert.UseVisualStyleBackColor = False
         ' 
@@ -122,7 +122,7 @@ Partial Class a03_Signup
         txtEmail.Location = New Point(177, 66)
         txtEmail.Name = "txtEmail"
         txtEmail.Size = New Size(330, 27)
-        txtEmail.TabIndex = 7
+        txtEmail.TabIndex = 1
         ' 
         ' Label2
         ' 
@@ -138,7 +138,7 @@ Partial Class a03_Signup
         txtcPassword.Location = New Point(177, 171)
         txtcPassword.Name = "txtcPassword"
         txtcPassword.Size = New Size(330, 27)
-        txtcPassword.TabIndex = 10
+        txtcPassword.TabIndex = 4
         ' 
         ' Label1
         ' 
@@ -154,7 +154,7 @@ Partial Class a03_Signup
         CheckBox1.Location = New Point(362, 140)
         CheckBox1.Name = "CheckBox1"
         CheckBox1.Size = New Size(141, 24)
-        CheckBox1.TabIndex = 9
+        CheckBox1.TabIndex = 3
         CheckBox1.Text = "Show Password"
         CheckBox1.UseVisualStyleBackColor = True
         ' 
@@ -164,7 +164,7 @@ Partial Class a03_Signup
         Label4.Location = New Point(21, 29)
         Label4.Name = "Label4"
         Label4.Size = New Size(115, 20)
-        Label4.TabIndex = 4
+        Label4.TabIndex = 11
         Label4.Text = "Employee's Id :"
         ' 
         ' PictureBox1

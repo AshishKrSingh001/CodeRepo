@@ -54,7 +54,7 @@ Public Class a03_Signup
 
     Private Sub btnInsert_Click(sender As Object, e As EventArgs) Handles btnInsert.Click
         Dim pwd As String = txtPassword.Text
-        If ValidatePassword(pwd) Then
+        If ValidatePassword(pwd, 8, 1, 1, 1) Then
             If txtcPassword.Text <> pwd Then
                 MessageBox.Show("Password Doesn't Matched", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Else
@@ -92,7 +92,7 @@ Public Class a03_Signup
 
             End If
         Else
-            MessageBox.Show("Password Should consists letters in Lowercase, Uppercase, Number, SpecialChars etc  ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Password Should contain atleast 8 Character which consists of Lowercase, Uppercase, Number, SpecialChars etc  ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
 

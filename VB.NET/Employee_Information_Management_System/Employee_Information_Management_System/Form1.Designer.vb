@@ -46,6 +46,7 @@ Partial Class Form1
         ReportOfAllRecordToolStripMenuItem = New ToolStripMenuItem()
         ExitToolStripMenuItem1 = New ToolStripMenuItem()
         PictureBox1 = New PictureBox()
+        EmployeesAttendenceToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -163,7 +164,7 @@ Partial Class Form1
         ' 
         ' AttendenceToolStripMenuItem
         ' 
-        AttendenceToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {TimeInTimeOutToolStripMenuItem, AttendenceRecordToolStripMenuItem, ReportOfAllRecordToolStripMenuItem})
+        AttendenceToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {TimeInTimeOutToolStripMenuItem, AttendenceRecordToolStripMenuItem, ReportOfAllRecordToolStripMenuItem, EmployeesAttendenceToolStripMenuItem})
         AttendenceToolStripMenuItem.Font = New Font("Segoe UI Black", 9F, FontStyle.Bold Or FontStyle.Italic)
         AttendenceToolStripMenuItem.Name = "AttendenceToolStripMenuItem"
         AttendenceToolStripMenuItem.Size = New Size(104, 24)
@@ -172,19 +173,19 @@ Partial Class Form1
         ' TimeInTimeOutToolStripMenuItem
         ' 
         TimeInTimeOutToolStripMenuItem.Name = "TimeInTimeOutToolStripMenuItem"
-        TimeInTimeOutToolStripMenuItem.Size = New Size(248, 26)
+        TimeInTimeOutToolStripMenuItem.Size = New Size(277, 26)
         TimeInTimeOutToolStripMenuItem.Text = "1. Time_In/Time_Out"
         ' 
         ' AttendenceRecordToolStripMenuItem
         ' 
         AttendenceRecordToolStripMenuItem.Name = "AttendenceRecordToolStripMenuItem"
-        AttendenceRecordToolStripMenuItem.Size = New Size(248, 26)
+        AttendenceRecordToolStripMenuItem.Size = New Size(277, 26)
         AttendenceRecordToolStripMenuItem.Text = "2. Attendence Record"
         ' 
         ' ReportOfAllRecordToolStripMenuItem
         ' 
         ReportOfAllRecordToolStripMenuItem.Name = "ReportOfAllRecordToolStripMenuItem"
-        ReportOfAllRecordToolStripMenuItem.Size = New Size(248, 26)
+        ReportOfAllRecordToolStripMenuItem.Size = New Size(277, 26)
         ReportOfAllRecordToolStripMenuItem.Text = "3. Report of all record"
         ' 
         ' ExitToolStripMenuItem1
@@ -207,6 +208,12 @@ Partial Class Form1
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 6
         PictureBox1.TabStop = False
+        ' 
+        ' EmployeesAttendenceToolStripMenuItem
+        ' 
+        EmployeesAttendenceToolStripMenuItem.Name = "EmployeesAttendenceToolStripMenuItem"
+        EmployeesAttendenceToolStripMenuItem.Size = New Size(277, 26)
+        EmployeesAttendenceToolStripMenuItem.Text = "4. Employee's Attendence"
         ' 
         ' Form1
         ' 
@@ -256,5 +263,6 @@ Partial Class Form1
     Friend WithEvents TimeInTimeOutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AttendenceRecordToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReportOfAllRecordToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EmployeesAttendenceToolStripMenuItem As ToolStripMenuItem
 
 End Class
