@@ -3,6 +3,7 @@ package GUI;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.awt.FlowLayout;
 
 public class JavaSwingEx extends JFrame
 {
@@ -24,7 +25,7 @@ public class JavaSwingEx extends JFrame
 		//textField1.setBounds(100,100,50,50);
 		panel1.add(textfield1);
 		
-		textarea1 = new JTextArea(4);
+		textarea1 = new JTextArea(10,20);
 		//textArea1.setBounds(100,100,50,50);
 		panel1.add(textarea1);
 		
@@ -49,6 +50,7 @@ public class JavaSwingEx extends JFrame
 		setVisible(true);
 		setTitle("JavaSwingEx");
 		setSize(500,700);
+		setLayout(new FlowLayout());
 	}
 	public static void main(String []args)
 	{
