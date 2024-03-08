@@ -9,14 +9,16 @@
     <h2>Ashish Kumar Singh</h2>
     <h3>Remove an html element</h3>
     <div>
-        <p>This is Paragraph 1</p>
+        <p id="p1">This is Paragraph 1</p>
         <p id="p2">This is another paragraph</p>
     </div>
     <button style="cursor: pointer;"onclick="func()">Remove Element</button>
     <script>
         function func()
         {
-            document.getElementsByTagName("div").innerHTML.remove();
+            document.getElementsById("p2").innerHtml=remove();
+            
+            document.body.style.backgroundColor="red";
         }
     </script>
 </body>
