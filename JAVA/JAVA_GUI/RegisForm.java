@@ -14,76 +14,73 @@ public class RegisForm extends JFrame
 	
 	public RegisForm()
 	{
-		
-		setLayout(new GridBagLayout());
 		GridBagConstraints c = new GridBagConstraints();
 		
-		main = new JPanel();
-		rbutton= new JPanel();
-		sub = new JButton("SignUp");
-		lblName = new JLabel("Name: ");
-		lblEmail = new JLabel("Email: ");
-		lblPno = new JLabel("Phone No: ");
-		lblGender = new JLabel("Gender: ");
-		header = new JLabel("Registration Form");
-		name = new JTextField(20);
-		email = new JTextField(20);
-		pno = new JTextField(20);
-		gender = new ButtonGroup();
-		male = new JRadioButton("Male");
-		female = new JRadioButton("Female");
+		c.fill = GridBagConstraints.HORIZONTAL; 
 		
+		main = new JPanel();
+		main.setLayout(new GridBagLayout());
 		
 		c.gridx = 0;
-		c.gridy = 0;
-		c.weighty =1;
-		c.weightx=2;
-		//c.anchor = c.FIRST_LINE_START;
+		c.gridy= 0;
+		c.gridwidth = 2;
+		header = new JLabel("Registration Form");
+		c.anchor = GridBagConstraints.CENTER;
 		main.add(header,c);
 		
-		c.gridx = 1;
-		c.gridy= 0;
-		c.weightx=1;
+		c.gridwidth = 1;
+		c.fill = c.HORIZONTAL;
+		lblName = new JLabel("Name: ");
+		c.gridx = 0;
+		c.gridy= 1;
 		main.add(lblName,c);
-
-		c.gridy = 1;
+		
+		name = new JTextField(20);
+		c.gridx = 1;
 		main.add(name,c);
 		
-		c.gridx = 2;
+		lblEmail = new JLabel("Email: ");
 		c.gridx = 0;
+		c.gridy= 2;
 		main.add(lblEmail,c);
 		
-		c.gridy = 1;
+		email = new JTextField(20);
+		c.gridx = 1;
 		main.add(email,c);
-
-		c.gridx = 3;
+		
+		lblPno = new JLabel("Phone No: ");
+		c.gridy = 3;
 		c.gridx = 0;
 		main.add(lblPno,c);
 		
-		c.gridy = 1;
+		pno = new JTextField(20);
+		c.gridx = 1;
 		main.add(pno,c);
 		
-		c.gridx = 4;
-		c.gridy = 0;
+		lblGender = new JLabel("Gender: ");
+		c.gridx = 0;
+		c.gridy = 4;
 		main.add(lblGender,c);
 		
-		c.gridy = 1;
+		gender = new ButtonGroup();
+		rbutton= new JPanel();
+		male = new JRadioButton("Male");
+		female = new JRadioButton("Female");
+		c.gridx = 1;
 		rbutton.add(male);
 		rbutton.add(female);
 		main.add(rbutton,c);
 		
-		c.gridx = 5;
-		c.gridy = 1;
+		sub = new JButton("SignUp");
+		c.gridx = 1;
+		c.gridy = 5;
+		c.gridwidth = 2;
 		main.add(sub,c);
 		
 		main.setBackground(Color.CYAN);
-		c.anchor = c.FIRST_LINE_START;
-		c.fill = GridBagConstraints.HORIZONTAL; 
-		main.setSize(750,750);
-		add(main,c);
+		add(main);
 		setSize(800,800);
 		setVisible(true);
-		setResizable(false);
 		setTitle("Registration Form");
 	}
 	

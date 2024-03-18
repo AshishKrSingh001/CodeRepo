@@ -73,7 +73,7 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        a18_signin.ShowDialog()
+        'a18_signin.ShowDialog()
     End Sub
 
     Private Sub EmployeesAttendenceToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EmployeesAttendenceToolStripMenuItem.Click
