@@ -1,5 +1,5 @@
 ﻿Public Class Form1
-    Public conString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Repo\CodeRepo\VB.NET\Employee_Information_Management_System\Employee_Information_Management_System\Employee_DepartmentDB.mdf;Integrated Security=True"
+    Public conString As String = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Repo\CodeRepo\VB.NET\Employee_Information_Management_System\Employee_Information_Management_System\Employee_DepartmentDB.mdf;Integrated Security=True"
     Private Sub DeptMenuStrip_Click(sender As Object, e As EventArgs) Handles DeptMenuStrip.Click
         a01_FormDept.ShowDialog()
     End Sub
@@ -73,7 +73,7 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'a18_signin.ShowDialog()
+        a18_signin.ShowDialog()
     End Sub
 
     Private Sub EmployeesAttendenceToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EmployeesAttendenceToolStripMenuItem.Click

@@ -1475,19 +1475,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ashis\\.nuget\\packages\\": {}
+    "C:\\Users\\ASHISH KUMAR\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\Employee_Information_Management_System.vbproj",
+      "projectUniqueName": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\Employee_Information_Management_System.vbproj",
       "projectName": "Employee_Information_Management_System",
-      "projectPath": "D:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\Employee_Information_Management_System.vbproj",
-      "packagesPath": "C:\\Users\\ashis\\.nuget\\packages\\",
-      "outputPath": "D:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\obj\\",
+      "projectPath": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\Employee_Information_Management_System.vbproj",
+      "packagesPath": "C:\\Users\\ASHISH KUMAR\\.nuget\\packages\\",
+      "outputPath": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ashis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ASHISH KUMAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1508,6 +1513,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1562,7 +1572,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
