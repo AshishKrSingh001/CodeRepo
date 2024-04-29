@@ -20,9 +20,8 @@ Partial Class a18_signin
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(a18_signin))
         Label3 = New Label()
         Label4 = New Label()
         txtUname = New TextBox()
@@ -33,8 +32,11 @@ Partial Class a18_signin
         Button4 = New Button()
         GroupBox1 = New GroupBox()
         PictureBox1 = New PictureBox()
+        Panel1 = New Panel()
+        Label5 = New Label()
         GroupBox1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        Panel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' Label3
@@ -130,9 +132,9 @@ Partial Class a18_signin
         GroupBox1.Controls.Add(Label4)
         GroupBox1.Controls.Add(Label3)
         GroupBox1.Font = New Font("Segoe UI", 9F, FontStyle.Bold Or FontStyle.Italic)
-        GroupBox1.Location = New Point(-1, 135)
+        GroupBox1.Location = New Point(1, 177)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(583, 190)
+        GroupBox1.Size = New Size(536, 219)
         GroupBox1.TabIndex = 12
         GroupBox1.TabStop = False
         GroupBox1.Text = "Login Form"
@@ -141,25 +143,46 @@ Partial Class a18_signin
         ' PictureBox1
         ' 
         PictureBox1.Image = My.Resources.Resources.EmpImage1
-        PictureBox1.Location = New Point(228, 12)
+        PictureBox1.Location = New Point(204, 66)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(126, 117)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 33
         PictureBox1.TabStop = False
         ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(128))
+        Panel1.Controls.Add(Label5)
+        Panel1.Dock = DockStyle.Top
+        Panel1.Location = New Point(0, 0)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(537, 51)
+        Panel1.TabIndex = 34
+        ' 
+        ' Label5
+        ' 
+        Label5.Dock = DockStyle.Fill
+        Label5.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
+        Label5.Location = New Point(0, 0)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(537, 51)
+        Label5.TabIndex = 41
+        Label5.Text = "ADMINISTRATOR LOGIN"
+        Label5.TextAlign = ContentAlignment.MiddleCenter
+        ' 
         ' a18_signin
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ButtonShadow
-        ClientSize = New Size(584, 331)
+        ClientSize = New Size(537, 398)
         ControlBox = False
+        Controls.Add(Panel1)
         Controls.Add(PictureBox1)
         Controls.Add(GroupBox1)
         Font = New Font("Segoe UI", 9F, FontStyle.Bold Or FontStyle.Italic)
         FormBorderStyle = FormBorderStyle.Fixed3D
-        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         MinimizeBox = False
         Name = "a18_signin"
@@ -167,6 +190,7 @@ Partial Class a18_signin
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        Panel1.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
 
@@ -180,4 +204,7 @@ Partial Class a18_signin
     Friend WithEvents Button4 As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label5 As Label
 End Class
+

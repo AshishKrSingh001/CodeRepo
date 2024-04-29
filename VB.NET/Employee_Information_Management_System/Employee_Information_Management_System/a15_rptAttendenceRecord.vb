@@ -8,7 +8,7 @@ Public Class a15_rptAttendenceRecord
     Dim ds As DataSet
     Sub displayRecords()
         Try
-            Dim cmd As New SqlCommand("Select Id,EmpTable.EmpNo,EmpName,DptNo,attenDate,inTime,inStatus,outTime,outStatus,TimeDuration from Attendence,EmpTable where Attendence.EmpNo = EmpTable.EmpNo", con)
+            Dim cmd As New SqlCommand("Select Id,EmpTable.EmpNo,EmpName,DptNo,attenDate,inTime,inStatus,outTime,outStatus,TimeDuration from AttendanceTable,EmpTable where AttendanceTable.EmpNo = EmpTable.EmpNo", con)
             Dim da As New SqlDataAdapter(cmd)
             ds = New DataSet
             da.Fill(ds, "Atten")
@@ -36,7 +36,7 @@ Public Class a15_rptAttendenceRecord
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
-    Private Sub rptAttendenceRecord_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub rptAttendanceRecord_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         displayRecords()
     End Sub
 

@@ -25,6 +25,9 @@ Public Class a18_signin
             Else
                 Me.Close()
                 MessageBox.Show("Login Successfully", "Login Details", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                If (MessageBoxButtons.OK) Then
+                    Form1.ShowDialog()
+                End If
             End If
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -43,4 +46,5 @@ Public Class a18_signin
         CheckBox1.Checked = False
         txtUname.Focus()
     End Sub
+
 End Class

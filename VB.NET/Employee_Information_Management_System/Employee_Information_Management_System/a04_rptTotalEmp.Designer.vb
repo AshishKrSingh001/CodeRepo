@@ -59,7 +59,7 @@ Partial Class a04_rptTotalEmp
         btnExportToExcel.Dock = DockStyle.Bottom
         btnExportToExcel.FlatStyle = FlatStyle.Flat
         btnExportToExcel.ForeColor = SystemColors.Control
-        btnExportToExcel.Location = New Point(0, 459)
+        btnExportToExcel.Location = New Point(0, 544)
         btnExportToExcel.Name = "btnExportToExcel"
         btnExportToExcel.Size = New Size(1267, 40)
         btnExportToExcel.TabIndex = 20

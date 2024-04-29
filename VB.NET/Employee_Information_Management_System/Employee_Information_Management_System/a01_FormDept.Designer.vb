@@ -49,6 +49,7 @@ Partial Class a01_FormDept
         txtDeptNo = New MaskedTextBox()
         GroupBox1 = New GroupBox()
         btnExportToExcel = New Button()
+        Label2 = New Label()
         gbOperations.SuspendLayout()
         gbNavigation.SuspendLayout()
         gbSorting.SuspendLayout()
@@ -116,7 +117,7 @@ Partial Class a01_FormDept
         gbOperations.Controls.Add(btnFilter)
         gbOperations.Controls.Add(btnUpdate)
         gbOperations.Controls.Add(btnInsert)
-        gbOperations.Location = New Point(12, 156)
+        gbOperations.Location = New Point(12, 202)
         gbOperations.Margin = New Padding(2)
         gbOperations.Name = "gbOperations"
         gbOperations.Padding = New Padding(2)
@@ -215,7 +216,7 @@ Partial Class a01_FormDept
         gbNavigation.Controls.Add(btnNav3)
         gbNavigation.Controls.Add(btnNav2)
         gbNavigation.Controls.Add(btnNav1)
-        gbNavigation.Location = New Point(499, 316)
+        gbNavigation.Location = New Point(499, 362)
         gbNavigation.Margin = New Padding(2)
         gbNavigation.Name = "gbNavigation"
         gbNavigation.Padding = New Padding(2)
@@ -288,7 +289,7 @@ Partial Class a01_FormDept
         ' 
         gbSorting.Controls.Add(btnDes)
         gbSorting.Controls.Add(btnAsc)
-        gbSorting.Location = New Point(12, 316)
+        gbSorting.Location = New Point(12, 362)
         gbSorting.Margin = New Padding(2)
         gbSorting.Name = "gbSorting"
         gbSorting.Padding = New Padding(2)
@@ -338,7 +339,7 @@ Partial Class a01_FormDept
         DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView1.Cursor = Cursors.Hand
-        DataGridView1.Location = New Point(499, 16)
+        DataGridView1.Location = New Point(499, 62)
         DataGridView1.Margin = New Padding(2)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
@@ -364,7 +365,7 @@ Partial Class a01_FormDept
         GroupBox1.Controls.Add(Label10)
         GroupBox1.Controls.Add(txtDeptName)
         GroupBox1.Controls.Add(txtLocation)
-        GroupBox1.Location = New Point(12, 12)
+        GroupBox1.Location = New Point(12, 58)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(461, 139)
         GroupBox1.TabIndex = 19
@@ -378,19 +379,33 @@ Partial Class a01_FormDept
         btnExportToExcel.Dock = DockStyle.Bottom
         btnExportToExcel.FlatStyle = FlatStyle.Flat
         btnExportToExcel.ForeColor = SystemColors.Control
-        btnExportToExcel.Location = New Point(0, 404)
+        btnExportToExcel.Location = New Point(0, 446)
         btnExportToExcel.Name = "btnExportToExcel"
         btnExportToExcel.Size = New Size(1070, 40)
         btnExportToExcel.TabIndex = 17
         btnExportToExcel.Text = "Export To Excel"
         btnExportToExcel.UseVisualStyleBackColor = False
         ' 
+        ' Label2
+        ' 
+        Label2.BackColor = Color.IndianRed
+        Label2.Dock = DockStyle.Top
+        Label2.Font = New Font("Segoe UI", 15F, FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.FromArgb(CByte(0), CByte(64), CByte(0))
+        Label2.Location = New Point(0, 0)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(1070, 49)
+        Label2.TabIndex = 45
+        Label2.Text = "Department Details"
+        Label2.TextAlign = ContentAlignment.MiddleCenter
+        ' 
         ' a01_FormDept
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ButtonShadow
-        ClientSize = New Size(1070, 444)
+        ClientSize = New Size(1070, 486)
+        Controls.Add(Label2)
         Controls.Add(btnExportToExcel)
         Controls.Add(GroupBox1)
         Controls.Add(gbSorting)
@@ -404,7 +419,7 @@ Partial Class a01_FormDept
         MinimizeBox = False
         Name = "a01_FormDept"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Department Information"
+        Text = "Department Form"
         gbOperations.ResumeLayout(False)
         gbNavigation.ResumeLayout(False)
         gbSorting.ResumeLayout(False)
@@ -439,4 +454,5 @@ Partial Class a01_FormDept
     Friend WithEvents txtDeptNo As MaskedTextBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents btnExportToExcel As Button
+    Friend WithEvents Label2 As Label
 End Class

@@ -24,6 +24,8 @@ Partial Class a19_Attendence_of_Each_Individual
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(a19_Attendence_of_Each_Individual))
         GroupBox1 = New GroupBox()
+        PictureBox2 = New PictureBox()
+        PictureBox1 = New PictureBox()
         Label7 = New Label()
         Label6 = New Label()
         Label5 = New Label()
@@ -35,12 +37,10 @@ Partial Class a19_Attendence_of_Each_Individual
         Label1 = New Label()
         btnExport_to_Excel = New Button()
         dgvEmp = New DataGridView()
-        PictureBox1 = New PictureBox()
-        PictureBox2 = New PictureBox()
         GroupBox1.SuspendLayout()
-        CType(dgvEmp, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgvEmp, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' GroupBox1
@@ -63,6 +63,26 @@ Partial Class a19_Attendence_of_Each_Individual
         GroupBox1.TabIndex = 0
         GroupBox1.TabStop = False
         GroupBox1.Text = "Employee Details"
+        ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.Image = My.Resources.Resources.logo
+        PictureBox2.Location = New Point(876, 20)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(357, 199)
+        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox2.TabIndex = 25
+        PictureBox2.TabStop = False
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = My.Resources.Resources.bImage1
+        PictureBox1.Location = New Point(12, 26)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(357, 199)
+        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox1.TabIndex = 24
+        PictureBox1.TabStop = False
         ' 
         ' Label7
         ' 
@@ -181,26 +201,6 @@ Partial Class a19_Attendence_of_Each_Individual
         dgvEmp.Size = New Size(1245, 523)
         dgvEmp.TabIndex = 30
         ' 
-        ' PictureBox1
-        ' 
-        PictureBox1.Image = My.Resources.Resources.bImage1
-        PictureBox1.Location = New Point(12, 26)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(357, 199)
-        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox1.TabIndex = 24
-        PictureBox1.TabStop = False
-        ' 
-        ' PictureBox2
-        ' 
-        PictureBox2.Image = My.Resources.Resources.logo
-        PictureBox2.Location = New Point(876, 20)
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(357, 199)
-        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox2.TabIndex = 25
-        PictureBox2.TabStop = False
-        ' 
         ' a19_Attendence_of_Each_Individual
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
@@ -214,12 +214,12 @@ Partial Class a19_Attendence_of_Each_Individual
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "a19_Attendence_of_Each_Individual"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Attendence of Employee"
+        Text = "Attendance of Employee"
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
-        CType(dgvEmp, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvEmp, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 

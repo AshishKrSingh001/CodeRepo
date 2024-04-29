@@ -44,9 +44,11 @@ Partial Class Form1
         TimeInTimeOutToolStripMenuItem = New ToolStripMenuItem()
         AttendenceRecordToolStripMenuItem = New ToolStripMenuItem()
         ReportOfAllRecordToolStripMenuItem = New ToolStripMenuItem()
-        ExitToolStripMenuItem1 = New ToolStripMenuItem()
-        PictureBox1 = New PictureBox()
         EmployeesAttendenceToolStripMenuItem = New ToolStripMenuItem()
+        ExitToolStripMenuItem1 = New ToolStripMenuItem()
+        ExitToolStripMenuItem = New ToolStripMenuItem()
+        PictureBox1 = New PictureBox()
+        GeneratePayrollToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -54,7 +56,7 @@ Partial Class Form1
         ' MenuStrip1
         ' 
         MenuStrip1.ImageScalingSize = New Size(20, 20)
-        MenuStrip1.Items.AddRange(New ToolStripItem() {DataEntryToolStripMenuItem1, ReportToolStripMenuItem, AttendenceToolStripMenuItem, ExitToolStripMenuItem1})
+        MenuStrip1.Items.AddRange(New ToolStripItem() {DataEntryToolStripMenuItem1, ReportToolStripMenuItem, AttendenceToolStripMenuItem, ExitToolStripMenuItem1, ExitToolStripMenuItem})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.Padding = New Padding(5, 1, 0, 1)
@@ -188,12 +190,26 @@ Partial Class Form1
         ReportOfAllRecordToolStripMenuItem.Size = New Size(277, 26)
         ReportOfAllRecordToolStripMenuItem.Text = "3. Report of all record"
         ' 
+        ' EmployeesAttendenceToolStripMenuItem
+        ' 
+        EmployeesAttendenceToolStripMenuItem.Name = "EmployeesAttendenceToolStripMenuItem"
+        EmployeesAttendenceToolStripMenuItem.Size = New Size(277, 26)
+        EmployeesAttendenceToolStripMenuItem.Text = "4. Employee's Attendence"
+        ' 
         ' ExitToolStripMenuItem1
         ' 
+        ExitToolStripMenuItem1.DropDownItems.AddRange(New ToolStripItem() {GeneratePayrollToolStripMenuItem})
         ExitToolStripMenuItem1.Font = New Font("Segoe UI Black", 9F, FontStyle.Bold Or FontStyle.Italic)
         ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        ExitToolStripMenuItem1.Size = New Size(51, 24)
-        ExitToolStripMenuItem1.Text = "Exit"
+        ExitToolStripMenuItem1.Size = New Size(76, 24)
+        ExitToolStripMenuItem1.Text = "Payroll"
+        ' 
+        ' ExitToolStripMenuItem
+        ' 
+        ExitToolStripMenuItem.Font = New Font("Segoe UI Black", 9F, FontStyle.Bold Or FontStyle.Italic)
+        ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        ExitToolStripMenuItem.Size = New Size(51, 24)
+        ExitToolStripMenuItem.Text = "Exit"
         ' 
         ' PictureBox1
         ' 
@@ -209,11 +225,11 @@ Partial Class Form1
         PictureBox1.TabIndex = 6
         PictureBox1.TabStop = False
         ' 
-        ' EmployeesAttendenceToolStripMenuItem
+        ' GeneratePayrollToolStripMenuItem
         ' 
-        EmployeesAttendenceToolStripMenuItem.Name = "EmployeesAttendenceToolStripMenuItem"
-        EmployeesAttendenceToolStripMenuItem.Size = New Size(277, 26)
-        EmployeesAttendenceToolStripMenuItem.Text = "4. Employee's Attendence"
+        GeneratePayrollToolStripMenuItem.Name = "GeneratePayrollToolStripMenuItem"
+        GeneratePayrollToolStripMenuItem.Size = New Size(224, 26)
+        GeneratePayrollToolStripMenuItem.Text = "GeneratePayroll"
         ' 
         ' Form1
         ' 
@@ -264,5 +280,7 @@ Partial Class Form1
     Friend WithEvents AttendenceRecordToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReportOfAllRecordToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EmployeesAttendenceToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GeneratePayrollToolStripMenuItem As ToolStripMenuItem
 
 End Class

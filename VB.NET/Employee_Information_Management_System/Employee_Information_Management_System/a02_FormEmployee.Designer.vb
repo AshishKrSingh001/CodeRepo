@@ -20,7 +20,7 @@ Partial Class a02_FormEmployee
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(a02_FormEmployee))
         dgvEmp = New DataGridView()
@@ -71,6 +71,7 @@ Partial Class a02_FormEmployee
         Label10 = New Label()
         GroupBox5 = New GroupBox()
         cbsame = New CheckBox()
+        Label11 = New Label()
         CType(dgvEmp, ComponentModel.ISupportInitialize).BeginInit()
         gbOperations.SuspendLayout()
         gbSorting.SuspendLayout()
@@ -87,7 +88,7 @@ Partial Class a02_FormEmployee
         dgvEmp.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvEmp.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvEmp.Cursor = Cursors.Hand
-        dgvEmp.Location = New Point(453, 10)
+        dgvEmp.Location = New Point(453, 57)
         dgvEmp.Margin = New Padding(2)
         dgvEmp.Name = "dgvEmp"
         dgvEmp.RowHeadersWidth = 51
@@ -102,7 +103,7 @@ Partial Class a02_FormEmployee
         gbOperations.Controls.Add(btnFilter)
         gbOperations.Controls.Add(btnUpdate)
         gbOperations.Controls.Add(btnInsert)
-        gbOperations.Location = New Point(11, 674)
+        gbOperations.Location = New Point(11, 721)
         gbOperations.Margin = New Padding(2)
         gbOperations.Name = "gbOperations"
         gbOperations.Padding = New Padding(2)
@@ -199,7 +200,7 @@ Partial Class a02_FormEmployee
         ' 
         gbSorting.Controls.Add(btnDes)
         gbSorting.Controls.Add(btnAsc)
-        gbSorting.Location = New Point(1421, 675)
+        gbSorting.Location = New Point(1421, 722)
         gbSorting.Margin = New Padding(2)
         gbSorting.Name = "gbSorting"
         gbSorting.Padding = New Padding(2)
@@ -242,7 +243,7 @@ Partial Class a02_FormEmployee
         gbNavigation.Controls.Add(btnNav2)
         gbNavigation.Controls.Add(btnNav4)
         gbNavigation.Controls.Add(btnNav1)
-        gbNavigation.Location = New Point(830, 675)
+        gbNavigation.Location = New Point(830, 722)
         gbNavigation.Margin = New Padding(2)
         gbNavigation.Name = "gbNavigation"
         gbNavigation.Padding = New Padding(2)
@@ -325,7 +326,7 @@ Partial Class a02_FormEmployee
         GroupBox1.Controls.Add(Label3)
         GroupBox1.Controls.Add(Label2)
         GroupBox1.Controls.Add(Label1)
-        GroupBox1.Location = New Point(14, 12)
+        GroupBox1.Location = New Point(14, 58)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(434, 222)
         GroupBox1.TabIndex = 0
@@ -453,7 +454,7 @@ Partial Class a02_FormEmployee
         btnExportToExcel.Dock = DockStyle.Bottom
         btnExportToExcel.FlatStyle = FlatStyle.Flat
         btnExportToExcel.ForeColor = SystemColors.Control
-        btnExportToExcel.Location = New Point(0, 754)
+        btnExportToExcel.Location = New Point(0, 803)
         btnExportToExcel.Name = "btnExportToExcel"
         btnExportToExcel.Size = New Size(1769, 40)
         btnExportToExcel.TabIndex = 28
@@ -468,7 +469,7 @@ Partial Class a02_FormEmployee
         GroupBox2.Controls.Add(GroupBox3)
         GroupBox2.Controls.Add(dtpDob)
         GroupBox2.Controls.Add(Label7)
-        GroupBox2.Location = New Point(14, 240)
+        GroupBox2.Location = New Point(14, 286)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Size = New Size(434, 224)
         GroupBox2.TabIndex = 6
@@ -639,7 +640,7 @@ Partial Class a02_FormEmployee
         GroupBox5.Controls.Add(txtcAdd)
         GroupBox5.Controls.Add(Label9)
         GroupBox5.Controls.Add(txtpAdd)
-        GroupBox5.Location = New Point(14, 470)
+        GroupBox5.Location = New Point(14, 516)
         GroupBox5.Name = "GroupBox5"
         GroupBox5.Size = New Size(434, 200)
         GroupBox5.TabIndex = 13
@@ -656,13 +657,27 @@ Partial Class a02_FormEmployee
         cbsame.Text = "Both Same"
         cbsame.UseVisualStyleBackColor = True
         ' 
+        ' Label11
+        ' 
+        Label11.BackColor = Color.IndianRed
+        Label11.Dock = DockStyle.Top
+        Label11.Font = New Font("Segoe UI", 15F, FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
+        Label11.ForeColor = Color.FromArgb(CByte(0), CByte(64), CByte(0))
+        Label11.Location = New Point(0, 0)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(1769, 55)
+        Label11.TabIndex = 45
+        Label11.Text = "Employee's Details"
+        Label11.TextAlign = ContentAlignment.MiddleCenter
+        ' 
         ' a02_FormEmployee
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         AutoSize = True
         BackColor = SystemColors.ButtonShadow
-        ClientSize = New Size(1769, 794)
+        ClientSize = New Size(1769, 843)
+        Controls.Add(Label11)
         Controls.Add(GroupBox5)
         Controls.Add(GroupBox2)
         Controls.Add(btnExportToExcel)
@@ -677,7 +692,7 @@ Partial Class a02_FormEmployee
         MinimizeBox = False
         Name = "a02_FormEmployee"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Employee Information"
+        Text = "Employee Form"
         CType(dgvEmp, ComponentModel.ISupportInitialize).EndInit()
         gbOperations.ResumeLayout(False)
         gbSorting.ResumeLayout(False)
@@ -746,5 +761,6 @@ Partial Class a02_FormEmployee
     Friend WithEvents cbsame As CheckBox
     Friend WithEvents rbUnM As RadioButton
     Friend WithEvents rbM As RadioButton
+    Friend WithEvents Label11 As Label
 
 End Class

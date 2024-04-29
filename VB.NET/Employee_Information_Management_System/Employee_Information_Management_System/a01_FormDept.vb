@@ -1,6 +1,4 @@
-﻿Imports System.Data
-Imports System.Data.SqlClient
-Imports System.Windows.Forms.VisualStyles
+﻿Imports System.Data.SqlClient
 
 Public Class a01_FormDept
     Dim con As New SqlConnection(Form1.conString)

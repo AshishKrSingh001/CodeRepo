@@ -12,7 +12,7 @@ Public Class a19_Attendence_of_Each_Individual
 
     Sub displayRecords()
         Try
-            Dim cmd As New SqlCommand("Select attenDate,inTime,inStatus,outTime,outStatus,TimeDuration from Attendence where EmpNo = @empno", con)
+            Dim cmd As New SqlCommand("Select attenDate,inTime,inStatus,outTime,outStatus,TimeDuration from AttendanceTable where EmpNo = @empno", con)
             cmd.Parameters.Clear()
             cmd.Parameters.AddWithValue("@empno", no)
             Dim da As New SqlDataAdapter(cmd)
@@ -51,7 +51,7 @@ Public Class a19_Attendence_of_Each_Individual
 
 
     End Sub
-    Private Sub Attendence_of_Each_Individual_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Attendance_of_Each_Individual_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         no = 10001
         displayRecords()
     End Sub

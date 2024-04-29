@@ -6,7 +6,7 @@ Public Class a17_ReportOfAllRecord
     Dim ds As DataSet
     Sub displayRecords()
         Try
-            Dim cmd As New SqlCommand("Select Id,EmpTable.EmpNo,EmpName,EmpTable.DptNo,DptName,Location,Date_OJ,Email,MobNo,Salary,attenDate,inTime,inStatus,outTime,outStatus,TimeDuration from Attendence,EmpTable,DeptTable where Attendence.EmpNo = EmpTable.EmpNo AND EmpTable.DptNo = DeptTable.DptNo", con)
+            Dim cmd As New SqlCommand("Select Id,EmpTable.EmpNo,EmpName,EmpTable.DptNo,DptName,Location,Date_OJ,Email,MobNo,Salary,attenDate,inTime,inStatus,outTime,outStatus,TimeDuration from AttendanceTable,EmpTable,DeptTable where AttendanceTable.EmpNo = EmpTable.EmpNo AND EmpTable.DptNo = DeptTable.DptNo", con)
             Dim da As New SqlDataAdapter(cmd)
             ds = New DataSet
             da.Fill(ds, "Atten")

@@ -69,7 +69,7 @@ Partial Class a15_rptAttendenceRecord
         MinimizeBox = False
         Name = "a15_rptAttendenceRecord"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Attendence Record"
+        Text = "Attendance Record"
         CType(dgvEmp, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub

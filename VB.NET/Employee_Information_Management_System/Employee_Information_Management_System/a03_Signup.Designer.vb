@@ -36,6 +36,7 @@ Partial Class a03_Signup
         CheckBox1 = New CheckBox()
         Label4 = New Label()
         PictureBox1 = New PictureBox()
+        Label3 = New Label()
         GroupBox1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -55,7 +56,7 @@ Partial Class a03_Signup
         GroupBox1.Controls.Add(CheckBox1)
         GroupBox1.Controls.Add(Label4)
         GroupBox1.Font = New Font("Segoe UI", 9F, FontStyle.Bold Or FontStyle.Italic)
-        GroupBox1.Location = New Point(12, 135)
+        GroupBox1.Location = New Point(12, 191)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(528, 277)
         GroupBox1.TabIndex = 13
@@ -170,19 +171,33 @@ Partial Class a03_Signup
         ' PictureBox1
         ' 
         PictureBox1.Image = My.Resources.Resources.EmpImage1
-        PictureBox1.Location = New Point(216, 12)
+        PictureBox1.Location = New Point(215, 68)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(126, 117)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 32
         PictureBox1.TabStop = False
         ' 
+        ' Label3
+        ' 
+        Label3.BackColor = Color.IndianRed
+        Label3.Dock = DockStyle.Top
+        Label3.Font = New Font("Segoe UI", 15F, FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
+        Label3.ForeColor = Color.FromArgb(CByte(0), CByte(64), CByte(0))
+        Label3.Location = New Point(0, 0)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(548, 63)
+        Label3.TabIndex = 45
+        Label3.Text = "Reset Password"
+        Label3.TextAlign = ContentAlignment.MiddleCenter
+        ' 
         ' a03_Signup
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ButtonShadow
-        ClientSize = New Size(548, 426)
+        ClientSize = New Size(548, 475)
+        Controls.Add(Label3)
         Controls.Add(PictureBox1)
         Controls.Add(GroupBox1)
         Font = New Font("Segoe UI", 9F, FontStyle.Bold Or FontStyle.Italic)
@@ -210,4 +225,5 @@ Partial Class a03_Signup
     Friend WithEvents txtNo As MaskedTextBox
     Friend WithEvents btnClear As Button
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label3 As Label
 End Class
