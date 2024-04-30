@@ -18,7 +18,7 @@ Public Class a02_FormEmployee
     End Sub
     Sub displayRecords()
         Try
-            Dim cmd As New SqlCommand("Select * from EmpTable", con)
+            Dim cmd As New SqlCommand("SELECT EmpTable.EmpNo, EmpTable.EmpName, EmpTable.Salary, DeptTable.DptName, EmpTable.Date_OJ, EmpTable.Email, EmpTable.MobNo, EmpTable.DOB, EmpTable.Gender, EmpTable.MaritalStatus, EmpTable.BloodGroup, EmpTable.CorrospondenceAddress, EmpTable.PermanentAddress FROM EmpTable INNER JOIN DeptTable ON EmpTable.DptNo = DeptTable.DptNo ", con)
             Dim da As New SqlDataAdapter(cmd)
             ds = New DataSet
             da.Fill(ds, "Emp")
@@ -34,7 +34,7 @@ Public Class a02_FormEmployee
                 .Columns(0).HeaderCell.Value = "Employee's No"
                 .Columns(1).HeaderCell.Value = "Employee's Name"
                 .Columns(2).HeaderCell.Value = "Salary"
-                .Columns(3).HeaderCell.Value = "Department No"
+                .Columns(3).HeaderCell.Value = "Department Name"
                 .Columns(4).HeaderCell.Value = "Date of Joining"
                 .Columns(5).HeaderCell.Value = "Email"
                 .Columns(6).HeaderCell.Value = "Mobile No"
@@ -47,7 +47,7 @@ Public Class a02_FormEmployee
                 .Columns(0).FillWeight = 40
                 .Columns(1).FillWeight = 80
                 .Columns(2).FillWeight = 40
-                .Columns(3).FillWeight = 40
+                .Columns(3).FillWeight = 90
                 .Columns(4).FillWeight = 60
                 .Columns(5).FillWeight = 100
                 .Columns(6).FillWeight = 60

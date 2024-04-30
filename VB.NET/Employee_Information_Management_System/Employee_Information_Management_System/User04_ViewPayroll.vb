@@ -6,25 +6,12 @@ Public Class User04_ViewPayroll
     Private Sub btnExport_to_Excel_Click(sender As Object, e As EventArgs) Handles btnExport_to_Excel.Click
         Dim ete As New Export_to_Excel(dgvEmp)
     End Sub
-    Function generateEmpNo()
-        Try
-            Dim cmd As New SqlCommand("Select EmpNo from EmpTable where email = @email", con)
-            cmd.Parameters.Clear()
-            cmd.Parameters.AddWithValue("@email", User.user)
-            con.Open()
-            Return cmd.ExecuteScalar
-            con.Close()
-
-        Catch ex As Exception
-            MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
-    End Function
 
     Private Sub User04_ViewPayroll_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
-            Dim cmd As New SqlCommand("Select * from Payroll where EmpNo = @eno", con)
+            Dim cmd As New SqlCommand("SELECT BaseSalary, TotalHours, TotalWorkingHours, CalculatedSalary, PayrollDate, ProvidentFund, TravelAllowance, DearnessAllowance, HouseRentAllowance, NetSalary, StartDate, EndDate, month FROM Payroll where EmpNo = @eno", con)
             cmd.Parameters.Clear()
-            cmd.Parameters.AddWithValue("@eno", generateEmpNo)
+            cmd.Parameters.AddWithValue("@eno", User.empNo)
             Dim da As New SqlDataAdapter(cmd)
             ds = New DataSet
             da.Fill(ds, "Atten")
@@ -39,16 +26,24 @@ Public Class User04_ViewPayroll
             dgvEmp.EnableHeadersVisualStyles = False
             With dgvEmp
                 .RowHeadersVisible = False
-                .Columns(0).HeaderCell.Value = "Date"
-                .Columns(1).HeaderCell.Value = "In Time"
-                .Columns(2).HeaderCell.Value = "In Status"
-                .Columns(3).HeaderCell.Value = "Out Time"
-                .Columns(4).HeaderCell.Value = "Out Status"
-                .Columns(5).HeaderCell.Value = "Time Duration"
+                .Columns(0).HeaderText = "Base Salary"
+                .Columns(1).HeaderText = "Total Hours"
+                .Columns(2).HeaderText = "Total Working Hours"
+                .Columns(3).HeaderText = "Calculated Salary"
+                .Columns(4).HeaderText = "Payroll Date"
+                .Columns(5).HeaderText = "Provident Fund"
+                .Columns(6).HeaderText = "Travel Allowance"
+                .Columns(7).HeaderText = "Dearness Allowance"
+                .Columns(8).HeaderText = "House Rent Allowance"
+                .Columns(9).HeaderText = "Net Salary"
+                .Columns(10).HeaderText = "Start Date"
+                .Columns(11).HeaderText = "End Date"
+                .Columns(12).HeaderText = "Month"
+
             End With
-            Dim cmd1 As New SqlCommand("Select EmpNo,EmpName,DptName,Emptable.DptNo from EmpTable,DeptTable where Email = @email AND EmpTable.DptNo = DeptTable.DptNo", con)
+            Dim cmd1 As New SqlCommand("Select EmpNo,EmpName,DptName,Emptable.DptNo from EmpTable,DeptTable where EmpNo = @empno AND EmpTable.DptNo = DeptTable.DptNo", con)
             cmd1.Parameters.Clear()
-            cmd1.Parameters.AddWithValue("@email", User.user)
+            cmd1.Parameters.AddWithValue("@empno", User.empNo)
             Dim da1 As New SqlDataAdapter(cmd1)
             ds = New DataSet
             da1.Fill(ds, "Emp")
@@ -56,7 +51,7 @@ Public Class User04_ViewPayroll
             Label6.Text = ds.Tables("Emp").Rows(0).Item(0)
             Label7.Text = ds.Tables("Emp").Rows(0).Item(2) & "(" & ds.Tables("Emp").Rows(0).Item(3) & ")"
         Catch ex As Exception
-            MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Error occurred at line " & New StackFrame(True).GetFileLineNumber & ": " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
 
     End Sub

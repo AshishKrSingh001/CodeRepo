@@ -34,8 +34,10 @@ Partial Class User
         ExitToolStripMenuItem = New ToolStripMenuItem()
         ExitToolStripMenuItem1 = New ToolStripMenuItem()
         PictureBox1 = New PictureBox()
+        PictureBox2 = New PictureBox()
         MenuStrip1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' MenuStrip1
@@ -125,6 +127,20 @@ Partial Class User
         PictureBox1.TabIndex = 6
         PictureBox1.TabStop = False
         ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        PictureBox2.BackColor = SystemColors.ActiveCaptionText
+        PictureBox2.BackgroundImageLayout = ImageLayout.Stretch
+        PictureBox2.ErrorImage = CType(resources.GetObject("PictureBox2.ErrorImage"), Image)
+        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
+        PictureBox2.Location = New Point(0, 26)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(718, 418)
+        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox2.TabIndex = 8
+        PictureBox2.TabStop = False
+        ' 
         ' User
         ' 
         AutoScaleDimensions = New SizeF(9F, 20F)
@@ -133,6 +149,7 @@ Partial Class User
         BackColor = SystemColors.ButtonShadow
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(718, 444)
+        Controls.Add(PictureBox2)
         Controls.Add(PictureBox1)
         Controls.Add(MenuStrip1)
         Font = New Font("Segoe UI", 9F, FontStyle.Bold Or FontStyle.Italic)
@@ -146,6 +163,7 @@ Partial Class User
         MenuStrip1.ResumeLayout(False)
         MenuStrip1.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -161,6 +179,7 @@ Partial Class User
     Friend WithEvents AttendanceReportToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents PictureBox2 As PictureBox
 
 End Class
 

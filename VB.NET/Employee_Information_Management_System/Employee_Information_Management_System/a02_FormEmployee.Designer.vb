@@ -92,7 +92,7 @@ Partial Class a02_FormEmployee
         dgvEmp.Margin = New Padding(2)
         dgvEmp.Name = "dgvEmp"
         dgvEmp.RowHeadersWidth = 51
-        dgvEmp.Size = New Size(1305, 660)
+        dgvEmp.Size = New Size(1361, 660)
         dgvEmp.TabIndex = 29
         ' 
         ' gbOperations
@@ -204,7 +204,7 @@ Partial Class a02_FormEmployee
         gbSorting.Margin = New Padding(2)
         gbSorting.Name = "gbSorting"
         gbSorting.Padding = New Padding(2)
-        gbSorting.Size = New Size(340, 74)
+        gbSorting.Size = New Size(393, 74)
         gbSorting.TabIndex = 26
         gbSorting.TabStop = False
         gbSorting.Text = "Sorting"
@@ -215,7 +215,7 @@ Partial Class a02_FormEmployee
         btnDes.Cursor = Cursors.Hand
         btnDes.FlatStyle = FlatStyle.Flat
         btnDes.ForeColor = SystemColors.Control
-        btnDes.Location = New Point(199, 30)
+        btnDes.Location = New Point(247, 29)
         btnDes.Margin = New Padding(2)
         btnDes.Name = "btnDes"
         btnDes.Size = New Size(125, 35)
@@ -229,7 +229,7 @@ Partial Class a02_FormEmployee
         btnAsc.Cursor = Cursors.Hand
         btnAsc.FlatStyle = FlatStyle.Flat
         btnAsc.ForeColor = SystemColors.Control
-        btnAsc.Location = New Point(70, 29)
+        btnAsc.Location = New Point(92, 30)
         btnAsc.Margin = New Padding(2)
         btnAsc.Name = "btnAsc"
         btnAsc.Size = New Size(125, 35)
@@ -328,7 +328,7 @@ Partial Class a02_FormEmployee
         GroupBox1.Controls.Add(Label1)
         GroupBox1.Location = New Point(14, 58)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(434, 222)
+        GroupBox1.Size = New Size(434, 236)
         GroupBox1.TabIndex = 0
         GroupBox1.TabStop = False
         GroupBox1.Text = "Employee Details"
@@ -336,7 +336,7 @@ Partial Class a02_FormEmployee
         ' txtMobNo
         ' 
         txtMobNo.CutCopyMaskFormat = MaskFormat.ExcludePromptAndLiterals
-        txtMobNo.Location = New Point(162, 185)
+        txtMobNo.Location = New Point(162, 201)
         txtMobNo.Mask = "0000000000"
         txtMobNo.Name = "txtMobNo"
         txtMobNo.PromptChar = "#"c
@@ -347,7 +347,7 @@ Partial Class a02_FormEmployee
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Location = New Point(7, 188)
+        Label6.Location = New Point(7, 204)
         Label6.Margin = New Padding(2, 0, 2, 0)
         Label6.Name = "Label6"
         Label6.Size = New Size(91, 20)
@@ -366,7 +366,7 @@ Partial Class a02_FormEmployee
         ' 
         ' dtpDate
         ' 
-        dtpDate.Location = New Point(162, 150)
+        dtpDate.Location = New Point(162, 166)
         dtpDate.Margin = New Padding(2)
         dtpDate.Name = "dtpDate"
         dtpDate.Size = New Size(245, 27)
@@ -375,7 +375,7 @@ Partial Class a02_FormEmployee
         ' cmbDeptName
         ' 
         cmbDeptName.FormattingEnabled = True
-        cmbDeptName.Location = New Point(162, 118)
+        cmbDeptName.Location = New Point(162, 132)
         cmbDeptName.Margin = New Padding(2)
         cmbDeptName.Name = "cmbDeptName"
         cmbDeptName.Size = New Size(245, 28)
@@ -383,7 +383,7 @@ Partial Class a02_FormEmployee
         ' 
         ' txtSalary
         ' 
-        txtSalary.Location = New Point(162, 88)
+        txtSalary.Location = New Point(162, 98)
         txtSalary.Margin = New Padding(2)
         txtSalary.Name = "txtSalary"
         txtSalary.Size = New Size(245, 27)
@@ -391,7 +391,7 @@ Partial Class a02_FormEmployee
         ' 
         ' txtEmpName
         ' 
-        txtEmpName.Location = New Point(162, 58)
+        txtEmpName.Location = New Point(162, 62)
         txtEmpName.Margin = New Padding(2)
         txtEmpName.Name = "txtEmpName"
         txtEmpName.Size = New Size(245, 27)
@@ -400,7 +400,7 @@ Partial Class a02_FormEmployee
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(7, 155)
+        Label5.Location = New Point(7, 172)
         Label5.Margin = New Padding(2, 0, 2, 0)
         Label5.Name = "Label5"
         Label5.Size = New Size(131, 20)
@@ -410,7 +410,7 @@ Partial Class a02_FormEmployee
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(7, 121)
+        Label4.Location = New Point(7, 135)
         Label4.Margin = New Padding(2, 0, 2, 0)
         Label4.Name = "Label4"
         Label4.Size = New Size(154, 20)
@@ -420,7 +420,7 @@ Partial Class a02_FormEmployee
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(7, 61)
+        Label3.Location = New Point(7, 65)
         Label3.Margin = New Padding(2, 0, 2, 0)
         Label3.Name = "Label3"
         Label3.Size = New Size(137, 20)
@@ -430,7 +430,7 @@ Partial Class a02_FormEmployee
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(7, 90)
+        Label2.Location = New Point(7, 100)
         Label2.Margin = New Padding(2, 0, 2, 0)
         Label2.Name = "Label2"
         Label2.Size = New Size(66, 20)
@@ -456,7 +456,7 @@ Partial Class a02_FormEmployee
         btnExportToExcel.ForeColor = SystemColors.Control
         btnExportToExcel.Location = New Point(0, 803)
         btnExportToExcel.Name = "btnExportToExcel"
-        btnExportToExcel.Size = New Size(1769, 40)
+        btnExportToExcel.Size = New Size(1825, 40)
         btnExportToExcel.TabIndex = 28
         btnExportToExcel.Text = "Export To Excel"
         btnExportToExcel.UseVisualStyleBackColor = False
@@ -469,7 +469,7 @@ Partial Class a02_FormEmployee
         GroupBox2.Controls.Add(GroupBox3)
         GroupBox2.Controls.Add(dtpDob)
         GroupBox2.Controls.Add(Label7)
-        GroupBox2.Location = New Point(14, 286)
+        GroupBox2.Location = New Point(14, 300)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Size = New Size(434, 224)
         GroupBox2.TabIndex = 6
@@ -640,9 +640,9 @@ Partial Class a02_FormEmployee
         GroupBox5.Controls.Add(txtcAdd)
         GroupBox5.Controls.Add(Label9)
         GroupBox5.Controls.Add(txtpAdd)
-        GroupBox5.Location = New Point(14, 516)
+        GroupBox5.Location = New Point(14, 530)
         GroupBox5.Name = "GroupBox5"
-        GroupBox5.Size = New Size(434, 200)
+        GroupBox5.Size = New Size(434, 186)
         GroupBox5.TabIndex = 13
         GroupBox5.TabStop = False
         GroupBox5.Text = "Address"
@@ -665,7 +665,7 @@ Partial Class a02_FormEmployee
         Label11.ForeColor = Color.FromArgb(CByte(0), CByte(64), CByte(0))
         Label11.Location = New Point(0, 0)
         Label11.Name = "Label11"
-        Label11.Size = New Size(1769, 55)
+        Label11.Size = New Size(1825, 55)
         Label11.TabIndex = 45
         Label11.Text = "Employee's Details"
         Label11.TextAlign = ContentAlignment.MiddleCenter
@@ -676,7 +676,7 @@ Partial Class a02_FormEmployee
         AutoScaleMode = AutoScaleMode.Font
         AutoSize = True
         BackColor = SystemColors.ButtonShadow
-        ClientSize = New Size(1769, 843)
+        ClientSize = New Size(1825, 843)
         Controls.Add(Label11)
         Controls.Add(GroupBox5)
         Controls.Add(GroupBox2)

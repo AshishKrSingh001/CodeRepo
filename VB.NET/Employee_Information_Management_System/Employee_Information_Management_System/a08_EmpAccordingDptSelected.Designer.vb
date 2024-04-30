@@ -40,7 +40,7 @@ Partial Class a08_EmpAccordingDptSelected
         DataGridView1.Location = New Point(10, 83)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(1094, 398)
+        DataGridView1.Size = New Size(1627, 398)
         DataGridView1.TabIndex = 1
         ' 
         ' Label2
@@ -48,7 +48,7 @@ Partial Class a08_EmpAccordingDptSelected
         Label2.Dock = DockStyle.Bottom
         Label2.Location = New Point(0, 528)
         Label2.Name = "Label2"
-        Label2.Size = New Size(1116, 25)
+        Label2.Size = New Size(1649, 25)
         Label2.TabIndex = 5
         Label2.TextAlign = ContentAlignment.MiddleCenter
         ' 
@@ -61,7 +61,7 @@ Partial Class a08_EmpAccordingDptSelected
         btnExportToExcel.ForeColor = SystemColors.Control
         btnExportToExcel.Location = New Point(0, 488)
         btnExportToExcel.Name = "btnExportToExcel"
-        btnExportToExcel.Size = New Size(1116, 40)
+        btnExportToExcel.Size = New Size(1649, 40)
         btnExportToExcel.TabIndex = 20
         btnExportToExcel.Text = "Export To Excel"
         btnExportToExcel.UseVisualStyleBackColor = False
@@ -72,7 +72,7 @@ Partial Class a08_EmpAccordingDptSelected
         Button1.Cursor = Cursors.Hand
         Button1.FlatStyle = FlatStyle.Flat
         Button1.ForeColor = SystemColors.Control
-        Button1.Location = New Point(677, 31)
+        Button1.Location = New Point(1029, 35)
         Button1.Name = "Button1"
         Button1.Size = New Size(94, 29)
         Button1.TabIndex = 4
@@ -82,7 +82,7 @@ Partial Class a08_EmpAccordingDptSelected
         ' ComboBox1
         ' 
         ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(411, 32)
+        ComboBox1.Location = New Point(763, 36)
         ComboBox1.Name = "ComboBox1"
         ComboBox1.Size = New Size(246, 28)
         ComboBox1.TabIndex = 3
@@ -90,7 +90,7 @@ Partial Class a08_EmpAccordingDptSelected
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(195, 35)
+        Label1.Location = New Point(547, 39)
         Label1.Name = "Label1"
         Label1.Size = New Size(196, 20)
         Label1.TabIndex = 2
@@ -101,7 +101,7 @@ Partial Class a08_EmpAccordingDptSelected
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ButtonShadow
-        ClientSize = New Size(1116, 553)
+        ClientSize = New Size(1649, 553)
         Controls.Add(btnExportToExcel)
         Controls.Add(Label2)
         Controls.Add(Button1)

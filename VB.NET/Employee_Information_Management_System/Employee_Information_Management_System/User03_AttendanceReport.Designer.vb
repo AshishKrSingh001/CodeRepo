@@ -34,7 +34,6 @@ Partial Class User03_AttendanceReport
         Label4 = New Label()
         Label3 = New Label()
         Label2 = New Label()
-        Label1 = New Label()
         btnExport_to_Excel = New Button()
         dgvEmp = New DataGridView()
         GroupBox1.SuspendLayout()
@@ -56,11 +55,10 @@ Partial Class User03_AttendanceReport
         GroupBox1.Controls.Add(Label4)
         GroupBox1.Controls.Add(Label3)
         GroupBox1.Controls.Add(Label2)
-        GroupBox1.Controls.Add(Label1)
         GroupBox1.Dock = DockStyle.Top
         GroupBox1.Location = New Point(0, 0)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(1245, 288)
+        GroupBox1.Size = New Size(1494, 288)
         GroupBox1.TabIndex = 0
         GroupBox1.TabStop = False
         GroupBox1.Text = "Employee Details"
@@ -68,7 +66,7 @@ Partial Class User03_AttendanceReport
         ' PictureBox3
         ' 
         PictureBox3.Image = My.Resources.Resources.EmpImage2
-        PictureBox3.Location = New Point(555, 20)
+        PictureBox3.Location = New Point(730, 26)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(125, 105)
         PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
@@ -80,7 +78,7 @@ Partial Class User03_AttendanceReport
         Label8.AutoSize = True
         Label8.Font = New Font("Segoe UI", 12F, FontStyle.Bold Or FontStyle.Italic)
         Label8.ForeColor = SystemColors.HotTrack
-        Label8.Location = New Point(580, 140)
+        Label8.Location = New Point(676, 140)
         Label8.Name = "Label8"
         Label8.Size = New Size(0, 28)
         Label8.TabIndex = 26
@@ -88,9 +86,9 @@ Partial Class User03_AttendanceReport
         ' PictureBox2
         ' 
         PictureBox2.Image = My.Resources.Resources.logo
-        PictureBox2.Location = New Point(876, 20)
+        PictureBox2.Location = New Point(1001, 12)
         PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(357, 199)
+        PictureBox2.Size = New Size(487, 276)
         PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox2.TabIndex = 25
         PictureBox2.TabStop = False
@@ -100,7 +98,7 @@ Partial Class User03_AttendanceReport
         PictureBox1.Image = My.Resources.Resources.bImage1
         PictureBox1.Location = New Point(12, 26)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(357, 199)
+        PictureBox1.Size = New Size(477, 256)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 24
         PictureBox1.TabStop = False
@@ -110,7 +108,7 @@ Partial Class User03_AttendanceReport
         Label7.AutoSize = True
         Label7.Font = New Font("Segoe UI", 12F, FontStyle.Bold Or FontStyle.Italic)
         Label7.ForeColor = SystemColors.HotTrack
-        Label7.Location = New Point(575, 238)
+        Label7.Location = New Point(671, 238)
         Label7.Name = "Label7"
         Label7.Size = New Size(0, 28)
         Label7.TabIndex = 23
@@ -120,7 +118,7 @@ Partial Class User03_AttendanceReport
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI", 12F, FontStyle.Bold Or FontStyle.Italic)
         Label6.ForeColor = SystemColors.HotTrack
-        Label6.Location = New Point(575, 205)
+        Label6.Location = New Point(671, 205)
         Label6.Name = "Label6"
         Label6.Size = New Size(0, 28)
         Label6.TabIndex = 22
@@ -130,7 +128,7 @@ Partial Class User03_AttendanceReport
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 12F, FontStyle.Bold Or FontStyle.Italic)
         Label5.ForeColor = SystemColors.HotTrack
-        Label5.Location = New Point(575, 171)
+        Label5.Location = New Point(671, 171)
         Label5.Name = "Label5"
         Label5.Size = New Size(0, 28)
         Label5.TabIndex = 21
@@ -138,7 +136,7 @@ Partial Class User03_AttendanceReport
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(412, 238)
+        Label4.Location = New Point(508, 238)
         Label4.Name = "Label4"
         Label4.Size = New Size(154, 20)
         Label4.TabIndex = 20
@@ -147,7 +145,7 @@ Partial Class User03_AttendanceReport
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(412, 205)
+        Label3.Location = New Point(508, 205)
         Label3.Name = "Label3"
         Label3.Size = New Size(126, 20)
         Label3.TabIndex = 19
@@ -156,20 +154,11 @@ Partial Class User03_AttendanceReport
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(412, 171)
+        Label2.Location = New Point(508, 171)
         Label2.Name = "Label2"
         Label2.Size = New Size(148, 20)
         Label2.TabIndex = 18
         Label2.Text = "Employee's Name : "
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(412, 142)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(122, 20)
-        Label1.TabIndex = 4
-        Label1.Text = "Employee's No :"
         ' 
         ' btnExport_to_Excel
         ' 
@@ -180,7 +169,7 @@ Partial Class User03_AttendanceReport
         btnExport_to_Excel.ForeColor = SystemColors.Control
         btnExport_to_Excel.Location = New Point(0, 599)
         btnExport_to_Excel.Name = "btnExport_to_Excel"
-        btnExport_to_Excel.Size = New Size(1245, 40)
+        btnExport_to_Excel.Size = New Size(1494, 40)
         btnExport_to_Excel.TabIndex = 0
         btnExport_to_Excel.Text = "Export to Excel"
         btnExport_to_Excel.UseVisualStyleBackColor = False
@@ -195,7 +184,7 @@ Partial Class User03_AttendanceReport
         dgvEmp.Margin = New Padding(2)
         dgvEmp.Name = "dgvEmp"
         dgvEmp.RowHeadersWidth = 51
-        dgvEmp.Size = New Size(1245, 311)
+        dgvEmp.Size = New Size(1494, 311)
         dgvEmp.TabIndex = 30
         ' 
         ' User03_AttendanceReport
@@ -203,7 +192,7 @@ Partial Class User03_AttendanceReport
         AutoScaleDimensions = New SizeF(9F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ButtonShadow
-        ClientSize = New Size(1245, 639)
+        ClientSize = New Size(1494, 639)
         Controls.Add(dgvEmp)
         Controls.Add(btnExport_to_Excel)
         Controls.Add(GroupBox1)
@@ -224,7 +213,6 @@ Partial Class User03_AttendanceReport
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents btnExport_to_Excel As Button
     Friend WithEvents dgvEmp As DataGridView
-    Friend WithEvents Label1 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label

@@ -9,9 +9,9 @@ Public Class User03_AttendanceReport
 
     Private Sub User03_AttendanceReport_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
-            Dim cmd As New SqlCommand("Select attenDate,inTime,inStatus,outTime,outStatus,TimeDuration from AttendanceTable where Email = @email", con)
+            Dim cmd As New SqlCommand("Select attenDate,inTime,inStatus,outTime,outStatus,TimeDuration from AttendanceTable where EmpNo = @empno", con)
             cmd.Parameters.Clear()
-            cmd.Parameters.AddWithValue("@email", User.user)
+            cmd.Parameters.AddWithValue("@empno", User.empNo)
             Dim da As New SqlDataAdapter(cmd)
             ds = New DataSet
             da.Fill(ds, "Atten")
@@ -33,9 +33,9 @@ Public Class User03_AttendanceReport
                 .Columns(4).HeaderCell.Value = "Out Status"
                 .Columns(5).HeaderCell.Value = "Time Duration"
             End With
-            Dim cmd1 As New SqlCommand("Select EmpNo,EmpName,DptName,Emptable.DptNo from EmpTable,DeptTable where Email = @email AND EmpTable.DptNo = DeptTable.DptNo", con)
+            Dim cmd1 As New SqlCommand("Select EmpNo,EmpName,DptName,Emptable.DptNo from EmpTable,DeptTable where EmpNo = @empno AND EmpTable.DptNo = DeptTable.DptNo", con)
             cmd1.Parameters.Clear()
-            cmd1.Parameters.AddWithValue("@email", User.user)
+            cmd1.Parameters.AddWithValue("@empno", User.empNo)
             Dim da1 As New SqlDataAdapter(cmd1)
             ds = New DataSet
             da1.Fill(ds, "Emp")
@@ -43,7 +43,7 @@ Public Class User03_AttendanceReport
             Label6.Text = ds.Tables("Emp").Rows(0).Item(0)
             Label7.Text = ds.Tables("Emp").Rows(0).Item(2) & "(" & ds.Tables("Emp").Rows(0).Item(3) & ")"
         Catch ex As Exception
-            MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Error occurred at line " & New StackFrame(True).GetFileLineNumber & ": " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
 
     End Sub

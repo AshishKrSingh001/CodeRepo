@@ -3,40 +3,16 @@
   "WorkspaceRootPath": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|e:\\repo\\coderepo\\vb.net\\employee_information_management_system\\employee_information_management_system\\user04_viewpayroll.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|solutionrelative:employee_information_management_system\\user04_viewpayroll.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|e:\\repo\\coderepo\\vb.net\\employee_information_management_system\\employee_information_management_system\\a06_rptempsortdoj.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|solutionrelative:employee_information_management_system\\a06_rptempsortdoj.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|e:\\repo\\coderepo\\vb.net\\employee_information_management_system\\employee_information_management_system\\user03_attendancereport.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|solutionrelative:employee_information_management_system\\user03_attendancereport.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|e:\\repo\\coderepo\\vb.net\\employee_information_management_system\\employee_information_management_system\\a06_rptempsortdoj.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|solutionrelative:employee_information_management_system\\a06_rptempsortdoj.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|e:\\repo\\coderepo\\vb.net\\employee_information_management_system\\employee_information_management_system\\user03_attendancereport.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|solutionrelative:employee_information_management_system\\user03_attendancereport.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|e:\\repo\\coderepo\\vb.net\\employee_information_management_system\\employee_information_management_system\\user.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|solutionrelative:employee_information_management_system\\user.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|e:\\repo\\coderepo\\vb.net\\employee_information_management_system\\employee_information_management_system\\user.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|solutionrelative:employee_information_management_system\\user.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|e:\\repo\\coderepo\\vb.net\\employee_information_management_system\\employee_information_management_system\\usersignin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|solutionrelative:employee_information_management_system\\usersignin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|e:\\repo\\coderepo\\vb.net\\employee_information_management_system\\employee_information_management_system\\usersignin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|solutionrelative:employee_information_management_system\\usersignin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\employee_information_management_system\\user01_employeesinformation.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|solutionrelative:employee_information_management_system\\user01_employeesinformation.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\employee_information_management_system\\user04_viewpayroll.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|solutionrelative:employee_information_management_system\\user04_viewpayroll.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|e:\\repo\\coderepo\\vb.net\\employee_information_management_system\\employee_information_management_system\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{CF45C2AA-2E56-44FB-A292-1231F7E3A6D0}|Employee_Information_Management_System\\Employee_Information_Management_System.vbproj|solutionrelative:employee_information_management_system\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,119 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.vb",
-              "DocumentMoniker": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\User.vb",
-              "RelativeDocumentMoniker": "Employee_Information_Management_System\\User.vb",
-              "ToolTip": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\User.vb",
-              "RelativeToolTip": "Employee_Information_Management_System\\User.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAIAAAA",
+              "DocumentIndex": 0,
+              "Title": "a06_rptEmpSortDOJ.vb",
+              "DocumentMoniker": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\a06_rptEmpSortDOJ.vb",
+              "RelativeDocumentMoniker": "Employee_Information_Management_System\\a06_rptEmpSortDOJ.vb",
+              "ToolTip": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\a06_rptEmpSortDOJ.vb",
+              "RelativeToolTip": "Employee_Information_Management_System\\a06_rptEmpSortDOJ.vb",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwCYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-29T19:18:11.725Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "User.vb [Design]",
-              "DocumentMoniker": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\User.vb",
-              "RelativeDocumentMoniker": "Employee_Information_Management_System\\User.vb",
-              "ToolTip": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\User.vb [Design]",
-              "RelativeToolTip": "Employee_Information_Management_System\\User.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-29T19:16:26.872Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserSIgnIn.vb",
-              "DocumentMoniker": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\UserSIgnIn.vb",
-              "RelativeDocumentMoniker": "Employee_Information_Management_System\\UserSIgnIn.vb",
-              "ToolTip": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\UserSIgnIn.vb",
-              "RelativeToolTip": "Employee_Information_Management_System\\UserSIgnIn.vb",
-              "ViewState": "AQIAABsAAAAAAAAAAAAawCYAAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-29T18:58:57.464Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserSIgnIn.vb [Design]",
-              "DocumentMoniker": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\UserSIgnIn.vb",
-              "RelativeDocumentMoniker": "Employee_Information_Management_System\\UserSIgnIn.vb",
-              "ToolTip": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\UserSIgnIn.vb [Design]",
-              "RelativeToolTip": "Employee_Information_Management_System\\UserSIgnIn.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-29T18:58:54.339Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "User03_AttendanceReport.vb",
-              "DocumentMoniker": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\User03_AttendanceReport.vb",
-              "RelativeDocumentMoniker": "Employee_Information_Management_System\\User03_AttendanceReport.vb",
-              "ToolTip": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\User03_AttendanceReport.vb",
-              "RelativeToolTip": "Employee_Information_Management_System\\User03_AttendanceReport.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-29T18:55:01.653Z",
+              "WhenOpened": "2024-04-30T12:34:17.136Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "User03_AttendanceReport.vb [Design]",
-              "DocumentMoniker": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\User03_AttendanceReport.vb",
-              "RelativeDocumentMoniker": "Employee_Information_Management_System\\User03_AttendanceReport.vb",
-              "ToolTip": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\User03_AttendanceReport.vb [Design]",
-              "RelativeToolTip": "Employee_Information_Management_System\\User03_AttendanceReport.vb [Design]",
+              "Title": "a06_rptEmpSortDOJ.vb [Design]",
+              "DocumentMoniker": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\a06_rptEmpSortDOJ.vb",
+              "RelativeDocumentMoniker": "Employee_Information_Management_System\\a06_rptEmpSortDOJ.vb",
+              "ToolTip": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\a06_rptEmpSortDOJ.vb [Design]",
+              "RelativeToolTip": "Employee_Information_Management_System\\a06_rptEmpSortDOJ.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-29T18:54:58.917Z",
+              "WhenOpened": "2024-04-30T12:34:15.395Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "User04_ViewPayroll.vb",
-              "DocumentMoniker": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\User04_ViewPayroll.vb",
-              "RelativeDocumentMoniker": "Employee_Information_Management_System\\User04_ViewPayroll.vb",
-              "ToolTip": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\User04_ViewPayroll.vb*",
-              "RelativeToolTip": "Employee_Information_Management_System\\User04_ViewPayroll.vb*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABJAAAA",
+              "DocumentIndex": 2,
+              "Title": "Form1.vb",
+              "DocumentMoniker": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\Form1.vb",
+              "RelativeDocumentMoniker": "Employee_Information_Management_System\\Form1.vb",
+              "ToolTip": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\Form1.vb",
+              "RelativeToolTip": "Employee_Information_Management_System\\Form1.vb",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAswFwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-29T18:54:43.614Z",
+              "WhenOpened": "2024-04-30T12:25:18.853Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "User01_EmployeesInformation.vb [Design]",
-              "DocumentMoniker": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\User01_EmployeesInformation.vb",
-              "RelativeDocumentMoniker": "Employee_Information_Management_System\\User01_EmployeesInformation.vb",
-              "ToolTip": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\User01_EmployeesInformation.vb [Design]",
-              "RelativeToolTip": "Employee_Information_Management_System\\User01_EmployeesInformation.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-29T18:19:12.189Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "User04_ViewPayroll.vb [Design]",
-              "DocumentMoniker": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\User04_ViewPayroll.vb",
-              "RelativeDocumentMoniker": "Employee_Information_Management_System\\User04_ViewPayroll.vb",
-              "ToolTip": "E:\\Repo\\CodeRepo\\VB.NET\\Employee_Information_Management_System\\Employee_Information_Management_System\\User04_ViewPayroll.vb [Design]*",
-              "RelativeToolTip": "Employee_Information_Management_System\\User04_ViewPayroll.vb [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-04-29T18:18:13.419Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

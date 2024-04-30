@@ -90,7 +90,7 @@
 
     ' Method to open Sign-in Form when the application loads
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        a18_signin.ShowDialog()
+        'a18_signin.ShowDialog()
     End Sub
 
     ' Method to open Attendence of Each Individual Report Form
