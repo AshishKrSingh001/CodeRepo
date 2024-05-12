@@ -1,0 +1,38 @@
+{% extends "app/base.html" %}
+
+{% load static %}
+
+{% block title %}Contact{% endblock title %}
+
+{% block banner_slider %}
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'app/images/banner/b1.jpg' %}" class="d-block w-100" alt="alt">
+            </div>
+            <div class="carousel-item active">
+                <img src="{% static 'app/images/banner/b2.jpg' %}" class="d-block w-100" alt="alt">
+            </div>  
+            <div class="carousel-item active">
+                <img src="{% static 'app/images/banner/b3.jpg' %}" class="d-block w-100" alt="alt">
+            </div> 
+            <div class="carousel-item active">
+                <img src="{% static 'app/images/banner/b4.jpg' %}" class="d-block w-100" alt="alt">
+            </div>         
+        </div>
+    </div>
+{% endblock banner_slider %}
+
+{% block main-content %}
+<div class="container mt-3">
+    <h2 class="text-center">Contact Us</h2>
+    <div class="row container mt-3">
+        <div class="col-md-4 offset-md-4">
+            <p class="fs-4">Address: 123 Main Street, City, Country</p>
+            <p class="fs-4">Contact: +1234567890</p>
+            <p class="fs-4">Email: info@example.com</p>
+        </div>
+    </div>
+</div>
+<br><br/>
+{% endblock main-content %}
