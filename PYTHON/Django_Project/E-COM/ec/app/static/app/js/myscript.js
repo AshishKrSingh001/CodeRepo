@@ -56,23 +56,35 @@ $('.minus-cart').click(function(){
     })
 })
 
+$(document).ready(function() {
+    $('.remove-cart').click(function() {
+        var id = $(this).attr("pid").toString();
+        var eml = this;
 
-$('.remove-cart').click(function(){
-    var id=$(this).attr("pid").toString();
-    var eml=this
-    $.ajax({
-        type:"GET",
-        url:"/removecart",
-        data:{
-            prod_id:id
-        },
-        success:function(data){
-            document.getElementById("amount").innerText=data.amount 
-            document.getElementById("totalamount").innerText=data.totalamount
-            eml.parentNode.parentNode.parentNode.parentNode.remove() 
-        }
-    })
-})
+        $.ajax({
+            type: "GET",
+            url: "/removecart",
+            data: {
+                prod_id: id
+            },
+            success: function(data) {
+                if (data.error) {
+                    alert(data.error);
+                } else {
+                    document.getElementById("amount").innerText = data.amount;
+                    document.getElementById("totalamount").innerText = data.totalamount;
+                    $(eml).closest('.cart-item').remove();
+                    // // Reload the page after successfully removing the item
+                    // location.reload();
+                }
+            },
+            error: function() {
+                alert("An error occurred. Please try again.");
+            }
+        });
+    });
+});
+
 
 
 $('.plus-wishlist').click(function(){
