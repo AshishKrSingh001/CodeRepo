@@ -1,4 +1,5 @@
 from django.urls import path
+from django.contrib import admin
 from . import views
 from django.conf import settings
 from django.conf.urls.static import static
@@ -22,7 +23,12 @@ urlpatterns = [
     path('minuscart/',views.minus_cart,),
     path('removecart/',views.remove_cart,),
     path('paymentdone/', views.PaymentDone.as_view(), name='paymentdone'),
-    path('orders/',views.home,name='orders'),
+    path('orders/',views.orders,name='orders'),
+    path('pluswishlist/',views.plus_wishlist,),
+    path('minuswishlist/',views.minus_wishlist,),
+    path('wishlists/',views.wishlists,name="wishlists"),
+    path("search/",views.search,name='search'),
+
 
     #login
     path("customer-registration/",views.CustomerRegistrationView.as_view(),name="customer-registration"),
@@ -42,3 +48,7 @@ urlpatterns = [
     path("password_reset_complete/",auth_view.PasswordResetCompleteView.as_view(template_name="app/passwordResetComplete.html"),name="password_reset_complete"),
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
  
+
+admin.site.site_header = "Moo Heaven:The Milk Oasis"
+admin.site.site_title = "Moo Heaven:The Milk Oasis"
+admin.site.site_index_title = "Welcome to Moo Heaven"

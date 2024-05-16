@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from django.views import View
-from . models import Product,Customer,Cart
+from . models import Product,Customer,Cart,Wishlist
 from django.db.models import Count
 from . forms import CustomerRegistrationForm,CustomerProfile
 from django.contrib import messages
@@ -14,54 +14,98 @@ from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from django.http import HttpResponse
 import logging
+from django.contrib.auth.decorators import login_required
+
 # Create your views here.
 def home(request):
-    return render(request,"app/home.html")
+    wishItem=0
+    totalItem = 0
+    if request.user.is_authenticated:
+        totalItem = len(Cart.objects.filter(user=request.user))
+        wishItem = len(Wishlist.objects.filter(user=request.user))
+
+    return render(request,"app/home.html",locals())
 
 def about(request):
-    return render(request,"app/about.html")
+    wishItem=0
+    totalItem = 0
+    if request.user.is_authenticated:
+        totalItem = len(Cart.objects.filter(user=request.user))
+        wishItem = len(Wishlist.objects.filter(user=request.user))
+    return render(request,"app/about.html",locals())
 
 def contact(request):
-    return render(request,"app/contact.html") 
+    wishItem=0
+    totalItem = 0
+    if request.user.is_authenticated:
+        totalItem = len(Cart.objects.filter(user=request.user))
+        wishItem = len(Wishlist.objects.filter(user=request.user))
+    return render(request,"app/contact.html",locals()) 
 
+@method_decorator(login_required, name='dispatch')
 class CategoryView(View):
     def get(self,request,val):
+        wishItem=0
+        totalItem = 0
+        if request.user.is_authenticated:
+            totalItem = len(Cart.objects.filter(user=request.user))
+            wishItem = len(Wishlist.objects.filter(user=request.user))
         product = Product.objects.filter(category=val)
         title = Product.objects.filter(category=val).values('title')
         return render(request,"app/category.html",locals()) 
-
+@method_decorator(login_required, name='dispatch')
 class CategoryTitle(View):
     def get(self,request,val):
+        wishItem=0
+        totalItem = 0
+        if request.user.is_authenticated:
+            totalItem = len(Cart.objects.filter(user=request.user))
+            wishItem = len(Wishlist.objects.filter(user=request.user))
         product = Product.objects.filter(title=val)
         title = Product.objects.filter(category=product[0].category).values('title')
         return render(request,"app/category.html",locals()) 
-
+@method_decorator(login_required, name='dispatch')
 class ProductDetail(View):
     def get(self,request,pk):
         product = Product.objects.get(pk=pk)
+        wishlist = Wishlist.objects.filter(Q(product=product) & Q(user=request.user))
+        wishItem=0
+        totalItem = 0
+        if request.user.is_authenticated:
+            totalItem = len(Cart.objects.filter(user=request.user))
+            wishItem = len(Wishlist.objects.filter(user=request.user))
         return render(request,"app/productDetail.html",locals())
     
-
 class CustomerRegistrationView(View):
     def get(self,request):
         form = CustomerRegistrationForm()
+        wishItem=0
+        totalItem = 0
+        if request.user.is_authenticated:
+            totalItem = len(Cart.objects.filter(user=request.user))
+            wishItem = len(Wishlist.objects.filter(user=request.user))
         return render(request,"app/customerRegistration.html",locals())
     def post(self,request):
         form = CustomerRegistrationForm(request.POST)
         if form.is_valid():
              # Save the user
-            user = form.save()
-            # Create a Customer instance and assign the user
-            customer = Customer(user=user, **form.cleaned_data)
-            customer.save()
+            form.save()
+            # # Create a Customer instance and assign the user
+            # customer = Customer(user=user, **form.cleaned_data)
+            # customer.save()
             messages.success(request,"Congratulation! User Register Successfully")
         else:
             messages.warning(request,"Invalid Input Data")
         return render(request,"app/customerRegistration.html",locals())
-    
+@method_decorator(login_required, name='dispatch')    
 class ProfileView(View):
     def get(self,request):
         form = CustomerProfile()
+        wishItem=0
+        totalItem = 0
+        if request.user.is_authenticated:
+            totalItem = len(Cart.objects.filter(user=request.user))
+            wishItem = len(Wishlist.objects.filter(user=request.user))
         return render(request,"app/profile.html",locals())
     def post(self,request):
         form = CustomerProfile(request.POST)
@@ -80,15 +124,25 @@ class ProfileView(View):
         else:
             messages.warning(request,"Invalid Input Data")
         return render(request,"app/profile.html",locals())
-
+@login_required
 def address(request):
     add = Customer.objects.filter(user = request.user)
+    wishItem=0
+    totalItem = 0
+    if request.user.is_authenticated:
+        totalItem = len(Cart.objects.filter(user=request.user))
+        wishItem = len(Wishlist.objects.filter(user=request.user))
     return render(request,"app/address.html",locals())
-
+@method_decorator(login_required, name='dispatch')
 class UpdateAddress(View):
     def get(self,request,pk):
         add = Customer.objects.get(pk=pk)
         form = CustomerProfile(instance=add)
+        wishItem=0
+        totalItem = 0
+        if request.user.is_authenticated:
+            totalItem = len(Cart.objects.filter(user=request.user))
+            wishItem = len(Wishlist.objects.filter(user=request.user))
         return render(request,"app/updateAddress.html",locals())
     def post(self,request,pk):
         form = CustomerProfile(request.POST)
@@ -107,7 +161,7 @@ class UpdateAddress(View):
         else:
             messages.warning(request,"Invalid Input Data")
         return redirect("address")
-    
+@login_required   
 def add_to_cart(request):
     user = request.user
     product_id = request.GET.get('prod_id')
@@ -115,7 +169,7 @@ def add_to_cart(request):
     Cart(user = user,product = product).save()
     return redirect("/cart")
 
-    
+@login_required   
 def show_cart(request):
     user = request.user
     cart = Cart.objects.filter(user=user)
@@ -124,9 +178,14 @@ def show_cart(request):
         value = p.quantity * p.product.discounted_price
         amount = amount + value
     totalamount = amount + 40
+    wishItem=0
+    totalItem = 0
+    if request.user.is_authenticated:
+        totalItem = len(Cart.objects.filter(user=request.user))
+        wishItem = len(Wishlist.objects.filter(user=request.user))
     return render(request,'app/addtocart.html',locals())
 
-
+@login_required
 def plus_cart(request):
     if request.method == "GET":
         prod_id = request.GET.get('prod_id')
@@ -155,7 +214,7 @@ def plus_cart(request):
             'totalamount': totalamount
         }
         return JsonResponse(data)
-
+@login_required
 def minus_cart(request):
     if request.method == "GET":
         prod_id = request.GET.get('prod_id')
@@ -195,7 +254,7 @@ def minus_cart(request):
         }
         return JsonResponse(data)
     
-
+@login_required
 def remove_cart(request):
     if request.method == "GET":
         prod_id = request.GET.get('prod_id')
@@ -217,14 +276,18 @@ def remove_cart(request):
         }
         return JsonResponse(data)
 
-
 logger = logging.getLogger(__name__)
-
+@method_decorator(login_required, name='dispatch')
 class Checkout(View):
     def get(self, request):
         user = request.user
         add = Customer.objects.filter(user=user)
         cart_items = Cart.objects.filter(user=user)
+        wishItem=0
+        totalItem = 0
+        if request.user.is_authenticated:
+            totalItem = len(Cart.objects.filter(user=request.user))
+            wishItem = len(Wishlist.objects.filter(user=request.user))
         famount = 0
         for p in cart_items:
             value = p.quantity * p.product.discounted_price
@@ -247,18 +310,22 @@ class Checkout(View):
             payment.save()
         return render(request,"app/checkout.html",locals())
 
-
+@method_decorator(login_required, name='dispatch')
 class PaymentDone(View):
     def get(self, request):
+        print(10)
         try:
             order_id = request.GET.get('order_id')
             payment_id = request.GET.get('payment_id')
-            cust_id = request.GET.get('cust_id')
+            cust_id = int(request.GET.get('cust_id'))
+            #print(cust_id)
 
             # Check if cust_id is not None and is not empty
             if cust_id:
                 # Cust_id is provided, proceed with your logic
                 # Fetch the payment object
+                customer = Customer.objects.get(id=cust_id)
+
                 payment = Payment.objects.get(razorpay_order_id=order_id)
                 payment.razorpay_payment_id = payment_id
                 payment.paid = True
@@ -268,10 +335,10 @@ class PaymentDone(View):
                 user = request.user
                 cart_items = Cart.objects.filter(user=user)
                 for item in cart_items:
-                    OrderPlaced(user=user, customer_id=cust_id, product=item.product, quantity=item.quantity, payment=payment).save()
+                    OrderPlaced(user=user, customer=customer, product=item.product, quantity=item.quantity,payment=payment).save()
                     item.delete()
 
-                return render(request, 'app/about.html')
+                return render(request, 'app/orders.html')
             else:
                 # Cust_id is missing or empty, handle the error gracefully
                 return HttpResponse("cust_id is missing or empty.", status=400)
@@ -280,3 +347,53 @@ class PaymentDone(View):
         except Exception as e:
             # Return the error message along with the exception details
             return HttpResponse(f"An error occurred: {str(e)}", status=500)
+@login_required        
+def orders(request):
+    orderPlaced = OrderPlaced.objects.filter(user=request.user)
+    wishItem=0
+    totalItem = 0
+    if request.user.is_authenticated:
+        totalItem = len(Cart.objects.filter(user=request.user))
+        wishItem = len(Wishlist.objects.filter(user=request.user))
+    return render(request,"app/orders.html",locals())
+@login_required
+def plus_wishlist(request):
+    if request.method == "GET":
+        prod_id = request.GET['prod_id']
+        product = Product.objects.get(id=prod_id)
+        user = request.user
+        Wishlist(user=user,product=product).save()
+        data = {
+            "message":"Wishlist Added Successfully",
+        }
+        return JsonResponse(data)
+@login_required   
+def minus_wishlist(request):
+    if request.method == "GET":
+        prod_id = request.GET['prod_id']
+        product = Product.objects.get(id=prod_id)
+        user = request.user
+        Wishlist.objects.filter(user=user,product=product).delete()
+        data = {
+            "message":"Wishlist Remove Successfully",
+        }
+        return JsonResponse(data)
+@login_required
+def wishlists(request):
+    user = request.user
+    wishlist_items = Wishlist.objects.filter(user=user)
+    products = [item.product for item in wishlist_items]
+    context = {
+        'products': products,
+    }
+    return render(request, "app/wishlist.html", context)
+@login_required
+def search(request):
+    query = request.GET['search']
+    wishItem=0
+    totalItem = 0
+    if request.user.is_authenticated:
+        totalItem = len(Cart.objects.filter(user=request.user))
+        wishItem = len(Wishlist.objects.filter(user=request.user))
+    product = Product.objects.filter(Q(title__icontains=query))
+    return render(request,"app/search.html",locals())

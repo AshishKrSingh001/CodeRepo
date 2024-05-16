@@ -74,8 +74,7 @@ $(document).ready(function() {
                     document.getElementById("amount").innerText = data.amount;
                     document.getElementById("totalamount").innerText = data.totalamount;
                     $(eml).closest('.cart-item').remove();
-                    // // Reload the page after successfully removing the item
-                    // location.reload();
+                    window.location.href = "http://localhost:8000/cart/"
                 }
             },
             error: function() {
