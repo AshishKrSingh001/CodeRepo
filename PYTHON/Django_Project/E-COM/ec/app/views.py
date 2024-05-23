@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import get_object_or_404, render,redirect
 from django.views import View
 from . models import Product,Customer,Cart,Wishlist
 from django.db.models import Count
@@ -10,11 +10,12 @@ import razorpay
 from django.conf import settings
 from .models import Payment,OrderPlaced
 from django.http import HttpResponseBadRequest
+from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
-from django.http import HttpResponse
 import logging
 from django.contrib.auth.decorators import login_required
+
 
 # Create your views here.
 def home(request):
@@ -67,7 +68,7 @@ class CategoryTitle(View):
 @method_decorator(login_required, name='dispatch')
 class ProductDetail(View):
     def get(self,request,pk):
-        product = Product.objects.get(pk=pk)
+        product = Product.objects.get(id=pk)
         wishlist = Wishlist.objects.filter(Q(product=product) & Q(user=request.user))
         wishItem=0
         totalItem = 0
@@ -123,7 +124,7 @@ class ProfileView(View):
             messages.success(request,"Congratulation! User Data saved Successfully")
         else:
             messages.warning(request,"Invalid Input Data")
-        return render(request,"app/profile.html",locals())
+        return render(request,"app/address.html",locals())
 @login_required
 def address(request):
     add = Customer.objects.filter(user = request.user)
@@ -347,6 +348,71 @@ class PaymentDone(View):
         except Exception as e:
             # Return the error message along with the exception details
             return HttpResponse(f"An error occurred: {str(e)}", status=500)
+
+@login_required
+def buynow(request,pk):
+    user = request.user
+    add = Customer.objects.filter(user=user)
+    product = Product.objects.get(id=pk)
+    wishItem=0
+    totalItem = 0
+    if request.user.is_authenticated:
+        totalItem = len(Cart.objects.filter(user=request.user))
+        wishItem = len(Wishlist.objects.filter(user=request.user))
+    totalamount = product.discounted_price
+    razoramounnt = int(totalamount * 100)
+    client = razorpay.Client(auth=(settings.RAZOR_KEY_ID,settings.RAZOR_KEY_SECRET))
+    data = {'amount':razoramounnt,'currency':"INR","receipt":"order_recptid_12"}
+    payment_response = client.order.create(data=data)
+    print(payment_response)
+    order_id = payment_response['id']
+    order_status = payment_response['status']
+    if order_status == 'created':
+        payment = Payment(
+            user=user,
+            amount=totalamount,
+            razorpay_order_id = order_id,
+            razorpay_payment_status = order_status
+        )
+        payment.save()
+    return render(request,"app/buynow.html",locals())
+
+@method_decorator(login_required, name='dispatch')
+class BuyNowPaymentDone(View):
+    def get(self, request):
+        try:
+            order_id = request.GET.get('order_id')
+            payment_id = request.GET.get('payment_id')
+            cust_id = int(request.GET.get('cust_id'))
+            prod_id = request.GET.get('prod_id')
+            #print(cust_id)
+
+            # Check if cust_id is not None and is not empty
+            if cust_id:
+                # Cust_id is provided, proceed with your logic
+                # Fetch the payment object
+                customer = Customer.objects.get(id=cust_id)
+
+                payment = Payment.objects.get(razorpay_order_id=order_id)
+                payment.razorpay_payment_id = payment_id
+                payment.paid = True
+                payment.save()
+
+                # Move items from Cart to OrderPlaced
+                user = request.user
+                product = Product.objects.get(id=prod_id)
+                
+                OrderPlaced(user=user, customer=customer, product=product, quantity=1,payment=payment).save()
+
+                return render(request, 'app/orders.html')
+            else:
+                # Cust_id is missing or empty, handle the error gracefully
+                return HttpResponse("cust_id is missing or empty.", status=400)
+        except Payment.DoesNotExist:
+            return HttpResponse("Payment record not found.", status=404)
+        except Exception as e:
+            # Return the error message along with the exception details
+            return HttpResponse(f"An error occurred: {str(e)}", status=500)
 @login_required        
 def orders(request):
     orderPlaced = OrderPlaced.objects.filter(user=request.user)
@@ -356,6 +422,7 @@ def orders(request):
         totalItem = len(Cart.objects.filter(user=request.user))
         wishItem = len(Wishlist.objects.filter(user=request.user))
     return render(request,"app/orders.html",locals())
+    
 @login_required
 def plus_wishlist(request):
     if request.method == "GET":
@@ -387,6 +454,30 @@ def wishlists(request):
         'products': products,
     }
     return render(request, "app/wishlist.html", context)
+
+@login_required
+def add_all_to_cart(request):
+    user = request.user
+    wishlist_items = Wishlist.objects.filter(user=user)
+    for item in wishlist_items:
+        # Check if the item already exists in the cart
+        cart_item, created = Cart.objects.get_or_create(
+            user=user,
+            product=item.product,
+            defaults={'quantity': 1}
+        )
+        if not created:
+            # If the item already exists in the cart, increase the quantity
+            cart_item.quantity += 1
+            cart_item.save()
+    
+    # Delete all items from the wishlist
+    wishlist_items.delete()
+    
+    # Redirect to a page showing the cart, assuming 'cart' is the name of that view
+    return redirect('showcart')
+
+
 @login_required
 def search(request):
     query = request.GET['search']

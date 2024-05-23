@@ -20,6 +20,18 @@ class CustomerRegistrationForm(UserCreationForm):
 
 class MyPasswordResetForm(PasswordResetForm):
     email = forms.EmailField(widget=forms.EmailInput(attrs={'class': 'form-control'}))
+    def clean_email(self):
+        email = self.cleaned_data.get('email')
+        if not User.objects.filter(email=email).exists():
+            raise forms.ValidationError("This email does not exist.")
+        return email
+    # username = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control'}))
+    # def clean_username(self):
+    #     username = self.cleaned_data.get('username')
+    #     if not User.objects.filter(username=username).exists():
+    #         raise forms.ValidationError("This username does not exist.")
+    #     return username
+
 
 class MySetPasswordForm(SetPasswordForm):
     new_password1 = forms.CharField(label='New Password', widget=forms.PasswordInput(attrs={'class': 'form-control'}))

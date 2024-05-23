@@ -10,25 +10,37 @@
         <div class="col-sm-3">
             <h2>Wishlist Item</h2><hr>
             <div class="list-group">
-                {% for val in products %}
-                <a href="{% url 'category-title' val.title %}" class="list-group-item list-group-item-action" aria-current="true">{{ val.title }}</a>
-                {% endfor %}
+                {% if products %}
+                    {% for val in products %}
+                        <a href="{% url 'category-title' val.title %}" class="list-group-item list-group-item-action" aria-current="true">{{ val.title }}</a>
+                    {% endfor %}
+                {% else %}
+                    <p>No items in your wishlist.</p>
+                {% endif %}
             </div>
+            <br>
+            {% if products %}
+                <a href="{% url 'add-all-to-cart' %}" class="btn btn-warning shadow px-5 py-2 ms-4">Add all items in Cart</a>
+            {% endif %}
         </div>
         <div class="col-sm-9">
             <div class="row">
-                {% for prod in products %}
-                <div class="col text-center mb-4">
-                    <a href="{% url 'product-detail' prod.id %}" class="btn">
-                        <div>
-                            <img src="{{ prod.product_image.url }}" width="300px" height="200px" alt="{{ prod.title }}">
-                            <div class="fw-bold">{{ prod.title }}</div>
-                            <div class="fw-bold text-danger">Rs.{{ prod.discounted_price }}/-</div>
-                            <small class="fw-light text-decoration-line-through">{{ prod.selling_price }}</small>
+                {% if products %}
+                    {% for prod in products %}
+                        <div class="col text-center mb-4">
+                            <a href="{% url 'product-detail' prod.id %}" class="btn">
+                                <div>
+                                    <img src="{{ prod.product_image.url }}" width="300px" height="200px" alt="{{ prod.title }}">
+                                    <div class="fw-bold">{{ prod.title }}</div>
+                                    <div class="fw-bold text-danger">Rs.{{ prod.discounted_price }}/-</div>
+                                    <small class="fw-light text-decoration-line-through">{{ prod.selling_price }}</small>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                {% endfor %}
+                    {% endfor %}
+                {% else %}
+                    <h2 class="text-center">Your wishlist is empty.</h2>
+                {% endif %}
             </div>
         </div>
     </div>

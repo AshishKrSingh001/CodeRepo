@@ -3,21 +3,30 @@
 {% load static %}
 
 {% block title %}Search Results{% endblock title %}
+
 {% block main-content %}
 <div class="container my-5">
     <div class="row">
         <div class="col-sm-8">
             <div class="row">
-                {% for prod in product %}
-                <div class="col-sm-4 text-center mb-4 hover-shadow">
-                    <a href="{% url 'product-detail' prod.id %}" class="btn">
-                        <div>
-                            <img src="{{prod.product_image.url}}" width="300px" height="200px"/>
-                            <div class="fw-bold text-danger">Rs.{{prod.discounted_price}}/-<small class="fw-light text-decoration-line-through">{{prod.selling_price}}</small></div>
+                {% if product %}
+                    {% for prod in product %}
+                        <div class="col-sm-4 text-center mb-4 hover-shadow">
+                            <a href="{% url 'product-detail' prod.id %}" class="btn">
+                                <div>
+                                    <img src="{{ prod.product_image.url }}" width="300px" height="200px" alt="{{ prod.title }}" />
+                                    <div class="fw-bold text-success">{{ prod.title }}</div>
+                                    <div class="fw-bold text-danger">
+                                        Rs.{{ prod.discounted_price }}/-
+                                        <small class="fw-light text-decoration-line-through">{{ prod.selling_price }}</small>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                {% endfor %}
+                    {% endfor %}
+                {% else %}
+                    <h1 class="text-center">No search results found.</h1>
+                {% endif %}
             </div>
         </div>
     </div>
