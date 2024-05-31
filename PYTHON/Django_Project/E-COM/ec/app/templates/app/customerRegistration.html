@@ -8,13 +8,13 @@
     <div class="row my-3">
         <h3>Customer Registration</h3>
         <hr>
-        <form action = "" method="post" novalidate class="shadow p-5">
+        <form action ="" method="post" novalidate class="shadow p-5">
             {% csrf_token %}
             {% for fm in form %}
                 {{fm.label_tag}}{{fm}}<small calss="text-danger">{{fm.errors|striptags}}</small>
-                <br>
+                <br><br/>
             {% endfor %}
-            <input type="submit" value="Submit" class="btn btn-primary"><br>
+            <input type="submit" value="Submit" class="btn btn-primary">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" class="btn btn-warning"><br>
             <div class="text-center text-primary fw-bold">
                 <small>Existing User ?&nbsp;<a href="{% url 'login' %}" class="text-danger">Login Now</a></small>
             </div>

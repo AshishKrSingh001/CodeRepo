@@ -11,11 +11,11 @@
         <form action = "" method="post" novalidate class="shadow p-5">
             {% csrf_token %}
             {% for fm in form %}
-                {{fm.label_tag}}{{fm}}<small calss="text-danger">{{fm.errors|striptags}}</small>
-                
+                {{fm.label_tag}}{{fm}}<small class="text-danger">{{fm.errors|striptags}}</small>
+                 
             {% endfor %}
             <small><a href="{% url 'password_reset' %}" class="text-danger">Forgot Password ?</a></small><br><br/>
-            <input type="submit" value="Submit" class="btn btn-primary"><br>
+            <input type="submit" value="Submit" class="btn btn-primary">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" class="btn btn-warning"><br>
             <div class="text-center text-primary fw-bold">
                 <small>New User ?&nbsp;<a href="{% url 'customer-registration' %}" class="text-danger">Create an Account</a></small>
             </div>

@@ -43,9 +43,6 @@
             <li class="nav-item">
               <a class="nav-link text-white" href="{% url 'about' %}">About-us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="{% url 'contact' %}">Contact-us</a>
-            </li>
           </ul>
           <form class="d-flex" role="search" action="/search/">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search">
@@ -73,10 +70,7 @@
           </li>
           {% else %}
           <li class="nav-item mx-2">
-            <a class="nav-link text-white" href="{% url 'login' %}">Login</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link text-white" href="{% url 'customer-registration' %}">Registration</a>
+            <p class="nav-link text-white"><a style="text-decoration:none;color:white;"  href="{% url 'login' %}">Login</a>/<a style="text-decoration:none;color:white;" href="{% url 'customer-registration' %}">Register</a></p>
           </li>
           {% endif %}
         </ul>

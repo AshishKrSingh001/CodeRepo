@@ -35,6 +35,7 @@
 {% block main-content %}
 <br>
    <div class="container">
+   {% if request.user.is_authenticated %}
         <h2 class="text-center">Dairy Products</h2>
         <br><br/>
         <div class="row container">
@@ -104,6 +105,10 @@
                 </div>
             </div>
         </div>
+		   {% else %}
+			<h2 class="text-center">Login Required</h2>
+		   {% endif %}
    </div> 
+
     <br><br/>
 {% endblock main-content %}

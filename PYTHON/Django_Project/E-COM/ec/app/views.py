@@ -35,15 +35,8 @@ def about(request):
         wishItem = len(Wishlist.objects.filter(user=request.user))
     return render(request,"app/about.html",locals())
 
-def contact(request):
-    wishItem=0
-    totalItem = 0
-    if request.user.is_authenticated:
-        totalItem = len(Cart.objects.filter(user=request.user))
-        wishItem = len(Wishlist.objects.filter(user=request.user))
-    return render(request,"app/contact.html",locals()) 
 
-@method_decorator(login_required, name='dispatch')
+#@method_decorator(login_required, name='dispatch')
 class CategoryView(View):
     def get(self,request,val):
         wishItem=0
@@ -54,7 +47,7 @@ class CategoryView(View):
         product = Product.objects.filter(category=val)
         title = Product.objects.filter(category=val).values('title')
         return render(request,"app/category.html",locals()) 
-@method_decorator(login_required, name='dispatch')
+#@method_decorator(login_required, name='dispatch')
 class CategoryTitle(View):
     def get(self,request,val):
         wishItem=0
@@ -124,7 +117,7 @@ class ProfileView(View):
             messages.success(request,"Congratulation! User Data saved Successfully")
         else:
             messages.warning(request,"Invalid Input Data")
-        return render(request,"app/address.html",locals())
+        return render(request,"app/profile.html",locals())
 @login_required
 def address(request):
     add = Customer.objects.filter(user = request.user)
