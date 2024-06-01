@@ -22,3 +22,16 @@ class HomeworkForm(forms.ModelForm):
             'is_finished': forms.CheckboxInput(attrs={'class': 'btn-check mt-4'}),
         }
         fields = ['subject','title','description','due','is_finished']
+
+class DashboardForm(forms.Form):
+    text = forms.CharField(max_length=100,label="Enter your Search",
+        widget=forms.TextInput(attrs={'class': 'form-control'}))
+    
+class TodoForm(forms.ModelForm):
+    class Meta:
+        model = Todo
+        fields = ['title','is_finished']
+        widgets = {
+            'title':forms.TextInput(attrs={'class':'form-control'}),
+            'is_finished': forms.CheckboxInput(attrs={'class': 'btn-check mt-4'}),
+        }

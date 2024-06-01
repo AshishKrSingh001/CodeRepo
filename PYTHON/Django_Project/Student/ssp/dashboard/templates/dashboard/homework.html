@@ -14,7 +14,7 @@
             </button>
         </div>
     </form>
-</div>
+</div><hr>
 <div class="container">
     {% if not homework_done %}
     <table class="table table-striped table-bordered table-hover table-dark">
@@ -30,7 +30,7 @@
             </tr>
         </thead>
         <tbody>
-            {% for homework in  homeworks %}
+            {% for homework in  homeworks|slice:"::-1" %}
             <tr>
                 <th scope="row">{{forloop.counter}}</th>
                 <td>{{homework.subject}}</td>
