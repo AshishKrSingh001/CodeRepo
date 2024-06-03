@@ -7,30 +7,37 @@ from . import views
 from youtubesearchpython import VideosSearch
 import requests
 import wikipedia
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 # Create your views here.
 def home(request):
     return render(request,"dashboard/home.html")
 
+@login_required
 def notes(request):
     if request.method=="POST":
         form =NotesForm(request.POST)
         if form.is_valid():
             notes = Notes(user = request.user,title = request.POST['title'],description = request.POST['description'])
             notes.save()
-        messages.success(request,f"notes added by {request.user.username} successfully!")
-    else:
-        form = NotesForm()
+            messages.success(request,f"notes added by {request.user.username} successfully!")
+        else:
+            form = NotesForm()
     notes = Notes.objects.filter(user = request.user)
     return render(request,"dashboard/notes.html",locals())
 
+@login_required
 def delete_note(request,pk=None):
     Notes.objects.get(id=pk).delete()
     messages.success(request,f"notes deleted by {request.user.username} successfully!")
     return redirect("notes")
+
+method_decorator(login_required, name='dispatch')
 class NotesDetailView(generic.DetailView):
     model = Notes
 
+@login_required
 def homework(request):
     if request.method == "POST":
         form = HomeworkForm(request.POST)
@@ -62,6 +69,7 @@ def homework(request):
         homework_done = False
     return render(request,'dashboard/homework.html',locals())
 
+@login_required
 def update_homework(request,pk=None):
     homework = Homework.objects.get(id=pk) 
     if homework.is_finished == True:
@@ -72,11 +80,13 @@ def update_homework(request,pk=None):
     messages.success(request,f"homework updated by {request.user.username} successfully!")
     return redirect('homework')
 
+@login_required
 def delete_homework(request,pk=None):
     Homework.objects.get(id=pk).delete()
     messages.success(request,f"homework deleted by {request.user.username} successfully!")
     return redirect("homework")
 
+@login_required
 def youtube(request):
     if request.method == "POST":
         form = DashboardForm(request.POST)
@@ -105,6 +115,7 @@ def youtube(request):
         form = DashboardForm()
     return render(request,"dashboard/youtube.html",locals())
 
+@login_required
 def todo(request):
     if request.method == "POST":
         form = TodoForm(request.POST)
@@ -133,6 +144,7 @@ def todo(request):
         todo_done = False
     return render(request,"dashboard/todo.html",locals())
 
+@login_required
 def update_todo(request,pk):
     todo = Todo.objects.get(id=pk)
     if todo.is_finished == True:
@@ -143,11 +155,13 @@ def update_todo(request,pk):
     messages.success(request,f"todo updated by {request.user.username} successfully!")
     return redirect("todo")
 
+@login_required
 def delete_todo(request,pk):
     todo = Todo.objects.get(id=pk).delete()
     messages.success(request,f"todo deleted by {request.user.username} successfully!")
     return redirect("todo")
 
+@login_required
 def books(request):
     if request.method == "POST":
         form = DashboardForm(request.POST)
@@ -173,6 +187,7 @@ def books(request):
         form = DashboardForm()
     return render(request,"dashboard/books.html",locals())
 
+@login_required
 def dictionary(request):
     if request.method == "POST":
         form = DashboardForm(request.POST)
@@ -195,6 +210,7 @@ def dictionary(request):
         form = DashboardForm()
     return render(request,"dashboard/dictionary.html",locals())
 
+@login_required
 def wiki(request):
     if request.method=="POST":
         text = request.POST['text']
@@ -206,3 +222,84 @@ def wiki(request):
         return render(request,"dashboard/wiki.html",locals())
     form = DashboardForm()
     return render(request,"dashboard/wiki.html",locals())
+
+@login_required
+def conversion(request):
+    if request.method == 'POST':
+        form = ConversionForm(request.POST)
+        if form.is_valid():
+            measurement = form.cleaned_data['measurement']
+            if measurement == 'length':
+                measurement_form = ConversionLengthForm()
+                context = {
+                    'form': form,
+                    'm_form': measurement_form,
+                    'input': True
+                }
+                if 'input' in request.POST:
+                    first = request.POST['measure1']
+                    second = request.POST['measure2']
+                    input_value = request.POST['input']
+                    answer = ''
+                    if input_value and int(input_value) > 0:
+                        if first == 'yard' and second == 'foot':
+                            answer = f'{input_value} yard = {int(input_value) * 3} foot'
+                        elif first == 'foot' and second == 'yard':
+                            answer = f'{input_value} foot = {int(input_value) / 3} yard'
+                    context['answer'] = answer
+
+            elif measurement == 'mass':
+                measurement_form = ConversionMassForm()
+                context = {
+                    'form': form,
+                    'm_form': measurement_form,
+                    'input': True
+                }
+                if 'input' in request.POST:
+                    first = request.POST['measure1']
+                    second = request.POST['measure2']
+                    input_value = request.POST['input']
+                    answer = ''
+                    if input_value and int(input_value) > 0:
+                        if first == 'pound' and second == 'kilogram':
+                            answer = f'{input_value} pound = {int(input_value) * 0.453592} kilogram'
+                        elif first == 'kilogram' and second == 'pound':
+                            answer = f'{input_value} kilogram = {int(input_value) * 2.20462} pound'
+                    context['answer'] = answer
+
+            return render(request, "dashboard/conversion.html", context)
+
+    else:
+        form = ConversionForm()
+        context = {
+            'form': form,
+            'input': False
+        }
+
+    return render(request, "dashboard/conversion.html", context)
+
+def register(request):
+    if request.method =="POST":
+        form = UserRegistrationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            messages.success(request,f"Account Created for {username}!!")
+            redirect('login')
+    else:
+        form = UserRegistrationForm()
+    return render(request,"dashboard/register.html",locals())
+
+@login_required
+def profile(request):
+    homeworks = Homework.objects.filter(is_finished=False,user=request.user)
+    todos = Todo.objects.filter(is_finished=False,user=request.user)
+    if len(homeworks) == 0:
+        homework_done = False
+    else:
+        homework_done = True
+    if len(todos) == 0:
+        todo_done = False
+    else:
+        todo_done = True
+    return render(request,"dashboard/profile.html",locals())
