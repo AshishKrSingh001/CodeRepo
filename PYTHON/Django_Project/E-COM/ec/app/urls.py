@@ -34,8 +34,8 @@ urlpatterns = [
 
     #login
     path("customer-registration/",views.CustomerRegistrationView.as_view(),name="customer-registration"),
-    path("account/login/",auth_view.LoginView.as_view(template_name="app/login.html",authentication_form=LoginForm),name="login"),
-
+    #path("account/login/",auth_view.LoginView.as_view(template_name="app/login.html",authentication_form=LoginForm,redirect_authenticated_user=True),name="login"),
+    
     path("password-change/",auth_view.PasswordChangeView.as_view(template_name="app/changePassword.html",form_class=MyPasswordChangeForm, success_url="/password-change-done"), name="password-change"),
 
     path("password-change-done/",auth_view.PasswordChangeDoneView.as_view(template_name="app/passwordChangeDone.html"), name="password-change-done"),

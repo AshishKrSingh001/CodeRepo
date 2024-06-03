@@ -36,7 +36,7 @@ def about(request):
     return render(request,"app/about.html",locals())
 
 
-#@method_decorator(login_required, name='dispatch')
+@method_decorator(login_required, name='dispatch')
 class CategoryView(View):
     def get(self,request,val):
         wishItem=0
@@ -47,7 +47,7 @@ class CategoryView(View):
         product = Product.objects.filter(category=val)
         title = Product.objects.filter(category=val).values('title')
         return render(request,"app/category.html",locals()) 
-#@method_decorator(login_required, name='dispatch')
+@method_decorator(login_required, name='dispatch')
 class CategoryTitle(View):
     def get(self,request,val):
         wishItem=0
@@ -352,7 +352,7 @@ def buynow(request,pk):
     if request.user.is_authenticated:
         totalItem = len(Cart.objects.filter(user=request.user))
         wishItem = len(Wishlist.objects.filter(user=request.user))
-    totalamount = product.discounted_price
+    totalamount = product.discounted_price + 40
     razoramounnt = int(totalamount * 100)
     client = razorpay.Client(auth=(settings.RAZOR_KEY_ID,settings.RAZOR_KEY_SECRET))
     data = {'amount':razoramounnt,'currency':"INR","receipt":"order_recptid_12"}

@@ -2,6 +2,7 @@ from django import forms
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm, UsernameField,PasswordChangeForm,SetPasswordForm,PasswordResetForm
 from django.contrib.auth.models import User
 from django.core.validators import RegexValidator
+from django.core.exceptions import ValidationError
 
 from .models import Customer
 
@@ -50,27 +51,6 @@ from django.core.validators import RegexValidator
 from .models import Customer
 
 class CustomerProfile(forms.ModelForm):
-    mobile = forms.CharField(
-        label='Mobile Number',
-        validators=[
-            RegexValidator(
-                regex=r'^\+?1?\d{9,15}$',
-                message="Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed."
-            ),
-        ],
-        widget=forms.NumberInput(attrs={'class': 'form-control'}),
-    )
-
-    zipcode = forms.CharField(
-        label='Zip Code',
-        validators=[
-            RegexValidator(
-                regex=r'^\d{5}(?:[-\s]\d{4})?$',
-                message="Zip Code must be in the format: '12345' or '12345-6789'."
-            ),
-        ],
-        widget=forms.NumberInput(attrs={'class': 'form-control'}),
-    )
 
     class Meta:
         model = Customer
@@ -81,4 +61,16 @@ class CustomerProfile(forms.ModelForm):
             'city': forms.TextInput(attrs={'class': 'form-control'}),
             'state': forms.Select(attrs={'class': 'form-control'}),
             'zipcode': forms.NumberInput(attrs={'class': 'form-control'}),
+            'mobile': forms.NumberInput(attrs={'class': 'form-control'}),
         }
+    def clean_mobile(self):
+        mobile = str(self.cleaned_data.get('mobile'))
+        if len(mobile) != 10 or not mobile.startswith(('7', '8', '9')):
+            raise ValidationError("Mobile number must be a 10 digit number starting with 7, 8, or 9.")
+        return int(mobile)
+
+    def clean_zipcode(self):
+        zipcode = self.cleaned_data.get('zipcode')
+        if zipcode < 100000 or zipcode > 999999:
+            raise ValidationError("Zipcode must be a 6 digit number between 100000 and 999999.")
+        return zipcode
