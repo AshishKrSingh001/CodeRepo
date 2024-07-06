@@ -27,7 +27,7 @@ class OrderPlacedModelAdmin(admin.ModelAdmin):
      list_display = ['id','user','customer','product','quantity','ordered_date','status','payment']
 
 @admin.register(Wishlist)
-class WishlistModelAdmin(admin.ModelAdmin):
+class WishlistModelAdmin(admin.ModelAdmin): 
     list_display = ['id','user','product']
 
 

@@ -15,7 +15,7 @@
                         <a href="{% url 'category-title' val.title %}" class="list-group-item list-group-item-action" aria-current="true">{{ val.title }}</a>
                     {% endfor %}
                 {% else %}
-                    <p>No items in your wishlist.</p>
+                <div style="height:30vh;"><p>No items in your wishlist.</p></div>
                 {% endif %}
             </div>
             <br>

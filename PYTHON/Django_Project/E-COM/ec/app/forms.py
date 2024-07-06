@@ -57,7 +57,7 @@ class CustomerProfile(forms.ModelForm):
         fields = ['name', 'locality', 'city', 'mobile', 'state', 'zipcode']
         widgets = {
             'name': forms.TextInput(attrs={'class': 'form-control'}),
-            'locality': forms.TextInput(attrs={'class': 'form-control'}),
+            'locality': forms.TextInput(attrs={'class': 'form-control'}), 
             'city': forms.TextInput(attrs={'class': 'form-control'}),
             'state': forms.Select(attrs={'class': 'form-control'}),
             'zipcode': forms.NumberInput(attrs={'class': 'form-control'}),
@@ -74,3 +74,7 @@ class CustomerProfile(forms.ModelForm):
         if zipcode < 100000 or zipcode > 999999:
             raise ValidationError("Zipcode must be a 6 digit number between 100000 and 999999.")
         return zipcode
+    
+
+
+    

@@ -15,7 +15,7 @@ urlpatterns = [
     path('profile/',views.ProfileView.as_view(),name="profile"),
     path('address/',views.address,name="address"),
     path('updateAddress/<int:pk>',views.UpdateAddress.as_view(),name="updateAddress"),
-    path('add-to-cart/',views.add_to_cart,name="add-to-cart"),
+    path('add-to-cart/',views.add_to_cart,name="add-to-cart"), 
     path('cart/',views.show_cart,name="showcart"),
     path('checkout/',views.Checkout.as_view(),name="checkout"),
     path('buynow/<int:pk>',views.buynow,name="buynow"),
@@ -37,7 +37,6 @@ urlpatterns = [
     #path("account/login/",auth_view.LoginView.as_view(template_name="app/login.html",authentication_form=LoginForm,redirect_authenticated_user=True),name="login"),
     
     path("password-change/",auth_view.PasswordChangeView.as_view(template_name="app/changePassword.html",form_class=MyPasswordChangeForm, success_url="/password-change-done"), name="password-change"),
-
     path("password-change-done/",auth_view.PasswordChangeDoneView.as_view(template_name="app/passwordChangeDone.html"), name="password-change-done"),
     path('logout/', auth_view.LogoutView.as_view(next_page='login'), name='logout'),
     path("password-reset/", auth_view.PasswordResetView.as_view(
@@ -61,9 +60,16 @@ urlpatterns = [
 #    path("password_reset_confirm/<uidb64>/<token>/",auth_view.PasswordResetConfirmView.as_view(template_name="app/passwordResetConfirm.html",form_class=MySetPasswordForm),name="password_reset_confirm"),
 
 #     path("password_reset_complete/",auth_view.PasswordResetCompleteView.as_view(template_name="app/passwordResetComplete.html"),name="password_reset_complete"),
+
+path("terms-conditions/",views.terms_conditions,name="terms-conditions"),
+path("privacy-policy/",views.privacy_policy,name="privacy-policy"),
+
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
  
 
 admin.site.site_header = "Moo Heaven:The Milk Oasis"
 admin.site.site_title = "Moo Heaven:The Milk Oasis"
 admin.site.site_index_title = "Welcome to Moo Heaven"
+
+
+

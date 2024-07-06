@@ -10,7 +10,7 @@ import razorpay
 from django.conf import settings
 from .models import Payment,OrderPlaced
 from django.http import HttpResponseBadRequest
-from django.http import HttpResponse
+from django.http import HttpResponse 
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 import logging
@@ -34,6 +34,22 @@ def about(request):
         totalItem = len(Cart.objects.filter(user=request.user))
         wishItem = len(Wishlist.objects.filter(user=request.user))
     return render(request,"app/about.html",locals())
+
+def terms_conditions(request):
+    wishItem=0
+    totalItem = 0
+    if request.user.is_authenticated:
+        totalItem = len(Cart.objects.filter(user=request.user))
+        wishItem = len(Wishlist.objects.filter(user=request.user))
+    return render(request,"app/terms_condition.html",locals())
+
+def privacy_policy(request):
+    wishItem=0
+    totalItem = 0
+    if request.user.is_authenticated:
+        totalItem = len(Cart.objects.filter(user=request.user))
+        wishItem = len(Wishlist.objects.filter(user=request.user))
+    return render(request,"app/privacy_policy.html",locals())
 
 
 @method_decorator(login_required, name='dispatch')
@@ -418,6 +434,7 @@ def orders(request):
     
 @login_required
 def plus_wishlist(request):
+    print(request.user,"******************")
     if request.method == "GET":
         prod_id = request.GET['prod_id']
         product = Product.objects.get(id=prod_id)
@@ -429,6 +446,7 @@ def plus_wishlist(request):
         return JsonResponse(data)
 @login_required   
 def minus_wishlist(request):
+    print(request.user,"******************")
     if request.method == "GET":
         prod_id = request.GET['prod_id']
         product = Product.objects.get(id=prod_id)
