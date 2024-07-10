@@ -1,0 +1,23 @@
+{% extends "store/base.html" %}
+
+{% block title %}Orders{% endblock title %}
+
+
+{% block content %}
+
+<div class="container-fluid mt-3">
+    <div class="row mx-auto p-4 ps-5">
+      {% for product in products %}
+      <div class="card text-start mx-auto mb-4 ms-4" style="width:18rem;">
+        <img class="card-img-top" src="{{product.image.url}}" alt="{{product.name}}" height="250px" width="150px" />
+        <div class="card-body">
+          <h6 class="card-title">{{product.name}}</h6>
+          <p class="card-text"><b>Rs.&nbsp;{{product.price}}</b></p>
+          <a href="#" class="btn btn-light border btn-sm">Add to Cart</a>
+        </div>
+      </div>
+  {% endfor %}
+    </div>
+  </div>
+
+{% endblock content %}

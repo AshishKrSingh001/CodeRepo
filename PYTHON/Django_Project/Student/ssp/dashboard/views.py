@@ -64,13 +64,13 @@ def homework(request):
             homeworks.save()
             messages.success(request, f"Homework added by {request.user.username} successfully!")
             return redirect('homework')  # Redirect to the same view to reset the form
-    else:
-        form = HomeworkForm()
+        else:
+            form = HomeworkForm()
     
     homeworks = Homework.objects.filter(user=request.user)
     homework_done = not homeworks.exists()
     
-    return render(request, 'dashboard/homework.html', {'form': form, 'homeworks': homeworks, 'homework_done': homework_done})
+    return render(request, 'dashboard/homework.html',locals())
 
 @login_required
 def update_homework(request, pk=None):

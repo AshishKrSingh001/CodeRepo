@@ -1,0 +1,53 @@
+{% extends "store/base.html" %}
+{% load cart_tags %}
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+<div class="container">
+    <div class="border rounded m-4 p-4 login-container">
+        <h3 class="alert alert-light border rounded text-center login-container">Products added in Cart</h3>
+        <div class="table-responsive">
+            <table class="table table-light table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">S.No.</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Total Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for product in products %}
+                    <tr class="">
+                        <td class="fw-bold pt-5">{{forloop.counter}}.</td>
+                        <td><img class="rounded-circle" src="{{product.image.url}}" alt="" height="100px" width="100px"/></td>
+                        <td class="pt-5">{{product.name}}</td>
+                        <td  class="product-price pt-5">{{product.price}}</td>
+                        <td class="pt-5">{{product|count_in_cart:request.session.cart}}</td>
+                        <td class="product-price pt-5">{{product|total_price:request.session.cart}}</td>
+            
+                    </tr>
+                    {% endfor %}
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="4"></th>
+                        <th>Total Price:</th>
+                        <th  class="product-price">{{products|total_cart_price:request.session.cart}}</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="m-3 p-3">
+                <a href="#" class="btn btn-outline-primary">Checkout</a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+{% endblock content %}
