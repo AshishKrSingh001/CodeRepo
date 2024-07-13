@@ -5,45 +5,37 @@
 {% block title %}Wishlist{% endblock title %}
 
 {% block main-content %}
-<div class="container my-5">
+<div class="container my-5 p-4">
+    {% if products %}
     <div class="row">
-        <div class="col-sm-3">
-            <h2>Wishlist Item</h2><hr>
-            <div class="list-group">
-                {% if products %}
+        <div class="col-sm-3 shadow_container p-4">
+            <h3 class="alert alert-light border rounded text-center shadow_container">Wishlists</h3>
+            <div class="list-group shadow_container">
                     {% for val in products %}
-                        <a href="{% url 'category-title' val.title %}" class="list-group-item list-group-item-action" aria-current="true">{{ val.title }}</a>
+                        <a href="{% url 'category-title' val.title %}" class="list-group-item list-group-item-action fw-bold" aria-current="true">{{ val.title }}</a>
                     {% endfor %}
-                {% else %}
-                <div style="height:30vh;"><p>No items in your wishlist.</p></div>
-                {% endif %}
             </div>
             <br>
-            {% if products %}
-                <a href="{% url 'add-all-to-cart' %}" class="btn btn-warning shadow px-5 py-2 ms-4">Add all items in Cart</a>
-            {% endif %}
         </div>
         <div class="col-sm-9">
             <div class="row">
-                {% if products %}
                     {% for prod in products %}
-                        <div class="col text-center mb-4">
+                        <div class="col text-center m-4 shadow_container p-4">
                             <a href="{% url 'product-detail' prod.id %}" class="btn">
                                 <div>
                                     <img src="{{ prod.product_image.url }}" width="300px" height="200px" alt="{{ prod.title }}">
-                                    <div class="fw-bold">{{ prod.title }}</div>
+                                    <h5 class="border rounded text-center shadow_container btn btn-success px-4 fw-bold">{{prod.title}}</h5>
                                     <div class="fw-bold text-danger">Rs.{{ prod.discounted_price }}/-</div>
-                                    <small class="fw-light text-decoration-line-through">{{ prod.selling_price }}</small>
                                 </div>
                             </a>
                         </div>
                     {% endfor %}
-                {% else %}
-                    <h2 class="text-center">Your wishlist is empty.</h2>
-                {% endif %}
             </div>
         </div>
     </div>
+    {% else %}
+    <h3 class="alert alert-light border rounded text-center shadow-container">Wishlist is Empty</h3>
+    {% endif %}
 </div>
 <br><br/>
 {% endblock main-content %}

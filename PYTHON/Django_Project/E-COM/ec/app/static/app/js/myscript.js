@@ -35,6 +35,7 @@ $('.plus-cart').click(function(){
             eml.innerText=data.quantity 
             document.getElementById("amount").innerText=data.amount 
             document.getElementById("totalamount").innerText=data.totalamount
+            window.location.href = "http://localhost:8000/cart/"
         }
     })
 })
@@ -50,8 +51,9 @@ $('.minus-cart').click(function(){
         },
         success:function(data){
             eml.innerText=data.quantity 
-            document.getElementById("amount").innerText=data.amount 
-            document.getElementById("totalamount").innerText=data.totalamount
+            document.getElementById("amount").innerText= "₹"+data.amount
+            document.getElementById("totalamount").innerText= "₹"+data.totalamount
+            window.location.href = "http://localhost:8000/cart/"
         }
     })
 })

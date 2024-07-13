@@ -1,4 +1,5 @@
 from django import template
+from .custom_filter import add_currency
 
 register = template.Library()
 

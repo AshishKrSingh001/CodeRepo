@@ -11,7 +11,7 @@
             <div class="row">
                 {% if product %}
                     {% for prod in product %}
-                        <div class="col-sm-4 text-center mb-4 hover-shadow">
+                        <div class="col-sm-5 text-center mb-4 shadow_container p-4">
                             <a href="{% url 'product-detail' prod.id %}" class="btn">
                                 <div>
                                     <img src="{{ prod.product_image.url }}" width="300px" height="200px" alt="{{ prod.title }}" />

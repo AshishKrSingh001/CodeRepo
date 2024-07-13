@@ -1,3 +1,4 @@
+from django.http import HttpResponseRedirect
 from django.views import View
 from django.shortcuts import redirect, render
 from django.views import View
@@ -6,9 +7,12 @@ from django.contrib.auth.hashers import check_password
 
 # login page
 class Signin(View):
+    return_url = ""
     # get method
     def get(self,request):
-        return render(request,'store/login.html',locals())
+        Signin.return_url = request.GET.get('return_url')
+        return render(request, 'store/login.html', locals())
+        # return render(request,'store/login.html',locals())
     # post method
     def post(self,request):
         postData = request.POST
@@ -20,7 +24,11 @@ class Signin(View):
         if customer:
             if check_password(password,customer.password):
                 request.session['customer'] = customer.id
-                return redirect('home')
+
+                if Signin.return_url :
+                    return HttpResponseRedirect(Signin.return_url)
+                else:
+                    return redirect('home')
             else:
                 error_message = "Entered Email or Password Invalid !!"
         else:

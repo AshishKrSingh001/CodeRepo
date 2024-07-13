@@ -7,6 +7,9 @@ class Customer(models.Model):
     password = models.CharField(max_length=500)
     phone = models.CharField(max_length=15)
 
+    def __str__(self):
+        return self.first_name
+
     def register(self):
         self.save()
 

@@ -15,6 +15,7 @@ from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 import logging
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
 
 
 # Create your views here.
@@ -52,6 +53,25 @@ def privacy_policy(request):
     return render(request,"app/privacy_policy.html",locals())
 
 
+def return_category(val):
+    if val == 'CR':
+        return "Curd"
+    elif val == 'ML':
+        return "Milk"
+    elif val == 'LS':
+        return "Lassi"
+    elif val == 'MS':
+        return "Milkshake"
+    elif val == 'PN':
+        return "Paneer"
+    elif val == 'GH':
+        return "Ghee"
+    elif val == 'CZ':
+        return "Cheese"
+    elif val == 'IC':
+        return "Ice-creams"
+        
+
 @method_decorator(login_required, name='dispatch')
 class CategoryView(View):
     def get(self,request,val):
@@ -62,7 +82,9 @@ class CategoryView(View):
             wishItem = len(Wishlist.objects.filter(user=request.user))
         product = Product.objects.filter(category=val)
         title = Product.objects.filter(category=val).values('title')
-        return render(request,"app/category.html",locals()) 
+        category = return_category(val)
+        return render(request,"app/category.html",locals())
+     
 @method_decorator(login_required, name='dispatch')
 class CategoryTitle(View):
     def get(self,request,val):
@@ -74,6 +96,8 @@ class CategoryTitle(View):
         product = Product.objects.filter(title=val)
         title = Product.objects.filter(category=product[0].category).values('title')
         return render(request,"app/category.html",locals()) 
+    
+    
 @method_decorator(login_required, name='dispatch')
 class ProductDetail(View):
     def get(self,request,pk):
@@ -84,6 +108,8 @@ class ProductDetail(View):
         if request.user.is_authenticated:
             totalItem = len(Cart.objects.filter(user=request.user))
             wishItem = len(Wishlist.objects.filter(user=request.user))
+        category = return_category(product.category)
+        print(category)
         return render(request,"app/productDetail.html",locals())
     
 class CustomerRegistrationView(View):
@@ -424,12 +450,19 @@ class BuyNowPaymentDone(View):
             return HttpResponse(f"An error occurred: {str(e)}", status=500)
 @login_required        
 def orders(request):
-    orderPlaced = OrderPlaced.objects.filter(user=request.user)
+    orders = OrderPlaced.objects.filter(user=request.user)
     wishItem=0
     totalItem = 0
     if request.user.is_authenticated:
         totalItem = len(Cart.objects.filter(user=request.user))
         wishItem = len(Wishlist.objects.filter(user=request.user))
+        
+    paginator = Paginator(orders, 9)  # Show 9 orders per page
+
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    if len(orders) < 1:
+        ord = True
     return render(request,"app/orders.html",locals())
     
 @login_required
@@ -458,6 +491,11 @@ def minus_wishlist(request):
         return JsonResponse(data)
 @login_required
 def wishlists(request):
+    wishItem=0
+    totalItem = 0
+    if request.user.is_authenticated:
+        totalItem = len(Cart.objects.filter(user=request.user))
+        wishItem = len(Wishlist.objects.filter(user=request.user))
     user = request.user
     wishlist_items = Wishlist.objects.filter(user=user)
     products = [item.product for item in wishlist_items]

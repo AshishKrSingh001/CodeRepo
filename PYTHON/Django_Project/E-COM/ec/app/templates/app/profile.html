@@ -6,22 +6,22 @@
 {% block main-content %}
     <div class="container my-5">
         <div class="row">
-            <h3>Welcome <span class="text-captalize">{{request.user}}</span></h3>
        
         <div class="col-sm-2 border-end">
             <ul class="list-unstyle">
-                <li class="d-grid"><a href="{% url 'profile' %}" class="btn btn-primary">Profile</a></li>
-                <li class="d-grid"><a href="{% url 'address' %}" class="btn ">Address</a></li>
+                <li class="d-grid"><a href="{% url 'profile' %}" class="btn btn-primary fw-bold mb-2">Profile</a></li>
+                <li class="d-grid"><a href="{% url 'address' %}" class="btn btn-outline-primary fw-bold">Address</a></li>
             </ul>
-        </div>
-        <div class="col-sm-8 offset-sm-1">
+        </div> 
+        <div class="col-sm-4 offset-sm-1 shadow_container p-4 fw-bold justify-content-center">
+            <h3 class="alert alert-light border rounded text-center shadow_container p-2">Customer Address</h3>
             <form action="" method="post">
                 {% csrf_token %}
                 {% for fm in form %}
                 {{fm.label_tag}} {{fm}} <small class="text-danger">{{fm.errors|striptags}}</small><br>
                 {% endfor %}
                 <div class="col-12 mt-3">
-                    <button type="submit" class="btn btn-primary">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="reset" class="btn btn-warning">Reset</button>
+                    <button type="submit" class="btn btn-primary fw-bold">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="reset" class="btn btn-warning fw-bold">Reset</button>
                 </div><br>
                 {% if form.non_field_errors %}
             {% for error in form.non_field_errors %}
@@ -39,4 +39,6 @@
         </div>
     </div>
     </div>
+    <br>
+    <br/>
 {% endblock main-content %}

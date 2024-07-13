@@ -7,7 +7,7 @@
     <div class="p-5 m-5">
         <div class="col-lg-4 mx-auto border rounded p-4 login-container">
             <h3 class="alert alert-light border rounded text-center login-container">Login Page</h3>
-            <form action="{% url 'login'%}" method="post">
+            <form action="/login/" method="post">
                 {% csrf_token %}
                 {% if error_message %}
                     <div class="alert alert-danger login-container" role="alert">{{error_message}}</div>

@@ -11,30 +11,28 @@
         <div class="alert alert-danger" role="alert">{{ msg }}</div>
     {% endfor %}
     {% endif %}
-    <div class="row mt-5"> 
-        <div class="col-sm-6">
-            <h4>Order Summary</h4>
-            <hr>
+    <div class="row my-4"> 
+        <div class="col-sm-6 shadow_container p-4">
+            <h3 class="alert alert-light border rounded text-center shadow_container p-2">Order Summary</h3>
             {% for item in cart_items %}
-            <div class="card mb-2">
+            <div class="card mb-2 shadow_container">
                 <div class="card-body">
                     <h5>Product: {{ item.product.title }}</h5>
                     <p>Quantity: {{ item.quantity }}</p>
-                    <p class="fw-bold">Price: {{ item.product.discounted_price }}</p>
+                    <p class="fw-bold">Price: ₹{{ item.product.discounted_price }}</p>
                 </div>
             </div>
             {% endfor %}
-            <p class="fw-bold">Total Cost + Rs. 40 = Rs. {{ totalamount }}</p>
+            <p class="fw-bold">Total Cost + ₹40 = ₹{{ totalamount }}</p>
             <small>Terms and Conditions: All sales are final. No refunds or returns.</small>
         </div>
-        <div class="col-sm-4 offset-sm-1">
-            <h4>Select Shipping Address</h4>
-            <hr>
+        <div class="col-sm-4 offset-sm-1 p-4">
+            <h3 class="alert alert-light border rounded text-center shadow_container p-2">{{ product.title }}Select Shipping Address</h3>
             {% if add %}
                 <form method="post" id="myform">
                     {% csrf_token %}
                     {% for ad in add %}
-                    <div class="card mb-3">
+                    <div class="card mb-3 shadow_container">
                         <div class="card-body">
                             <h5>{{ ad.name }}</h5>
                             <p>Mobile: {{ ad.mobile }}</p>
