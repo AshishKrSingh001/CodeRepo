@@ -4,6 +4,42 @@ import java.util.*;
 
 public class array01_ArrayFunctions
 {
+	public static void main(String[]s)
+	{
+		//int A[] = {0,1,2,2,3,0,4,2};
+		int A[] = {1,2};
+		int B[] = {3,4};
+		outputInArray(A);
+		outputInArray(B);
+		A = mergeSortedArray(A,B);
+		outputInArray(A);
+		
+		double median=0;
+        A = mergeSortedArray(A,B);
+        
+        if(A.length % 2 == 0)
+            median = (A[(A.length/2)-1]+A[A.length/2])/2;
+        else
+            median = (A[(A.length/2)-1]);
+        System.out.println(median);
+	}
+	public static int removeElement(int[] A, int val) 
+    {
+        int n = A.length-1;
+		for(int i=0;i<=n;i++)
+		{
+			if(A[i] == val)
+			{
+				if(A[n]==val)
+					n--;
+				int temp = A[i];
+				A[i] = A[n];
+				A[n] = temp;
+				n--;
+			}
+		}
+		return n+1;
+    }
 	public void inputInArray(int A[])
 	{
 		Scanner sc = new Scanner(System.in);
@@ -16,7 +52,7 @@ public class array01_ArrayFunctions
 		System.out.println("**********Input-End***********");
 	}
 	
-	public void outputInArray(int A[])
+	public static void outputInArray(int A[])
 	{
 		System.out.println("**********Output-Start***********\nArray elements are:");
 		for(int i=0;i<A.length;i++)
@@ -24,6 +60,29 @@ public class array01_ArrayFunctions
 			System.out.print(A[i]+"\t");
 		}
 		System.out.println("\n**********Output-End***********");
+	}
+	public static int[] mergeSortedArray(int nums1[],int nums2[])
+	{
+		int i=0,j=0,k=0;
+        int A[] = new int[nums1.length+nums2.length];
+        while(i<nums1.length && j<nums2.length)
+        {
+            if(nums1[i]<=nums2[j])
+                A[k++] =nums1[i++];
+            else
+                A[k++] =nums2[j++];
+        }
+        if(i!=nums1.length)
+        {
+            while(i<nums1.length)
+                A[k++] =nums1[i++];
+        }
+        else if(j!=nums2.length)
+        {
+            while(j<nums2.length)
+                A[k++] =nums2[j++];
+        }
+		return A;
 	}
 
 	public int[] removeEvenInteger(int[]A)
@@ -189,4 +248,6 @@ public class array01_ArrayFunctions
 		}
 		return myArr;
 	}
+	
+	
 }

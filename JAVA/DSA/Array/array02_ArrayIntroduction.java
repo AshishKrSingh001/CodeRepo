@@ -8,7 +8,7 @@ public class array02_ArrayIntroduction
 	public static void main(String[]args)
 	{
 		System.out.println("Hi");
-		dsa01_ArrayFunctions af = new dsa01_ArrayFunctions();
+		array01_ArrayFunctions af = new array01_ArrayFunctions();
 		int n;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter size of an array: ");

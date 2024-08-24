@@ -7,7 +7,7 @@ public class array03_RemoveEvenInteger
 {	
 	public static void main(String []args)
 	{
-		dsa01_ArrayFunctions af = new dsa01_ArrayFunctions();
+		array01_ArrayFunctions af = new array01_ArrayFunctions();
 		int n = 5;
 		int Arr[] = new int[n];
 		af.inputInArray(Arr);
