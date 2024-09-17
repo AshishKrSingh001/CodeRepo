@@ -1,14 +1,14 @@
-public class  LCCapacityToShipPackagesWithinDDays
+public class  LC_CapacityToShipPackagesWithinDDays
 {
 	public int shipWithinDays(int[] weights, int days) 
     {
-        int start = Integer.MIN_VAlUE; // for max element of array
+        int start = Integer.MIN_VALUE; // for max element of array
 		int end = 0; // for sum of all element of array
 		
 		for(int i=0;i<weights.length;i++)
 		{
 			if(weights[i] > start)
-				start = weights;
+				start = weights[i];
 			end += weights[i];
 		}
 		int res = 0;

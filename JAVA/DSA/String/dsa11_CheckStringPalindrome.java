@@ -1,4 +1,4 @@
-package dsa.string.java;
+// package dsa.string.java;
 import java.util.Scanner;
 
 public class dsa11_CheckStringPalindrome
