@@ -32,7 +32,11 @@
                                         <p class="card-text"><strong>Date of Order:</strong> <span class="fst-italic fw-bolder">{{ order.ordered_date }}</span></p>
                                         <p class="card-text"><strong>Status:</strong> 
                                             <span class="badge text-bg-{% if order.status == 'Accepted' %}secondary{% elif order.status == 'Packed' %}warning{% elif order.status == 'On The Way' %}info{% elif order.status == 'Delivered' %}success{% elif order.status == 'Cancel' %}danger{% elif order.status == 'Pending' %}primary{% endif %} btn-sm fst-italic">{{ order.status }}</span>
-                                        </p>                             
+                                        </p>
+                                        {% comment %} <div class="progress fw-bold bg-success" role="progressbar" aria-label="Basic example" aria-valuenow="{% if order.status == 'Accepted' %}25{% elif order.status == 'Shipped' %}50{% elif order.status == 'On The Way' %}75{% elif order.status == 'Delivered' %}100{% elif order.status == 'Cancel' %}100{% elif order.status == 'Pending' %}0{% endif %}" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: {% if order.status == 'Accepted' %}25{% elif order.status == 'Shipped' %}50{% elif order.status == 'On The Way' %}75{% elif order.status == 'Delivered' %}100{% elif order.status == 'Cancel' %}100{% elif order.status == 'Pending' %}0{% endif %}%">{{ order.status }}
+                                            </div>
+                                          </div> {% endcomment %}
                                     </div>
                                 </div>
                             </div>

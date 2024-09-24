@@ -92,13 +92,13 @@ class Customer(models.Model):
 
 class Review(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='reviews')
-    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
+    name = models.CharField(max_length=200)
     rating = models.IntegerField(choices=[(i, str(i)) for i in range(1, 6)])
     review_text = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"Review by {self.customer} for {self.product}"
+        return f"Review by {self.name} for {self.product}"
 
 
 class Cart(models.Model):
@@ -112,7 +112,7 @@ class Cart(models.Model):
     
 STATUS_CHOICES = (
     ('Accepted','Accepted'),
-    ('Packed','Packed'),
+    ('Shipped','Shipped'),
     ('On The Way','On The Way'),
     ('Delivered','Delivered'),
     ('Cancel','Cancel'),

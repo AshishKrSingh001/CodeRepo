@@ -2,10 +2,11 @@ from django.shortcuts import get_object_or_404, render,redirect
 from django.views import View
 from . models import Product,Customer,Cart,Wishlist,Vendor
 from django.db.models import Count
-from . forms import CustomerRegistrationForm,CustomerProfile
+from . forms import CustomerRegistrationForm,CustomerProfile, ReviewForm
 from django.contrib import messages
 from django.http import JsonResponse 
 from django.db.models import Q
+from django.contrib.auth.models import User
 import razorpay
 from django.conf import settings
 from .models import Payment,OrderPlaced
@@ -20,7 +21,6 @@ from .forms import VendorProfileForm,ProductForm
 from django.contrib.auth import login
 from django.views.decorators.http import require_POST
 
-# Create your views here.
 
 def home(request):
     wishItem=0
@@ -56,26 +56,30 @@ def privacy_policy(request):
     return render(request,"app/privacy_policy.html",locals())
 
 class CustomerRegistrationView(View):
-    def get(self,request):
+    def get(self, request):
         form = CustomerRegistrationForm()
-        wishItem=0
+        wishItem = 0
         totalItem = 0
         if request.user.is_authenticated:
             totalItem = len(Cart.objects.filter(user=request.user))
             wishItem = len(Wishlist.objects.filter(user=request.user))
-        return render(request,"app/customerRegistration.html",locals())
-    def post(self,request):
+        return render(request, "app/customerRegistration.html", locals())
+
+    def post(self, request):
         form = CustomerRegistrationForm(request.POST)
         if form.is_valid():
-             # Save the user
-            form.save()
-            # # Create a Customer instance and assign the user
-            # customer = Customer(user=user, **form.cleaned_data)
-            # customer.save()
-            messages.success(request,"Congratulation! User Register Successfully")
+            # Check if the email already exists
+            email = form.cleaned_data.get('email')
+            if User.objects.filter(email=email).exists():
+                messages.warning(request, "Email already exists.")
+            else:
+                # Save the user
+                form.save()
+                messages.success(request, "Congratulations! User registered successfully.")
         else:
-            messages.warning(request,"Invalid Input Data")
-        return render(request,"app/customerRegistration.html",locals())
+            messages.warning(request, "Invalid Input Data")
+        return render(request, "app/customerRegistration.html", locals())
+
     
 def return_category(val):
     if val == 'CR':
@@ -175,6 +179,22 @@ def vendor_register(request):
         # Render the form if vendor is not present
         return render(request, 'app/vendor.html', {'form': form})
     
+def vendor_info(request,pk):
+    vendor = Vendor.objects.get(id = pk)  # Check if the vendor exists for the user
+    if vendor:
+        # Fetch all products uploaded by the vendor
+        products_list = Product.objects.filter(vendor=vendor)
+
+        # Pagination - Show 6 products per page
+        paginator = Paginator(products_list, 4)  # 4 products per page
+        page_number = request.GET.get('page')
+        products = paginator.get_page(page_number)
+
+        # Render the vendor's profile and their products
+        return render(request, 'app/vendor_info.html', {'vendor': vendor, 'products': products})
+    else:
+        return HttpResponse("<h2>Page not found</h2>")
+    
 def add_product(request):
     vendor = Vendor.objects.filter(user=request.user).first()
 
@@ -260,17 +280,35 @@ class UpdateAddress(View):
     
 @method_decorator(login_required, name='dispatch')
 class ProductDetail(View):
-    def get(self,request,pk):
-        product = Product.objects.get(id=pk)
-        wishlist = Wishlist.objects.filter(Q(product=product) & Q(user=request.user))
-        wishItem=0
-        totalItem = 0
-        if request.user.is_authenticated:
-            totalItem = len(Cart.objects.filter(user=request.user))
-            wishItem = len(Wishlist.objects.filter(user=request.user))
+    def get(self, request, pk):
+        product = get_object_or_404(Product, id=pk)
+        wishlist = Wishlist.objects.filter(Q(product=product) & Q(user=request.user)).exists()
+        totalItem = Cart.objects.filter(user=request.user).count() if request.user.is_authenticated else 0
+        wishItem = Wishlist.objects.filter(user=request.user).count() if request.user.is_authenticated else 0
         category = return_category(product.category)
-        print(category)
-        return render(request,"app/productDetail.html",locals())
+        reviews_list = product.reviews.all()
+
+        # Pagination for reviews
+        paginator = Paginator(reviews_list, 3)  # Show 5 reviews per page
+        page_number = request.GET.get('page')
+        reviews = paginator.get_page(page_number)
+        return render(request, "app/productDetail.html", locals())
+
+    def post(self, request, pk):
+        product = get_object_or_404(Product, id=pk)
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.product = product
+            review.save()
+            return redirect('home')
+        else:
+            form = ReviewForm()
+        return render(request, "app/productDetail.html", {
+            'product': product,
+            'form': form,
+            'reviews': product.reviews.all()
+        })
     
 @login_required   
 def add_to_cart(request):
@@ -598,7 +636,7 @@ class BuyNowPaymentDone(View):
                 payment.save()
 
                 # Move items from Cart to OrderPlaced
-                user = request.user
+                user = request.user 
                 product = Product.objects.get(id=prod_id)
                 
                 OrderPlaced(user=user, customer=customer, product=product, quantity=1,payment=payment).save()

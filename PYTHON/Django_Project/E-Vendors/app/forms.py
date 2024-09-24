@@ -4,10 +4,10 @@ from django.contrib.auth.models import User
 from django.core.validators import RegexValidator
 from django.core.exceptions import ValidationError
 from django import forms
-from .models import Vendor,Product
+from .models import Vendor,Product,Review
 
 from .models import Customer
-
+ 
 class LoginForm(AuthenticationForm):
     username = forms.CharField(widget=forms.TextInput(attrs={'autofocus':'True','class':'form-control'}))
     password = forms.CharField(label='Password',widget=forms.PasswordInput(attrs={'class':'form-control'}))
@@ -106,6 +106,20 @@ class ProductForm(forms.ModelForm):
             'category': forms.Select(attrs={'class': 'form-control'}),
             'image_url' : forms.FileInput(attrs={'class': 'form-control'}),
             'status': forms.Select(attrs={'class': 'form-control'}),
+        }
+
+class ReviewForm(forms.ModelForm):
+    class Meta:
+        model = Review
+        exclude = ['product']
+        #fields = ['product', 'name', 'rating', 'review_text']
+        widgets = {
+            'name': forms.TextInput(attrs={'class': 'form-control'}),
+            'rating': forms.Select(attrs={'class': 'form-control '}, choices=[(i, str(i)) for i in range(1, 6)]),
+            'review_text': forms.Textarea(attrs={'rows': 4, 'cols': 40, 'class': 'form-control'}),
+        }
+        labels = {
+            'review_text': 'Your Review',
         }
     
 

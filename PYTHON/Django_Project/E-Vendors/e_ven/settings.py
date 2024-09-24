@@ -136,10 +136,17 @@ LOGIN_REDIRECT_URL = '/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# Use this if you want to send emails via Gmail SMTP
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+# SMTP server configuration
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+# Your Gmail email and app-specific password
+EMAIL_HOST_USER = 'bundelicrafts@gmail.com'  # Replace with your Gmail email
+EMAIL_HOST_PASSWORD = 'vcus iqxv hwta wstn'  # Replace with your Gmail app password
 
 RAZOR_KEY_ID = "rzp_test_iI2PBZyKzfEFjd"
 RAZOR_KEY_SECRET = "qXMJ0ATC9Crvz7eZoTPRRl79"

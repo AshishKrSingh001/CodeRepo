@@ -14,7 +14,9 @@ urlpatterns = [
     path("category/<slug:val>",views.CategoryView.as_view(),name="category"),
     path("category-title/<val>",views.CategoryTitle.as_view(),name="category-title"),
     path('vendor_dashboard/', views.vendor_register, name='vendor_dashboard'),
+    path('vendor_info/<int:pk>/', views.vendor_info, name='vendor_info'),
      path('add-product/', views.add_product, name='add_product'),
+     path('product/<int:pk>/submit-review/', views.ProductDetail.as_view(), name='submit_review'),
 
     # password change
     path("password-change/",auth_view.PasswordChangeView.as_view(template_name="app/changePassword.html",form_class=MyPasswordChangeForm, success_url="/password-change-done"), name="password-change"),
