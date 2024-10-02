@@ -1,0 +1,12 @@
+{
+    "java.project.sourcePaths": [
+        "JAVA/DSA/String",
+        "JAVA/DSA/Recursion",
+        "JAVA/DSA/LinkedList",
+        "JAVA/DSA/LC",
+        "JAVA/DSA/GFG",
+        "JAVA/DSA/Collections",
+        "JAVA/DSA/Array",
+        "JAVA/DSA/Basics"
+    ]
+}

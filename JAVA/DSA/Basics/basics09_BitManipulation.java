@@ -71,4 +71,27 @@ public class basics09_BitManipulation
 	{
 		return (num & (num-1));
 	}
+	public static int clearLSB(int num, int i)
+    {
+        return (num & ~((1<<(i+1))-1));
+    }
+    public static int clearMSB(int num, int i)
+    {
+        return (num & ((1<<(i+1))-1));
+    }
+	public static void printBitsOfChar(char ch)
+    {
+        for(int i=7;i>=0;i--)
+        {
+            System.out.print(((int)ch>>i) & 1);
+        }System.out.println("");
+    }
+    public static char lowerToUpper(char ch)
+    {
+        return (char)((int)ch & ~(1<<5));
+    }
+    public static char upperToLower(char ch)
+    {
+        return (char)((int)ch | (1<<5));
+    }
 }

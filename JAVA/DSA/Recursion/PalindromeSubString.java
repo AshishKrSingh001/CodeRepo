@@ -1,36 +1,37 @@
-import java.util.ArrayList;
-import java.util.List;
 
 public class PalindromeSubString 
 {
-    public static boolean palindrome(String s)
+    public static void palindrome(String s, int index, int n)
     {
-        if(s.length()==1)
-            return true;
-        for(int i=0;i<=(s.length()/2)-1;i++)
+        if(index == n)
         {
-            if(s.charAt(i)!=s.charAt(s.length()-1 - i))
+            return;
+        }
+        for(int i=index; i<n; i++)
+        {
+            if(isPalindrome(s, index, i))
+            {
+                System.out.print(s.substring(index,i+1)+" ");
+                palindrome(s, i+1, n);
+                System.out.println("");
+            }
+        }
+    }
+    public static boolean isPalindrome(String s, int i, int j)
+    {
+        while(i<j)
+        {
+            if(s.charAt(i)!=s.charAt(j))
                 return false;
+            i++;
+            j--;
         }
         return true;
     }
-    public static void findPermutations(String s, int index, List<List<String>>res)
+    public static void main(String[]args)
     {
-        int n = s.length();
-        if(index == n)
-        {
-            List<String>subList = new ArrayList<>();
-            for(int i=0;i<n;i++)
-            {
-                subList.add(s.substring(i,index));
-            }
-            res.add((new ArrayList<>(subList)));
-            return;
-        }
-       
-    }
-    public static void main(String[] args) 
-    {
-        System.out.println(palindrome(""));
+        System.out.println("Try programiz.pro");
+        String s = "ABCDCBA";
+        palindrome(s, 0, s.length());
     }
 }

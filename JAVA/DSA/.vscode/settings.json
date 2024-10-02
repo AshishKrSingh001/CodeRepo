@@ -1,3 +1,13 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.sourcePaths": [
+        "String",
+        "Recursion",
+        "LinkedList",
+        "LC",
+        "GFG",
+        "Collections",
+        "Array",
+        "Basics"
+    ]
 }
