@@ -23,7 +23,7 @@ void arrayDisplay(int Arr[], int N, char msg[])
 }
 void linearSearch(int Arr[], int N, int key)
 {
-    for(int i=1;i<N;i++)
+    for(int i=0;i<N;i++)
     {
         if(Arr[i] == key)
         {
