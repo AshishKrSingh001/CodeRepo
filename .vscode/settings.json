@@ -8,5 +8,6 @@
         "JAVA/DSA/Collections",
         "JAVA/DSA/Array",
         "JAVA/DSA/Basics"
-    ]
+    ],
+    "C_Cpp.errorSquiggles": "disabled"
 }

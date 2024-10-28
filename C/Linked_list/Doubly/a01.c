@@ -258,7 +258,7 @@ node *reverse(node *h)
 		q=p;
 		p=p->next;
 		q->next=h;
-		h=q;;
+		h=q;
 	}
 	h->prev=NULL;
 	return h;
