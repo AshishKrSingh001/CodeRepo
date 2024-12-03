@@ -1,14 +1,17 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": [
+        "Tree",
         "String",
+        "Stack",
         "Recursion",
         "LinkedList",
         "LC",
+        "Hashing",
         "GFG",
         "Collections",
         "Basics",
         "Array",
-        "Stack"
+        "Tree in Java"
     ]
 }
