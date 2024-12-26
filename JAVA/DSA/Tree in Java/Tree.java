@@ -324,6 +324,14 @@ public class Tree
         }
         return false;
     }
+    public static int depthDiff(Node root){
+        if(root==null){
+            return 0;
+        }
+        int leftDiff = depthDiff(root.left);
+        int rightDiff = depthDiff(root.right);
+        return Math.abs(leftDiff - rightDiff)+1;
+    }
     public static void main(String[] args) {
         int preorder[] = {1, 2, 4, 5, 3, 6};
         int inorder[] = {4, 2, 5, 1, 3, 6};
@@ -355,8 +363,9 @@ public class Tree
         // System.out.println(list1);
         // List<Integer>list1 = bottomViewOfTheTree(root);
         // System.out.println(list1);
-        List<Integer>list1 = leftViewOfTheTree(root);
-        System.out.println(list1);
+        // List<Integer>list1 = leftViewOfTheTree(root);
+        // System.out.println(list1);
+        System.err.println(depthDiff(root));
         // System.out.println(isCousinNode(root, 4, 5));
     }
     public static class CustNode{

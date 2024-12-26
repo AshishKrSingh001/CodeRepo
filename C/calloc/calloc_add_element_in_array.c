@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void main()
+void main() 
 {
     int *p,i,n,position,element;
     printf("Enter array size:\n");
@@ -12,7 +12,7 @@ void main()
     printf("Allocated size is %d",_msize(p));
 
     printf("\nEnter element of array:\n");
-    for(i=0;i<n;i++)
+    for(i=0;i<n;i++) 
     scanf("%d",p+i);
 
     printf("Array element before add new element:\n");

@@ -13,7 +13,7 @@ public class Array13_SortingAlorithms
     public static void main(String[] args) 
     {
         System.out.println("Hello");
-        int A[] = {1,7,5,4,1,2,3,4,4,4};
+        int A[] = {31, 19, 67, 42, 91, 13, 75, 28, 56};
         outputInArray(A,"Previous Array");
         // insertionSort(A);
         // selectionSortBidirectional(A);

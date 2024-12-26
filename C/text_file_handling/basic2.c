@@ -22,7 +22,8 @@
 
             fscanf(fp,"%d%s%s%f",&rolno,nm,cs,&fee);
 */
-
+// Name: Abhishek Kumar 
+// Y24271002
 // WAP for data record.
 #include <stdio.h>
 void main()

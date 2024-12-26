@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
 void main()
-{
+{ 
     int size1,*p,i;
     printf("How many numbers ?\n");
     scanf("%d",&size1);
