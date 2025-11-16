@@ -1,0 +1,21 @@
+# text = "Hello,World"
+# print(text[0:6])
+# print(text[::-1])
+list1 = [1, 5, 4, 2, 3, 60]
+# list1.sort(reverse=True)
+# # list1.reverse()
+# print(list1)
+# list1.append(20)
+# list1.reverse()
+# print(list1)
+# list1.insert(2, 144)
+# print(list1)
+list1.remove(60)
+print(list1)
+list1.pop(-2)
+print(list1)
+list2 = [10, 20, 30]
+list1.extend(list2)
+print(list1)
+list2 = list1.copy()
+print(list2)
