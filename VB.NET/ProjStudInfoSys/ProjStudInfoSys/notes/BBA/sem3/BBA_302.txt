@@ -1,0 +1,26 @@
+BBA 302 : FINANCIAL MANAGEMENT – 2 [MANAGERIALACCOUNTING]
+Section I
+ Scope of Financial Management, Traditional Approach, Modern approach, Investment
+Decision, Financing Decision, Dividend decision, Objectives of Financial management,
+Profit Maximization vs Wealth Maximization.
+Section II
+ Capital Budgeting-Meaning, importance and various techniques-accounting rate of return,
+pay back method, net present value, net terminal value, internal rate of return, profitability
+index method.
+ Measurement of cost of capital: cost of debt, cost of preference shares, costs of equity
+shares, calculation of overall cost of capital based on Historical and Market Weights.
+Section III
+ Operating and Financial Leverage, Capital Structure Decision. NI approach, NOI approach,
+MM approach, Traditional approach.
+ Working Capital Management-Definition, importance, factors affecting working capital.
+Sources of raising working capital finance.
+Text Books:
+1. Khan M.Y, Jain P.K., (2010), Financial Management, 3rd edition, McGraw Hill Education.
+2. Maheshwari S.N., (2009), Financial Management- Principles and Practice, 9th Edition
+Sultan Chand & Sons.
+Reference Books:
+1. Kapil, Sheeba, (2010), Financial Management, 1st edition, Pearson Education.
+2. Burk Demazo, (2010), Financial Management, Pearson Education.
+3. Ross, Stephen,Westerfield, R., and Jaffe, J.,(2004), Corporate Finance, 7th Edition, McGraw
+Hill Education.
+4. Pandey I. M., (2007), Financial Management, Vikas Publishing House.

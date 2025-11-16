@@ -1,0 +1,17 @@
+BCA-603 E-COMMERCE
+Introduction to E-commerce: E-commerce: The revolution is just beginning, The visions and
+forces behind E-commerce, Understanding E-commerce.
+E-commerce business models and concepts: E-commerce business models, Major business-toconsumer (B2C) business models, Major business-to-business (B2B) business models, Business
+models in emerging E-commerce areas, How the internet and the Web change business.
+E-commerce infrastructure: The Internet, Technology background, The internet today, The world
+wide web. Building an E-commerce web site: A systematic approach, choosing server software,
+choosing the hardware for an E-commerce site, other E-commerce site tools.
+Security and Encryption: The E-commerce security environment, Security threats in the Ecommerce environment, Technology solutions, Policies, Procedures and Laws.
+E-commerce payment systems: Payment systems, Credit card E-commerce transactions, Ecommerce digital payment systems in the B2C arena, B2B payment systems. Ethical, Social, and
+Political issues in E-commerce: Understanding ethical, social, and political issues in E-commerce,
+Privacy and information rights, Intellectual property rights, Governance, Public safety and welfare.
+Text Book:
+1. K.C. Laudon & C.G. Traver, E-commerce, Pearson Education, 2003.
+Reference Books:
+1. R. Kalakota & A.B.Whiilston-' Frontiers of Electronic Commerce, Pearson Education- 2006.
+2. K.K.Bajaj & D.Nag- E-Commerce, Tata McGraw Hill, New Delhi, Second Edition.

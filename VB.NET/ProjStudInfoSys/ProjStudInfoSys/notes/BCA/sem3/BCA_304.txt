@@ -1,0 +1,23 @@
+BCA-304 SOFTWARE ENGINEERING
+Introduction to Software Engineering: Characteristics, Emergence of Software Engineering,
+Software Metrics & Models, Process & Product Metrics. Software Life Cycle Models: Waterfall,
+Prototype and Spiral Models and their Comparison.
+Software Project Management: Size Estimation- LOC and FP Metrics, Cost Estimation-Delphi
+and Basic COCOMO, Introduction to Halstead’s Software Science, Staffing Level EstimationPutnam’s Model. Software Requirements Specification: SRS Documents, their Characteristics and
+Organization.
+Software Design: Classification, Software Design Approaches, Function Oriented Software
+Design, Structured Analysis- Data flow Diagrams and Structured Design, Introduction to Object
+Oriented Design.
+Coding and Testing of Software: Unit Testing, Block Box Testing, White Box Testing,
+Debugging, Program Analysis Tools, System Testing. Software Reliability and Quality Assurance:
+Reliability Metric- Musa’s Basic Model.
+Software Quality Assurance: ISO 9000 and SEI CMM and their Comparison. Software
+Maintenance: Maintenance Process Models and Reverse Engineering, Estimation of Maintenance
+Costs.
+Text Book:
+1.Rajib Mall -Fundamentals of Software Engineering, Prentice Hall of India, New Delhi, 2005.
+Reference Book:
+1. Pankaj Jalote- An Integrated Approach to Software Engineering, 3rd Edition, Narosa Publishing
+House, New Delhi, 2005.
+2. Richard Fairley- Software Engineering Concepts, Tata McGraw Hill, New Delhi, 2006.
+3. Roger S Pressman – Software Engineering; T.M.H

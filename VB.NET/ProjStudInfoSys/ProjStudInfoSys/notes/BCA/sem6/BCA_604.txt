@@ -1,0 +1,19 @@
+BCA-604 Project and Viva
+The objective of the BCA project work is to develop a quality software solution by following the
+software engineering principles and practices. During the development of the project the students
+should involve in all the stages of the software development life cycle (SDLC). The main objective
+of this project course is to provide learners a platform to demonstrate their practical and theoretical
+skills gained during five semesters of study in BCA Programme. During project development
+students are expected to define a project problem, do requirements analysis, systems design,
+software development, apply testing strategies and do documentation with an overall emphasis on
+the development of a robust, efficient and reliable software systems. The project development
+process has to be consistent and should follow standard.. For example database tables designed in
+the system should match with the E-R Diagram. SRS documents to be created as per IEEE
+standards.
+Students are encouraged to spend maximum time of the sixth semester working on a project
+preferably in a software industry or any research organization. Topics selected should be complex
+and large enough to justify as a BCA final semester project. The courses studied by the students
+during the BCA Programme provide them the comprehensive background knowledge on diverse
+subject areas in computer science such as computer programming, data structure, DBMS, Computer
+Organization, SAD, Software Engineering, Computer Networks etc., which will be helping students
+in doing project work.

@@ -1,0 +1,25 @@
+BBA 502 : INDIAN FINANCIAL SYSTEM
+Section I
+ Financial system in India: RBI and financial system, money market, characteristics,
+instruments, role of DFID, introduction to capital market, its role, significance.
+ History of stock exchanges, regulations of stock exchanges, licensed dealer, online trading
+concept, qualification for membership, functions of stock exchanges, regulations on trading,
+measures to promote healthy stock markets.
+Section II
+ Structure of Indian Financial markets; Major players in the capital market – NSE,
+OTCEL, Regional Exchanges; Role of Broker, merchant banker, underwriter, depository
+ Types of instruments in the Indian Market - Equity, Preference Shares, Debentures,
+Bonds, Warrants, Options, Convertible securities, Fixed deposits, Derivatives, Debt
+Securitization, Commercial Paper, Euro Issue etc.
+Section III
+ Regulations of the capital market in India; Securities and contracts Regulation Act; SEBI
+ Evolution of Merchant Banking, scope, functions and its role in Indian context. SEBl
+Guidelines for Merchant Bankers.
+ SEBI Guidelines on Issue Management, Pre-Issue & Post Issue work; Designing &
+pricing of Instruments preparing for public issues
+Text Books:
+1. MY Kahn (2004); Indian Financial System: Theory and Practice, 4th Edition; Tata McGraw
+Hill.
+Reference Books:
+1. Sundaram and Varshney, (2004); Banking Theory, Law, and Practice, 3rd Edition; Sultan
+Chand and Sons Publisher.

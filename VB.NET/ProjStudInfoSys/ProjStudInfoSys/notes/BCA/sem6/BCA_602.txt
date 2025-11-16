@@ -1,0 +1,25 @@
+BCA-602 : CONCEPT OF DATA MININGAND DATA WAREHOUSING (Elective 2)
+Introduction : Data Mining – Motivation, Importance of DM Functionalities, Basic Data
+Mining Tasks, DM Applications, and Social Implications
+Data Warehousing : Differences between Operational Database and Data Warehouse – Multidimensional Data Model - From Tables to Data Cubes. Schemas, Measures,
+DW Implementation – Efficient Computation of Data Cubes.
+Data Reprocessing, Data Mining Primitives, Languages : Data Cleaning, Data Integration and
+Transformation, Data Reduction, Discretization and concept of Hierarchy
+Generation, Task relevant Data, Background Knowledge, Presentation and
+Visualization of Discovered Patterns.
+Data Mining Algorithms : Association Rule Mining, Classification and Prediction – Decision
+Tree, Baysian Classification Back Propagation, Cluster Analysis, Outlier
+Analysis.
+Web, Temporal and Spatial Data Mining : Web Content Mining, Web Structure Mining, Web
+Usages Mining, Spatial Mining, Generalization and specialization, Spatial
+Rules, Spatial Classification and Clustering Algorithms, Temporal Mining,
+Modeling Temporal Events, Times Series, Pattern Detection, Sequences.
+Reference Books :
+1. Jiawei I-lan & Micheline Kambler, “Data Mining: Concepts and Techniques”, Harcourt
+India Pvt. Ltd., First Indian Reprint, 2001
+2. Margaret H. Dunham, “Data Mining : Introduction and Advance Topics”, Pearson
+Education, First Indian Reprint, 2003
+3. Arun K. Pujari, “Data Mining Techniques”, University Press (India) Limited, First edition,
+2001
+4. Efrem O, Mallach, “Decision Support and Data Warehousing Systems”, Mcgraw-Hill
+International Edition, 2000

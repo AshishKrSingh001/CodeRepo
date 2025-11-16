@@ -1,0 +1,48 @@
+<!--
+    JavaScript Basic : Exercise-8 with Solution
+    Write a JavaScript program to calculate multiplication and division of two
+    numbers (input from user).
+    Sample Form:
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation</title>
+    <script>
+        function multi()
+        {
+            var a=parseInt(document.getElementById("fnum").value);
+            var b=parseInt(document.getElementById("snum").value);
+            document.getElementById("result").innerHTML="Multiplication: "+a*b
+        }
+        function div()
+        {
+            var a=parseInt(document.getElementById("fnum").value);
+            var b=parseInt(document.getElementById("snum").value);
+            document.getElementById("result").innerHTML="Division: "+a/b
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>First number</td>
+                <td><input id="fnum" type="text"></td>
+            </tr>
+            <tr>
+                <td>Second number</td>
+                <td><input id="snum" type="text"></td>
+            </tr>
+            <tr>
+                <td><input type="Button" onclick="multi()" value="multi"></td>
+                <td><input type="Button" onclick="div()" value="div"></td>
+            </tr>
+        </table>
+        <p id="result"></p>
+    </form>
+</body>
+</html>

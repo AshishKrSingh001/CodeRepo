@@ -1,0 +1,16 @@
+D:\Programming\dotnet\WinFormsApp_Collection\WinFormsApp_Collection\bin\Debug\net6.0-windows\WinFormsApp_Collection.exe
+D:\Programming\dotnet\WinFormsApp_Collection\WinFormsApp_Collection\bin\Debug\net6.0-windows\WinFormsApp_Collection.deps.json
+D:\Programming\dotnet\WinFormsApp_Collection\WinFormsApp_Collection\bin\Debug\net6.0-windows\WinFormsApp_Collection.runtimeconfig.json
+D:\Programming\dotnet\WinFormsApp_Collection\WinFormsApp_Collection\bin\Debug\net6.0-windows\WinFormsApp_Collection.dll
+D:\Programming\dotnet\WinFormsApp_Collection\WinFormsApp_Collection\bin\Debug\net6.0-windows\WinFormsApp_Collection.pdb
+D:\Programming\dotnet\WinFormsApp_Collection\WinFormsApp_Collection\obj\Debug\net6.0-windows\WinFormsApp_Collection.Form1.resources
+D:\Programming\dotnet\WinFormsApp_Collection\WinFormsApp_Collection\obj\Debug\net6.0-windows\WinFormsApp_Collection.vbproj.GenerateResource.cache
+D:\Programming\dotnet\WinFormsApp_Collection\WinFormsApp_Collection\obj\Debug\net6.0-windows\WinFormsApp_Collection.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\dotnet\WinFormsApp_Collection\WinFormsApp_Collection\obj\Debug\net6.0-windows\WinFormsApp_Collection.AssemblyInfoInputs.cache
+D:\Programming\dotnet\WinFormsApp_Collection\WinFormsApp_Collection\obj\Debug\net6.0-windows\WinFormsApp_Collection.AssemblyInfo.vb
+D:\Programming\dotnet\WinFormsApp_Collection\WinFormsApp_Collection\obj\Debug\net6.0-windows\WinFormsApp_Collection.vbproj.CoreCompileInputs.cache
+D:\Programming\dotnet\WinFormsApp_Collection\WinFormsApp_Collection\obj\Debug\net6.0-windows\WinFormsApp_Collection.dll
+D:\Programming\dotnet\WinFormsApp_Collection\WinFormsApp_Collection\obj\Debug\net6.0-windows\refint\WinFormsApp_Collection.dll
+D:\Programming\dotnet\WinFormsApp_Collection\WinFormsApp_Collection\obj\Debug\net6.0-windows\WinFormsApp_Collection.pdb
+D:\Programming\dotnet\WinFormsApp_Collection\WinFormsApp_Collection\obj\Debug\net6.0-windows\WinFormsApp_Collection.genruntimeconfig.cache
+D:\Programming\dotnet\WinFormsApp_Collection\WinFormsApp_Collection\obj\Debug\net6.0-windows\ref\WinFormsApp_Collection.dll

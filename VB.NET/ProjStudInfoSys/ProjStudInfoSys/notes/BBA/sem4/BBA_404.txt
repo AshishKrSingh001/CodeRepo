@@ -1,0 +1,29 @@
+BBA 404 : PROJECT & EVENT MANAGEMENT
+Section I
+ Project: Definition, characteristics, importance, types, steps in identification of projects,
+project life-cycle.
+ Project management: meaning and scope.
+ Technical appraisal, Environmental appraisal, Managerial appraisal.
+Section II
+ Economic & market appraisal including market survey for forecasting future demand and
+sales.
+ Financial appraisal: project cost estimation & working capital requirements, sources of
+funds, appropriate composition of funds (capital budgeting), preparation of projected
+financial statements viz. Projected balance sheet, projected income statement, projected
+funds & cash flow statements. Preparation of detailed project report.
+ Need & techniques for ranking of projects : payback method, accounting rate of return,
+internal rate of return, net present value method, net terminal value method, multiple internal
+rate of return.
+Text Books:
+1. Pinto, (2009), Project Management, 1st Edition, Pearson Education.
+2. Maheshwari, S.N., (2009), Management Accounting & Financial Control, 14th edition,
+Sultan Chand & Sons.
+Reference Books:
+1. Chandra, Prasanna, (2009), Projects: Planning, Analysis, Financing, Implementation and
+Review, 7th edition, McGraw Hill Education.
+2. Choudhury, S, (2007). Project Management, 1st Edition, Tata Mc Graw Hill Publishing
+Company.
+3. Bhavesh, M. Patel (2009). Project Management: Strategic Financial Planning Evaluation and
+Control, Vikas Publishing House Pvt. Ltd.
+4. Panneerselvam, R., and Senthilkumar, P., (2007), Project Management, Prentice Hall of
+India.

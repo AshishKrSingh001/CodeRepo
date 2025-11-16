@@ -1,0 +1,216 @@
+<html>
+	<head>
+		<title>Signup</title>
+		<style>
+			*
+			{
+				margin:0px;
+				padding:0px;
+			}
+			#container
+			{
+				margin:0px;
+				padding:2vh 1vw;
+				height:auto;
+				width:97vw;
+				background-color:#983cda;
+			}
+			.head
+			{
+				height:20vh;
+				width:97vw;
+				background-color:#7ac5e6;
+			}
+			.logo
+			{
+				background-image:url("logo.jpeg");
+			}
+			.tail
+			{
+				height:10vh;
+				width:97vw;
+				background-color:#7ac5e6;
+				padding:5vh 0vw;
+			}
+			.table
+			{
+				margin:0;
+				padding:2vh;
+				background-color:#c995ef;
+				height:auto;
+				width:100%;
+				align-content:center;
+				margin-left:auto;
+				margin-right:auto;
+				cellspacing:0;
+				cellpadding:0;
+			}
+			td
+			{
+				text-align:left;
+				padding:1vh 1vw;
+				font-weight:bold;
+			}
+			.input
+			{
+				height:4.5vh;
+				width:30vw;
+				outline:none;
+			}
+			img 
+			{
+				border: 1px solid #7ac5e6;
+				height:17vh;
+				width:10vw;
+			}
+			.btn1
+			{
+				background-color:red;
+				height:4vh;
+				width:6vw;
+			}
+			.btn2
+			{
+				background-color:green;
+				height:4vh;
+				width:5vw;
+			}
+			.btn1,.btn2
+			{
+				align-:right;
+				border:none;
+				font-weight:bold;
+				color:white;
+				font-size:2.6vh;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="head">
+				<form method="post">
+				<table>
+					<tr>
+						<td><img src="logo01.jpg" alt="logo01"></td>
+						<td style="height:17vh; width:72vw;"><center><big><b><font color="blue"><p>फॉर्म / Form-01</p>
+						<p>प्रवेश हेतु आवेदन</p>
+						<p>Application for Entrancce</p></font></b></big></center></td></td>
+						<td><img src="logo02.jpg" alt="logo02" style="float:right;"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="main">
+				<table class="table">
+				<tr>
+					<th colspan="2" style="background-color:#808000;"><big>आवेदक का विवरण / Details of Applicant</big></th>
+				</tr>
+				<tr>
+					<td>लिंग / Gender&nbsp;&nbsp;<font color="red">*</font></td>
+					
+					<td>जन्मतिथि / Date of Birth<font color="red">*</font></td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="male">&nbsp;&nbsp;पुरुष / Male&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="female">&nbsp;&nbsp;स्त्री / Female&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="other">&nbsp;&nbsp; तृतीय लिंग / Third Gender</td>
+					<td><input class="input" type="date" name="dob" required></td>
+				</tr>
+				<tr>
+					<td>आवेदक / आवेदिका का नाम / Name of Applicant&nbsp;&nbsp;<font color="red">*</font></td>
+					<td>आधार संख्या / Aadhar Number&nbsp;&nbsp;<font color="red">*</font></td>
+				</tr>
+				<tr>
+					<td><input class="input" type="text" name="name" required autofocus></td>
+					<td><input class="input" type="text" name="aadhar" required></td>
+				</tr>
+				<tr>
+					<td>पिता का नाम/Name of Father&nbsp;&nbsp;<font color="red">*</font></td>
+					<td>खाता संख्या / Account Number&nbsp;&nbsp;<font color="red">*</font></td>
+				</tr>
+				<tr>
+					<td><input class="input" type="text" name="fname" required></td>
+					<td><input class="input" type="text" name="account" required></td>
+				</tr>
+				<tr>
+					<td>माता का नाम/Name of Mother&nbsp;&nbsp;<font color="red">*</font></td>
+					<td>IFSC Code&nbsp;&nbsp;<font color="red">*</font></td>
+				</tr>
+				<tr>
+					<td><input class="input" type="text" name="mname" required></td>
+					<td><input class="input" type="text" name="ifsc" required></td>
+				</tr>
+				<tr>
+					<td>पति का नाम/Name of Husband</td>
+					<td>PAN Number</td>
+				</tr>
+				<tr>
+					<td><input class="input" type="text" name="hname"></td>
+					<td><input class="input" type="text" name="pan"></td>
+				</tr>
+				<tr>
+					<td>आवेदक का मोबाइल संख्या / Mobile No. of Applicant&nbsp;&nbsp;<font color="red">*</font></td>
+					<td>आवेदक का ईमेल / Email of Applicant&nbsp;&nbsp;<font color="red">*</font></td>
+				</tr>
+				<tr>
+					<td><input class="input" type="text" name="mob" required></td>
+					<td><input class="input" type="email" name="email" required></td>
+				</tr>
+				<tr><td>पता / Address:-</td></tr>
+				<tr>
+					<td>राज्य / State&nbsp;&nbsp;<font color="red">*</font></td>
+					<td>जिला / District&nbsp;&nbsp;<font color="red">*</font></td>
+				</tr>
+				<tr>
+					<td><input class="input" type="text" name="state" required></td>
+					<td><input class="input" type="text" name="district" required></td>
+				</tr>
+				<tr>
+					<td>अनुमंडल / Sub-Division&nbsp;&nbsp;<font color="red">*</font></td>
+					<td>प्रखंड / Block&nbsp;&nbsp;<font color="red">*</font></td>
+				</tr>
+				<tr>
+					<td><input class="input" type="text" name="sub" required></td>
+					<td><input class="input" type="text" name="block" required></td>
+				</tr>
+				<tr>
+					<td>स्थानीय निकाय का प्रकार / Type of Local Body</td>
+					<td>वार्ड संख्या / Ward No.&nbsp;&nbsp;<font color="red">*</font></td>
+				</tr>
+				<tr>
+					<td style="padding:0vh 1vw;"><input type="radio" name="vp1">&nbsp;&nbsp;ग्राम पंचायत / Village Panchayat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="vp2">&nbsp;&nbsp;नगर निगम / Municipal Corporation</td>
+					<td><input class="input" type="text" name="ward" required></td>
+				</tr>
+				<tr><td style="padding:0vh 1vw 1vh 1vw;"><input type="radio" name="vp3">&nbsp;&nbsp;नगर परिषद / Municipality&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="vp4">&nbsp;&nbsp;नगर पंचायत / Town Panchayat</td></tr>
+				<tr>
+					<td>ग्राम (Village)/मोहल्ला (Town)&nbsp;&nbsp;<font color="red">*</font></td>
+					<td>डाक घर / Post Office&nbsp;&nbsp;<font color="red">*</font></td>
+				</tr>
+				<tr>
+					<td><input class="input" type="text" name="town" required></td>
+					<td><input class="input" type="text" name="po" required></td>
+				</tr>
+				<tr>
+					<td>थाना / Police Station&nbsp;&nbsp;<font color="red">*</font></td>
+					<td>पिन कोड / Pin Code&nbsp;&nbsp;<font color="red">*</font></td>
+				</tr>
+				<tr>
+					<td><input class="input" type="text" name="ps" required></td>
+					<td><input class="input" type="text" name="pin" required></td>
+				</tr>
+				<tr>
+					<td><input class="btn2" type="reset" name="reset" value="Reset">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input class="btn1" type="submit" name="submit" value="Proceed"></td>
+				</tr>
+			</table>
+			</form>
+			</div>
+			<div class="tail">
+				<font color="blue"><center><p>Content on this website is owned, by the Myself, Ashish Kumar Singh</p>
+				<p>Site is technically designed, hosted and maintained by Myself</p>
+				<p>Powered By — Myself</p></center></font>
+			</div>
+		</div>
+	</body>
+</html>

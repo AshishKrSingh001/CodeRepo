@@ -1,0 +1,40 @@
+BBA 403 : OPERATIONS RESEARCH AND LOGISTICS
+Operations Research
+Section I
+ Introduction to OR Managerial Decision Making and OR. OR Models: Principles and
+Types.
+ Linear Programming: Problem Formulation, Graphical & Simplex Method, Duality, and
+Sensitivity Analysis
+Section II
+ Transportation Models, Transshipment Problem, Traveling Salesman Problem, Assignment
+Models.
+ Game Theory – Two person zero sum game, Pure strategy, mixed strategy & saddle point,
+rules of dominance, Solution of special kind of games
+ Decision Theory – Maximax, maximin, minimax regret criterion, Laplace criterion etc
+Section III
+ Waiting line models – Components and operating characteristics of Queuing system and
+channel configurations
+ PERT-CPM
+Logistics
+Section I
+ Introduction, concepts & significance, functions.
+ Physical distribution, transportation, inventory control, ware housing, packaging, material
+handling, order processing, location analysis.
+Section II
+ Logistic Cost: Inventory, warehousing, production cost, channels, communication,
+transportation, material handling, packaging, customer service.
+Section III
+ Logistic information systems: Need, components and design.
+ Transportation modes, made choice, inter transport, containerization, routing, logistic
+organization.
+Text Books:
+1. Vohra, N.D., (2009) Quantitative Techniques in Management, 4th edition, McGraw Hill
+Education.
+2. Vishwanathan, P.K., (2008) Business Statistics and Applied Orientation, 1st edition, Pearson
+Education.
+Reference Books:
+1. Rajagopalan, S. and Sattanathan, R., (2009) Business Statistics & Operations Research, 2nd
+Edition, McGraw Hill Education.
+2. Sharma, J.K., (2009) Operations Research: Problems & Solutions, 2nd edition, Macmillan
+India Ltd.
+3. Taha, Hamdy, (2008) Operations Research: An Introduction, 8th edition, Pearson Education.

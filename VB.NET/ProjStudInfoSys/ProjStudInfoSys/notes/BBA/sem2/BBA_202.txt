@@ -1,0 +1,38 @@
+BBA 202 : FINANCIAL MANAGEMENT – 1 [FINANCIALACCOUNTING]
+BASIC ACCOUNTING
+Section I
+ Accounting – Introduction, importance and scope, concepts & conventions – Introduction
+generally accepted accounting principles, Double Entry Framework: The accounting
+equation, Accounting cycle – Journals, Ledgers, Purchase Book, Sales Book, Cash Book,
+Petty Cash Book, Trial Balance.
+Section II
+ Preparation of financial statements – Profit and loss account and Balance Sheet with
+necessary adjustments.
+ Analysis and interpretation of Financial Statement – meaning and significance.
+Section III
+ Tools of Financial Analysis – Ratio Analysis, Trend Analysis, Common size and
+Comparative Financial Statement.
+ Fund Flow Statement and Cash Flow Statement
+ Marginal Costing, Break-Even Analysis, Applications of Marginal Costing.
+COST ACCOUNTING
+Section IV
+ Concept & classification: Material, labour, overhead, fixed & variable, direct & indirect,
+product & period costs.
+ Cost volume profit analysis: Contribution, PV ratios, Break even analysis
+Section V
+ Conditions of boom & depression, margin of safety.
+ Relevant costs & decision making: Pricing product profitability, make or buy decision.
+Section VI
+ Standard costing and variance analysis: Material labour & overhead, reconciliation between
+budgeted profit and actual profit, preparation of cost-sheet.
+Text Books:
+1. Tulsian, P.C., (2009) Financial Accountancy, 2nd edition, Pearson Education.
+2. Maheshwari, S.N. and Maheshwari, S. K., (2009) An Introduction to Accountancy, Eighth
+Edition, Vikas Publishing House.
+Reference Books:
+1. Bhattacharyya, Asish K., (2010) Essentials of Financial Accounting, Prentice Hall of India.
+2. Rajasekran, (2010), Financial Accounting, 1st edition, Pearson Education.
+3. Bhattacharya, S.K. and Dearden, J., (2003) Accounting for Manager – Text and Cases, 3rd
+Edition, Vikas Publishing House.
+4. Glautier, M.W.E. and Underdown, B. (2010). Accounting Theory and Practice, Pearson
+Education

@@ -1,0 +1,16 @@
+At the physical layer, communication is direct: 
+device A sends a stream of bits to device B 
+(through intermediate nodes). 
+• At the higher layers, communication must move 
+down through the layers on device A, over to 
+device B, and then back up through the layers.
+ • Each layer in the sending device adds its own 
+information to the message it receives from the 
+layer just above it and passes the whole 
+package to the layer just below it. 
+• At layer 1 the entire package is converted to a 
+form that can be transmitted to the receiving 
+device. 
+• At the receiving machine, the message is 
+unwrapped layer by layer, with each process 
+receiving and removing the data meant for it.<strong>My name is Ashish</strong>

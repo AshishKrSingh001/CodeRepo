@@ -1,0 +1,16 @@
+D:\Programming\dotnet\ProjKeyBoardEventEx\ProjKeyBoardEventEx\bin\Debug\net6.0-windows\ProjKeyBoardEventEx.exe
+D:\Programming\dotnet\ProjKeyBoardEventEx\ProjKeyBoardEventEx\bin\Debug\net6.0-windows\ProjKeyBoardEventEx.deps.json
+D:\Programming\dotnet\ProjKeyBoardEventEx\ProjKeyBoardEventEx\bin\Debug\net6.0-windows\ProjKeyBoardEventEx.runtimeconfig.json
+D:\Programming\dotnet\ProjKeyBoardEventEx\ProjKeyBoardEventEx\bin\Debug\net6.0-windows\ProjKeyBoardEventEx.dll
+D:\Programming\dotnet\ProjKeyBoardEventEx\ProjKeyBoardEventEx\bin\Debug\net6.0-windows\ProjKeyBoardEventEx.pdb
+D:\Programming\dotnet\ProjKeyBoardEventEx\ProjKeyBoardEventEx\obj\Debug\net6.0-windows\ProjKeyBoardEventEx.Form1.resources
+D:\Programming\dotnet\ProjKeyBoardEventEx\ProjKeyBoardEventEx\obj\Debug\net6.0-windows\ProjKeyBoardEventEx.vbproj.GenerateResource.cache
+D:\Programming\dotnet\ProjKeyBoardEventEx\ProjKeyBoardEventEx\obj\Debug\net6.0-windows\ProjKeyBoardEventEx.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\dotnet\ProjKeyBoardEventEx\ProjKeyBoardEventEx\obj\Debug\net6.0-windows\ProjKeyBoardEventEx.AssemblyInfoInputs.cache
+D:\Programming\dotnet\ProjKeyBoardEventEx\ProjKeyBoardEventEx\obj\Debug\net6.0-windows\ProjKeyBoardEventEx.AssemblyInfo.vb
+D:\Programming\dotnet\ProjKeyBoardEventEx\ProjKeyBoardEventEx\obj\Debug\net6.0-windows\ProjKeyBoardEventEx.vbproj.CoreCompileInputs.cache
+D:\Programming\dotnet\ProjKeyBoardEventEx\ProjKeyBoardEventEx\obj\Debug\net6.0-windows\ProjKeyBoardEventEx.dll
+D:\Programming\dotnet\ProjKeyBoardEventEx\ProjKeyBoardEventEx\obj\Debug\net6.0-windows\refint\ProjKeyBoardEventEx.dll
+D:\Programming\dotnet\ProjKeyBoardEventEx\ProjKeyBoardEventEx\obj\Debug\net6.0-windows\ProjKeyBoardEventEx.pdb
+D:\Programming\dotnet\ProjKeyBoardEventEx\ProjKeyBoardEventEx\obj\Debug\net6.0-windows\ProjKeyBoardEventEx.genruntimeconfig.cache
+D:\Programming\dotnet\ProjKeyBoardEventEx\ProjKeyBoardEventEx\obj\Debug\net6.0-windows\ref\ProjKeyBoardEventEx.dll

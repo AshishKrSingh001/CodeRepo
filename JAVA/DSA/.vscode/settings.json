@@ -1,0 +1,19 @@
+{
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.sourcePaths": [
+        "Tree in Java",
+        "String",
+        "Stack",
+        "Recursion",
+        "LinkedList",
+        "LC",
+        "Heap",
+        "Hashing",
+        "Graph",
+        "GFG",
+        "Collections",
+        "Basics",
+        "Array",
+        "ImpQuestion"
+    ]
+}

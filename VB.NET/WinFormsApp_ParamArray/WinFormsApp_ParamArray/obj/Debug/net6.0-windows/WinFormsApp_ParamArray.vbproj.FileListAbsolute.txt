@@ -1,0 +1,16 @@
+D:\Programming\dotnet\WinFormsApp_ParamArray\WinFormsApp_ParamArray\bin\Debug\net6.0-windows\WinFormsApp_ParamArray.exe
+D:\Programming\dotnet\WinFormsApp_ParamArray\WinFormsApp_ParamArray\bin\Debug\net6.0-windows\WinFormsApp_ParamArray.deps.json
+D:\Programming\dotnet\WinFormsApp_ParamArray\WinFormsApp_ParamArray\bin\Debug\net6.0-windows\WinFormsApp_ParamArray.runtimeconfig.json
+D:\Programming\dotnet\WinFormsApp_ParamArray\WinFormsApp_ParamArray\bin\Debug\net6.0-windows\WinFormsApp_ParamArray.dll
+D:\Programming\dotnet\WinFormsApp_ParamArray\WinFormsApp_ParamArray\bin\Debug\net6.0-windows\WinFormsApp_ParamArray.pdb
+D:\Programming\dotnet\WinFormsApp_ParamArray\WinFormsApp_ParamArray\obj\Debug\net6.0-windows\WinFormsApp_ParamArray.Form1.resources
+D:\Programming\dotnet\WinFormsApp_ParamArray\WinFormsApp_ParamArray\obj\Debug\net6.0-windows\WinFormsApp_ParamArray.vbproj.GenerateResource.cache
+D:\Programming\dotnet\WinFormsApp_ParamArray\WinFormsApp_ParamArray\obj\Debug\net6.0-windows\WinFormsApp_ParamArray.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\dotnet\WinFormsApp_ParamArray\WinFormsApp_ParamArray\obj\Debug\net6.0-windows\WinFormsApp_ParamArray.AssemblyInfoInputs.cache
+D:\Programming\dotnet\WinFormsApp_ParamArray\WinFormsApp_ParamArray\obj\Debug\net6.0-windows\WinFormsApp_ParamArray.AssemblyInfo.vb
+D:\Programming\dotnet\WinFormsApp_ParamArray\WinFormsApp_ParamArray\obj\Debug\net6.0-windows\WinFormsApp_ParamArray.vbproj.CoreCompileInputs.cache
+D:\Programming\dotnet\WinFormsApp_ParamArray\WinFormsApp_ParamArray\obj\Debug\net6.0-windows\WinFormsApp_ParamArray.dll
+D:\Programming\dotnet\WinFormsApp_ParamArray\WinFormsApp_ParamArray\obj\Debug\net6.0-windows\refint\WinFormsApp_ParamArray.dll
+D:\Programming\dotnet\WinFormsApp_ParamArray\WinFormsApp_ParamArray\obj\Debug\net6.0-windows\WinFormsApp_ParamArray.pdb
+D:\Programming\dotnet\WinFormsApp_ParamArray\WinFormsApp_ParamArray\obj\Debug\net6.0-windows\WinFormsApp_ParamArray.genruntimeconfig.cache
+D:\Programming\dotnet\WinFormsApp_ParamArray\WinFormsApp_ParamArray\obj\Debug\net6.0-windows\ref\WinFormsApp_ParamArray.dll

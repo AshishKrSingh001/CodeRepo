@@ -1,0 +1,16 @@
+D:\Programming\dotnet\OOPs\OOPs\bin\Debug\net6.0-windows\OOPs.exe
+D:\Programming\dotnet\OOPs\OOPs\bin\Debug\net6.0-windows\OOPs.deps.json
+D:\Programming\dotnet\OOPs\OOPs\bin\Debug\net6.0-windows\OOPs.runtimeconfig.json
+D:\Programming\dotnet\OOPs\OOPs\bin\Debug\net6.0-windows\OOPs.dll
+D:\Programming\dotnet\OOPs\OOPs\bin\Debug\net6.0-windows\OOPs.pdb
+D:\Programming\dotnet\OOPs\OOPs\obj\Debug\net6.0-windows\OOPs.Form1.resources
+D:\Programming\dotnet\OOPs\OOPs\obj\Debug\net6.0-windows\OOPs.vbproj.GenerateResource.cache
+D:\Programming\dotnet\OOPs\OOPs\obj\Debug\net6.0-windows\OOPs.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\dotnet\OOPs\OOPs\obj\Debug\net6.0-windows\OOPs.AssemblyInfoInputs.cache
+D:\Programming\dotnet\OOPs\OOPs\obj\Debug\net6.0-windows\OOPs.AssemblyInfo.vb
+D:\Programming\dotnet\OOPs\OOPs\obj\Debug\net6.0-windows\OOPs.vbproj.CoreCompileInputs.cache
+D:\Programming\dotnet\OOPs\OOPs\obj\Debug\net6.0-windows\OOPs.dll
+D:\Programming\dotnet\OOPs\OOPs\obj\Debug\net6.0-windows\refint\OOPs.dll
+D:\Programming\dotnet\OOPs\OOPs\obj\Debug\net6.0-windows\OOPs.pdb
+D:\Programming\dotnet\OOPs\OOPs\obj\Debug\net6.0-windows\OOPs.genruntimeconfig.cache
+D:\Programming\dotnet\OOPs\OOPs\obj\Debug\net6.0-windows\ref\OOPs.dll

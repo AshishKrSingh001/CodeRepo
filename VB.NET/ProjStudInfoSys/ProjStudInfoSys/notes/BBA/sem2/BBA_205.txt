@@ -1,0 +1,34 @@
+BBA 205 : INFORMATION TECHNOLOGY IN MANAGEMENT – 2
+[MANAGEMENT INFORMATION SYSTEM]
+Section I
+ Introduction: Definition & Significance, Evolution, MIS Support for Programmed and
+Non-Programmed Decision Making, Model of Decision Making.
+ Structure of MIS: Based on Management Activity & Organizational Function, Conceptual
+& Physical Structure of MIS.
+ Systems Concept: Definition of a System, Types of Systems, Sub-System, and Systems
+Concepts & Organization.
+ Information Concept: Definition of Information, Information Presentation, Quality of
+Information.
+Section II
+ Decision Support Systems: Characteristics of DSS, Decision Support & Structure of
+Decision Making. Decision Support & Repetitiveness of Decisions. Classes of DSS, DSS
+Users, GDSS, Characteristics of GDSS.
+ Organization & Information Systems: Relationship, Salient Feature of Organization,
+Effect of organization on Information Systems and Vice Versa.
+ Advanced Information Systems: Knowledge Work Systems, Executive Support Systems,
+Expert Systems Artificial intelligence.
+Section III
+ ERP: An Introduction, Application Examples of Information Systems.
+Text Books:
+1. Elmasri and Navathe, (2009), Fundamentals of Database Systems, 5th edition, Pearson
+Education.
+2. ITL Education Ltd., (2010), Introduction to Database System, Pearson Education.
+Reference Books:
+1. Ramakrishnan, R. and Gehrke, J. (2007), Database Management Systems, 3rd edition,
+McGrawHill Education.
+2. Kanan, A. and Date, C. J., (2006), An Introduction to Database System, Vol. I & Vol. II, 8th
+edition, Addison Wesley Publishing Company.
+3. Singh. S. L., (2008), Database System Concept and Application, 2nd edition, Pearson
+Education.
+4. Atul, Kahate, (2006), Introduction to Database Management System, 1st edition Pearson
+Education.

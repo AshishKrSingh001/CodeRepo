@@ -1,0 +1,28 @@
+BCA-103 INFORMATION TECHNOLOGY AND APPLICATION
+Introduction To Computers
+Introduction, Characteristics of computers, Evolution of computers, Generation of Computers,
+Classification of Computers, The Computer System, Applications of Computers.
+Input / Output devices and Memory
+Introduction, Keyboard, Pointing Devices, Speech Recognition, Digital Camera, Scanners,
+Optical Scanners. Classification of Output, Printers, Plotters, Computer Output Microfilm (COM),
+Monitors, Audio Output, Projectors. Random Access Memory (RAM), Read Only Memory (ROM),
+Types of ROM. Classification of Secondary Storage Devices, Magnetic Tape, Magnetic Disk,
+Optical Disk, Magneto Optical disk.
+Software Concepts
+Introduction to Software, Relationship between Software and Hardware, System Software,
+Application Software Algorithm, Flowchart, Program, Pseudocode (P-Code).Features of a Good
+Programming Language.
+Operating Systems: History & Evolution, Functions of an Operating System, A Brief History of
+MS-DOS, Linux, Windows System. Database Management System
+Data Communication And Computer Network
+Introduction, Data Communication, Transmission Media, Multiplexing, Switching, Computer
+Network, Network Topologies, Communication Protocols, Network devices.
+World Wide Web, Hypertext, Uniform Resource Locator, Web Browsers, IP Address, Domain
+Name, Internet Services Providers, Internet Security, Internet Requirements, Web Search Engine,
+Net Surfing, Internet Services, Case
+Study, Intranet.
+MS-Office – MS-Word, MS-Excel, Ms-Power Point.
+Text Books:
+1. V. Rajaraman, Fundamentals Of Computers, 3rd Edition , PHI Publications
+2. Nasib S. Gill, Essentials of Computer & Network Technology, Khanna Publications.
+3. Deepak Bharihoke, Fundamentals of Information Technology, Excel Books.

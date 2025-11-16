@@ -1,0 +1,16 @@
+D:\Programming\dotnet\RandomNumberProcedureEx\RandomNumberProcedureEx\bin\Debug\net6.0-windows\RandomNumberProcedureEx.exe
+D:\Programming\dotnet\RandomNumberProcedureEx\RandomNumberProcedureEx\bin\Debug\net6.0-windows\RandomNumberProcedureEx.deps.json
+D:\Programming\dotnet\RandomNumberProcedureEx\RandomNumberProcedureEx\bin\Debug\net6.0-windows\RandomNumberProcedureEx.runtimeconfig.json
+D:\Programming\dotnet\RandomNumberProcedureEx\RandomNumberProcedureEx\bin\Debug\net6.0-windows\RandomNumberProcedureEx.dll
+D:\Programming\dotnet\RandomNumberProcedureEx\RandomNumberProcedureEx\bin\Debug\net6.0-windows\RandomNumberProcedureEx.pdb
+D:\Programming\dotnet\RandomNumberProcedureEx\RandomNumberProcedureEx\obj\Debug\net6.0-windows\RandomNumberProcedureEx.Form1.resources
+D:\Programming\dotnet\RandomNumberProcedureEx\RandomNumberProcedureEx\obj\Debug\net6.0-windows\RandomNumberProcedureEx.vbproj.GenerateResource.cache
+D:\Programming\dotnet\RandomNumberProcedureEx\RandomNumberProcedureEx\obj\Debug\net6.0-windows\RandomNumberProcedureEx.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\dotnet\RandomNumberProcedureEx\RandomNumberProcedureEx\obj\Debug\net6.0-windows\RandomNumberProcedureEx.AssemblyInfoInputs.cache
+D:\Programming\dotnet\RandomNumberProcedureEx\RandomNumberProcedureEx\obj\Debug\net6.0-windows\RandomNumberProcedureEx.AssemblyInfo.vb
+D:\Programming\dotnet\RandomNumberProcedureEx\RandomNumberProcedureEx\obj\Debug\net6.0-windows\RandomNumberProcedureEx.vbproj.CoreCompileInputs.cache
+D:\Programming\dotnet\RandomNumberProcedureEx\RandomNumberProcedureEx\obj\Debug\net6.0-windows\RandomNumberProcedureEx.dll
+D:\Programming\dotnet\RandomNumberProcedureEx\RandomNumberProcedureEx\obj\Debug\net6.0-windows\refint\RandomNumberProcedureEx.dll
+D:\Programming\dotnet\RandomNumberProcedureEx\RandomNumberProcedureEx\obj\Debug\net6.0-windows\RandomNumberProcedureEx.pdb
+D:\Programming\dotnet\RandomNumberProcedureEx\RandomNumberProcedureEx\obj\Debug\net6.0-windows\RandomNumberProcedureEx.genruntimeconfig.cache
+D:\Programming\dotnet\RandomNumberProcedureEx\RandomNumberProcedureEx\obj\Debug\net6.0-windows\ref\RandomNumberProcedureEx.dll

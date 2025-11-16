@@ -1,0 +1,41 @@
+BCA-403 File & Data Structure
+Introduction to Data Structure and Application of Data Structure
+Algorithms and Analysis of Algorithms: Definition, Structure and Properties of Algorithms,
+Development of an Algorithm, Data Structures and Algorithms, Data Structure – Definition and
+Classification, Efficiency of Algorithms, Apriory Analysis, Asymptotic Notations, Time Complexity
+of an Algorithm using O Notation, Polynomial Vs Exponential Algorithms, Average, Best and Worst
+case Complexities, Analyzing Recursive Programs, Open source software development process.
+Linked List, Linked Stacks and Linked Queues: Singly Linked Lists, Circularly Linked Lists,
+Doubly Linked Lists, Multiply Linked Lists, Applications of Linked Lists, Introduction to Linked
+Stack and Linked Queues, Operations on Linked Stacks and Linked Queues, Dynamic Memory
+Management and Linked Stack, Implementations of Linked Representations, Applications of
+Linked Stacks and Linked Queues.
+Arrays, Stacks and Queues: Array Operations, Number of Elements in an Array, Representation
+of Arrays in Memory, Applications of Array, Stack-Introduction, Stack Operations, Applications of
+Stack, Queues-Introduction, Operations on Queues, Circular Queues, Other Types of Queues,
+Applications of Queues, Polynomials & Sparse matrix.
+Trees, Binary Trees, BST, AVL Trees and B Trees: Trees: Definition and Basic Terminologies,
+Representation of Trees, Binary Trees: Basic Terminologies and Types, Representation of Binary
+Trees, Binary Tree Traversals, Threaded Binary Trees, Applications, BST & AVL Trees:
+Introduction, BST: Definition and Operations, AVL Trees: Definition and Operations, B Trees:
+Introduction, m-way search trees: Definition and Operations, B Trees: Definition and Operations.
+Graphs: Introduction, Definitions and Basic Terminologies, Representations of Graphs, Graph
+Traversals, Single-Source Shortest-Path Problem, Minimum Cost Spanning Trees.
+Sorting: Understanding Internal and External Sorting.
+Internal Sorting: Insertion Sort, Bubble Sort, shell sort, Quick Sort, 2-way Merge Sot, Heap
+Sort, Sorting on Several Keys.
+Searching: Introduction, Binary Search, Transpose Sequential Search, Interpolation Search.
+Text Book:
+1. G A V Pai – Data Structures and Algorithms: Concepts, Techniques and Applications, 2nd
+Edn, Tata McGraw-Hill, 2008.
+2. Horowitz E.Sahni, S., Susan A., Fundamentals of Data Structures in C, 2nd Edition, University Press,
+2010
+Reference Books:
+1. J. P. Tremblay , P. G. Sorenson – An Introduction to Data Structures With Applications, 2nd
+Edn, McGraw-Hill, Inc. New York, NY, USA.
+2. Seymour Lipschutz – Data Structures, 6th Edn, 9th Reprint 2008, Tata McGraw-Hill.
+3. Adam Drozdek – Data Structures and Algorithms in C++, Thomson Learning, New Delhi –
+2007.
+4. J. Feller, B. Fitzgerald -Understanding Open Source Software Development, Pearson
+Education Ltd, New Delhi.
+5. Aron M. Tenenbaum & Others – Data Structure using C & C++; Pearsons Publications

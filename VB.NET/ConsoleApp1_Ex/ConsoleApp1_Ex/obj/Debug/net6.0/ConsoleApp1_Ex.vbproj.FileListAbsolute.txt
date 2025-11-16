@@ -1,0 +1,14 @@
+D:\Programming\dotnet\ConsoleApp1_Ex\ConsoleApp1_Ex\bin\Debug\net6.0\ConsoleApp1_Ex.exe
+D:\Programming\dotnet\ConsoleApp1_Ex\ConsoleApp1_Ex\bin\Debug\net6.0\ConsoleApp1_Ex.deps.json
+D:\Programming\dotnet\ConsoleApp1_Ex\ConsoleApp1_Ex\bin\Debug\net6.0\ConsoleApp1_Ex.runtimeconfig.json
+D:\Programming\dotnet\ConsoleApp1_Ex\ConsoleApp1_Ex\bin\Debug\net6.0\ConsoleApp1_Ex.dll
+D:\Programming\dotnet\ConsoleApp1_Ex\ConsoleApp1_Ex\bin\Debug\net6.0\ConsoleApp1_Ex.pdb
+D:\Programming\dotnet\ConsoleApp1_Ex\ConsoleApp1_Ex\obj\Debug\net6.0\ConsoleApp1_Ex.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\dotnet\ConsoleApp1_Ex\ConsoleApp1_Ex\obj\Debug\net6.0\ConsoleApp1_Ex.AssemblyInfoInputs.cache
+D:\Programming\dotnet\ConsoleApp1_Ex\ConsoleApp1_Ex\obj\Debug\net6.0\ConsoleApp1_Ex.AssemblyInfo.vb
+D:\Programming\dotnet\ConsoleApp1_Ex\ConsoleApp1_Ex\obj\Debug\net6.0\ConsoleApp1_Ex.vbproj.CoreCompileInputs.cache
+D:\Programming\dotnet\ConsoleApp1_Ex\ConsoleApp1_Ex\obj\Debug\net6.0\ConsoleApp1_Ex.dll
+D:\Programming\dotnet\ConsoleApp1_Ex\ConsoleApp1_Ex\obj\Debug\net6.0\refint\ConsoleApp1_Ex.dll
+D:\Programming\dotnet\ConsoleApp1_Ex\ConsoleApp1_Ex\obj\Debug\net6.0\ConsoleApp1_Ex.pdb
+D:\Programming\dotnet\ConsoleApp1_Ex\ConsoleApp1_Ex\obj\Debug\net6.0\ConsoleApp1_Ex.genruntimeconfig.cache
+D:\Programming\dotnet\ConsoleApp1_Ex\ConsoleApp1_Ex\obj\Debug\net6.0\ref\ConsoleApp1_Ex.dll

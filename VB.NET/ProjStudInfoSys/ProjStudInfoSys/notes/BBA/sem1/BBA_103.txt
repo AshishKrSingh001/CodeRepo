@@ -1,0 +1,27 @@
+BBA 103 : MACROECONOMICS
+Section I
+ Introduction to macroeconomics: Macro static and macro dynamics.
+ National Income: Concepts, analysis and measurement through double entry, sectoral
+accounting and matrix approach.
+ Keynesian theory of income determination: Concept of employment, determinant of
+macroeconomics equilibrium with aggregate demand and aggregate supply analysis.
+Section II
+ Consumption: Meaning, determinant and importance. Consumption function. Theories of
+consumption – absolute income, relative income and permanent income hypothesis.
+ Theory of multiplier: Income generation process in a static and dynamic setting. Tax
+multiplier, foreign trade multiplier and balanced budget multiplier bankers from multiplier
+process, relevance of multiplier to a developing economy.
+Section III
+ Theory of investment: Management efficiency of capital and measures to promote
+investment, internal rate determination – classical, non-classical and Keynesian control.
+ Inflation: Meaning, types and theories, stabilization policies monetary and fiscal policies.
+Text Books:
+1. Soga, Erold, (2008) Macro Economics, 1st edition, Pearson Education.
+2. Agarwal, ((2010)) Macroeconomics Theory and Policy, 1st edition, Pearson Education.
+Reference Books:
+1. Dwivedi, D. N., ((2005)) Macro Economics, McGraw Hill Education.
+2. Mishra, S. K. and Puri, V. K., ((2003)), Modern Macro-Economics Theory, Himalaya
+Publishing House.
+3. Shapiro, E., ((2003)) Macro-Economic Analysis, McGraw Hill Education.
+4. Hirschey, Mark, (2009) Fundamentals of Managerial Economics, 9th edition, Cengage
+Learning.

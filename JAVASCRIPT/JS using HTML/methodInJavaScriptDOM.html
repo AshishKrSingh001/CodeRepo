@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove</title>
+</head>
+<body>
+    <h2>Ashish Kumar Singh</h2>
+    <h3>Remove an html element</h3>
+    <div>
+        <p id="p1">This is Paragraph 1</p>
+        <p id="p2">This is another paragraph</p>
+    </div>
+    <button style="cursor: pointer;"onclick="func()">Remove Element</button>
+    <script>
+        function func()
+        {
+            document.getElementsById("p2").innerHtml=remove();
+            
+            document.body.style.backgroundColor="red";
+        }
+    </script>
+</body>
+</html>

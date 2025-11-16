@@ -1,0 +1,53 @@
+BCA-203 SYSTEM ANALYSIS & DESIGN
+Introduction to SAD
+Fundamentals of System, Important Terms related to Systems, Classification of Systems, Real Life
+Business Subsystems, Real Time Systems, Distributed Systems, Development of a successful
+System, Various Approaches for development of Information Systems. Structured Analysis and
+Design Approach, Prototype, Joint Application Development.
+Systems Analyst-A Profession
+Why do Businesses need Systems Analysts? Users, Analysts in various functional areas, Role of a
+Systems Analyst Duties of a Systems Analyst, Qualifications of a Systems Analyst, Analytical
+Skills, Technical Skills, Management Skills, Interpersonal Skills.
+Process of System Development
+Systems Development Life Cycle, Phases of SDLC, Project Identification and Selection, Project
+Initiation and planning, Analysis, Logical Design, Physical Design, Implementation, Maintenance,
+Product of SDLC Phases, Approaches to Development, Prototyping, Joint Application Design,
+Participatory Design, Case Study.
+Introduction to Documentation of Systems
+Concepts and process of Documentation, Types of Documentation, System Requirements
+Specification, System Design Specification, Test Design Document, User Manual, Different
+Standard for Documentation, Documentation and Quality of Software, Good Practices for
+Documentation.
+Planning and Designing Systems
+Process of System Planning: Fact finding Techniques, Interviews, Group Discussion, Site Visits,
+Presentations, Questionnaires, Issues involved in Feasibility Study, Technical Feasibility,
+Operational Feasibility, Economic Feasibility, Legal Feasibility, Cost Benefit Analysis, Preparing
+Schedule, Gathering Requirements of System, Joint Application Development, Prototyping.
+Modular and Structured Design
+Design Principles, Top Down Design, Bottom Up Design, Structure Charts, Modularity, Goals of
+Design, Coupling, Cohesion.
+System Design and Modelling
+Logical and Physical Design, Process Modeling, Data Flow Diagrams, Data Modeling, E-R
+Diagrams, Process Specification Tools, Decision Tables, Decision Trees, Notation Structured
+English, Data Dictionary.
+More Design Issues and CASE Tools
+Forms and Reports Design: Forms, Importance of Forms, Reports, Importance of Reports,
+Differences between Forms and Reports, Process of Designing Forms and Reports, Deliverables and
+Outcomes, Design Specifications, Narrative Overviews, Sample Design, Testing and Usability
+Assessment, Types of Information, Internal Information, External Information, Turnaround
+Document, General Formatting Guidelines, Meaningful Titles, Meaningful Information, Balanced
+Layout, Easy Navigation, Guidelines for Displaying Contents, Highlight Information, Using Colour,
+Displaying Text, Designing Tables and Lists, Criteria for Form Design, Organization, Consistency,
+Completeness, Flexible Entry, Economy, Criteria for Report Design, Relevance, Accuracy, Clarity,
+Timeliness, Cost.
+Audit and Security of Computer Systems
+Introduction, Definition of Audit, Objectives of Audit.
+Text Book:
+1. Elias M. Award : System Analysis and design; Galgotia
+2. James A. Sen : Analysis of Design of Information System TMH
+3. Rojer S. Pressman : Software Engineering : A Practitioners Approach,MCH
+4. Pankaj Jalote : An Integrated Approach to Software Engineering; Springer.
+Reference Book :
+1. J. L. Whitten & L. D. Bentley : System Analysis and Design Method; TMH
+2. J. B. Dixit & Rajkumar : Structured system Analysis and Dseign; University Science Press
+3. K.C. Landon & J. P.Landon : MIS ; Macmillan

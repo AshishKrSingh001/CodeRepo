@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>
+			Web Pages
+		</title>
+
+	</head>
+	<body>
+			<p id="a">Hello</p>
+		<form>
+			<input type="button" onclick="fun1('Ashish',10)" ondblclick="fun1('anish',20)" onload="fun2('Ashish',21)" value="fun">
+		</form>
+		<script>
+			function fun1(x,y)
+			{
+				document.getElementById("a").innerHTML=x+" your age is "+y;
+			}
+			function fun2(x,y)
+			{
+				document.getElementById("a").innerHTML=x+" you are "+y+" years old";
+			}
+		</script>
+	</body>
+</html>

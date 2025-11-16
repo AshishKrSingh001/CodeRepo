@@ -1,0 +1,22 @@
+BCA-501 Windows Programming using VB .Net
+Introduction to .Net Technology
+Why .Net?, The .Net Framework Class Library, Working with the .Net FCL, Namespaces, Types of
+a .Net Namespace.
+The Visual Basic.Net Language
+VB.Net Data types, Operators, Decision Statements- If..then, If..then..else, Select.. Case, Loop
+Statements- While, Do .. Loop, For .. Next, For Each ..Next, Arrays.
+OOP using VB.Net
+Object Oriented features- Abstraction, Encapsulation, Polymorphism, Inheritance, Declaring
+Classes, Implementing Typecasting, Procedures and Functions, Optional arguments, Error handling
+in Procedures, Properties, Public and Private variables, Types of Properties, Polymorphism,
+Inheritance, Method Overriding.
+Windows Form
+Introduction to Class Libraries, Event and Event Handlers, Windows Application, Windows GUI,
+First Win Forms Application, Controls, Text controls, Selection List Controls, VB.Net is
+overridden, Some controls with examples. Error handling In Windows Forms: Types of
+Validations, Types of Errors, Exceptions, Classified Runtime based Exceptions. SDI and MDI
+Applications: SDI and MDI interfaces, Characteristics of MDI components, Creating MDI Forms.
+Data access with ADO.Net
+Overview of Microsoft Database Access Technology, ADO.Net, Creating a Database, ADO.Net
+Architecture, ADO.Net Class Libraries, Databound Controls, Creating a Data Set, Using XML
+Data.

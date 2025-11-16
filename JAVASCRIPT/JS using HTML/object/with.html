@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Object</title>
+	</head>
+	<body>
+		<script>
+			function addpost(yourpost)
+			{
+				with(this)
+				{
+					post = yourpost;
+				}
+			}
+			function employee(name,id)
+			{
+				this.name = name;
+				this.id = id;
+				this.post="";
+				this.addpost = addpost;
+			}
+			var emp0 = new employee("Ashish",13489);
+			emp0.addpost("FrontEnd Developer");
+			document.write("Name: "+emp0.name+"<br>Id: "+emp0.id+"<br>Post: "+emp0.post+"<br>");
+			var emp1 = new employee("Aditya",13039);
+			emp1.addpost("BackEnd Developer");
+			document.write("Name: "+emp1.name+"<br>Id: "+emp1.id+"<br>Post: "+emp1.post+"<br>");
+			var emp2 = new employee("Aman",13014);
+			emp2.addpost("Full Stack Developer");
+			document.write("Name: "+emp2.name+"<br>Id: "+emp2.id+"<br>Post: "+emp2.post+"<br>");
+			var emp3 = new employee("Roshan",13088);
+			emp3.addpost("Andriod Developer");
+			document.write("Name: "+emp3.name+"<br>Id: "+emp3.id+"<br>Post: "+emp3.post+"<br>");
+		</script>
+	</body>
+</html>

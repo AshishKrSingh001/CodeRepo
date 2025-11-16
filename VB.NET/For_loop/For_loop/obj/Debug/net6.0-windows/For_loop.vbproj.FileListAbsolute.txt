@@ -1,0 +1,16 @@
+D:\Programming\dotnet\For_loop\For_loop\bin\Debug\net6.0-windows\For_loop.exe
+D:\Programming\dotnet\For_loop\For_loop\bin\Debug\net6.0-windows\For_loop.deps.json
+D:\Programming\dotnet\For_loop\For_loop\bin\Debug\net6.0-windows\For_loop.runtimeconfig.json
+D:\Programming\dotnet\For_loop\For_loop\bin\Debug\net6.0-windows\For_loop.dll
+D:\Programming\dotnet\For_loop\For_loop\bin\Debug\net6.0-windows\For_loop.pdb
+D:\Programming\dotnet\For_loop\For_loop\obj\Debug\net6.0-windows\For_loop.Form1.resources
+D:\Programming\dotnet\For_loop\For_loop\obj\Debug\net6.0-windows\For_loop.vbproj.GenerateResource.cache
+D:\Programming\dotnet\For_loop\For_loop\obj\Debug\net6.0-windows\For_loop.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\dotnet\For_loop\For_loop\obj\Debug\net6.0-windows\For_loop.AssemblyInfoInputs.cache
+D:\Programming\dotnet\For_loop\For_loop\obj\Debug\net6.0-windows\For_loop.AssemblyInfo.vb
+D:\Programming\dotnet\For_loop\For_loop\obj\Debug\net6.0-windows\For_loop.vbproj.CoreCompileInputs.cache
+D:\Programming\dotnet\For_loop\For_loop\obj\Debug\net6.0-windows\For_loop.dll
+D:\Programming\dotnet\For_loop\For_loop\obj\Debug\net6.0-windows\refint\For_loop.dll
+D:\Programming\dotnet\For_loop\For_loop\obj\Debug\net6.0-windows\For_loop.pdb
+D:\Programming\dotnet\For_loop\For_loop\obj\Debug\net6.0-windows\For_loop.genruntimeconfig.cache
+D:\Programming\dotnet\For_loop\For_loop\obj\Debug\net6.0-windows\ref\For_loop.dll

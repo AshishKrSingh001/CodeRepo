@@ -1,0 +1,28 @@
+BCA-401 RELATIONAL DATA BASE MANAGEMENT SYSTEM
+INTRODUCTION TO DATABASE SYSTEMS: Overview and History of DBMS. File System
+vs DBMS .Advantage of DBMS Describing and Storing Data in a DBMS. Queries in DBMS.
+Transaction management and Structure of a DBMS, Components of DBMS; The 3 level
+architecture of DBMS – Hierarchical, Network, and Relational Model; Distributed Database; KBDBMS; OODBMS (Basic Concepts).
+ENTITY RELATIONSHIP MODEL: Overview of Data Design Entities, Attributes and Entity
+Sets, Relationship and Relationship Sets. Features of the ER Model-Key Constraints, Participation
+Constraints, Weak Entities, Class Hierarchies,Aggregation, Conceptual Data Base, Design with ER
+Model-Entity vs Attribute, Entity vs Relationship Binary vs Ternary Relationship and Aggregation
+vs ternary Relationship Conceptual Design for a Large Enterprise. RELATIONSHIP ALGEBRA
+AND CALCULUS: Relationship Algebra Selection and Projection, Set Operations Renaming,
+Joint, Division, Relation Calculus, Expressive Power of Algebra and Calculus.
+SQL QUERIES PROGRAMMING AND TRIGGERS: The Forms of a Basic SQL Query,
+Union, Intersection and Exception,Nested Queries ,Correlated Nested Queries, Set-Comparison
+Operations, Aggregate Operators, Null Values and Embedded SQL, Dynamic SQL, ODBC and
+JDBC, Triggers and Active Databases.
+SCHEMA REFINEMENT AND NORMAL FORMS: Introductions to Schema Refinement,
+Functional Dependencies, Boyce-Codd Normal Forms, Third Normal Form, NormalizationDecomposition into BCNF Decomposition into 3-NF.
+TEXT BOOKS:
+1. Fundamental of Database Systems- Elmasri Navathe- Pearson Education Asia.
+2. Database- Principles, Programming and Performance- Parick O’ Neil Elizabeth O’
+Niel, Harcort Asia PTE Limited.
+REFERENCES BOOKS:
+1. An Introduction to Database Systems- C.J.Date, Addison Wesley, Pearson Education
+Press.
+2. Database System Concepts- Abraham Silberschat, Henry F. Korth, S.Sudarshan, Tata
+McGraw Hill.
+3. Database Management – Bipin C. Desai – BPB Publications.

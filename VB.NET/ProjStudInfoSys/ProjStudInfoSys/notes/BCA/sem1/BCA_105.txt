@@ -1,0 +1,37 @@
+BCA-105: Python Programming (Elective 1)
+Overview: Environment, Basic Syntax, Variable Types, Basic Operators, Installing Python. Very
+Simple Programs, Scripts Loops, Conditionals Functions. Tuples, Lists, Dictionaries for Loop
+Classes Importing Modules File I/O Error Handling.
+Structures: if...else , while Loop , for Loop , Loop Control. Numbers, Strings, Lists, Tuples,
+Dictionary, Date & Time. Functions, Modules, Files I/O, Exceptions. Classes / Objects, Reg
+Expressions, GUI Programming.
+Text Books and References:
+1. Programming Python: Powerful Object Oriented Programming; Mark Lutz; Shroff/O'Reilly;
+2010.
+2. Beginning Python: Using Python 2.6 & Python 3.1; James Payne; Wiley India; 2011.
+3. Head First Programming: A Learner's Guide to Programming using Python Language; Barry &
+Griffiths; Shroff/O'Reilly; 2009.
+BCA-106 : PROBLEM SOLVING AND PROGRAMMING CONCEPTS (Elective 2)
+Introduction to Problem Solving and Programming : Problem Solving Concepts – Problem
+Solving in everyday life, types of problems, problem solving concepts for computers, Algorithms
+and Flow charts; Programming Concepts.
+Logic Structures : Introduction to Programming structure – Modules and their functions – Local
+and Global Variables – Four Logic structures – Problems solving with Sequential and Decision
+Logic Structures.
+Loop & Case Logic Structure : Loop Logic structure – While/While Wend Structure, Repeat /
+Until Structure, Automatic Counter loop, Nested Loops and Recursion.
+Array Data Structure & File Concepts : Processing Arrays – Arrays, one dimensional arrays, 2D
+arrays, Multidimensional arrays – Searching and Sorting Techniques. Definition – Record, File –
+Primary and Secondary Keys –
+Sequential Access File Applications.
+Application Domains : Bio-informatics and medical Applications – Business Applications – Law
+Enforcement and political Process – Ecommerce – Manufacturing – Education – Entertainment and
+Agriculture.
+Text Books and References:
+1. Maureen Sprankle, Problem solving and Programming Concepts, Pearson Education, New
+Delhi.
+2. Compilation Notes, Department of Information Technology, SRM University.
+3. Elizabeth A. Dickson, Computer Program Design, Tata McGraw Hill.
+4. Kenneth C. Louden, Programming Languages – Principles and Practice, Thomson Asia Pvt.
+Ltd.
+5. Yuskel Uckan, Problem Solving Using C, McGraw Hill.
