@@ -1,0 +1,11 @@
+a = "Ashish Kumar Singh"
+print("a[:]: ",a[:])
+print("a[3:]: ",a[3:])
+print("a[:5]: ",a[:5])
+print("a[6:9]: ",a[6:9])
+print("a[-2:]: ",a[-2:])
+print("a[:-8]: ",a[:-8])
+print("a[-8:-6]: ",a[-8:-6])
+print("a[0:7]: ",a[0:7])
+print("a[len(a):]: ",a[len(a):0])
+print("a[0:len(a)]: ",a[0:len(a)])
