@@ -1,0 +1,48 @@
+{% extends "app/base.html" %}
+
+{% load static %}
+
+{% block title %}Product Details{% endblock title %}
+
+{% block main-content %}
+<div class="container my-5 mx-auto">
+    <h3 class="alert alert-light border rounded text-center shadow_container p-2">{{ product.title }}</h3>
+    <div class="row flex">
+        <div class="col-12 mb-4">
+            <div class="card h-100 shadow_container p-4">
+                <div class="row no-gutters d-flex justify-content-between">
+                    <div class="col-md-4 text-center shadow_container ms-4 py-4 m-4">
+                        <div class="my-4"><img class="card-img" src="{{ product.product_image.url }}" alt="{{ product.title }}" style="height: 400px; width: 400px;"></div>
+                        <p class="fs-6"><strong class="text-danger">₹{{product.discounted_price}}&nbsp;</strong><small class="text-decoration-line-through">{{product.selling_price}}</small></p> 
+                        {% comment %} <h3 class="alert alert-light border rounded text-center shadow_container p-2">{{ product.title }}</h3> {% endcomment %}
+                        <div class="">
+                            <form action="/add-to-cart" class="d-inline">
+                                <input type="hidden" name="prod_id" value="{{product.id}}">
+                                <button type="submit" class="btn btn-primary shadow px-5 py-2 form-control my-2 fw-bold">Add to cart</button>
+                           </form>
+                             {% comment %} <a href="{% url 'showcart' %}" class="btn btn-warning shadow px-5 py-2 ms-4">Buy Now</a> {% endcomment %}
+                            <a href="{% url 'buynow' product.id %}" class="btn btn-warning shadow form-control my-2 fw-bold">Buy Now</a>
+                            {% if wishlist %}
+                            <a pid="{{product.id}}" class="minus-wishlist btn btn-danger shadow form-control my-2"><i class="fas fa-heart fa-lg"></i></a>
+                            {% else %}
+                            <a pid="{{product.id}}" class="plus-wishlist btn btn-success shadow form-control my-2"><i class="fas fa-heart fa-lg"></i></a>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="col-md-7 p-4">
+                        <div class="card-body shadow_container p-4">
+                            <h3 class="alert alert-light alert-sm border rounded text-center shadow_container p-2 m-2">Description</h3>
+                            <p class="fs-5 p-4">{{product.description}}</p>          
+                        </div>
+                        <div class="card-body shadow_container mt-2 p-4">
+                            <h3 class="alert alert-light border rounded text-center shadow_container p-2 m-2">Composition</h3>
+                            <p class="fs-5 p-4">{{product.composition}}</p>          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br/>
+{% endblock main-content %}

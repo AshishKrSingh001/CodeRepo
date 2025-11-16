@@ -1,0 +1,36 @@
+{% extends "store/base.html" %}
+
+{% block title %}Login{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <div class="p-5 m-5">
+        <div class="col-lg-4 mx-auto border rounded p-4 login-container">
+            <h3 class="alert alert-light border rounded text-center login-container">Login Page</h3>
+            <form action="/login/" method="post">
+                {% csrf_token %}
+                {% if error_message %}
+                    <div class="alert alert-danger login-container" role="alert">{{error_message}}</div>
+                {% endif %}
+                
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" name="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com" required value="{{email}}">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="****************" name="password" required value="{{password}}">
+                </div>
+                <div class="mb-3 mt-4 d-flex justify-content-between align-items-center">
+                    <button type="submit" class="btn btn-primary btn-sm col-lg-4"><b>Login</b></button>
+                    <label class="float-right">
+                        <small class="text-danger">New user? </small>
+                        <a href="{% url 'signup'%}" class="btn btn-warning btn-sm fw-bold text-dark">Signup</a>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

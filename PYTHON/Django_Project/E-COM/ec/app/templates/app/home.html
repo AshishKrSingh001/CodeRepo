@@ -1,0 +1,146 @@
+{% extends "app/base.html" %}
+
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+{% block banner_slider %}
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'app/images/banner/b1.jpg' %}" class="d-block w-100" alt="alt">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'app/images/banner/b2.jpg' %}" class="d-block w-100" alt="alt">
+            </div>  
+            <div class="carousel-item">
+                <img src="{% static 'app/images/banner/b3.jpg' %}" class="d-block w-100" alt="alt">
+            </div> 
+             <div class="carousel-item">
+                <img src="{% static 'app/images/banner/b4.jpg' %}" class="d-block w-100" alt="alt">
+            </div>         
+        </div> 
+    </div>
+{% endblock banner_slider %}
+
+
+{% block main-content %}
+<br>
+   <div class="container shadow_container p-4">
+   {% if request.user.is_authenticated %}
+   <h3 class="alert alert-light border rounded text-center shadow_container">Products</h3>
+        <br><br/>
+        <div class="row container">
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s; animation-name: none;">
+                <div class="goodnesssec buttermilk smbg shadow_container">
+                    <a href="{% url 'category' 'ML' %}">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'app/images/cow-milk.png' %}" class="img-responsive" alt="">
+                            <h5 class="border rounded text-center shadow_container btn btn-success px-4 fw-bold">Milk</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s; animation-name: none;">
+                <div class="goodnesssec buttermilk smbg shadow_container">
+                    <a href="{% url 'category' 'CR' %}">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'app/images/curd-total.png' %}" class="img-responsive" alt="">
+                            <h5 class="border rounded text-center shadow_container btn btn-success px-4 fw-bold">Curd</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s; animation-name: none;">
+                <div class="goodnesssec buttermilk smbg shadow_container">
+                    <a href="{% url 'category' 'IC' %}">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'app/images/kulfi.png' %}" class="img-responsive" alt="">
+                            <h5 class="border rounded text-center shadow_container btn btn-success px-4 fw-bold">Kulfi</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br><br/>
+        <div class="row container">
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s; animation-name: none;">
+                <div class="goodnesssec buttermilk smbg shadow_container">
+                    <a href="{% url 'category' 'MS' %}">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'app/images/milk-shake-chocolate.png' %}" class="img-responsive" alt="">
+                            <h5 class="border rounded text-center shadow_container btn btn-success px-4 fw-bold">Milkshake</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s; animation-name: none;">
+                <div class="goodnesssec buttermilk smbg shadow_container">
+                    <a href="{% url 'category' 'IC' %}">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'app/images/icbars.png' %}" class="img-responsive" alt="">
+                            <h5 class="border rounded text-center shadow_container btn btn-success px-4 fw-bold">Icebar</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s; animation-name: none;">
+                <div class="goodnesssec buttermilk smbg shadow_container">
+                    <a href="{% url 'category' 'GH' %}">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'app/images/buffalo-ghee.png' %}" class="img-responsive" alt="">
+                            <h5 class="border rounded text-center shadow_container btn btn-success px-4 fw-bold">Ghee</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+		   {% else %}
+			<h2 class="text-center">Login Required</h2>
+		   {% endif %}
+   </div> 
+
+    <br><br/>
+{% endblock main-content %}
+
+{% block information %}
+<div class="container">
+    <div class="row bg-success text-center p-5 text-white border-bottom shadow_container my-5">
+        <h3 class="alert alert-success border rounded text-center shadow_container">Information</h3>
+        <small class="fs-5">
+            At Moo Haven: The Milk Oasis, we're passionate about bringing you the finest dairy products straight from our farm to your table. Our commitment to quality shines through in every product we offer. From creamy milk and velvety curd to indulgent milkshakes and refreshing lassi, each item is crafted with care and attention to detail. Our ghee adds richness to your favorite recipes, while our paneer and cheese provide the perfect touch to elevate your culinary creations. And when it's time for a sweet treat, our delectable ice creams are sure to delight. Experience the wholesome goodness of dairy like never before with Moo Haven.
+        </small>  
+    </div>
+</div>
+{% endblock information %}
+{% block home_foot %}
+<footer class="bg-secondary">
+    <div class="footer">
+    <div class="row">
+        <div class="col">
+          <a class="contact-info" href="#"><i class="fa-solid fa-phone"></i></a>
+          <a class="contact-info" href="#"><i class="fa-brands fa-github"></i></a>
+          <a class="contact-info" href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a class="contact-info" href="#"><i class="fa-solid fa-paper-plane"></i></a>
+          <a class="contact-info" href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a class="contact-info" href="#"><i class="fa-solid fa-location-dot"></i></a>
+          <a class="contact-info" href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a class="contact-info" href="#"><i class="fa-solid fa-envelope"></i></a>
+          <a class="contact-info" href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+    
+    <div class="row">
+    <ul>
+    <li><a href="{% url 'about' %}">About us</a></li>
+    <li><a href="{% url 'profile' %}">Profile</a></li>
+    <li><a href="{% url 'privacy-policy' %}">Privacy Policy</a></li>
+    <li><a href="{% url 'terms-conditions' %}">Terms & Conditions</a></li>
+    <li><a href="{% url 'wishlists' %}">Wishlists</a></li>
+    <li><a href="{% url 'orders' %}">Orders</a></li>
+    <li><a href="{% url 'showcart' %}">Cart</a></li>
+    </ul>
+    </div>
+    <div class="bg-white"><br></div>
+    {% endblock home_foot %}

@@ -1,0 +1,90 @@
+{% extends "store/base.html" %}
+{% load cart_tags %}
+{% load custom_filter %}
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+<div class="container">
+    <div class="border rounded m-4 p-4 login-container">
+        <h3 class="alert alert-light border rounded text-center login-container">Products Added in Cart</h3>
+        <div class="table-responsive">
+                {% if prod %}
+                <h4 class="text-center p-5 m-5 text-primary border rounded">The Cart is Empty</h4>
+                {% else %}
+            <table class="table table-light table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-center">S.No.</th>
+                        <th scope="col" class="text-center">Image</th>
+                        <th scope="col" class="text-center">Product</th>
+                        <th scope="col" class="text-center">Price</th>
+                        <th scope="col" class="text-center">Quantity</th>
+                        <th scope="col" class="text-center">Total Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for product in products %}
+                    <tr class="lo">
+                        <td class="fw-bold pt-5 text-center">{{forloop.counter}}.</td>
+                        <td style="display:flex;justify-content:center;"><img class="rounded-circle" src="{{product.image.url}}" alt="" height="100px" width="100px"/></td>
+                        <td class="pt-5 text-center">{{product.name}}</td>
+                        <td  class="product-price pt-5 text-center">{{product.price|add_currency}}</td>
+                        <td class="pt-5 text-center">{{product|count_in_cart:request.session.cart}}</td>
+                        <th class="product-price pt-5 text-center">{{product|total_price:request.session.cart|add_currency}}</th>
+            
+                    </tr>
+                    {% endfor %}
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="4"></th>
+                        <th class="text-center">Total Cart Price:</th>
+                        <th  class="product-price text-danger text-center">{{products|total_cart_price:request.session.cart|add_currency}}</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="m-3 p-3">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-primary float-end px-4 fw-bold login-container" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                   Checkout
+                </button>
+            </div>
+            {% endif %}
+        </div>
+        
+    </div>
+</div>
+
+{% comment %} Model from bootstrap {% endcomment %}
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header login-container">
+          <h1 class="modal-title fs-5 text-center lo" id="exampleModalLabel">Checkout</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="p-3 m-2">
+            <form action="{% url 'checkout'%}" method="post" class="">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="" class="form-label">Address</label>
+                    <input type="text" name="address" id="" class="form-control" placeholder="" aria-describedby="helpId"/>
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Phone</label>
+                    <input type="text" name="phone" id="" class="form-control" placeholder="" aria-describedby="helpId"/>
+                </div>
+                <button type="submit" class="btn btn-outline-primary float-end login-container">Checkout</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}

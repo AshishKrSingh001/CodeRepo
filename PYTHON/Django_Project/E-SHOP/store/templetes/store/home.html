@@ -1,0 +1,119 @@
+{% extends "store/base.html" %}
+{% load cart_tags %}
+{% load custom_filter %}
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+<div class="container-fluid mt-5">
+    
+    <div class="row py-2 ps-3">
+
+        <div class="col-lg-3 col-sm-12 mx-auto mb-4">
+            <ul class="list-group login-container">
+                <a href="/" class="list-group-item {% if not request.GET.category %}active{% endif %} fw-bold">All Products</a>
+                {% for category in categories %}
+                <a href="/?category={{ category.id }}" class="list-group-item {% if request.GET.category|stringformat:'s' == category.id|stringformat:'s' %}active{% endif %} fw-bold">{{ category.name }}</a>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div id="products" class="col-lg-9 mx-auto">
+            <div class="row mx-auto">
+                {% if category_prod %}
+                <hr>
+                <h2 class="text-center">No products available in the category '<span class="text-danger">{{ category_name }}</span>' </h2>
+                <hr>
+                {% elif all_prod %}
+                <hr>
+                <h2 class="text-center">No products available</h2>
+                <hr>
+                {% else %}
+                    {% for product in page_obj %}
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 login-container">
+                                <a href="#"><img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}" height="250px" width="150px" /></a>
+                                <div class="card-body">
+                                    <h6 class="card-title" style="height:5vh;">{{ product.name }}</h6>
+                                                                  
+                                    
+                                    <p class="card-text fw-bold text-secondary">
+                                        <span class="text-danger product-price">{{ product.price|add_currency }}</span>
+                                    </p>
+                                    <div class="card-footer p-0 no-gutters">
+                                        {% if product|is_in_cart:request.session.cart %}
+                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                <form action="/" method="POST" class="m-0">
+                                                    {% csrf_token %}
+                                                    <input type="hidden" name="product" value="{{ product.id }}">
+                                                    <input type="hidden" name="remove" value="true">
+                                                    <button type="submit" class="btn btn-primary px-3">-</button>
+                                                </form>
+                                                <div class="text-center col fw-bold pt-1">{{ product|count_in_cart:request.session.cart }} in cart</div>
+                                                <form action="/" method="POST" class="m-0">
+                                                    {% csrf_token %}
+                                                    <input type="hidden" name="product" value="{{ product.id }}">
+                                                    <button type="submit" class="btn btn-primary btn-block px-3">+</button>
+                                                </form>
+                                            </div>
+                                        {% else %}
+                                            <form action="/" method="POST" class="btn-block p-0">
+                                                {% csrf_token %}
+                                                <input type="hidden" name="product" value="{{ product.id }}">
+                                                <input type="submit" class="btn btn-primary form-control btn-sm fw-bold text-light rounded mb-1" value="Add to Cart" />
+                                            </form>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            
+            {% if page_obj.has_other_pages %}
+            <nav aria-label="Product navigation" class="mt-4">
+                <ul class="pagination justify-content-center">
+                    {% if page_obj.has_previous %}
+                        <li class="page-item">
+                            <a class="page-link" href="?category={{ request.GET.category|default_if_none:'' }}&page=1">&laquo;&laquo;</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="?category={{ request.GET.category|default_if_none:'' }}&page={{ page_obj.previous_page_number }}">&laquo;</a>
+                        </li>
+                    {% endif %}
+
+                    {% for num in page_obj.paginator.page_range %}
+                        {% if page_obj.number == num %}
+                            <li class="page-item active"><span class="page-link">{{ num }}</span></li>
+                        {% else %}
+                            <li class="page-item"><a class="page-link" href="?category={{ request.GET.category|default_if_none:'' }}&page={{ num }}">{{ num }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+
+                    {% if page_obj.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="?category={{ request.GET.category|default_if_none:'' }}&page={{ page_obj.next_page_number }}">&raquo;</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="?category={{ request.GET.category|default_if_none:'' }}&page={{ page_obj.paginator.num_pages }}">&raquo;&raquo;</a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </nav>
+            {% endif %}
+        </div>
+
+    </div>
+
+</div>
+
+<div class="p-5 mb-4 bg-light rounded-3" id="abc">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">E-SHOP</h1>
+        <p class="col-lg-12 fs-4">Welcome to your One-Stop Online Shop! Explore the world of Convenience and Choice on our E-commerce Store. We provide a variety of Products in various Categories so that all your needs and desires can be fulfilled. Whether you are looking for the latest Tech Gadgets, stylish Clothing, or essential Home Appliances, we have something for everyone. Our Categories include Audio & Video Devices, Home Appliances, Laptops & Computers, Mobile Phones & Accessories, Bags & Wallets, Watches & Jewelry, Shoes, Kids' Clothing, Men's Clothing, and Women's Clothing. We promise only High-Quality Products and bring our Products at Competitive Pricing. Quickly receive your Products with our Fast and Reliable Delivery Options. Our Helpful and Friendly Customer Service Representatives are always available to answer any of your questions. Visit our Website and take advantage of amazing Deals and Offers. Welcome to our Store, where Quality and Satisfaction are our top priorities.</p>
+        <a class="btn btn-primary btn-lg" href="{% url 'home' %}">Shop Now</a>
+    </div>
+</div>
+
+{% endblock content %}
