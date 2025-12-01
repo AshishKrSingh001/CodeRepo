@@ -1,6 +1,6 @@
 from EllepticCurve.EllepticCurve import Sha256Point
 import secrets
-from util import hash160, hash256
+from util import hash160, hash256, encode_base58
 from database import Account_db
 
 class Account:
@@ -32,26 +32,8 @@ class Account:
         checksum = hash256(new_address)[:4]
 
         new_address = new_address + checksum
-        BASE58_ALPHABET = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
 
-        count = 0
-
-        for c in new_address:
-            if c==0:
-                count += 1
-            else:
-                break
-        
-        num = int.from_bytes(new_address, 'big')
-        prefix = '1' * count
-
-        result = ''
-
-        while num > 0:
-            num, mod = divmod(num, 58)
-            result = BASE58_ALPHABET[mod] + result
-
-        self.public_address = prefix + result
+        self.public_address = encode_base58(new_address)
 
         print(f"Private Key {self.private_key}")
         print(f"Public Key {self.public_address}")

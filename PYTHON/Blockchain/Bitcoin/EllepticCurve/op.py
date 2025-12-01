@@ -3,8 +3,8 @@ Copyright (c) 2021 Codiesalert.com
 These scripts shouldn't be used for commercial purpose without Codies Alert Permission
 Any violations may lead to legal action
 """
-from Blockchain.Backend.util.util import hash160
-from Blockchain.Backend.core.EllepticCurve.EllepticCurve import Sha256Point, Signature
+from util import hash160
+from EllepticCurve import Sha256Point, Signature
 
 
 def op_dup(stack):

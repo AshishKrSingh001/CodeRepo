@@ -1,4 +1,5 @@
 from util import int_to_little_endian, encode_varint
+from EllepticCurve.op import OP_CODE_FUNCTION
 
 class Script:
     def __init__(self, cmds = None):
@@ -6,6 +7,9 @@ class Script:
             self.cmds = []
         else:
             self.cmds = cmds
+
+    def __add__(self, other):
+        return Script(self.cmds + other.cmds)
     
     def serialize(self):
         # initialize what we'll send back
@@ -41,6 +45,16 @@ class Script:
         total = len(result)
         # encode_varint the total length of the result and prepend
         return encode_varint(total) + result
+
+    def evaluate(self, z):
+        cmds = self.cmds[:]
+        stack = []
+
+        while len(cmds) > 0:
+            cmd = cmds.pop(0)
+
+            if type(cmd) > 0:
+                operation = OP_CODE_FUNCTION[cmd]
 
 
     @classmethod

@@ -4,13 +4,15 @@ from block_header import Block_header
 from database import Blockchain_db
 from tx import CoinbaseTx
 import time
+from multiprocessing import Manager, Process
+from Frontend.run import main
 
 ZERO_HASH = '0' * 64
 VERSION = 1
 
 class Blockchain:
-    def __init__(self):
-        self.chain = []
+    def __init__(self, utxos):
+        self.utxos = utxos
 
     def write_on_disk(self, block):
         blockchain_db = Blockchain_db()
@@ -24,6 +26,10 @@ class Blockchain:
         prev_hash = ZERO_HASH
         self.add_block(block_height, prev_hash)
 
+    """Keep track of all the unspent transaction in cache for fast retrival"""
+    def store_utxos_in_cache(self, Transaction):
+        self.utxos[Transaction.tx_id] = Transaction
+
     def add_block(self, block_height, prev_hash):
         timestamp = int(time.time())
 
@@ -34,6 +40,9 @@ class Blockchain:
         bits = 'ffff001f'
         block_header = Block_header(VERSION, prev_hash, merkle_root, timestamp, bits)
         block_header.mine()
+        
+        self.store_utxos_in_cache(coinbase_tx)
+
         print(f"Block {block_height} mined successfully with nonce value of {block_header.nonce}")
         self.write_on_disk([Block(block_height, 1, block_header.__dict__, 1, coinbase_tx.to_dict()).__dict__])
 
@@ -48,5 +57,11 @@ class Blockchain:
             self.add_block(block_height, prev_hash)
 
 if __name__ == "__main__":
-    blockchain = Blockchain()
-    blockchain.main()
+    with Manager() as manager:
+        utxos = manager.dict()
+
+        webapp = Process(target=main, args=(utxos,))
+        webapp.start()
+
+        blockchain = Blockchain(utxos)
+        blockchain.main()

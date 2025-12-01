@@ -1,0 +1,15 @@
+2025-12-01T10:12:43.845900 | BORROW: user=2-Bob borrowed book=1 ('Introduction to Algorithms') due=2025-12-15
+2025-12-01T10:12:43.852492 | BORROW: user=3-Professor X borrowed book=1 ('None') due=2025-12-15
+2025-12-01T10:12:43.954137 | BORROW: user=2-Bob borrowed book=3 ('Artificial Intelligence: A Modern Approach') due=2025-12-15
+2025-12-01T10:12:43.960754 | BORROW: user=3-Professor X borrowed book=4 ('Operating System Concepts') due=2025-12-15
+2025-12-01T10:12:44.063672 | RETURN: user=2-Bob returned book=3 ('Artificial Intelligence: A Modern Approach')
+2025-12-01T10:12:44.110310 | RETURN: user=3-Professor X returned book=4 ('Operating System Concepts')
+2025-12-01T10:14:10.934218 | BORROW-FAILED: user=3-Professor X book=1 error=No copies available for book id 1
+2025-12-01T10:14:10.934218 | BORROW-FAILED: user=2-Bob book=1 error=No copies available for book id 1
+2025-12-01T10:14:10.935747 | BORROW: user=1-Alice borrowed book=1 ('Introduction to Algorithms') due=2025-12-15
+2025-12-01T10:14:11.044352 | BORROW: user=2-Bob borrowed book=3 ('Artificial Intelligence: A Modern Approach') due=2025-12-15
+2025-12-01T10:14:11.052474 | BORROW: user=3-Professor X borrowed book=4 ('Operating System Concepts') due=2025-12-15
+2025-12-01T10:14:11.056233 | BORROW: user=1-Alice borrowed book=2 ('Clean Code') due=2025-12-15
+2025-12-01T10:14:11.154973 | RETURN: user=2-Bob returned book=3 ('Artificial Intelligence: A Modern Approach')
+2025-12-01T10:14:11.160947 | RETURN: user=3-Professor X returned book=4 ('Operating System Concepts')
+2025-12-01T10:14:11.170618 | RETURN: user=1-Alice returned book=1 ('Introduction to Algorithms')
